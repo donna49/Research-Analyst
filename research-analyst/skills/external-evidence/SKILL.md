@@ -28,12 +28,37 @@ regulators relevant to the issue (e.g. FDA, FAA, environmental, mining ministrie
 securities commissions; FCA; BaFin. Record the action, date, and how the regulator describes the
 facts.
 
+## Registries, agencies and other outside proof (Andrew's strongest evidence)
+
+- **Lien and security registries:** builders' liens (provincial land and personal-property
+  registries), with lien numbers, dates and amounts (Ascot).
+- **Insolvency:** CCAA or bankruptcy dockets, monitor reports, sworn affidavits (Wayland, Canacol,
+  Chesswood).
+- **Lenders and agencies:** board agendas, minutes, approval process timelines of the lender or
+  agency named by the company (DFC, EDC, DOE). Use these to check promised approval dates (Global
+  Atomic).
+- **FOIA / access to information:** list the requests worth making (topic, agency, what it would
+  prove) as `gap` records. Andrew flags "FOIA Request topic" in footnotes. Journalists' FOIA results
+  count as attributed reporting (Terravest / AMF records).
+- **Government and official bulletins:** incident, environmental and safety bulletins (Alamos fire
+  bulletins); sanctions and aid restrictions (Global Atomic, Section 7008).
+- **Counterparties and peers:** the counterparty's own statements; peers' disclosures of the same
+  regulatory or market event.
+- **Foreign-language press** where the operations are abroad (Canacol / El Colombiano). Record the
+  original and the translation.
+
 ## Independent reporting and short sellers
 
 Bigdata.com news (premium and public). For each report: outlet, date, whether it rests on documents,
 named sources, or anonymous sources, and which statements of the company it contradicts or
 supports. Short-seller reports: record each allegation separately as `attributed`, with the
 evidence the report cites, and look for the company's response.
+
+## Parallel and competing proceedings
+
+Feed `claim-framing`: for each proceeding, write a `proceeding` record with forum, docket, filed date,
+counsel, class period, corrective dates, status, and confidential witnesses relied on. A US complaint
+is a roadmap: record its misrepresentation and corrective-date paragraphs as `attributed`.
 
 ## Comparison
 

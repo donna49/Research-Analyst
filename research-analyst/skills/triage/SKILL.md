@@ -91,6 +91,19 @@ last 12 months, plus plaintiff-firm "investigation" announcements after day 0.
 A plaintiff-firm "investigation" announcement or a filed suit never lowers a disposition; it is
 reported, and for Watch names it is a reason to look again.
 
+### 6b. Andrew's forum and size note (Full investigation and Watch names only; never excludes)
+
+For each name, add a one-line note to the name's JSON (`forum_size_note`) so the list can be ranked
+the way Andrew would rank it (`references/andrew-method.md` §4):
+- **Forum:** Canadian listing (TSX, TSXV, CSE, Cboe Canada) / US listing with a Canadian footprint or
+  CDRs / other. Canadian-listed names come first; a foreign issuer needs a Canadian hook.
+- **Size:** market value lost from the drop standard (`market_cap_lost`). Flag "small" below about
+  25M in local currency. Andrew passed on cases with a recoverable class of about $5M or less.
+- **Parallel action:** a US suit already filed is a reason to rank a Canadian-listed or CDR name
+  *higher* (issue and hold), not lower.
+
+The note orders the Full-investigation list. It never moves a name between dispositions.
+
 ### 7. Reviewer pass
 
 Read every disposition against the evidence before rendering. Where the evidence or a rule (e.g.
@@ -112,8 +125,8 @@ Data: prices TradingView chart feed; news and filings Bigdata.com, SEC EDGAR, Co
 Searched: <n> searches, window <from> to <to>.
 
 ## Full investigation (<k>)
-| Company | Ticker | Country | Drop | Abnormal (t) | Market value lost | Likely trigger | Tier | Prior statements | Existing suit |
-|---|---|---|---|---|---|---|---|---|---|
+| Company | Ticker | Country | Drop | Abnormal (t) | Market value lost | Likely trigger | Tier | Prior statements | Existing suit | Forum / size |
+|---|---|---|---|---|---|---|---|---|---|---|
 One line per name; the trigger cell links its source; a short paragraph below the table per name
 (3–5 sentences: what happened, when, from whom, the quoted prior statement, why it was kept).
 

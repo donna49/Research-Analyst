@@ -1,9 +1,9 @@
 ---
 name: timeline
-description: Stage 8 of a research-analyst investigation. Merges every dated ledger record into one chronology of underlying events, company statements, public revelations and price reactions, showing what was publicly known at each point. Use after stages 1 to 7, or when a chronology of a disclosure story is needed.
+description: Stage 11 of a research-analyst investigation. Merges every dated ledger record into one chronology of underlying events, company statements, public revelations and price reactions, showing what was publicly known at each point. Use after stages 1 to 10, or when a chronology of a disclosure story is needed.
 ---
 
-# Timeline (stage 8)
+# Timeline (stage 11)
 
 One chronology built only from ledger records. Each row cites its record id.
 

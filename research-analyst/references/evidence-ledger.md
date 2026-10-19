@@ -12,7 +12,7 @@ integrity) and InvestSkill `fact-check` (claim ledger, source tiers, verdicts).
 | Field | Required | Meaning |
 |---|---|---|
 | `id` | yes | `E001`, `E002`, … unique in the case |
-| `stage` | yes | `market-event`, `trigger`, `issue`, `statement`, `comparison`, `knowledge`, `external`, `timeline`, `verify` |
+| `stage` | yes | `market-event`, `trigger`, `issue`, `statement`, `comparison`, `knowledge`, `external`, `parties`, `economics`, `claim`, `timeline`, `verify` |
 | `kind` | yes | See kinds below |
 | `claim` | yes | One proposition, in neutral words |
 | `status` | yes | `fact`, `attributed`, `inference`, `assumption`, `estimate`, `gap` (definitions below) |
@@ -22,7 +22,7 @@ integrity) and InvestSkill `fact-check` (claim ledger, source tiers, verdicts).
 | `event_at` | when different from `public_at` | When the underlying thing happened |
 | `refs` | for `inference`, `comparison` | IDs of the records the inference rests on |
 | `confidence` | for `inference`, `comparison` | `high`, `moderate`, `low` + one-line reason |
-| `verified` | set by stage 9 | `quote-match`, `number-recomputed`, `source-reopened`, `failed: <reason>` |
+| `verified` | set by stage 12 (verify) | `quote-match`, `number-recomputed`, `source-reopened`, `failed: <reason>` |
 | `supersedes` | optional | ID of a record this one corrects |
 
 `source` object:
@@ -52,6 +52,13 @@ integrity) and InvestSkill `fact-check` (claim ledger, source tiers, verdicts).
 | `alternative` | A competing explanation for the drop | `weight` (primary / contributing / unlikely) + reason |
 | `gap` | Something we could not establish | `would_be_settled_by` |
 | `search` | A search performed (for the coverage record) | `tool`, `query`, `date_range`, `results` (count) |
+| `party` | Issuer identity, listing, insider, director, officer, auditor, underwriter, related party | `role` (issuer / listing / officer / director / auditor / underwriter / insider / related party / plaintiff), `name`, `tenure`, plus `ticker`, `cusip`, `isin`, `jurisdiction` for issuer/listing records |
+| `capital` | Shares outstanding, market cap, cash, D&O insurance, compensation, insider trade | `metric`, `value`, `unit`/`currency`, `as_of` |
+| `offering` | A securities offering in or near the Class Period | `date`, `security`, `price`, `gross_proceeds`, `agents`, `use_of_proceeds` |
+| `proceeding` | A parallel or competing proceeding (class action, derivative suit, regulator case, CCAA) | `forum`, `docket`, `filed`, `counsel`, `class_period`, `status`, `corrective_dates` |
+| `economics` | A number from `scripts/economics.py` | `metric`, `value`, `unit`/`currency`, `formula`; `source.doc_type` = `script output`, `source.location` = JSON path |
+| `legal` | A legal proposition used in the memo, with its authority | `citation`, `pinpoint`, `text` (verbatim from `legal-library.md` or the verified source), `verified` (`library` / `checked: <url>`), `forum` |
+| `decision` | The recommendation (one per case; supersede to revise) | `recommendation` (`pursue` / `pursue-hold` / `monitor` / `pass`), `reasons`, `refs` (records it rests on), `would_change_if`, `next_catalyst`, `deadlines` |
 
 ## Claim status (from intel evidence standards)
 
