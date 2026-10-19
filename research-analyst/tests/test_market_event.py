@@ -81,6 +81,17 @@ class Classify(unittest.TestCase):
         self.assertEqual(me.classify(None, None, False), "Insufficient data")
 
 
+class Calibrate(unittest.TestCase):
+    def test_flagged_respects_thresholds(self):
+        import calibrate
+        r = {"abnormal_return": -0.06, "t_stat": -2.2}
+        self.assertTrue(calibrate.flagged(r, -0.05, -1.96))
+        self.assertFalse(calibrate.flagged(r, -0.07, -1.96))
+        self.assertFalse(calibrate.flagged(r, -0.05, -2.58))
+        self.assertTrue(calibrate.flagged({"abnormal_return": -0.06, "t_stat": None}, -0.05, -3.0))
+        self.assertIsNone(calibrate.flagged({"error": "x"}, -0.05, -1.96))
+
+
 class Analyse(unittest.TestCase):
     def run_one(self, **kw):
         with Fake(**kw) as f:

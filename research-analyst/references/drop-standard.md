@@ -51,7 +51,7 @@ Prices come from the TradingView chart feed (dividend-adjusted and split-adjuste
 split-only series is used to detect dividend effects). Classification data comes from the
 TradingView scanner. Both are cached in `.cache/` per day.
 
-## Classes (v1 defaults; calibrate on past cases)
+## Classes (v1 defaults; calibrate on past cases with `scripts/calibrate.py cases.csv`)
 
 | Class | Rule |
 |---|---|

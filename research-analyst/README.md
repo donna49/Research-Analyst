@@ -26,6 +26,7 @@ knowledge-indicators + external-evidence → timeline → verify → memo-writer
 | `scripts/market_event.py` | Drop standard (TradingView chart feed + scanner); all market numbers |
 | `scripts/ledger.py` | Ledger checks (`check`, `quotes`), stage-1 records (`add-market`), renderings (`summary`, `timeline`, `sources`) and the memo gate (`memo`) |
 | `scripts/edgar.py` | SEC EDGAR: filings with true acceptance times (`filings`), full-text search (`fts`), insider trades (`form4`), document text (`fetch`) |
+| `scripts/calibrate.py` | v2: scores AR / t threshold pairs on labelled past cases (`pursue` / `pass`) |
 | `scripts/build_triage.py` | Renders `triage.md` from `market_event.json` and `triage/*.json` |
 | `tests/` | Offline tests: `python3 -m unittest discover tests` |
 | `runs/` | One folder per screener date |

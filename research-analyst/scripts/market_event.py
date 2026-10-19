@@ -189,14 +189,14 @@ def returns(hist):
             for i in range(1, len(rows)) if rows[i]["close"] and rows[i - 1]["close"]}
 
 
-def classify(ar, t, short_history):
+def classify(ar, t, short_history, ar_clear=AR_CLEAR, ar_border=AR_BORDER, t_clear=T_CLEAR, t_border=T_BORDER):
     if ar is None:
         return "Insufficient data"
     if short_history:
-        return "Borderline (short history)" if ar <= AR_BORDER else "Not company-specific"
-    if ar <= AR_CLEAR and t <= T_CLEAR:
+        return "Borderline (short history)" if ar <= ar_border else "Not company-specific"
+    if ar <= ar_clear and t <= t_clear:
         return "Company-specific"
-    if ar <= AR_BORDER and t <= T_BORDER:
+    if ar <= ar_border and t <= t_border:
         return "Borderline"
     return "Not company-specific"
 
