@@ -12,7 +12,7 @@
       "name": "research-analyst",
       "source": "./research-analyst",
       "description": "Securities class-action origination research in Andrew Morganti's method: triages one-day drops of more than 10% in Canadian-listed and SEDAR-reporting issuers, then investigates a drop through to a memo in his own form, with an evidence ledger, case economics (look-back, damages ranges, 5% cap at each impugned document, limitation dates), claim framing, Bear v. Bull and a Pursue / Monitor / Pass recommendation, saved as a Google Doc.",
-      "version": "0.4.0"
+      "version": "0.4.1"
     }
   ]
 }
