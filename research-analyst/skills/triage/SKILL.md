@@ -16,7 +16,7 @@ Bigdata.com `company-brief` sweep (mandatory litigation query, category sweep).
 ### 1. Measure every drop (script, all names at once)
 
 ```
-python3 scripts/market_event.py --screener runs/<date>/screener.md --date <date> \
+python3 "${CLAUDE_PLUGIN_ROOT}/scripts/market_event.py" --screener runs/<date>/screener.md --date <date> \
   --json runs/<date>/market_event.json > runs/<date>/market_event.md
 ```
 
@@ -75,6 +75,14 @@ US: CourtListener dockets, nature of suit 850, party name = company, filed in th
 All countries: Bigdata.com news for "class action" or "securities lawsuit" with the company in the
 last 12 months, plus plaintiff-firm "investigation" announcements after day 0.
 
+### 0b. Andrew's trigger (applied to every row before step 2)
+
+Apply `references/trigger.md` to every screener row: a drop of more than 10%, a market cap over $200M,
+and either a Canadian listing or a Canadian-registered SEDAR+ filer listed in the US. Record
+`trigger_met` in the name's JSON. Names that fail go to the "Outside the trigger" table with the
+reason. Only names that meet the trigger can be Full investigation. For names that fail, add
+`unclear: <what to check>` where the Canadian registration cannot be settled quickly.
+
 ### 6. Disposition
 
 | Drop class | Trigger tier | Prior-statement check | Disposition |
@@ -91,6 +99,19 @@ last 12 months, plus plaintiff-firm "investigation" announcements after day 0.
 A plaintiff-firm "investigation" announcement or a filed suit never lowers a disposition; it is
 reported, and for Watch names it is a reason to look again.
 
+### 6b. Andrew's forum and size note (Full investigation and Watch names only; never excludes)
+
+For each name, add a one-line note to the name's JSON (`forum_size_note`) so the list can be ranked
+the way Andrew would rank it (`references/andrew-method.md` §4):
+- **Forum:** Canadian listing (TSX, TSXV, CSE, Cboe Canada) / US listing with a Canadian footprint or
+  CDRs / other. Canadian-listed names come first; a foreign issuer needs a Canadian hook.
+- **Size:** market value lost from the drop standard (`market_cap_lost`). Flag "small" below about
+  25M in local currency. Andrew passed on cases with a recoverable class of about $5M or less.
+- **Parallel action:** a US suit already filed is a reason to rank a Canadian-listed or CDR name
+  *higher* (issue and hold), not lower.
+
+The note orders the Full-investigation list. It never moves a name between dispositions.
+
 ### 7. Reviewer pass
 
 Read every disposition against the evidence before rendering. Where the evidence or a rule (e.g.
@@ -101,7 +122,7 @@ own fields. Timing checks that commonly change the picture:
 - a filing accepted after the day-0 close belongs to day +1 (use the EDGAR index-page ET time);
 - plaintiff-firm "investigation" notices are signals, not filed suits.
 
-Render with `python3 scripts/build_triage.py runs/<date>`.
+Render with `python3 "${CLAUDE_PLUGIN_ROOT}/scripts/build_triage.py" runs/<date>`.
 
 ## Output: `runs/<date>/triage.md`
 
@@ -112,8 +133,8 @@ Data: prices TradingView chart feed; news and filings Bigdata.com, SEC EDGAR, Co
 Searched: <n> searches, window <from> to <to>.
 
 ## Full investigation (<k>)
-| Company | Ticker | Country | Drop | Abnormal (t) | Market value lost | Likely trigger | Tier | Prior statements | Existing suit |
-|---|---|---|---|---|---|---|---|---|---|
+| Company | Ticker | Country | Drop | Abnormal (t) | Market value lost | Likely trigger | Tier | Prior statements | Existing suit | Forum / size |
+|---|---|---|---|---|---|---|---|---|---|---|
 One line per name; the trigger cell links its source; a short paragraph below the table per name
 (3–5 sentences: what happened, when, from whom, the quoted prior statement, why it was kept).
 

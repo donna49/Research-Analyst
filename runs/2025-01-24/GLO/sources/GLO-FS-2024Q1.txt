@@ -1,0 +1,3328 @@
+GLOBAL ATOMIC CORPORATION
+CONDENSED INTERIM
+CONSOLIDATED FINANCIAL STATEMENTS
+FOR THE THREE MONTHS ENDED
+MARCH 31, 2024 & 2023
+(EXPRESSED IN CANADIAN DOLLARS)
+(UNAUDITED)
+
+Global Atomic Corporation
+Condensed Interim Consolidated Statements of Financial Position
+(Expressed in Canadian Dollars) (Unaudited)
+As at
+Note
+reference
+ASSETS
+Current assets
+Cash and cash equivalents
+Accounts and other receivables
+Prepaid expenses
+Non-current assets
+Property, plant and equipment
+Intangible assets
+Advance payments for mineral properties
+Exploration and evaluation assets
+Investment in joint venture
+
+31-Mar
+2024
+
+$
+4,12
+
+5
+
+$
+
+145,905,549
+316,098
+10,514,586
+1,536,432
+13,523,632
+
+5
+6
+7
+
+Total assets
+
+18,572,407
+625,754
+194,022
+19,392,183
+
+31-Dec
+2023
+
+24,857,915
+683,283
+207,700
+25,748,898
+129,986,343
+339,155
+7,525,740
+1,370,358
+12,628,251
+
+$
+
+191,188,480
+
+$
+
+177,598,745
+
+$
+
+7,856,360
+
+$
+
+6,745,812
+
+LIABILITIES AND EQUITY
+Current liabilities
+Accounts payable and accrued liabilities
+
+8
+
+Current portion of long-term debt
+
+9
+
+Current portion of lease liabilities
+
+10
+
+Non-current liabilities
+Long-term accounts payable and accrued liabilities
+Long-term debt
+Long-term lease liabilities
+Total liabilities
+Equity
+Share capital
+Share purchase warrants
+Contributed surplus
+Retained earnings (deficit)
+Accumulated other comprehensive (loss)
+Shareholders' equity
+Non-controlling interests in subsidiary
+Total equity
+
+1,342,373
+
+2,654,097
+
+2,746,023
+
+11,853,382
+
+10,834,208
+
+8
+9
+10
+
+1,626,000
+3,137,431
+2,927,186
+19,543,999
+
+1,587,120
+3,471,736
+3,519,912
+19,412,976
+
+13
+14
+15
+
+180,972,303
+6,870,754
+21,970,244
+(16,573,798)
+(22,059,112)
+171,180,391
+464,090
+171,644,481
+
+169,428,131
+8,477,302
+21,532,188
+(18,956,976)
+(22,723,881)
+157,756,764
+429,005
+158,185,769
+
+19
+
+Total liabilities and equity
+Commitments and contingent liabilities
+
+1,342,925
+
+$
+
+191,188,480
+
+$
+
+177,598,745
+
+20
+
+The accompanying notes are an integral part of these unaudited condensed interim consolidated financial statements.
+On behalf of the Board:
+“Stephen G. Roman”
+Stephen G. Roman
+Chairman, President & CEO
+
+“Dean Chambers”
+Dean Chambers
+Non-Executive Director
+
+2
+
+Global Atomic Corporation
+Condensed Interim Consolidated Statements of Income (Loss)
+(Expressed in Canadian Dollars) (Unaudited)
+Three months ended March 31,
+Note
+reference
+Revenues
+Revenues from operations
+General and administration
+Finance income, net
+Foreign exchange (gain) loss
+Share of net (income) loss from joint venture
+Net income (loss) before income taxes
+
+2024
+$
+
+11
+
+$
+
+2,199,221
+(241,631)
+(3,750,362)
+(333,686)
+2,397,921
+
+$
+
+2,397,921
+
+7
+
+Current income tax expense
+Deferred income tax expense
+Net income (loss)
+
+271,463
+271,463
+
+2023
+$
+
+130,841
+130,841
+
+$
+
+2,832,831
+(71,468)
+1,210,716
+1,388,274
+(5,229,512)
+
+$
+
+(5,229,512)
+
+Net income (loss) attributable to:
+Shareholders of the Company
+Non-controlling interests
+
+19
+
+2,383,178
+14,743
+
+(5,237,663)
+8,151
+
+Basic net income (loss) per share
+Diluted net income (loss) per share
+
+17
+17
+
+$0.01
+$0.01
+
+($0.03)
+($0.03)
+
+17
+
+208,080,080
+
+184,583,128
+
+17
+
+213,208,175
+
+184,583,128
+
+Basic weighted-average number of
+shares outstanding
+Diluted weighted-average number of
+shares outstanding
+
+The accompanying notes are an integral part of these unaudited condensed interim consolidated financial statements.
+
+3
+
+Global Atomic Corporation
+Consolidated Statements of Comprehensive Income (Loss)
+(Expressed in Canadian Dollars) (Unaudited)
+Three months ended March 31,
+2024
+
+Net income (loss) for the period
+
+$
+
+2,397,921
+
+2023
+
+$
+
+(5,229,512)
+
+Other comprehensive income for the period
+Items that may be subsequently classified to statements of income
+Currency translation adjustment of Niger operations
+
+123,416
+
+1,129,759
+
+Currency translation adjustment of joint venture
+
+561,695
+
+1,589,017
+
+685,111
+
+2,718,776
+
+Total other comprehensive income
+
+$
+
+685,111
+
+$
+
+2,718,776
+
+Comprehensive income (loss)
+
+$
+
+3,083,032
+
+$
+
+(2,510,736)
+
+Comprehensive income (loss) attributable to:
+Shareholders of the Company
+Non-controlling interests
+
+3,047,947
+
+(2,518,218)
+
+35,085
+
+7,482
+
+The accompanying notes are an integral part of these unaudited condensed interim consolidated financial statements.
+
+4
+
+Global Atomic Corporation
+Condensed Interim Consolidated Statements of Changes in Equity
+(Expressed in Canadian Dollars) (Unaudited)
+
+Note
+reference
+
+Share Capital
+
+Share
+Purchase
+Warrants
+
+Contributed
+Surplus
+
+Retained
+Earnings
+(Deficit)
+
+Accumulated
+Other
+Comprehensive
+Income
+
+Attributable to
+Shareholders of Non-controlling
+the Company
+Interests
+
+Balance, December 31, 2023
+Warrants exercised
+13,14
+Stock option expense
+15
+Stock options exercised
+15
+Net income (loss)
+Other comprehensive income (loss)
+Balance, March 31, 2024
+
+$ 169,428,131
+10,606,548
+937,624
+$ 180,972,303
+
+$
+
+8,477,302
+(1,606,548)
+$ 6,870,754
+
+$ 21,532,188
+826,004
+(387,948)
+$ 21,970,244
+
+$ (18,956,976)
+2,383,178
+$ (16,573,798)
+
+$ (22,723,881)
+664,769
+$ (22,059,112)
+
+$ 157,756,764 $
+9,000,000
+826,004
+549,676
+2,383,178
+664,769
+$ 171,180,391 $
+
+429,005
+14,743
+20,342
+464,090
+
+$ 158,185,769
+9,000,000
+826,004
+549,676
+2,397,921
+685,111
+$ 171,644,481
+
+Balance, December 31, 2022
+Shares issued
+Shares to be issued
+Share issue costs
+Broker warrants issued
+Stock option expense
+
+$ 108,306,043
+49,640,922
+25,000
+(4,028,322)
+1,467,389
+-
+
+$
+
+4,126,058
+6,361,579
+509,176
+-
+
+$ 14,656,139
+1,497,157
+(633,229)
+-
+
+$ (2,353,296)
+(5,237,663)
+
+$ (23,657,112)
+-
+
+$ 101,077,832 $
+56,002,501
+25,000
+(4,028,322)
+509,176
+1,497,157
+834,160
+(5,237,663)
+
+431,492
+8,151
+
+$ 101,509,324
+56,002,501
+25,000
+(4,028,322)
+509,176
+1,497,157
+834,160
+(5,229,512)
+
+$ 155,411,032
+
+$ 10,996,813
+
+$ 15,520,067
+
+$ (7,590,959)
+
+2,719,445
+$ (20,937,667)
+
+2,719,445
+$ 153,399,286 $
+
+(669)
+438,974
+
+2,718,776
+$ 153,838,260
+
+Stock options exercised
+Net income (loss)
+Other comprehensive income
+Balance, March 31, 2023
+
+The accompanying notes are an integral part of these unaudited condensed interim consolidated financial statements.
+
+5
+
+Global Atomic Corporation
+Condensed Interim Consolidated Statements of Cash Flows
+(Expressed in Canadian Dollars) (Unaudited)
+Three months ended March 31,
+Note
+reference
+
+2024
+
+2023
+
+Cash generated from (used in)
+Operating activities
+Net income (loss)
+Unrealized foreign exchange (gain) loss
+Share of net (earnings) loss from joint venture
+Stock option expense
+Depreciation expense
+Interest income
+Interest expense on lease liability
+Non-cash working capital items:
+Accounts receivable
+Prepaid expenses
+Accounts payable and accrued liabilities
+Cash flows used in operating activities
+Financing activities
+Public offering and private
+placement of common shares
+Share issue costs
+Common shares to be issued
+Warrants exercised
+Stock options exercised
+Repayment of lease obligations
+Repayment of long-term debt
+Cash flows generated from financing activities
+Investing activities
+Advance payments for mineral properties
+Purchase property, plant & equipment
+Purchase intangible assets
+Exploration and evaluation expenditures
+Interest received
+Cash flows used in investing activities
+
+$
+7
+15
+
+8
+
+13
+13
+14
+15
+
+5
+6
+
+2,397,921
+(3,649,634)
+(333,686)
+826,004
+61,241
+(249,500)
+2,917
+(944,737)
+
+$
+
+(5,229,512)
+1,131,677
+1,388,274
+1,497,157
+69,644
+(71,468)
+15,253
+(1,198,975)
+
+57,529
+13,678
+(1,901,265)
+(2,774,795)
+
+(30,895)
+42,564
+(152,862)
+(1,340,168)
+
+9,000,000
+549,676
+(836,747)
+(457,323)
+8,255,606
+
+56,002,501
+(2,777,280)
+25,000
+834,160
+(215,976)
+53,868,405
+
+(4,422,239)
+(7,402,080)
+(165,566)
+249,500
+(11,740,385)
+
+(1,938,333)
+(6,953,529)
+(68,560)
+(54,030)
+71,468
+(8,942,984)
+
+$
+
+43,585,253
+68,359
+8,400,008
+52,053,620
+
+$
+
+15,253
+
+Net change in cash
+Effect of exchange rate changes on cash
+Cash, beginning of period
+Cash, end of period
+
+$
+
+(6,259,574)
+(25,934)
+24,857,915
+18,572,407
+
+Interest paid during the period
+
+$
+
+2,917
+
+The accompanying notes are an integral part of these unaudited condensed interim consolidated financial statements.
+
+6
+
+Global Atomic Corporation
+Notes to the Unaudited Condensed Interim Consolidated Financial Statements
+For the Three Months ended March 31, 2024 and 2023
+(Expressed in Canadian Dollars) (Unaudited)
+1.
+
+Nature of Operations
+
+Global Atomic Corporation and its subsidiaries (collectively, the “Company” or “Global Atomic”) have two principle lines
+of business:
+1.
+2.
+
+the processing of electric arc furnace dust (“EAFD”) obtained from steel companies in Türkiye through a Waelz
+kiln process to recover zinc concentrates that are then treated by zinc smelters (“EAFD Business”); and
+the acquisition, exploration and development of uranium properties in Niger (“Uranium Business”).
+
+Global Atomic Corporation, the ultimate parent, is a corporation incorporated under the laws of Ontario, Canada and
+its registered office is 8 King Street East, Suite 1700, Toronto, Ontario, M5C 1B5. Global Atomic Corporation is also
+the highest level at which these financial statements are consolidated.
+The Company’s EAFD activities are conducted through Befesa Silvermet Turkey, S.L. (“BST”), a Spanish incorporated
+joint venture with Befesa Zinc S.A.U. (“Befesa”). The joint venture is held 51% by Befesa and 49% by Global Atomic.
+The relationship between the joint venture partners is governed by a Shareholders Agreement. The joint venture was
+established to operate EAFD activities within Türkiye. At present, BST operates one EAFD facility located in Iskenderun,
+Türkiye, through wholly-owned subsidiaries. The unaudited condensed interim consolidated financial statements for
+the three months ended March 31, 2024 and 2023 reflect the impact of using the equity method to account for Global
+Atomic’s interest in the joint venture, with the Company’s share of net earnings and net assets separately disclosed
+(Note 7).
+The Company’s mineral resource properties are located in Niger. Through its wholly-owned subsidiary, Global Atomic
+Fuels Corporation (“GAFC”), the Company held six Mining Agreements and related Exploration Permits, on which it
+has conducted exploration activities for uranium. The Exploration Permits expired on December 17, 2023. GAFC holds
+a 100% interest in the shares of Global Uranium Niger Inc.(“GUNI”), a Niger corporation through which GAFC conducts
+its exploration activities. In accordance with the new Niger Mining Code, GUNI has applied for new Exploration Permits
+(‘Cahiers des Charges”). Management expects that such Exploration Permits will be granted shortly.
+On December 23, 2020, GAFC was granted a Mining Permit for the Dasa Project on behalf of a Niger mining company
+to be incorporated. The Mining Permit has an initial term of 10 years and is renewable until the resource has been fully
+depleted. The Company’s Niger mining subsidiary, Société Minière de DASA S.A. (“SOMIDA”) was incorporated on
+August 11, 2022 with an initial share capital of 2 billion West African CFA Franc (“CFA”) ($3,985,627). In accordance
+with the mining agreement signed by GAFC and the Republic of Niger on September 25, 2007, the latter received a
+10% free carried interest in the mining subsidiary and exercised its right to subscribe to an additional 10% by making
+its respective contribution of CFA 200 million ($398,563) to the initial share capital of SOMIDA, resulting in a total
+ownership of 20% of the shares of SOMIDA. Under the terms of the Company’s Mining Agreement, the Republic of
+Niger commits to fund its proportionate share of capital costs and operating deficits for such additional 10% interest.
+The Republic of Niger has no further option to increase its ownership.
+2.
+
+Basis of Presentation and Statement of Compliance
+
+The unaudited condensed interim consolidated financial statements of the Corporation have been prepared in
+accordance with International Financial Reporting Standards (“IFRS”) and IFRS Interpretations Committee (“IFRIC”)
+interpretations applicable to companies reporting under IFRS, including IAS 34, Interim Financial Reporting and include
+the operating results of Global Atomic and its subsidiaries and joint ventures. Accordingly, certain information and
+disclosure normally included in annual financial statements prepared in accordance with IFRS have been omitted or
+condensed. These unaudited condensed interim consolidated financial statements should be read in conjunction with
+the Corporation’s annual financial statements for the year ended December 31, 2023, which were prepared in
+accordance with IFRS.
+These unaudited condensed interim consolidated financial statements as at and for the three months ended March 31,
+2024 and 2023 were authorized for issuance on May 13, 2024 by the Global Atomic Board of Directors.
+
+7
+
+Global Atomic Corporation
+Notes to the Unaudited Condensed Interim Consolidated Financial Statements
+For the Three Months ended March 31, 2024 and 2023
+(Expressed in Canadian Dollars) (Unaudited)
+3.
+
+Material Accounting Policy Information, Accounting Standards and Amendments
+
+The accounting policies adopted are consistent with those of the Company’s financial statements for the year ended
+December 31, 2023.
+4.
+
+Accounts and Other Receivables
+
+Management fees & sales commissions receivable (Note 12)
+
+$
+
+Harmonized sales tax receivable
+
+December 31,
+2023
+
+415,543
+
+$
+
+210,034
+
+Other
+$
+
+351,629
+331,457
+
+177
+
+Total accounts and other receivables
+
+5.
+
+March 31,
+2024
+
+197
+
+625,754
+
+$
+
+683,283
+
+Property, Plant and Equipment and Advance Payments for Mineral Properties
+
+Property, plant and equipment balances as at March 31, 2024 and December 31, 2023 are as follows:
+
+Mineral property
+
+Plant and
+equipment
+
+Right of use
+asset
+
+Total
+
+74,340,064
+
+8,376,066
+
+1,179,400
+
+83,895,530
+
+8,235,081
+
+1,292,857
+
+223,373
+
+9,751,311
+
+(76,398)
+
+(7,250)
+
+19,891
+
+(63,757)
+
+82,498,747
+
+9,661,673
+
+1,422,664
+
+93,583,084
+
+31,900,096
+
+7,543,595
+
+7,225,708
+
+46,669,399
+
+COST
+Balance at December 31, 2022
+Additions
+Exchange differences
+Balance at March 31, 2023
+Additions
+Exchange differences
+Balance at December 31, 2023
+Additions
+
+(371,853)
+
+(153,797)
+
+(3,640,067)
+
+16,833,415
+
+8,494,575
+
+136,612,416
+
+13,471,103
+
+233,652
+
+-
+
+13,704,755
+
+3,518,980
+
+Exchange differences
+Balance at March 31, 2024
+
+(3,114,417)
+111,284,426
+
+$
+
+128,274,509
+
+$
+
+416,556
+
+173,855
+
+17,483,623 $
+
+8,668,430
+
+4,109,391
+$
+
+154,426,562
+
+ACCUMULATED DEPRECIATION
+-
+
+(1,143,195)
+
+(517,619)
+
+(1,660,814)
+
+Depreciation
+
+-
+
+(445,146)
+
+(108,321)
+
+(553,467)
+
+Exchange differences
+
+-
+
+(1,697)
+
+(13,735)
+
+(15,432)
+
+As at at March 31, 2023
+
+-
+
+(1,590,038)
+
+(639,675)
+
+(2,229,713)
+
+Depreciation
+
+-
+
+(2,493,708)
+
+(2,091,118)
+
+(4,584,826)
+
+Exchange differences
+
+-
+
+70,840
+
+117,626
+
+188,466
+
+As at December 31, 2023
+
+-
+
+(4,012,906)
+
+(2,613,167)
+
+(6,626,073)
+
+Depreciation
+
+-
+
+(1,108,297)
+
+(656,800)
+
+(1,765,097)
+
+Exchange differences
+
+-
+
+(86,720)
+
+(43,123)
+
+(129,843)
+
+As at December 31, 2022
+
+As at March 31, 2024
+
+$
+
+-
+
+$
+
+(5,207,923) $
+
+(3,313,090) $
+
+(8,521,013)
+
+As at December 31, 2023
+
+$
+
+111,284,426
+
+$
+
+12,820,509
+
+$
+
+5,881,408
+
+$
+
+129,986,343
+
+As at March 31, 2024
+
+$
+
+128,274,509
+
+$
+
+12,275,700
+
+$
+
+5,355,340
+
+$
+
+145,905,549
+
+NET BOOK VALUE
+
+8
+
+Global Atomic Corporation
+Notes to the Unaudited Condensed Interim Consolidated Financial Statements
+For the Three Months ended March 31, 2024 and 2023
+(Expressed in Canadian Dollars) (Unaudited)
+5.
+
+Property, Plant and Equipment and Advance Payments for Mineral Properties (Continued)
+
+At March 31, 2024, advance payments for mineral properties amounting to $10.5 million consist of contractual deposits
+paid to suppliers and are related to advances made for long lead items and materials to be used in the mining and
+processing for the Dasa Project (December 31, 2023: $7.5 million).
+Mining Code of the Republic of Niger
+On July 5, 2022, the President of the Republic of Niger signed into law a new Mining Code to consolidate the various
+amendments to the prior Mining Code and clarify certain aspects. Notwithstanding, all existing Mining Agreements and
+Permits remain valid for their existing terms. Global Atomic’s Adrar Emoles 3 Mining Agreement also contain a further
+provision to guarantee the stability of the duties, taxes, royalties and tax benefits as they existed at the time the Mining
+Agreement was entered into, unless the rates drop, in which case, the holder of the Mining Agreement will benefit from
+the lower rates.
+The mining royalty rates under the former Mining Code and the Mining Agreement are based on a 5.5% to 12% of
+revenues dependent on earnings margins. Under the new Mining Code, the royalty rate on uranium mining is fixed at
+7%.
+The Company expects the provisions of the new Mining Code will apply to SOMIDA after the expiry of the current
+Mining Agreement in September 2027. The Mining Code refers to numerous regulations, which have not yet been
+announced. Until such regulations are announced, the Company is not able to fully assess the impact of the new Mining
+Code on SOMIDA’s operations.
+Under the new Mining Code, the concept of an umbrella Mining Agreement covering both the exploration and
+exploitation phases no longer applies. Exploration Permits (known as Cahiers des Charges) are now separately issued
+for a period of 4 years with two 3 year renewals. Upon application for a Mining Permit, a Niger mining corporation is
+established to enter into a Mining Convention that includes all the terms and conditions of operations that were
+previously included in the umbrella Mining Agreements. The rights of the Republic of Niger to a free carried interest
+plus the right to participate at a higher level have not changed.
+
+6.
+
+Exploration and Evaluation Assets
+
+On December 22, 2017, upon the acquisition of GAFC, the Company acquired the following permits and associated
+exploration and evaluation assets in the Republic of Niger:
+Adrar Emoles Exploration Permits
+In September 2007, GAFC entered into two Mining Agreements for a term of twenty years with the Republic of Niger
+and was subsequently granted the Adrar Emoles 3 and 4 Exploration Permits. With the granting of the Dasa Project
+Mining Permit on December 23, 2010, the area of the Mining Permit (approximately 25 km2) was carved out from the
+Adrar Emoles 3 Exploration Permit.
+The Exploration Permits for Adrar Emoles 3 and 4 expired on December 17, 2023 and application has been made by
+GUNI for new Exploration Permits on these properties under the new Mining Code. Management expects the granting
+of these Exploration Permits imminently.
+Tin Negoran Exploration Permits
+In February 2007, GAFC entered into four Mining Agreements for a term of twenty years with the Republic of Niger and
+subsequently was granted the Tin Negoran 1, 2, 3 and 4 Exploration Permits. These permits expired on December 17,
+2023 and in accordance with the new Mining Code, GUNI is applying for a new Exploration Permit.
+The Company’s exploration activities are as follows:
+
+Exploration and evaluation assets - beginning
+Drilling, assays and related costs
+Exchange differences
+Exploration and evaluation assets - ending
+
+$
+
+$
+
+March 31,
+2024
+1,370,358 $
+165,566
+508
+1,536,432 $
+
+December 31,
+2023
+1,115,983
+241,167
+13,208
+1,370,358
+
+9
+
+Global Atomic Corporation
+Notes to the Unaudited Condensed Interim Consolidated Financial Statements
+For the Three Months ended March 31, 2024 and 2023
+(Expressed in Canadian Dollars) (Unaudited)
+7.
+
+Investment in Joint Venture
+
+At March 31, 2024, the Company holds a 49% (December 31, 2023: 49%) interest in the BST joint venture, with the
+remaining 51% held by Befesa. The BST joint venture is governed by the Shareholders Agreement between the joint
+venture partners that requires unanimous approval for certain key strategic, operating, investing and financing policies
+of the BST joint venture. The investment in the BST joint venture is accounted for using the equity method. There are
+no publicly quoted market prices for BST.
+Summarized financial information of BST on a 100% basis is as follows:
+Summarized consolidated statements of financial position:
+
+March 31,
+2024
+
+December 31,
+2023
+
+Assets
+Current assets
+Cash and cash equivalents
+
+$
+
+Other current assets (excluding cash and cash equivalents)
+Non-current assets
+
+(1)
+
+3,102,023
+
+$
+
+2,533,472
+
+7,021,735
+
+9,856,601
+
+37,606,748
+
+36,218,046
+
+$
+
+47,730,506
+
+$
+
+48,608,119
+
+$
+
+3,300,071
+
+$
+
+5,979,308
+
+Liabilities
+Current liabilities
+Accounts payable and accrued liabilities
+Income tax payable
+Loans payable (2)
+
+247,725
+
+-
+
+12,241,532
+
+12,652,168
+
+3,246,630
+
+3,165,198
+
+Long-term liabilities
+Loans payable (2)
+Other long-term liabilities (excluding loans payable)
+
+1,095,299
+
+1,039,504
+
+$
+
+20,131,257
+
+$
+
+22,836,178
+
+Net assets
+
+$
+
+27,599,249
+
+$
+
+25,771,941
+
+The Company's equity share of net assets of joint venture
+
+$
+
+13,523,632
+
+$
+
+12,628,251
+
+Note 1: Non-current assets comprise $23.6 million property, plant and equipment plus $14 million deferred tax asset ($22.8 million
+property, plant and equipment plus $13.3 million deferred tax asset at December 31, 2023).
+Note 2: At March 31, 2024, loans payable comprise US$11.4 million revolving credit facility with an effective interest rate of 11%
+(US$12 million at December 31, 2023).
+
+10
+
+Global Atomic Corporation
+Notes to the Unaudited Condensed Interim Consolidated Financial Statements
+For the Three Months ended March 31, 2024 and 2023
+(Expressed in Canadian Dollars) (Unaudited)
+7.
+
+Investment in Joint Venture (Continued)
+
+Summarized consolidated statements of income (loss):
+Three months ended March 31,
+2024
+Revenues
+
+$
+
+9,508,298
+
+2023
+$
+
+5,836,394
+
+Cost of sales
+
+8,415,706
+
+6,671,321
+
+Depreciation
+
+552,362
+
+968,502
+
+Management fees and sales commissions
+
+767,865
+
+384,014
+
+Foreign exchange loss
+
+902,858
+
+246,293
+
+Interest expense
+
+564,683
+
+550,124
+
+Monetary gain
+
+(1,373,721)
+
+(1,095,707)
+
+Tax (income) expense
+
+(1,002,446)
+
+945,059
+
+Net income (loss)
+
+$
+
+680,991
+
+$
+
+(2,833,212)
+
+The Company's equity share of net income (loss) of joint venture
+
+$
+
+333,686
+
+$
+
+(1,388,274)
+
+Other comprehensive income
+
+$
+
+1,146,316
+
+$
+
+3,242,893
+
+The Company's equity share of other comprehensive
+income of joint venture
+
+$
+
+561,695
+
+$
+
+1,589,017
+
+Financial statement line items included in condensed interim consolidated statements of income (loss) for the three
+month periods ended March 31, 2024 and 2023 include hyperinflation impact.
+The comprehensive gain (loss) reflects the impact of exchange rate movements between periods and arise due to the
+conversion of the Turkish Lira functional currency to the Canadian dollar presentation currency, being unrealized losses.
+Statements of investment in joint venture:
+Opening net assets of the Company's investments in joint venture at January 1, 2024
+
+$
+
+12,628,251
+
+Cormpany's share of net earnings of joint venture
+
+333,686
+
+Company's share of other comprehensive income of joint venture
+
+561,695
+
+Carrying value of the Company’s investment in joint venture at March 31, 2024
+
+$
+
+13,523,632
+
+Opening net assets of the Company's investments in joint venture at January 1, 2023
+
+$
+
+16,387,040
+
+Company's share of net loss of joint venture
+
+(1,388,274)
+
+Company's share of other comprehensive income of joint venture
+Carrying value of the Company’s investment in joint venture at March 31, 2023
+
+1,589,017
+$
+
+16,587,783
+
+11
+
+Global Atomic Corporation
+Notes to the Unaudited Condensed Interim Consolidated Financial Statements
+For the Three Months ended March 31, 2024 and 2023
+(Expressed in Canadian Dollars) (Unaudited)
+8.
+
+Accounts Payable and Accrued Liabilities
+
+March 31,
+2024
+
+a) Accounts payable and accrued liabilities
+Trade payables
+
+$
+
+2,053,982
+
+Accrued expenses and other liabilities
+
+$
+
+March 31,
+2024
+
+Shareholder advances (i)
+
+1,191,949
+5,553,863
+
+7,856,360
+
+b) Long-term accounts payable and accrued liabilities
+
+9.
+
+$
+
+5,802,378
+$
+
+(i)
+
+December 31,
+2023
+
+6,745,812
+December 31,
+2023
+
+$
+
+1,626,000
+
+$
+
+1,587,120
+
+$
+
+1,626,000
+
+$
+
+1,587,120
+
+On the incorporation of SOMIDA to pursue exploitation of the Dasa deposit, the historic exploration costs incurred on the
+Adrar Emoles 3 Exploration Permit prior to December 31, 2021 of US$54,869,201 are recoverable by GAFC and US$1,200,000
+are recoverable by Republic of Niger from SOMIDA. After intercompany elimination, a balance remained in long-term accounts
+payable and accrued liabilities comprises the costs incurred by Republic of Niger. The amount is presented as long-term as
+there is no repayment scheduled in the next twelve months and specific terms and conditions are subject to agreement by both
+parties.
+
+Long-term debt
+
+March 31,
+2024
+Equipment loans (1)
+
+$
+
+Less: current portion of the equipment loans
+
+4,480,356
+
+December 31,
+2023
+$
+
+(1,342,925)
+$
+
+3,137,431
+
+4,814,109
+(1,342,373)
+
+$
+
+3,471,736
+
+Note 1: Consists of equipment purchase from Epiroc Rock Drills AB through a loan from Epiroc Financial Solutions AB ("Epiroc"), as
+original lender, amounting to US$2,491,053 as of May 1, 2023 based on an effective interest rate of 10.4% and US$2,447,367 as of
+October 1, 2023 based on an effective interest rate of 10.5%. Each equipment loan is repayable in 48 equal monthly installments.
+
+The movement of long-term debt as of March 31, 2024 and 2023 is as follows:
+2024
+January 1
+
+$
+
+Loan additions
+
+4,814,109
+
+2023
+$
+
+-
+
+-
+
+-
+
+Principal payments
+
+(334,837)
+
+-
+
+Exchange differences
+
+1,084
+
+-
+
+Balance at March 31
+
+$
+
+4,480,356
+
+$
+
+-
+
+12
+
+Global Atomic Corporation
+Notes to the Unaudited Condensed Interim Consolidated Financial Statements
+For the Three Months ended March 31, 2024 and 2023
+(Expressed in Canadian Dollars) (Unaudited)
+10.
+
+Lease liabilities
+
+Equipment lease liabilities (1)
+Office lease liabilities
+Less: current portion of the equipment leases
+Less: current portion of the office leases
+$
+
+March 31,
+2024
+
+December 31,
+2023
+
+5,302,741
+
+5,820,218
+
+278,542
+
+445,717
+
+(2,396,844)
+
+(2,351,353)
+
+(257,253)
+
+(394,670)
+
+2,927,186
+
+$
+
+3,519,912
+
+Note 1: Consists of equipment leased from CMAC-Thyssen International Inc. ("CMAC") on April 1, 2023. The total lease liability of the
+various lease equipment was estimated at $7,088,121 as of April 1, 2023 based on an annual discount rate of 7%.
+
+The movement of lease liabilities as of March 31, 2024 and 2023 is as follows:
+
+2024
+January 1
+
+$
+
+Lease additions
+
+6,265,935
+
+2023
+$
+
+670,131
+
+-
+
+223,373
+
+Repayment of lease obligations
+
+(836,747)
+
+(215,976)
+
+Interest expense
+
+139,426
+
+15,253
+
+Exchange differences
+Balance at March 31
+
+12,669
+$
+
+5,581,283
+
+9,909
+$
+
+702,690
+
+For the three months ended March 31, 2024, out of a total interest expense of $139,426, $136,509 is capitalized to the
+mineral properties (Q1 2023: $14,019) and $2,917 is allocated to the finance expense (Q1 2023: $1,234).
+The following table is a maturity analysis of the Company’s contractual undiscounted payments required to meet lease
+liability obligations:
+March 31,
+2024
+Less than one year
+
+$
+
+One to three years
+
+2,981,536
+
+December 31,
+2023
+$
+
+3,062,477
+$
+
+6,044,013
+
+3,126,330
+3,720,365
+
+$
+
+6,846,694
+
+13
+
+Global Atomic Corporation
+Notes to the Unaudited Condensed Interim Consolidated Financial Statements
+For the Three Months ended March 31, 2024 and 2023
+(Expressed in Canadian Dollars) (Unaudited)
+11.
+
+General and administration
+
+Three months ended March 31,
+2024
+2023
+Stock option expense
+
+$
+
+826,004
+
+$
+
+1,497,157
+
+Management fees
+
+357,500
+
+309,903
+
+Salaries and benefits
+
+287,943
+
+303,270
+
+Professional fees
+
+120,993
+
+154,716
+
+Investor relations
+
+127,856
+
+139,274
+
+Office and general expenses
+
+138,115
+
+107,163
+
+Listing fees
+
+150,876
+
+102,894
+
+Depreciation
+
+61,241
+
+76,660
+
+Travel expenses
+
+45,013
+
+72,150
+
+Occupancy costs
+
+83,680
+
+69,644
+
+$
+
+12.
+
+2,199,221
+
+2,832,831
+
+Related Party Transactions
+March 31,
+2024
+
+a) Due from related parties
+(i)
+
+Befesa and BST
+
+December 31,
+2023
+
+415,543
+$
+
+415,543
+
+351,629
+$
+
+January 1 - March 31,
+2024
+
+b) Revenues from related parties
+Befesa and BST(i)
+
+271,463
+
+351,629
+January 1 - March 31,
+2023
+
+271,463
+$
+
+(i)
+
+$
+
+130,841
+$
+
+130,841
+
+Befesa and BST are related parties as a result of the BST joint venture. Amounts due from and revenues from Befesa and BST
+include management fees and sales commissions.
+
+During the three months ended March 31, 2024, the Company paid key management personnel, including officers,
+directors, or their related entities for management services. Compensation of key management personnel and directors
+for services provided was $1,046,051 (2023 - $1,735,686), including $523,376 share-based compensation expense
+(2023 - $1,074,822). These transactions were in the normal course of operations.
+All balances due to and from related parties are unsecured, non-interest bearing and due on demand.
+
+14
+
+Global Atomic Corporation
+Notes to the Unaudited Condensed Interim Consolidated Financial Statements
+For the Three Months ended March 31, 2024 and 2023
+(Expressed in Canadian Dollars) (Unaudited)
+13.
+
+Share Capital
+
+a)
+b)
+
+Authorized - Unlimited number of common shares, at no par value
+Common shares issued
+Number of Shares
+
+Amount
+
+Balance, December 31, 2022
+
+180,428,374
+
+Common shares to be issued
+
+-
+
+25,000
+
+Bought deal common shares (a)
+
+18,666,667
+
+49,640,922
+
+Share issue costs
+Options exercised
+Balance, March 31, 2023
+
+2,691,311
+201,786,352
+
+(4,028,322)
+1,467,389
+155,411,032
+
+Balance, December 31, 2023
+Warrants exercised
+Options exercised
+Share cancellation (b)
+Balance, March 31, 2024
+
+209,503,248 $
+3,000,000
+278,200
+(3,169,586)
+209,611,862
+
+169,428,131
+10,606,548
+937,624
+180,972,303
+
+14.
+
+$
+
+108,306,043
+
+(a)
+
+On March 17, 2023, the Company closed a bought deal of 18,666,667 units at a price of $3.00 per unit and 250,000 common
+share purchase warrants for gross proceeds of $56,002,501. Each unit comprised one common share and one-half share
+purchase warrant, with each full warrant exercisable at $4.00 per common share for a period of 18 months. Of the total
+proceeds, $6,361,579 was allocated to warrants and $49,640,922 to the common shares. In connection with the bought
+deal, the Company paid finder’s fees of $2,335,125 and miscellaneous legal and administrative fees and issued 560,000
+finder’s warrants. The finder’s warrants are exercisable at $3.00 per common share for a period of 18 months.
+
+(b)
+
+Pursuant to the amalgamation agreement between Global Atomic Fuels Corporation (predecessor company of Global
+Atomic Corporation) and Silvermet Inc. (predecessor company of Global Atomic Corporation) dated September 29, 2017
+any common shares that remained unexchanged as of the six-year anniversary of the effective date thereof; December 22,
+2023 were automatically cancelled and removed from the share registry by the Company’s transfer agent; TSX Trust on
+January 8, 2024.
+
+Share Purchase Warrants
+
+The following table reflects the continuity of share purchase warrants for the three months ended March 31, 2024 and
+2023:
+
+Three months ended
+March 31, 2024
+Number
+
+Value
+
+Three months ended
+March 31, 2023
+Number
+
+Value
+
+Balance, beginning of period
+Issued
+Exercised
+Expired
+
+13,143,334 $
+(3,000,000)
+-
+
+8,477,302 $ 4,900,000
+10,143,334
+(1,606,548)
+-
+
+$
+
+4,126,058
+6,870,755
+-
+
+Balance, end of period
+
+10,143,334
+
+6,870,754
+
+$
+
+10,996,813
+
+$
+
+$ 15,043,334
+
+15
+
+Global Atomic Corporation
+Notes to the Unaudited Condensed Interim Consolidated Financial Statements
+For the Three Months ended March 31, 2024 and 2023
+(Expressed in Canadian Dollars) (Unaudited)
+14.
+
+Share Purchase Warrants (continued)
+
+Using the Black-Scholes valuation method, the following assumptions were used to determine the value of outstanding
+warrants for the three months ended March 31, 2024:
+Expiring
+
+Number of warrants issued
+Share price
+Exercise price
+Risk-free interest rate
+Expected dividend yield
+Stock price volatility
+Expected life of warrants in years
+Warrant value
+Total value of warrants
+
+Sep 17
+2024
+
+Sep 17
+2024
+
+560,000
+$2.75
+$3.00
+3.68%
+0%
+72%
+1.5
+$0.91
+$509,176
+
+9,583,334
+$2.75
+$4.00
+3.68%
+0%
+72%
+1.5
+$0.66
+$6,361,578
+
+Total
+10,143,334
+
+$6,870,754
+
+The following table reflects the actual share purchase warrants issued and outstanding as of March 31, 2024:
+Issue Date
+
+Expiry Date
+
+Outstanding Exercise Price
+
+17-Mar-23
+17-Mar-23
+
+17-Sep-24
+17-Sep-24
+
+560,000
+9,583,334
+10,143,334
+
+15.
+
+$3.00
+$4.00
+$3.94
+
+Remaining
+Life (Years)
+0.47
+0.47
+0.47
+
+Stock Options
+
+The following table reflects the continuity of stock options for three months ended March 31, 2024 and 2023:
+
+Balance, December 31, 2022
+Granted (a)
+Forfeited
+Exercised
+Balance, March 31, 2023
+Balance, December 31, 2023
+Granted (b)
+Exercised
+Forfeited
+Balance, March 31, 2024
+
+Number of stock Weighted average
+options
+exercise price
+10,476,091 $
+1.39
+1,180,000
+3.00
+(250,000)
+0.50
+(2,691,311)
+0.29
+8,714,780 $
+1.98
+8,594,546 $
+120,000
+(278,200)
+(86,800)
+8,349,546 $
+
+2.43
+2.78
+1.98
+3.18
+2.44
+
+(a)
+
+On March 29, 2023, Global Atomic granted 1,180,000 options to directors, officers and employees of the Company,
+exercisable at $3.00 per common share through March 29, 2028. 393,333 options vested immediately, with the balance
+vesting over time through 2025.
+
+(b)
+
+On January 1, 2024, Global Atomic granted 120,000 options to an employee of the Company, exercisable at $2.78 per
+common share through January 1, 2029. 40,000 options vested immediately, with the balance vesting over time through
+2026.
+
+16
+
+Global Atomic Corporation
+Notes to the Unaudited Condensed Interim Consolidated Financial Statements
+For the Three Months ended March 31, 2024 and 2023
+(Expressed in Canadian Dollars) (Unaudited)
+15.
+
+Stock Options (continued)
+
+Using the Black-Scholes valuation method, the following assumptions were used to determine the value of the options
+granted:
+
+Share price
+Exercise price
+Risk-free interest rate
+Expected dividend yield
+Stock price volatility
+Expected life of options in years
+Number of options granted
+Number of options vested
+Value attributed to the option grant
+
+Share price
+Exercise price
+Risk-free interest rate
+Expected dividend yield
+Stock price volatility
+Expected life of options in years
+Number of options granted
+Number of options vested
+Value attributed to the option grant
+
+August 14,
+2024
+
+March 31,
+2025
+
+March 31,
+2025
+
+Expiring on:
+June 25,
+2025
+
+$0.47
+$0.50
+1.20%
+0%
+163%
+5.0
+2,329,546
+2,329,546
+$1,019,279
+
+$0.37
+$0.40
+0.55%
+0%
+177%
+5.0
+250,000
+250,000
+$87,972
+
+$0.37
+$0.50
+0.55%
+0%
+177%
+5.0
+750,000
+750,000
+$262,340
+
+February 15,
+2027
+$3.62
+$3.62
+1.80%
+0%
+87%
+5.0
+30,000
+30,000
+$74,491
+
+February 16,
+2026
+
+March 1,
+2026
+
+March 29,
+2026
+
+May 10,
+2026
+
+August 1,
+2026
+
+February 7,
+2027
+
+$0.50
+$0.50
+0.36%
+0%
+171%
+5.0
+400,000
+275,000
+$188,875
+
+$1.93
+$1.93
+0.49%
+0%
+103%
+5.0
+75,000
+75,000
+$109,999
+
+$2.15
+$2.15
+0.73%
+0%
+104%
+5.0
+150,000
+150,000
+$245,405
+
+$2.67
+$2.67
+0.92%
+0%
+104%
+5.0
+1,230,000
+1,230,000
+$2,487,257
+
+$3.11
+$3.11
+0.91%
+0%
+101%
+5.0
+300,000
+200,000
+$697,054
+
+$2.87
+$2.87
+0.78%
+0%
+98%
+5.0
+150,000
+150,000
+$315,161
+
+$3.40
+$3.40
+1.66%
+0%
+88%
+5.0
+75,000
+75,000
+$175,028
+
+March 1,
+2027
+
+Expiring on:
+March 29,
+May 1,
+2027
+2027
+
+June 23,
+2027
+
+August 12,
+2027
+
+March 29,
+2028
+
+April 27,
+2028
+
+$4.54
+$4.54
+1.47%
+0%
+86%
+5.0
+300,000
+300,000
+$923,432
+
+$4.12
+$4.12
+2.45%
+0%
+86%
+5.0
+677,000
+677,000
+$1,910,148
+
+$2.73
+$2.73
+3.16%
+0%
+85%
+5.0
+300,000
+200,000
+$560,589
+
+$3.40
+$3.40
+2.91%
+0%
+84%
+5.0
+150,000
+100,000
+$346,669
+
+$2.66
+$3.00
+3.05%
+0%
+74%
+5.0
+1,180,000
+786,667
+$1,886,389
+
+$2.69
+$2.69
+3.09%
+0%
+74%
+5.0
+45,000
+15,000
+$75,222
+
+$3.62
+$3.62
+2.75%
+0%
+85%
+5.0
+120,000
+80,000
+$295,440
+
+December 1, December 15, January 1,
+2028
+2028
+2029
+$2.35
+$2.35
+3.09%
+0%
+71%
+5.0
+150,000
+50,000
+$214,386
+
+$2.73
+$2.73
+3.15%
+0%
+71%
+5.0
+1,435,000
+478,333
+$2,370,556
+
+$2.78
+$2.78
+3.09%
+0%
+71%
+5.0
+120,000
+40,000
+$201,295
+
+The following table reflects the actual stock options issued and outstanding as of March 31, 2024:
+
+Expiry Date
+
+Weighted
+Average
+Remaining Number of
+Exercise Contractual
+Options
+Price Life (years) Outstanding
+
+Number of
+Options Vested
+(Exercisable)
+
+Number of
+Options
+Unvested
+
+August 14, 2024
+
+$ 0.50
+
+0.37
+
+1,554,546
+
+1,554,546
+
+-
+
+March 31, 2025
+
+$ 0.50
+
+1.00
+
+125,000
+
+125,000
+
+-
+
+283,000
+
+283,000
+
+-
+
+June 25, 2025
+
+$ 0.50
+
+1.24
+
+February 16, 2026
+
+$ 1.93
+
+1.88
+
+75,000
+
+75,000
+
+-
+
+March 1, 2026
+
+$ 2.15
+
+1.92
+
+150,000
+
+150,000
+
+-
+
+March 29, 2026
+
+$ 2.67
+
+1.99
+
+1,130,000
+
+1,130,000
+
+-
+
+May 10, 2026
+
+$ 3.11
+
+2.11
+
+300,000
+
+200,000
+
+100,000
+
+August 1, 2026
+
+$ 2.87
+
+2.34
+
+150,000
+
+150,000
+
+-
+
+February 7, 2027
+
+$ 3.40
+
+2.86
+
+75,000
+
+75,000
+
+-
+
+30,000
+
+-
+
+February 15, 2027
+
+$ 3.62
+
+2.88
+
+30,000
+
+March 1, 2027
+
+$ 4.54
+
+2.92
+
+300,000
+
+300,000
+
+-
+
+677,000
+
+-
+
+March 29, 2027
+
+$ 4.12
+
+2.99
+
+677,000
+
+May 1, 2027
+
+$ 3.62
+
+3.08
+
+120,000
+
+80,000
+
+40,000
+
+June 23, 2027
+
+$ 2.73
+
+3.23
+
+300,000
+
+200,000
+
+100,000
+
+August 12, 2027
+
+$ 3.40
+
+3.37
+
+150,000
+
+100,000
+
+50,000
+
+March 29, 2028
+
+$ 3.00
+
+4.00
+
+1,180,000
+
+393,333
+
+786,667
+
+April 27, 2028
+
+$ 2.69
+
+4.08
+
+45,000
+
+15,000
+
+30,000
+
+December 1, 2028
+
+$ 2.35
+
+4.67
+
+150,000
+
+50,000
+
+100,000
+
+1,435,000
+
+478,333
+
+956,667
+
+December 15, 2028
+
+$ 2.73
+
+4.71
+
+January 1, 2029
+
+$ 2.78
+
+4.76
+
+120,000
+
+40,000
+
+80,000
+
+$ 2.44
+
+2.65
+
+8,349,546
+
+6,106,212
+
+2,243,334
+
+17
+
+Global Atomic Corporation
+Notes to the Unaudited Condensed Interim Consolidated Financial Statements
+For the Three Months ended March 31, 2024 and 2023
+(Expressed in Canadian Dollars) (Unaudited)
+16.
+
+Segmented Information
+
+Significant information relating to the Company’s reportable operating segments is summarized in the tables below.
+The Company’s total assets by reportable operating segment and Corporate are as follows:
+
+March 31,
+
+Assets
+
+December 31,
+
+2024
+EAFD business net assets (at 100%)
+
+$
+
+27,599,249
+
+2023
+$
+
+25,771,941
+
+Uranium Business
+
+158,939,275
+
+138,524,827
+
+Corporate
+
+18,725,574
+
+26,445,667
+
+The Company’s consolidated statements of income by reportable operating segments and Corporate are as follows:
+Three months ended March 31, 2024
+
+(at 100%)
+EAFD
+
+Uranium
+Adjustments
+
+Business
+Revenues
+
+$
+
+9,508,298
+
+$
+
+Business
+
+(9,508,298) $
+
+-
+
+Corporate
+$
+
+271,463
+
+Total
+$
+
+271,463
+
+Cost of sales
+
+8,415,706
+
+(8,415,706)
+
+-
+
+-
+
+-
+
+Income (loss) from operations
+
+1,092,592
+
+(1,092,592)
+
+-
+
+271,463
+
+271,463
+(333,686)
+
+Share of net earnings from joint venture (49%)
+
+-
+
+(333,686)
+
+-
+
+-
+
+552,362
+
+(552,362)
+
+-
+
+-
+
+-
+
+-
+
+-
+
+103,745
+
+2,095,476
+
+2,199,221
+
+Management fees and sales commissions
+
+767,865
+
+(767,865)
+
+-
+
+-
+
+-
+
+Foreign exchange loss (gain)
+
+902,858
+
+(902,858)
+
+(3,071,080)
+
+(679,282)
+
+(3,750,362)
+
+Depreciation
+General and administration
+
+Interest expense (income)
+
+564,683
+
+(564,683)
+
+1,210
+
+(242,841)
+
+(241,631)
+
+Monetary gain
+
+(1,373,721)
+
+1,373,721
+
+-
+
+-
+
+-
+
+Tax recovery
+
+(1,002,446)
+
+1,002,446
+
+-
+
+-
+
+-
+
+Net income
+
+$
+
+Three months ended March 31, 2023
+
+680,991
+
+$
+
+(901,890) $
+
+2,397,921
+
+(at 100%)
+EAFD
+
+Uranium
+Adjustments
+
+Business
+Revenues
+
+2,966,125 $
+
+$
+
+5,836,394
+
+$
+
+Corporate
+
+Business
+
+(5,836,394) $
+
+-
+
+$
+
+130,841
+
+Total
+$
+
+130,841
+
+Cost of sales
+
+6,671,321
+
+(6,671,321)
+
+-
+
+-
+
+-
+
+Income (loss) from operations
+
+(834,927)
+
+834,927
+
+-
+
+130,841
+
+130,841
+1,388,274
+
+Share of net loss from joint venture (49%)
+
+-
+
+1,388,274
+
+-
+
+-
+
+968,502
+
+(968,502)
+
+-
+
+-
+
+-
+
+-
+
+-
+
+126,609
+
+2,706,222
+
+2,832,831
+
+Management fees and sales commissions
+
+384,014
+
+(384,014)
+
+-
+
+-
+
+-
+
+Foreign exchange loss (gain)
+
+246,293
+
+(246,293)
+
+1,208,291
+
+2,425
+
+1,210,716
+
+Depreciation
+General and administration
+
+Interest expense (income)
+
+550,124
+
+(550,124)
+
+2,313
+
+(73,781)
+
+(71,468)
+
+Monetary gain
+
+(1,095,707)
+
+1,095,707
+
+-
+
+-
+
+-
+
+Tax expense
+
+945,059
+
+(945,059)
+
+-
+
+-
+
+-
+
+Net loss
+
+$
+
+(2,833,212)
+
+$
+
+(1,337,213) $
+
+(2,504,025) $
+
+(5,229,512)
+
+18
+
+Global Atomic Corporation
+Notes to the Unaudited Condensed Interim Consolidated Financial Statements
+For the Three Months ended March 31, 2024 and 2023
+(Expressed in Canadian Dollars) (Unaudited)
+17.
+a)
+
+Income (Loss) per Common Share
+Basic
+
+Basic income (loss) per share is calculated by dividing the net income attributable to shareholders of the Company by
+the weighted average number of common shares outstanding during the year.
+Three months ended March 31,
+Net income (loss)
+Weighted-average number of shares outstanding
+Basic net income (loss) per share
+
+b)
+
+2024
+2,397,921
+208,080,080
+$
+0.01
+
+$
+
+2023
+$ (5,229,512)
+184,583,128
+$
+(0.03)
+
+Diluted
+
+Diluted income per share is calculated by adjusting the weighted average number of common shares outstanding to
+assume conversion of all dilutive potential common shares. The Company’s source of potentially dilutive common
+shares are stock options and warrants. For this, a calculation is done to determine the number of shares that could
+have been acquired at fair value (determined as the average market share price of the Company’s outstanding shares
+for the period), based on the exercise prices attached to the stock options and warrants. The number of shares
+calculated above is compared with the number of shares that would have been issued assuming exercise of the stock
+options and warrants.
+Three months ended March 31,
+Net income (loss)
+Weighted-average number of shares outstanding
+Adjustments for stock options & warrants
+Weighted-average number of shares outstanding for
+diluted income per share
+Diluted net income (loss) per share
+
+$
+
+2024
+2,397,921
+
+2023
+$ (5,229,512)
+
+208,080,080
+5,128,095
+
+184,583,128
+-
+
+213,208,175
+$
+
+0.01
+
+184,583,128
+$
+
+(0.03)
+
+The Company incurred net losses for the period ended March 31, 2023, therefore all outstanding stock options and
+warrants have been excluded from the calculation of diluted loss per common share since the effect would be antidilutive.
+
+18.
+
+Financial Instruments
+
+Certain of the Company’s financial assets and liabilities are measured at fair value and are classified into one of three
+levels in the fair value hierarchy according to the relative reliability of the inputs used to estimate the fair values. The
+three levels of the fair value hierarchy are:
+●
+●
+●
+
+Level 1 – Unadjusted quoted prices in active markets for identical assets or liabilities;
+Level 2 – Inputs other than quoted prices that are observable for the asset or liability either directly or indirectly;
+and
+Level 3 – Inputs that are not based on observable market data.
+
+As at March 31, 2024 and December 31, 2023, the Company did not have any financial assets or liabilities that are
+measured at fair value.
+
+19
+
+Global Atomic Corporation
+Notes to the Unaudited Condensed Interim Consolidated Financial Statements
+For the Three Months ended March 31, 2024 and 2023
+(Expressed in Canadian Dollars) (Unaudited)
+18.
+
+Financial Instruments (Continued)
+
+(a) Fair values of financial assets and liabilities
+March 31, 2024
+Carrying
+amount
+Loans
+
+December 31, 2023
+
+Estimated fair
+value
+
+Estimated
+fair value
+
+Carrying
+amount
+
+$
+
+4,480,356
+
+$
+
+4,480,356
+
+$
+
+4,814,109
+
+$
+
+4,814,109
+
+$
+
+4,480,356
+
+$
+
+4,480,356
+
+$
+
+4,814,109
+
+$
+
+4,814,109
+
+The fair values of the Company’s remaining financial assets and liabilities, which include cash and equivalents,
+accounts receivable and accounts payables approximate their carrying values due to their short-term nature.
+
+19.
+
+Non-controlling Interests
+
+As of March 31, 2024 and December 31, 2023, Global Atomic consolidated SOMIDA and reported the carrying value
+of the NCI as below:
+
+Opening non-controlling interest at January 1, 2024
+
+$
+
+429,005
+
+Net income
+
+14,743
+
+Currency translation adjustment
+
+20,342
+
+Balance non-controlling interest at March 31, 2024
+
+$
+
+464,090
+
+Opening non-controlling interest at January 1, 2023
+
+$
+
+431,492
+
+Net income
+
+17,350
+
+Currency translation adjustment
+
+(19,837)
+
+Balance non-controlling interest at December 31, 2023
+
+$
+
+429,005
+
+The following table summarizes the financial information relating to SOMIDA, the Company’s non-wholly owned
+subsidiary with material NCI, before any intercompany eliminations:
+March 31,
+2024
+
+December 31,
+2023
+
+Assets
+Current assets
+
+827,292
+
+1,089,967
+
+186,164,912
+
+167,906,283
+
+$ 186,992,203
+
+$ 168,996,249
+
+Non-current assets
+Liabilities
+Current liabilities
+
+10,738,810
+
+8,734,681
+
+Long-term liabilities
+
+171,940,127
+
+156,123,731
+
+$ 182,678,937
+
+$ 164,858,413
+
+Net assets
+
+$
+
+4,313,267
+
+$
+
+4,137,837
+
+Net assets attributable to NCI
+
+$
+
+464,090
+
+$
+
+429,005
+
+20
+
+Global Atomic Corporation
+Notes to the Unaudited Condensed Interim Consolidated Financial Statements
+For the Three Months ended March 31, 2024 and 2023
+(Expressed in Canadian Dollars) (Unaudited)
+20.
+
+Commitments and Contingent Liabilities
+
+(a) The Company had the following purchase commitments as of March 31, 2024, which are related to the
+development of the Dasa Project:
+Commited
+Expenditure
+Capital expenditure commitments
+
+$
+
+27,780,623
+
+Remaining
+Commitment
+
+Spent to Date
+$
+
+8,823,451
+
+$
+
+18,957,172
+
+(b) Litigation
+The Company may be involved in legal proceedings from time to time arising in the ordinary course of its business.
+Based on the Company’s knowledge and assessment of events at March 31, 2024, the Company does not believe that
+the outcome of any matters not recorded in the financial statements, individually or in aggregate, would have a material
+adverse effect.
+
+21
+
+

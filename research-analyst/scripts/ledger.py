@@ -3,16 +3,22 @@
 
   ledger.py check runs/<date>/<TICKER>/ledger.jsonl
   ledger.py quotes runs/<date>/<TICKER>/ledger.jsonl   # quote match against saved sources/
+  ledger.py memo runs/<date>/<TICKER>/ledger.jsonl runs/<date>/<TICKER>/memo.md   # memo lint
 
 `check` catches broken records; it cannot decide whether evidence is true or whether a citation
 supports a claim. `quotes` exact-matches every quote against the saved text in sources/<id>*.txt
-(whitespace and typographic quotes normalized). Exit code 1 on any failure.
+(whitespace and typographic quotes normalized). `memo` checks the rendered memo: every [E###]
+resolves, no template markers or placeholders remain, every line with a figure carries a citation,
+no ticker appears that the ledger never mentions (text carried over from another case), the
+required sections and a recommendation are present. Exit code 1 on any failure.
 """
 import glob, json, os, re, sys
 
-STAGES = {"market-event", "trigger", "issue", "statement", "comparison", "knowledge", "external", "timeline", "verify"}
+STAGES = {"market-event", "trigger", "issue", "statement", "comparison", "knowledge", "external", "timeline", "verify",
+          "parties", "economics", "claim"}
 KINDS = {"market", "revelation", "statement", "comparison", "knowledge", "external", "event", "alternative",
-         "gap", "search", "issue"}
+         "gap", "search", "issue", "party", "capital", "offering", "proceeding", "economics", "legal", "decision", "framing"}
+RECOMMENDATIONS = {"pursue", "pursue-hold", "monitor", "pass"}
 STATUSES = {"fact", "attributed", "inference", "assumption", "estimate", "gap"}
 STATEMENT_TYPES = {"fact", "forward-looking", "opinion", "risk-hypothetical", "reassurance", "omission", "puffery"}
 BANNED = re.compile(r"\b(fraud\w*|lied|lying|deceiv\w*|scheme|misled|liable)\b", re.I)
@@ -49,7 +55,7 @@ def check(path):
             errs.append(f"{rid}: unknown kind {r['kind']}")
         if r.get("status") and r["status"] not in STATUSES:
             errs.append(f"{rid}: unknown status {r['status']}")
-        if r.get("status") not in ("inference", "gap") and r.get("kind") not in ("search", "issue") and not r.get("source"):
+        if r.get("status") not in ("inference", "gap") and r.get("kind") not in ("search", "issue", "decision") and not r.get("source"):
             errs.append(f"{rid}: {r.get('status')} record has no source")
         src = r.get("source") or {}
         if src and src.get("doc_type") != "script output":
@@ -68,9 +74,20 @@ def check(path):
             for f in ("statement_id", "revelation_ids", "apparent_inconsistency", "innocent_explanation", "confidence"):
                 if not r.get(f):
                     errs.append(f"{rid}: comparison missing {f}")
+        if r.get("kind") == "economics" and (r.get("source") or {}).get("doc_type") != "script output":
+            errs.append(f"{rid}: economics record must cite economics.py output (script output)")
+        if r.get("kind") == "legal" and not r.get("citation"):
+            errs.append(f"{rid}: legal record without citation")
+        if r.get("kind") == "decision":
+            if r.get("recommendation") not in RECOMMENDATIONS:
+                errs.append(f"{rid}: decision.recommendation must be one of {sorted(RECOMMENDATIONS)}")
+            if not r.get("refs"):
+                errs.append(f"{rid}: decision without refs")
+        if r.get("kind") == "proceeding" and not r.get("forum"):
+            errs.append(f"{rid}: proceeding without forum")
         if r.get("kind") == "gap" and not r.get("would_be_settled_by"):
             errs.append(f"{rid}: gap without would_be_settled_by")
-        if BANNED.search(r.get("claim", "")) and r.get("status") != "attributed":
+        if BANNED.search(r.get("claim", "")) and r.get("status") != "attributed" and r.get("kind") != "legal":
             errs.append(f"{rid}: conclusory wording in claim (see language-rules.md)")
         if str(r.get("verified", "")).startswith("failed") and not any(o.get("supersedes") == rid for o in recs):
             errs.append(f"{rid}: verification failed and not superseded")
@@ -108,7 +125,118 @@ def quotes(path):
     return recs, errs
 
 
+REQUIRED_SECTIONS = ["OVERVIEW", "TOTAL MIX OF INFORMATION", "PUBLIC CORRECTIVE DISCLOSURE", "PARTIES",
+                     "POTENTIAL CLASS PROCEEDING", "THE MISREPRESENTATION", "PARALLEL AND COMPETING PROCEEDINGS",
+                     "BEAR v. BULL", "CONCLUSIONS"]
+PLACEHOLDER = re.compile(r"«|»|\[(add|number|tbd|insert|todo)[^\]]*\]|\breserved\b|\bTBD\b|PART __|\?\?\?|XX+\b", re.I)
+CITE = re.compile(r"\[(E\d{3,}(?:\s*[,;–-]\s*E\d{3,})*)\]")
+
+
+def cited_ids(text):
+    out = set()
+    for grp in CITE.findall(text):
+        for part in re.split(r"\s*[,;]\s*", grp):
+            rng = re.split(r"\s*[–-]\s*", part)
+            if len(rng) == 2:
+                a, b = (int(x[1:]) for x in rng)
+                w = len(rng[0]) - 1
+                out.update(f"E{n:0{w}d}" for n in range(a, b + 1))
+            else:
+                out.add(part.strip())
+    return out
+FIGURE = re.compile(r"(\$\s?\d|\bC\$|\bUS\$|\bUSD\s?\d|\bCAD\s?\d|\d[\d,.]*\s?%|\d[\d,.]*\s?(million|billion|M|B)\b)")
+TICKER = re.compile(r"\b(?:TSXV?|CSE|NEO|NYSE|NASDAQ|Nasdaq|OTCQX|OTCQB|OTC|ASX|LSE|XETR|FRA|Cboe Canada|CBOE)\s*:\s*[\"“']?([A-Z][A-Z0-9.]{0,7})|\(\s*[\"“]([A-Z][A-Z0-9.]{1,7})[\"”]\s*\)")
+
+
+FORM_SECTIONS = {
+    "A": ["OVERVIEW", "TOTAL MIX OF INFORMATION", "PUBLIC CORRECTIVE DISCLOSURE", "POTENTIAL CLASS PROCEEDING",
+          "THE MISREPRESENTATION", "BEAR v. BULL", "CONCLUSIONS"],
+    "B": ["Preamble", "Proposed Class Period", "Defined Terms", "Overview", "PART A. FACTS", "PART B. ISSUES",
+          "PART C. RULES", "PART D. ANALYSIS", "PART E. CONCLUSION"],
+    "C": ["STRICTLY CONFIDENTIAL: LITIGATION OPPORTUNITY", "Causes of Action", "Conclusion"],
+    "D": ["STRICTLY CONFIDENTIAL", "Executive Summary", "Overview", "Chronology of Events", "Overview of the Claim",
+          "The Law", "Causes of Action", "Conclusion"],
+}
+FOOTNOTE_REF = re.compile(r"\[\^(\w+)\](?!:)")
+FOOTNOTE_DEF = re.compile(r"^\[\^(\w+)\]:", re.M)
+
+
+def memo(ledger_path, memo_path):
+    """Lint a memo. Two modes:
+    - form mode (Andrew's forms, references/memo-forms/): footnotes [^n] in the memo, and a sidecar
+      memo_trace.json {"form": "A".."D", "footnotes": {"n": ["E001", ...]}, "lines": {"exact line text": ["E..."]}}
+    - ledger mode (legacy): inline [E###] citations."""
+    recs, errs = check(ledger_path)
+    ids = {r.get("id") for r in recs}
+    corpus = " ".join(json.dumps(r) for r in recs)
+    text = open(memo_path).read()
+    lines = text.splitlines()
+    trace_path = os.path.join(os.path.dirname(memo_path), "memo_trace.json")
+    trace = json.load(open(trace_path)) if os.path.exists(trace_path) else None
+    form = (trace or {}).get("form")
+    if trace:
+        fn = {k: v for k, v in trace.get("footnotes", {}).items()}
+        refs, defs = set(FOOTNOTE_REF.findall(text)), set(FOOTNOTE_DEF.findall(text))
+        for n in sorted(refs - defs):
+            errs.append(f"footnote [^{n}] used but not defined")
+        for n in sorted(defs - set(fn)):
+            errs.append(f"footnote [^{n}] has no ledger ids in memo_trace.json")
+        for n, eids in fn.items():
+            for e in eids:
+                if e not in ids:
+                    errs.append(f"memo_trace footnote {n} points to {e}, not in the ledger")
+        line_map = trace.get("lines", {})
+        for k, eids in line_map.items():
+            for e in eids:
+                if e not in ids:
+                    errs.append(f"memo_trace line '{k[:40]}' points to {e}, not in the ledger")
+        if CITE.search(text):
+            errs.append("form-mode memo contains [E###] ledger ids; they belong in memo_trace.json only")
+    else:
+        for e in sorted(cited_ids(text) - ids):
+            errs.append(f"memo cites {e}, which is not in the ledger")
+    in_code = False
+    for n, line in enumerate(lines, 1):
+        if line.strip().startswith("```"):
+            in_code = not in_code
+            continue
+        if PLACEHOLDER.search(line):
+            errs.append(f"memo line {n}: placeholder or template marker left: {line.strip()[:90]}")
+        body = line.strip()
+        if in_code or not body or body.startswith("#") or body.startswith("|---") or FOOTNOTE_DEF.match(body):
+            continue
+        if FIGURE.search(body):
+            if trace:
+                ok = FOOTNOTE_REF.search(body) or any(k.strip() and k.strip() in body for k in trace.get("lines", {}))
+            else:
+                ok = CITE.search(body)
+            if not ok:
+                errs.append(f"memo line {n}: figure without a source trace: {body[:90]}")
+    for m in TICKER.finditer(text):
+        tk = m.group(1) or m.group(2)
+        if tk and tk not in corpus:
+            errs.append(f"memo mentions ticker {tk}, which appears nowhere in the ledger (text from another case?)")
+    for sec in (FORM_SECTIONS.get(form) if form else REQUIRED_SECTIONS):
+        if sec.upper() not in text.upper():
+            errs.append(f"memo missing section for form {form or 'ledger-mode'}: {sec}")
+    if not form and not re.search(r"\b(Pursue|Monitor|Pass)\b", text):
+        errs.append("memo has no recommendation (Pursue / Pursue — issue and hold / Monitor / Pass)")
+    if form == "D" and "recommend" not in text.lower():
+        errs.append("Pass form without a recommendation sentence")
+    if not any(r.get("kind") == "decision" for r in recs):
+        errs.append("ledger has no decision record (claim-framing stage)")
+    if trace and form not in FORM_SECTIONS:
+        errs.append(f"memo_trace.json form must be one of {sorted(FORM_SECTIONS)}")
+    return recs, errs
+
+
 if __name__ == "__main__":
+    if sys.argv[1:2] == ["memo"] and len(sys.argv) == 4:
+        recs, errs = memo(sys.argv[2], sys.argv[3])
+        print(f"{len(recs)} records, {len(errs)} problems")
+        for e in errs:
+            print(" -", e)
+        sys.exit(1 if errs else 0)
     if len(sys.argv) != 3 or sys.argv[1] not in ("check", "quotes"):
         sys.exit(__doc__)
     recs, errs = (check if sys.argv[1] == "check" else quotes)(sys.argv[2])

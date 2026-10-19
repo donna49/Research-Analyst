@@ -1,0 +1,4 @@
+numpy
+websocket-client
+python-docx
+pypandoc_binary

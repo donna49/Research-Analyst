@@ -1,0 +1,2097 @@
+GLOBAL ATOMIC CORPORATION
+MANAGEMENT’S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION
+AND RESULTS OF OPERATIONS
+FOR THE THREE AND SIX MONTHS ENDED
+JUNE 30, 2023
+
+Dated August 10, 2023
+
+Global Atomic Corporation
+Management’s Discussion and Analysis
+For the three and six months ended June 30, 2023
+
+(All amounts in Canadian Dollars, unless otherwise stated)
+
+Table of Contents
+HIGHLIGHTS ........................................................................................................................................................ 3
+Dasa Uranium Project ...................................................................................................................................... 3
+Turkish Zinc Joint Venture................................................................................................................................ 3
+Corporate ......................................................................................................................................................... 4
+SUBSEQUENT EEVENTS ................................................................................................................................... 4
+OUTLOOK ............................................................................................................................................................ 4
+BACKGROUND .................................................................................................................................................... 4
+URANIUM BUSINESS .......................................................................................................................................... 5
+TURKISH ZINC EAFD OPERATIONS ................................................................................................................ 13
+COMPARATIVE RESULTS ................................................................................................................................ 16
+SELECTED QUARTERLY FINANCIAL INFORMATION .................................................................................... 17
+LIQUIDITY AND FINANCIAL POSITION ............................................................................................................ 17
+CAPITAL MANAGEMENT .................................................................................................................................. 18
+FINANCIAL RISK FACTORS .............................................................................................................................. 18
+RELATED PARTY TRANSACTIONS ................................................................................................................. 18
+OFF-BALANCE SHEET TRANSACTIONS......................................................................................................... 18
+SIGNIFICANT ACCOUNTING POLICIES AND CRITICAL ACCOUNTING ESTIMATES & JUDGEMENTS ..... 18
+CHANGES IN ACCOUNTING POLICIES ........................................................................................................... 18
+DISCLOSURE OF INTERNAL CONTROLS ..................................................................................................... 199
+RISKS AND UNCERTAINTIES......................................................................................................................... 199
+OUTSTANDING SHARE DATA .......................................................................................................................... 19
+MANAGEMENT’S RESPONSIBILITY FOR FINANCIAL INFORMATION .......................................................... 19
+QUALIFIED PERSON ....................................................................................................................................... 200
+CAUTIONARY NOTE REGARDING FORWARD-LOOKING STATEMENTS .................................................... 20
+
+2
+
+Global Atomic Corporation
+Management’s Discussion and Analysis
+For the three and six months ended June 30, 2023
+
+(All amounts in Canadian Dollars, unless otherwise stated)
+
+The following discussion of the results of operations and financial condition of Global Atomic Corporation (“Global
+Atomic” or the “Company”) prepared as of August 10, 2023 summarizes management’s review of the factors that
+affected the Company’s financial and operating performance for the three and six months ended June 30, 2023, and
+the factors reasonably expected to impact on future operations and results (“Management’s Discussion and Analysis
+of Financial Condition and Results of Operations” or “MD&A”).
+This MD&A is intended to supplement and complement the Company’s unaudited condensed interim consolidated
+financial statements as at and for the three and six months ended June 30, 2023 (“Financial Statements”) and the notes
+thereto, which were prepared in accordance with International Financial Reporting Standards (“IFRS”) as issued by the
+International Accounting Standards Board (“IASB”) applicable to interim periods, including IAS 34, Interim Financial
+Reporting.
+Certain information and discussion included in this MD&A constitute forward-looking information, which should be read
+in consideration of the cautionary notes contained in the section “Forward-Looking Statements” at the end of this MD&A.
+Further information about the Company and its operations can be obtained from the offices of the Company, at
+www.globalatomiccorp.com or from www.sedarplus.ca.
+HIGHLIGHTS
+Dasa Uranium Project
+
+
+
+
+
+
+Ramp development has been underway since the beginning of 2023, with over 600 metres completed as of
+the end of July 2023 Excavation of mining level access has begun as part of the Phase 1 Mine Plan.
+Additional mining equipment has arrived in Niger and is being shipped to the project site.
+Surface and underground mine infrastructure including mine dry, ventilation infrastructure, electrical and
+plumbing installations are currently underway.
+To prepare for civil engineering and the pouring of cement related to the Processing Plant, earthworks began
+in Q2 2023.
+On May 8, 2023, the Company formalized its June 2022 Letter of Intent by signing a Definitive Agreement
+with a second major North American utility for their procurement of up to 2.1 million pounds U3O8 from Dasa
+within a multi-year delivery window beginning in 2025.
+
+Turkish Zinc Joint Venture
+
+
+
+
+
+
+The Turkish Zinc Joint Venture (“BST” or the “Turkish JV”) plant processed 17,233 tonnes EAFD in Q2 2023
+as it resumed operations following the significant earthquakes earlier in the year.
+The zinc contained in concentrate shipments was 10.1 million pounds and the average monthly LME zinc
+price was US$1.15/lb in Q2 2023.
+The Company’s share of the Turkish JV EBITDA was a loss of $1.4 million in Q2 2023 ($2.5 million gain in Q2
+2022).
+The revolving credit facility of the Turkish JV was US$12.2 million as of the end of Q2 2023 (Global Atomic
+share – US$6 million).
+The cash balance of the Turkish JV was US$1.6 million as of the end of Q2 2023.
+
+3
+
+Global Atomic Corporation
+Management’s Discussion and Analysis
+For the three and six months ended June 30, 2023
+
+(All amounts in Canadian Dollars, unless otherwise stated)
+Corporate
+
+
+
+
+Global Atomic continues to receive quarterly management fees and monthly sales commissions from the
+Turkish JV ($202,000 in Q2 2023 compared to $398,000 in Q2 2022), helping to offset corporate overhead
+costs.
+Cash balance as of June 30, 2023, was $35.4 million.
+
+SUBSEQUENT EVENTS
+On July 26, 2023, the Presidential Guard division of the Niger military placed the President of Niger under house arrest
+and have assumed day-to-day operation of the Government. As of the date hereof, a new cabinet has been appointed
+comprised of both civilian and military personnel. The country’s borders were closed temporarily. Certain land borders
+have now reopened. SOMIDA’s operations in Niamey and at the Dasa Mine site have not been impacted to date,
+except for delays in receipt of mine consumable supplies and other shipments from outside Niger.
+In view of current circumstances in Niger, the Company has assessed project development options to conserve cash
+until the political situation stabilizes and full-scale operations can resume. The Company has developed a contingency
+plan to include the completion of detailed engineering and procurement contracts as well as an updated Feasibility
+Study based on the results from the May 2023 Mineral Resource Estimate, an updated mine plan using current U3O8
+pricing.
+At present, the Company estimates the contingency plan could delay commissioning of the Processing Plant by 6 to
+12 months. To match the delivery of ore from mining activities with startup of the Processing Plant, the Company would
+defer continued development of the underground mine workings which are now ahead of schedule. The plan will be to
+have an ore stockpile on surface prior to mill commissioning.
+OUTLOOK
+Dasa Uranium Project
+Given the current political situation in Niger, the construction schedule of the Dasa Project is under review with the
+Company’s business partners and banking syndicate. The outcome of that review may impact timelines to construct
+the Processing Plant at the Dasa Mine. Further details will be provided once the review is complete.
+Turkish Zinc Joint Venture
+The Electric Arc Furnace Dust (“EAFD”) recycling plant is expected to operate at full capacity through to the end of
+Q3 2023 and the Turkish JV is expected to return to profitability in Q4 of this year.
+BACKGROUND
+Global Atomic is a reporting issuer under applicable securities legislation in the provinces of Alberta, British Columbia
+and Ontario and trades under the symbol “GLO” on the Toronto Stock Exchange (the “TSX”), under the symbol “GLATF”
+on the Over-The-Counter Market (the “OTC:QX”) in the United States of America and under the symbol “G12” on the
+Frankfurt Stock Exchange.
+Global Atomic is headquartered in Toronto, Canada and is incorporated under the laws of the Province of Ontario.
+Global Atomic and its subsidiaries have two principal lines of business:
+1.
+
+the processing of electric arc furnace dust (“EAFD”) obtained from steel companies through a Waelz kiln to
+recover zinc and produce a high-grade zinc concentrate in Türkiye for sale to smelters.
+
+2.
+
+the acquisition, exploration and development of uranium properties, with the Dasa Project currently under
+development in Niger.
+
+4
+
+Global Atomic Corporation
+Management’s Discussion and Analysis
+For the three and six months ended June 30, 2023
+
+(All amounts in Canadian Dollars, unless otherwise stated)
+URANIUM BUSINESS
+
+The Company carries out its Niger uranium exploration and development activities through its wholly-owned subsidiary,
+Global Atomic Fuels Corporation (“GAFC”). GAFC was incorporated on January 31, 2005, to pursue uranium mining
+projects. After an analysis of the prospective exploration sites in Niger, GAFC entered into six Mining Agreements with
+the Government of the Republic of Niger. Each Mining Agreement covers a period of 20 years.
+Upon completion of a Feasibility Study and Environmental Impact Statement, a Mining Permit may be granted for an
+initial term of 10 years and is renewable for successive five-year terms until the resource is depleted. On December
+23, 2020, GAFC was granted a Mining Permit for the Dasa Project on behalf of a Niger mining company to be
+incorporated. The Company’s Niger mining subsidiary, Société Minière de DASA S.A. (“SOMIDA”) was incorporated
+on August 11, 2022. In accordance with the mining agreement signed by GAFC and the Republic of Niger on September
+25, 2007, the latter received a 10% free carried interest in the mining subsidiary and exercised its right to subscribe to
+an additional 10%, resulting in a total ownership of 20% of the shares of SOMIDA. Under the terms of the Company’s
+Mining Agreement, the Republic of Niger commits to fund its proportionate share of capital costs and operating deficits
+for the additional 10% interest. The Republic of Niger has no further option to increase its ownership.
+On the incorporation of SOMIDA to pursue exploitation of the Dasa deposit, the historic exploration costs incurred on
+the Adrar Emoles 3 Exploration Permit prior to December 31, 2021 of US$54,869,201 are recoverable by GAFC from
+SOMIDA. Additionally, 10% of the development expenditures incurred amounting to US$4,610,515 as at June 30, 2023
+are recoverable from the Republic of Niger in accordance with its commitments under the Mining Agreement to fund its
+additional 10% interest. This amount has been funded by GAFC on behalf of the Republic of Niger.
+In January 2007, GAFC entered into four Mining Agreements known as Tin Negoran 1, 2, 3 and 4. In September 2007,
+GAFC entered into two additional Mining Agreements known as Adrar Emoles 3 and 4.
+The original area covered by each Mining Agreement was approximately 500 km2. Upon each renewal of Exploration
+Permits, GAFC is required to reduce the area covered by the Mining Agreement by 50%. The area covered by each
+Exploration Permit is currently as follows:
+Tin Negoran 1
+Tin Negoran 2
+Tin Negoran 3
+Tin Negoran 4
+Adrar Emoles 3
+Adrar Emoles 4
+Total:
+
+119.7 km2
+122.1 km2
+124.3 km2
+120.1 km2
+96.2 km2
+120.1 km2
+702.5 km2
+
+Since December 2018, the Exploration Permits have been extended twice, most recently on January 21, 2021,
+extended to December 17, 2023.
+The 96.2 km2 Adrar Emoles 3 Exploration Permit area is net of the 25 km2 that was allocated to the Mining Permit.
+After entering the Mining Agreements, GAFC acquired historic exploration and drilling data that had been compiled on
+the six permit areas. GAFC initially began exploration work on the Tin Negoran permits where a small surface deposit
+was delineated and the Isakanan prospect located on the Adrar Emoles 4 permit, where a deposit, potentially amenable
+to In Situ Leaching, was delineated. In late 2009, a surface mapping and reconnaissance program was initiated around
+the Dajy prospect located on the Adrar Emoles 3 permit, which led to the discovery of high-grade surface mineralization
+approximately 2 km northeast of the Dajy prospect, which was named the Dasa Project.
+Drilling during 2010 and 2011 was concentrated on Dasa with drill depths less than 100 meters and drilled by vertical
+rotary holes. This initial drilling led to the discovery of surface mineralization hosted in Tchirozerine 2 sandstone. In
+2012, during a deeper drilling campaign (up to 754 metres), GAFC discovered the main graben-hosted deposit at Dasa.
+
+5
+
+Global Atomic Corporation
+Management’s Discussion and Analysis
+For the three and six months ended June 30, 2023
+
+(All amounts in Canadian Dollars, unless otherwise stated)
+
+Drilling in this area below 250 meters targeted the Triassic-Jurassic sandstones, Tchirozerine 2 formation (which also
+hosts Orano’s large Imouraren deposit) and subsequently, the Carboniferous formations (which also host Orano’s
+Cominak and Somair deposits at Arlit).
+Resources
+Since 2011, GAFC’s exploration activities have been primarily focused on the Dasa deposit. In 2018, GAFC began a
+drill program at an area identified as the “Flank Zone” to assess the potential for near-surface high-grade mineralization,
+as well as testing strike extensions of the deeper mineralization at depth. The Company was successful with both
+programs. The drilling identified significant amounts of high-grade mineralization in the Flank Zone and in several new
+zones along strike and down dip. Using this new data, CSA Global Pty. Ltd. (“CSA Global”), was engaged to prepare
+an updated Mineral Resource Estimate (“MRE”) that was reported in a technical report on July 31, 2019 with an effective
+date of June 1, 2019.
+On May 23, 2023, the Company announced an updated mineral resource estimate for the Dasa Project. The new
+mineral resource estimate incorporates drill, probe and chemical assay data compiled from an extensive 16,000-meter
+drill program initiated in September 2021 that focused on infill drilling to upgrade Inferred Resources to the higher
+resource classification of Indicated to allow these resources to be included in an updated mine plan and mineral reserve.
+In addition, all geotechnical data derived from drill core was incorporated. The current basis for production plans at the
+Dasa Project, remains the mineral reserve disclosed in the 2021 Dasa Technical Report, The Company plans to update
+the Technical Report with the new resource information and will disclose any revisions to that mineral reserve or to the
+mine plan, including in a material change report.
+Unlike the 2019 mineral resource estimate, as set out in the Dasa Technical Report, the new mineral resource estimate
+is focused solely on an underground mine model and does not include open pit modelling of near surface mineralization.
+As shown in the table below, this had the effect of increasing tonnage with varying impact on grade depending upon
+the applied cut-off grade. The Indicated Resource using a cut-off grade of 1,500 ppm e U3O8, has increased by 50%:
+
+Cut-Off
+Grade
+
+100
+320
+1,200
+1,500
+2,500
+10,000
+
+Category
+
+May 2023 Revised Estimate
+Uranium
+Contained
+Content
+Uranium
+Tonnes
+eU3O8
+eU3O8
+(Mt)
+ppm
+Mlb
+
+July 2019 Estimate
+Uranium
+Contained
+Content
+Uranium
+Tonnes
+eU3O8
+eU3O8
+(Mt)
+ppm
+Mlb
+
+% Change
+Contained
+Uranium
+eU3O8
+Mlb
+
+Indicated
+
+103.6
+
+803
+
+183.5
+
+81.6
+
+718
+
+129.1
+
+42%
+
+Inferred
+
+71.0
+
+636
+
+99.5
+
+96.1
+
+606
+
+128.4
+
+-23%
+
+Indicated
+
+44.9
+
+1,602
+
+158.5
+
+32.0
+
+1,530
+
+108.0
+
+47%
+
+Inferred
+
+25.4
+
+1,435
+
+80.4
+
+35.0
+
+1,333
+
+102.7
+
+-22%
+
+Indicated
+
+12.6
+
+4,201
+
+117.1
+
+7.9
+
+4,483
+
+78.0
+
+50%
+
+Inferred
+
+5.9
+
+4,320
+
+56.1
+
+8.4
+
+3,783
+
+69.9
+
+-20%
+
+Indicated
+
+10.1
+
+4,926
+
+109.6
+
+6.2
+
+5,328
+
+73.1
+
+50%
+
+Inferred
+
+4.4
+
+5,349
+
+51.5
+
+6.3
+
+4,563
+
+63.7
+
+-19%
+
+Indicated
+
+5.7
+
+7,258
+
+91.0
+
+3.6
+
+7,849
+
+61.9
+
+47%
+
+Inferred
+
+2.4
+
+8,211
+
+43.2
+
+3.4
+
+6,838
+
+51.4
+
+-16%
+
+Indicated
+
+0.9
+
+22,185
+
+43.5
+
+0.6
+
+24,401
+
+31.1
+
+40%
+
+Inferred
+
+0.6
+
+18,362
+
+25.3
+
+0.8
+
+14,598
+
+25.3
+
+0%
+
+6
+
+Global Atomic Corporation
+Management’s Discussion and Analysis
+For the three and six months ended June 30, 2023
+
+(All amounts in Canadian Dollars, unless otherwise stated)
+
+The Company identified specific areas of Indicated Resources and significant areas of Inferred Resources from the
+2019 mineral resource estimate, particularly in the lower left-hand side of the Figure below and between Zones 2 and
+3 and used this information to guide the location of infill drilling as part of the 16,000-meter drill program.
+The following resource schematic shows the Indicated and Inferred resources as estimated in the 2019 MRE.
+
+The following resource schematic shows the Indicated and Inferred resources as estimated in the 2023 revised MRE.
+
+7
+
+Global Atomic Corporation
+Management’s Discussion and Analysis
+For the three and six months ended June 30, 2023
+
+(All amounts in Canadian Dollars, unless otherwise stated)
+Reserves
+
+Following completion of the Preliminary Economic Assessment of the Dasa Project in May 2020, the Company initiated
+various trade-off studies which were followed up by a Feasibility Study for the first 12 years (“Phase 1”). The Phase 1
+Feasibility Study was reported with an effective date of November 15, 2021 and the full Feasibility Study was filed on
+SEDAR on December 30, 2021 also referred to as the “DASA Technical Report”.
+Laboratory test work was undertaken in three independent pilot plant campaigns with results from each campaign
+guiding and directing the subsequent campaign. Variations in quantity and type of process recovery consumables were
+used to determine the optimum recovery of uranium for the most practical equipment selection with the lowest
+reasonable operating cost. The final selection of the process followed the principles established in uranium operations
+in the region which have proven to be successful over the past 50 years.
+Mineral Reserves for the Dasa Project were estimated based on the geology and MRE previously reported by CSA
+Global. An engineering design and costing exercise was undertaken to a feasibility study level of accuracy which
+supports the Mineral Reserve Estimate.
+Detailed engineering designs were undertaken for the underground mine workings, mining surface infrastructure,
+Processing Plant, tailing storage facility, and support services infrastructure. These designs enabled detailed pricing
+enquiries to be issued to the market in the development of a comprehensive capital cost and sustaining cost estimate.
+Labour and consumable material requirements were developed and costed in the open markets to establish an
+expected operating cost over Phase 1. Sourcing of electrical power and water was determined to meet the mine
+requirements, and these too, contributed to the operational cost estimate.
+The capital cost estimate, sustaining cost estimate and operational cost estimates for the various elements of the mine
+and Processing Plant were combined into an economic analysis of the project to determine a financial model for the
+mine.
+The Feasibility Study was completed at a detailed level of design and engineering to enable an appropriate level of
+confidence to be applied to the economic viability and outcomes of the project. As a result of the Feasibility Study, the
+following Mineral Reserves were estimated.
+RoM
+(tonnes)
+
+U308
+(ppm)
+
+U308
+(t)
+
+Proven Mineral Reserve
+
+-
+
+-
+
+-
+
+Probable Mineral Reserve
+
+4,066,390
+
+5,267
+
+21,417
+
+Mineral Reserve Category
+
+U308
+(Million lbs)
+47.217
+
+8
+
+Global Atomic Corporation
+Management’s Discussion and Analysis
+For the three and six months ended June 30, 2023
+
+(All amounts in Canadian Dollars, unless otherwise stated)
+
+The Feasibility Study identified five zones of mineral reserves as shown in the following schematic.
+
+The mining inventory included in the Feasibility Study included a minor amount of Inferred Resources shown as follows:
+RoM tonnes
+
+U3O8 ppm
+
+U3O8 (t)
+
+U3O8 (Million lbs)
+
+Measured
+
+-
+
+-
+
+-
+
+Indicated
+
+4,066,390
+
+5,267
+
+21,417
+
+47.217
+
+Inferred
+
+187,236
+
+3,375
+
+632
+
+1.393
+
+Total Mining inventory
+
+4,253,626
+
+5,184
+
+22,050
+
+48.611
+
+On January 9, 2023, the Company revised its Dasa Project, Phase 1, Feasibility Study (“Feasibility Study”), which was
+revised primarily to apply “zero grade” to Inferred Resources included in certain stopes of the Phase 1 Mine Plan.
+The Zones vary in grades, with Zone 1 (Flank Zone) contributing the largest portion of the U3O8 tonnes:
+
+Zone
+
+In-situ
+Tonnes
+
+U3O8 PPM
+
+RoM
+Tonnes
+
+Feasibility Study including
+Inferred Resources
+RoM U3O8
+RoM U3O8 PPM
+Tonnes
+
+Revised Feasibility Study with
+“zero grade” Inferred
+Resources
+RoM U3O8
+RoM U3O8
+PPM
+Tonnes
+
+1
+
+2,464,615
+
+6,980
+
+2,316,047
+
+6,887
+
+15,950
+
+6,847
+
+15,856
+
+2
+
+264,339
+
+3,621
+
+256,078
+
+3,574
+
+915
+
+3,540
+
+906
+
+3
+
+656,114
+
+3,093
+
+633,541
+
+3,056
+
+1,936
+
+2,480
+
+1,571
+
+4
+
+604,673
+
+3,003
+
+584,616
+
+2,966
+
+1,734
+
+2,872
+
+1,679
+
+5
+
+478,916
+
+3,312
+
+463,344
+
+3,269
+
+1,515
+
+3,031
+
+1,405
+
+Total
+
+4,468,657
+
+5,279
+
+4,253,626
+
+5,184
+
+22,050
+
+5,035
+
+21,417
+
+9
+
+Global Atomic Corporation
+Management’s Discussion and Analysis
+For the three and six months ended June 30, 2023
+
+(All amounts in Canadian Dollars, unless otherwise stated)
+
+The inferred resources, representing 4.4% of total mineral resources to be mined in Phase I, was treated as zero
+grade waste in the revised feasibility study. Impacts of this grade change are summarized in the table below:
+Original Feasibility
+Study
+
+Revised Feasibility
+Study
+
+Average mill feed grade (ppm)
+
+5,184
+
+5,267
+
+Total production over 12-year Phase 1 mine plan (Mlb)
+
+45.4
+
+44.1
+
+Average cash cost1 (US$/lb)
+
+18.91
+
+19.02
+
+Average AISC (US$/lb)
+
+21.93
+
+22.13
+
+Internal After-tax Rate of Return (“IRR”) @ $US35/lb
+
+22.7%
+
+22.3%
+
+After-tax Net Present Value (“NPV8”) (US$ millions) @ $US35/lb
+
+157
+
+147
+
+Internal Rate of Return (“IRR”) @ $US50/lb
+
+44.6%
+
+44.4%
+
+After-tax Net Present Value (“NPV8”) (US$ millions) @ $US50/lb
+
+468
+
+456
+
+Reserve Expansion
+Drill results from the 2021/22 16,000 meter drill program indicate that Zones 2, 2a and 2b now represent a contiguous
+zone that joins Zone 3 and is estimated to be three times larger than initially defined.
+On the strength of results from the overall drill program, Global Atomic updated the Dasa Mineral Resource Estimate
+(“revised MRE”) and will in turn update its Mine Plan which is expected to result in larger and contiguous mining Zones,
+reduced underground development work between the Zones, lower operating costs and an increase in mineable
+reserves.
+The revised MRE was completed on May 23, 2023. The Company plans to use the revised MRE to complete a revised
+mine plan for the Dasa Project, followed by a revised Feasibility Study.
+Use of Proceeds from March 2023 Offering
+On March 17, 2023, the Company completed public offering of 18,666,667 units of the Company at a price of $3.00
+per unit for gross proceeds of approximately $56,000,000 (the “March 2023 Offering”). The below table includes the
+proposed use of proceeds together with the anticipated timing of those expenditures at the time of the filing of the final
+prospectus for the March 2023 Offering and the actual expenditures incurred as of June 30, 2023:
+Activity or Nature of Expenditure
+
+Estimated Use of
+Net Proceeds ($)
+
+Actual Use of
+Net Proceeds ($)
+
+Estimated Anticipated
+Timing of Expenditures
+
+Mine development (28.8% of net proceeds)
+
+$15,613,290
+
+$7,057,903
+
+Q1 to Q3 2023
+
+Processing Plant (35.2% of net proceeds)
+
+$19,104,030
+
+$332,500
+
+Q1 to Q3 2023
+
+Infrastructure & EPCM (17.4% of net
+proceeds)
+
+$9,436,670
+
+$5,258,445
+
+Q1 to Q3 2023
+
+Indirect Niger costs (11.3% of net
+proceeds)
+
+$6,124,446
+
+$4,958,397
+
+Q1 to Q3 2023
+
+Corporate, public company overheads and
+working capital purposes ($7.3% of net
+proceeds)
+
+$3,944,127
+
+$2,511,110
+
+Q1 to Q3 2023
+
+Total Net Proceeds
+
+$54,222,563
+
+$20,118,355
+
+Q1 to Q3 2023
+
+10
+
+Global Atomic Corporation
+Management’s Discussion and Analysis
+For the three and six months ended June 30, 2023
+
+(All amounts in Canadian Dollars, unless otherwise stated)
+
+Mine development costs include capital expenditures for mine ventilation fans, increased power and distribution and
+the Alimak raise which will be underway in Q3, as well as costs of the second equipment fleet, which began arriving at
+the end of Q2. Additionally, once the ramp is further advanced in Q3, there will be two working faces available for
+mining.
+Processing plant expenditures incurred as of June 30, 2023 are lower than expected due to delays in issuing purchase
+orders for a number of reasons. It is now expected that Processing Plant commissioning will take place in Q2 2025
+rather than Q1 2025.
+Infrastructure, indirect and corporate costs are generally in line with the forecast amounts.
+Business Objectives and Milestones
+The principal business objective of the Company is to complete the development, construction and commissioning of
+the Dasa Project by 2025 and begin shipping yellowcake in fulfillment of off-take agreements in 2025.
+The Company commenced work on the various project milestones required to achieve the Company’s principal
+business objective with the completion of the feasibility study disclosed in the Dasa Technical Report and the start of
+site preparation work in the fourth quarter 2021. During 2022, activities included the commencement of mine
+development work, including the box-cut, hiring miners and support employees, purchase of equipment and
+consumable supplies required to proceed with underground ramp development. An initial camp expansion of over 100
+beds was completed in the fourth quarter of 2022 to support the increased site activities. Also in the fourth quarter of
+2022, basic and detailed engineering for the Processing Plant and other surface infrastructure commenced.
+Ramp development has been underway since the beginning of 2023, with 503 metres completed as of June 30, 2023.
+Also in 2023, a second fleet of underground equipment has been acquired, and additional technical personnel were
+hired to support the underground development. Basic engineering of the Processing Plant has been completed with
+detailed engineering underway. The procurement process, particularly for long lead items, is well advanced as at June
+30, 2023.
+The key near term milestones for the Dasa Project that the Company will commence or continue to work towards
+achieving include the following:
+•
+
+Develop Alimak raise for the primary ventilation - October 2023 to February 2024
+
+•
+
+Install surface fans and mine ventilation infrastructure - February 2024 to May 2024
+
+•
+
+Install Phase 1 power - August 2023 to November 2023
+
+•
+
+Install underground electrical substation - November 2023 to February 2024
+
+•
+
+Expand the camp for additional 224 persons - August 2023 to November 2023
+
+•
+
+Complete 80% of processing plant equipment procurement – May 2023 to November 2023
+
+•
+
+Complete earthworks - December 2022 to November 2023
+
+•
+
+Complete civil work - November 2023 to September 2024
+
+Processing Plant equipment is scheduled for arrival and erection throughout Q1 2025 with cold and hot commissioning
+to begin in Q1 2025 and continue to May 2025. At the same time, mine development will continue with development
+ore from crosscuts produced beginning May 2024 and first stope ore mined in November 2024. Yellowcake production
+is planned to start in June 2025 with ramp up to steady state production beginning thereafter.
+The feasibility study initial capital expenditures were projected to be incurred over a two-year development period and
+excluded overhead and operating expenses. Sustaining capital expenditures, comprised largely of on-going mine
+development costs, were also excluded. The Company determined that a 30 month development period was more
+appropriate, so that engineering could be further advanced and mine development undertaken over a longer period to
+prepare for Processing Plant commissioning.
+The Company has been in on-going negotiations to obtain project financing. Negotiations are well advanced and the
+Company currently expects the project financing to be completed in the fourth quarter of 2023 with the first drawdown
+by the end of the year. The project financing will provide 60% of the total project costs. Project costs are deemed to
+
+11
+
+Global Atomic Corporation
+Management’s Discussion and Analysis
+For the three and six months ended June 30, 2023
+
+(All amounts in Canadian Dollars, unless otherwise stated)
+
+accrue up to the point at which cash receipts exceed cash disbursements. Based on the timing of revenue receipts, the
+ramp up of operations and the required working capital, this point in time is projected to be September 2025.
+Accordingly, project costs include operating and overhead expenses, as well as mine development costs, project
+finance interest costs and additional contingency allowances through to November 2025.
+The following table sets out a more detailed summary of the various milestones to achieve the Company’s business
+objective of construction and commissioning of the Dasa Project. The table includes the anticipate timeline to complete
+the milestones together with estimated cost and actual costs incurred to June 30, 2023:
+TIMELINE
+Milestone
+Initial Camp Expansion
+Resource Expansion Drilling
+Generators – Phase 1
+Mine Development to Ore
+Earthworks
+Construction Camp
+Detailed Engineering
+Alimak Raise
+Underground Substation
+Buildings
+Surface Fans and Ventilation
+Civil Work
+Steel Fabrication & Supply
+Plant Equipment
+Electrical Install
+Generators – Phase 2
+Grid Connection
+Mechanical Equipment
+Installed
+Procurement & Construction
+Management
+Mill Commissioning
+Other Surface Infrastructure
+Permanent Camp
+Mine Equipment
+Cross Cut & Stope Mining
+On-going Mine Development
+
+PROJECT COSTS (US$ millions)
+
+Start
+January 2022
+January 2022
+August 2023
+March 2022
+December 2022
+August 2023
+August 2022
+October 2023
+November 2023
+October 2023
+February 2024
+November 2023
+January 2024
+January 2024
+March 2024
+May 2024
+January 2024
+January 2024
+
+Completion
+November 2022
+December 2022
+November 2023
+October 2023
+November 2023
+November 2023
+December 2023
+February 2024
+February 2024
+May 2024
+May 2024
+September 2024
+October 2024
+October 2024
+October 2024
+October 2024
+October 2024
+November 2024
+
+Estimated
+$2.1
+$4.1
+$1.5
+$30.4
+$7.8
+$3.4
+$2.6
+$2.1
+$3.0
+$3.0
+$5.4
+$14.3
+$9.3
+$34.8
+$10.0
+$13.8
+$4.4
+$7.9
+
+Incurred to
+June 30, 2023
+$2.1
+$4.1
+$15.9
+$0.4
+$1.3
+0.2
+-
+
+Balance
+Remaining
+$1.5
+$14.5
+$7.4
+$3.4
+$1.3
+$2.1
+$3.0
+$3.0
+$5.4
+$14.3
+$9.3
+$34.6
+$10.0
+$13.8
+$4.4
+$7.9
+
+October 2022
+
+December 2024
+
+$6.1
+
+$1.1
+
+$5.0
+
+November 2024
+January 2022
+August 2023
+September 2022
+May 2024
+November 2024
+
+January 2025
+February 2025
+November 2025
+November 2025
+November 2025
+November 2025
+
+$1.0
+$17.6
+$1.2
+$15.7
+$28.2
+$21.8
+$251.6
+
+$5.7
+$5.2
+$36.0
+
+$1.0
+$11.9
+$1.2
+$10.5
+$28.2
+$21.8
+$215.5
+
+The foregoing table does not include operating and overhead expenses, project finance interest costs and additional
+contingency allowances through to November 2025, which are estimated to be US$130.2 million, including US$17.9
+million already incurred. Project finance lenders have also indicated a requirement for a project cost overrun facility in
+an amount yet to be determined, which will be funded 50% by equity and 50% from the lenders.
+Subject to completion of a toll milling or ore sales agreement with Orano, the Company would sell ore to Orano’s
+SOMAIR mine beginning in 2024.The proceeds of such ore sales would then be used to reduce the total amount of
+funding required to bring the Dasa Project into production.
+
+12
+
+Global Atomic Corporation
+Management’s Discussion and Analysis
+For the three and six months ended June 30, 2023
+
+(All amounts in Canadian Dollars, unless otherwise stated)
+
+Completion of the DASA Project mine and Processing Plant will require additional financing, both from debt and equity
+or other sources. The current situation in Niger has halted the free movement of goods into the country and created
+uncertainties, affecting both the ability to continue underground mine development in the short term and the availability
+of financing prior to a return of stability in the country.
+If the Project Financing is not completed and/or other sources of financing are not available on acceptable terms, the
+Company will reschedule its milestones. The Company has developed a contingency plan whereby the Company will
+complete detailed engineering and finalize procurement contracts, thereby facilitating the resumption of underground
+mining and Processing Plant construction when the timing is appropriate.
+At present, the Company estimates the contingency plan could delay commissioning of the Processing Plant by 6 to
+12 months. To match the delivery of ore from mining activities with start up of the Processing Plant, the Company would
+accordingly defer continued development of the underground mine workings. Although such rescheduling of the DASA
+Project mine and Processing Plant will defer the start of revenue realization, this approach if enacted, will also further
+de-risk the DASA Project.
+TURKISH ZINC EAFD OPERATIONS
+The Company’s Turkish EAFD business operates through a joint venture with Befesa Zinc S.A.U. (“Befesa”), an industry
+leading Spanish company that operates a number of Waelz kilns throughout Europe, North America and Asia. On
+October 27, 2010, Global Atomic and Befesa established joint venture, known as Befesa Silvermet Turkey, S.L. (“BST”
+or the “Turkish JV”) to operate an existing plant and develop the EAFD recycling business in Türkiye through BST’s
+wholly owned subsidiary, Befesa Silvermet Iskenderun Celik Tozu Geri Donusum A.S. (“BSI”) and zinc concentrates
+are sold through BST’s wholly owned subsidiary, Befesa Silvermet dis Ticaret A.S. (“BSD”). BST is held 51% by Befesa
+and 49% by Global Atomic. A Shareholders Agreement governs the relationship between the parties. Under the terms
+of the Shareholders Agreement, management fees and sales commissions are distributed pro rata to Befesa and Global
+Atomic. On a monthly basis, sales commissions based on volumes sold are paid by BSD to Befesa Zinc Comercial
+SAU (“BZC”), a subsidiary of Befesa and distributed to the Company and Befesa based on their proportionate
+ownership. Management fees based on revenues are paid by BSI on a quarterly basis to BST and similarly distributed
+to the Company and Befesa. According to the BST Shareholders Agreement, net income earned by BST less funds
+needed to fund operations must be distributed to the Company and Befesa Zinc annually. Net income earned each
+year in Türkiye, less funds needed to fund operations, must be distributed to the partners annually, following the BST
+annual meeting, which is usually held in the second quarter of the following year.
+BST owns and operates an EAFD Processing Plant in Iskenderun, Türkiye. The plant processes EAFD containing 25%
+to 30% zinc that is obtained from electric arc steel mills, and produces a zinc concentrate grading 65% to 68% zinc that
+is then sold to zinc smelters.
+Global Atomic holds a 49% interest in the Turkish JV and, as such, the investment is accounted for using the equity
+basis of accounting. Under this basis of accounting, the Company’s share of BST’s earnings is shown as a single line
+in its Consolidated Statements of Income (Loss).
+
+13
+
+Global Atomic Corporation
+Management’s Discussion and Analysis
+For the three and six months ended June 30, 2023
+
+(All amounts in Canadian Dollars, unless otherwise stated)
+
+The following table summarizes comparative results for the three and six months ended June 30, 2023 and 2022 of the
+Turkish JV at 100%.
+Three months ended June 30,
+
+Net sales revenues
+
+$
+
+Cost of sales
+Foreign exchange gain
+
+EBITDA
+
+(1)
+
+$
+
+Six months ended June 30,
+
+2023
+
+2022
+
+2023
+
+2022
+
+100%
+
+100%
+
+100%
+
+100%
+
+6,179,649
+
+$
+
+18,128,699
+
+$
+
+12,016,043
+
+$
+
+32,477,422
+
+9,957,890
+
+13,872,538
+
+16,629,211
+
+21,289,519
+
+826,550
+
+940,773
+
+902,615
+
+986,008
+
+(2,951,691)
+
+$
+
+5,196,934
+
+$
+
+(3,710,553)
+
+$
+
+12,173,911
+
+Management fees & sales commissions
+
+343,456
+
+667,781
+
+727,470
+
+Depreciation
+
+511,779
+
+349,364
+
+1,480,281
+
+743,572
+
+Interest expense
+
+241,998
+
+232,696
+
+792,122
+
+536,753
+
+3,350,450
+
+1,119,211
+
+3,672,808
+
+2,560,470
+
+5,317
+
+-
+
+1,101,021
+
+-
+
+(154,778)
+
+591,221
+
+790,281
+
+1,481,332
+
+Foreign exchange loss on debt and cash
+Monetary gain
+Tax expense (recovery)
+
+1,689,945
+
+Net income (loss)
+
+$
+
+(7,239,279)
+
+$
+
+2,236,661
+
+$
+
+(10,072,494)
+
+$
+
+5,161,839
+
+Global Atomic's equity share
+
+$
+
+(3,547,247)
+
+$
+
+1,095,964
+
+$
+
+(4,935,522)
+
+$
+
+2,529,301
+
+Global Atomic's share of EBITDA
+
+$
+
+(1,446,328)
+
+$
+
+2,546,498
+
+$
+
+(1,818,171)
+
+$
+
+5,965,216
+
+(1)
+
+EBITDA is a non-IFRS measure, does not have a standardized meaning prescribed by IFRS and may not be comparable to
+similar terms and measures presented by other issuers. EBITDA comprises earnings before income taxes, interest expense
+(income), foreign exchange loss (gain) on debt and bank, depreciation, management fees, sales commissions, losses (gains) on
+sale of property, plant and equipment.
+
+Zinc concentrates are sold to smelters in US dollars. Because the Turkish Lira is the functional currency of the Turkish
+operations, sales are converted to Turkish Lira at the date of the sale when funds are subsequently received. When
+the Turkish Lira depreciated, exchange gains were recognized on those sales. In calculating EBITDA, these exchange
+changes related to the functional and reporting currencies are treated as operations related (i.e., above the EBITDA
+subtotal).
+All the financial statement line items included in the Turkish Zinc JV consolidated statements of income (loss) for the
+three and six month periods ended June 30, 2023 include hyperinflation impact for the three and six month periods
+ended June 30, 2023 and the impact of inflation on income and expenses recognised in the comparatives are not
+restated because it has already been presented in the stable currency.
+The Turkish Zinc JV incurred significant deterioration in revenues in H1 2023 compared to H1 2022, due to processing
+less EAFD and lower zinc prices. Sales are recorded upon receipt at the smelter, which means that recorded sales in
+any given month generally represent the concentrate from EAFD processed in the prior month. The plant was under a
+scheduled maintenance shutdown in January 2023. Due to the earthquake on February 6, 2023, the recycling plant
+resumed operation following a thorough inspection in March 2023.
+The Turkish Zinc JV realized significant increases in expenses. The Ukrainian conflict, post-COVID demand increases,
+raw material shortages and global logistics challenges resulted in substantial inflationary pressures on all costs.
+Moreover, The Turkish Zinc JV also incurred extraordinary expenses related to the massive earthquake like financial
+support to the employees, fixed costs incurred due to the unplanned stoppage have in combination resulted in a
+negative EBITDA.
+
+14
+
+Global Atomic Corporation
+Management’s Discussion and Analysis
+For the three and six months ended June 30, 2023
+
+(All amounts in Canadian Dollars, unless otherwise stated)
+
+The cash balance of the Turkish JV was US$1.6 million at June 30, 2023.
+The local Turkish revolving credit facility balance was US$12.2 million at June 30, 2023 (December 31, 2022 - US$8.3
+million) and bears interest at 12%.
+The following table summarizes comparative operational metrics of the Iskenderun facility.
+Three months ended June 30,
+
+Six months ended June 30,
+
+2023
+
+2022
+
+2023
+
+2022
+
+100%
+
+100%
+
+100%
+
+100%
+
+Exchange rate (C$/TL, average)
+
+15.68
+
+12.33
+
+14.82
+
+11.65
+
+Exchange rate (US$/C$, average)
+
+1.34
+
+1.28
+
+1.35
+
+1.27
+
+Exchange rate (C$/TL, period-end)
+
+19.69
+
+12.95
+
+19.69
+
+12.95
+
+Exchange rate (US$/C$, period-end)
+
+1.32
+
+1.29
+
+1.32
+
+1.29
+
+Average monthly LME zinc price (US$/lb)
+
+1.15
+
+1.78
+
+1.29
+
+1.74
+
+EAFD processed (DMT)
+
+17,233
+
+25,826
+
+23,358
+
+45,611
+
+Production (DMT)
+
+5,167
+
+8,159
+
+6,978
+
+13,854
+
+Sales (DMT)
+
+7,027
+
+8,172
+
+9,506
+
+13,761
+
+Sales (zinc content '000 lbs)
+
+10,088
+
+11,780
+
+13,744
+
+19,963
+
+In H1 2023, world steel production decreased by 1.1% over the comparable 2022 period. The impact by region was
+mixed. In H1 2023 compared to H1 2022: Chinese production increased 1.3%; European Union production decreased
+10.9%; North American production decreased 3.5%, and Turkish production decreased by 16.3%.
+In April 2023, the World Steel Association published its short-term outlook for demand, which projected 2.3% overall
+global demand growth in 2023 and a further growth of 1.7% in 2024. Sharp decreases in construction activities due to
+the Turkish Lira’s devaluation and high inflation lead to a decrease in steel demand in 2022. However, the construction
+sector is expected to grow by 15% due to the rebuilding and reinforcing efforts in high earthquake-risk areas.
+The impact of the Ukrainian conflict on global steel markets is uncertain, however as exports from Russia and Ukraine
+have historically accounted for 10% of global steel exports, it is likely a material percentage of this supply will be
+replaced by increased production in other countries.
+
+15
+
+Global Atomic Corporation
+Management’s Discussion and Analysis
+For the three and six months ended June 30, 2023
+
+(All amounts in Canadian Dollars, unless otherwise stated)
+
+GLOBAL ATOMIC CORPORATION COMPARATIVE RESULTS
+The following table summarizes comparative results of operations of the Company:
+Three months ended June 30,
+2023
+2022
+
+(all amounts in C$)
+Revenues
+
+$
+
+202,273
+
+$
+
+397,862
+
+Six months ended June 30,
+2023
+2022
+$
+
+333,114
+
+$
+
+829,978
+
+General and administration
+
+1,806,321
+
+1,856,994
+
+4,639,152
+
+5,033,228
+
+Share of equity loss (earnings)
+
+3,547,248
+
+(1,095,964)
+
+4,935,522
+
+(2,529,301)
+
+Other expense
+
+-
+
+(15,076)
+
+-
+
+591,635
+
+Finance income
+
+(533,660)
+
+(13,321)
+
+(605,128)
+
+(43,138)
+
+Foreign exchange loss
+
+1,603,390
+
+(113,508)
+
+2,814,106
+
+67,413
+
+(221,263)
+
+$ (11,450,538)
+
+(6,238,148)
+
+(221,263)
+
+(11,475,811)
+
+(2,289,859)
+
+17,122
+
+-
+
+25,273
+
+-
+
+Net loss
+
+$
+
+(6,221,026)
+
+$
+
+$
+
+(2,289,859)
+
+Net loss attributable to:
+Shareholders of the Company
+Non-controlling interests
+Other comprehensive income (loss)
+Comprehensive loss
+
+$
+
+(5,517,775)
+
+$
+
+(2,287,301)
+
+$
+
+(2,798,999)
+
+$
+
+(4,535,985)
+
+$ (11,738,801)
+
+$
+
+(2,508,564)
+
+$ (14,249,537)
+
+$
+
+(6,825,844)
+
+(11,737,518)
+
+(2,508,564)
+
+(14,255,736)
+
+(6,825,844)
+
+(1,283)
+
+-
+
+6,199
+
+-
+
+($0.03)
+
+($0.00)
+
+($0.06)
+
+($0.01)
+
+202,128,857
+
+177,036,594
+
+193,404,462
+
+175,963,295
+
+202,128,857
+
+177,036,594
+
+193,404,462
+
+175,963,295
+
+June 30,
+
+December 31,
+
+2023
+
+2022
+
+Comprehensive loss attributable to:
+Shareholders of the Company
+Non-controlling interests
+Basic and diluted net loss per share
+Basic weighted-average
+number of shares outstanding
+Diluted weighted-average
+number of shares outstanding
+
+Cash
+
+$
+
+35,373,754
+
+$
+
+8,400,008
+
+Property, plant and equipment
+
+110,104,741
+
+Exploration & evaluation assets
+
+1,206,821
+
+1,115,983
+
+Investment in joint venture
+
+8,791,236
+
+16,387,040
+
+Other assets
+
+4,450,555
+
+2,118,258
+
+Total assets
+
+$ 159,927,107
+
+$ 110,256,005
+
+Total liabilities
+
+$
+
+$
+
+Total equity
+
+$ 142,532,472
+
+17,394,635
+
+82,234,716
+
+8,746,681
+
+$ 101,509,324
+
+16
+
+Global Atomic Corporation
+Management’s Discussion and Analysis
+For the three and six months ended June 30, 2023
+
+(All amounts in Canadian Dollars, unless otherwise stated)
+
+The consolidated financial statements reflect the equity method of accounting for Global Atomic’s interest in the Turkish
+JV. The Company’s share of net earnings and net assets are disclosed in the notes to the financial statements. See
+also the commentary above under “Turkish Zinc EAFD Operations.”
+Revenues include management fees and sales commissions received from the joint venture. These are based on joint
+venture revenues generated and zinc concentrate tonnes sold.
+General and administration costs at the corporate level include general office and management expenses, stock
+option awards, depreciation, costs related to maintaining a public listing, professional fees, audit, legal, accounting, tax
+and consultants’ costs, insurance, travel, and other miscellaneous office expenses.
+Share of net earnings from joint venture represents Global Atomic’s equity share of net earnings from the Turkish
+JV. In view of limited production, lower zinc prices in 2023, significant increases in expenses, devaluation of the Turkish
+Lira resulting in a negative equity income of $3.5 million in Q2 2023 and $4.9 million in H1 2023.
+SELECTED QUARTERLY FINANCIAL INFORMATION
+Revenues
+
+Net income (loss)
+
+Net income (loss)
+per share
+
+2023
+Q2
+
+$
+
+Q1
+
+202,273
+130,841
+
+$
+
+(6,221,026) $
+
+(0.03)
+
+(5,229,512)
+
+(0.03)
+
+(8,450,905) $
+
+(0.05)
+
+2022
+Q4
+
+$
+
+110,123
+
+$
+
+Q3
+
+209,393
+
+(1,757,643)
+
+(0.01)
+
+Q2
+
+397,862
+
+(221,263)
+
+(0.00)
+
+Q1
+
+432,116
+
+(2,068,596)
+
+(0.01)
+
+Q4
+Q3
+
+2021
+124,288 $
+223,645
+
+(3,356,761) $
+504,317
+
+(0.03)
+0.00
+
+$
+
+All quarterly values reflect Global Atomic’s 49% interest in the Turkish JV using the equity method, with the Company’s
+share of net earnings of the joint venture. The presentation currency is Canadian dollars.
+•
+
+The Company’s revenues are based on management fees and sales commissions received from Turkish JV,
+which in turn, vary from quarter to quarter based on zinc prices and sales volumes.
+
+•
+
+Net income is primarily impacted by changes in the equity income recorded for the Turkish JV.
+
+•
+
+Stock-based compensation is granted to management, contractors and directors from time to time, and
+impacts quarterly results accordingly.
+
+LIQUIDITY AND FINANCIAL POSITION
+The Company had a working capital surplus of $27 million at June 30, 2023 ($2.2 million at December 31, 2022).
+During Q2 2023, the Company spent $12.3 million on property, plant and equipment (including mineral properties),
+exploration and evaluation expenditures and advance payments for exploration and evaluation expenditures and
+mineral properties related to its Niger uranium properties ($7.6 million in Q2 2022). For H1 2023, the Company has
+spent $21.3 million (H1 2022 - $15.8 million).
+
+17
+
+Global Atomic Corporation
+Management’s Discussion and Analysis
+For the three and six months ended June 30, 2023
+
+(All amounts in Canadian Dollars, unless otherwise stated)
+
+Throughout the year, the Company receives its share of management fees and sales commissions from the Turkish
+operations, which help fund the various corporate costs.
+On March 17, 2023, the Company announced the closing of its bought deal Unit offering and raised gross proceeds of
+approximately $56 million. Additional funding will be required to finance the Dasa Processing Plant construction. The
+Company is pursuing opportunities to fund the required construction and start-up capital, and is considering project
+finance, sales contract prepayments, equity, and other sources of funding. There can be no assurance that such
+financing will be available on a timely basis and under terms which are acceptable to the Company.
+CAPITAL MANAGEMENT
+In managing its capital, the Company’s objective is to ensure the Company is able to continue its operations and that
+it has sufficient ability to satisfy its capital obligations and ongoing operational expenses. The Company considers the
+components of shareholders’ equity, as well as its cash and equivalents, notes receivable, credit facilities and longterm loan obligations as capital. Management adjusts the capital structure as necessary in order to support its business
+strategy. The Board of Directors does not establish quantitative return on capital criteria for management, but rather
+relies on the expertise of the Company’s management team to sustain current operations and future development of
+the business. The Company is not subject to externally imposed capital requirements.
+FINANCIAL RISK FACTORS
+The Company’s activities expose it to a variety of financial risks: credit risk, liquidity risk and market risk (including
+interest rate, foreign exchange rate, and commodity and equity price risk) which are listed in Note 22 of its audited
+consolidated financial statements for the year ended December 31, 2022 and Note 17 of its unaudited condensed
+interim consolidated financial statements for the three and six months ended June 30, 2023.
+RELATED PARTY TRANSACTIONS
+The Company lists its related party transactions in Note 11 of its unaudited condensed interim consolidated financial
+statements for the three and six months ended June 30, 2023.
+OFF-BALANCE SHEET TRANSACTIONS
+As of the date of this filing, the Company does not have any off-balance sheet arrangements that have, or are
+reasonably likely to have, a current or future effect on the results of operations or financial condition of the Company,
+including and without limitation, such considerations as liquidity and capital resources.
+SIGNIFICANT ACCOUNTING POLICIES AND CRITICAL ACCOUNTING ESTIMATES & JUDGEMENTS
+The Company prepares its consolidated financial statements in conformity with International Financial Reporting
+Standards (“IFRS”). The preparation of the Company’s consolidated financial statements requires management to
+make estimates and judgments that affect the reported amounts of assets, liabilities, revenues and expenses.
+Significant accounting policies and critical accounting estimates and judgments are described in Notes 3 and 5 of the
+Company’s audited consolidated financial statements for the year ended December 31, 2022.
+
+CHANGES IN ACCOUNTING POLICIES
+The Company describes the effect of changes in accounting policies in Note 4 of its audited consolidated financial
+statements for the year ended December 31, 2022. Future changes in accounting policies are also covered in Note 4.
+
+18
+
+Global Atomic Corporation
+Management’s Discussion and Analysis
+For the three and six months ended June 30, 2023
+
+(All amounts in Canadian Dollars, unless otherwise stated)
+DISCLOSURE OF INTERNAL CONTROLS
+
+The Company’s management, with the participation of its President and Chief Executive Officer and Chief Financial
+Officer, evaluated the effectiveness of Global Atomic’s internal controls over financial reporting and disclosure controls
+and procedures as at June 30, 2023. In making this evaluation, management used the criteria set forth in Internal
+Control – Integrated Framework (2013) issued by the Committee of Sponsoring Organizations of the Treadway
+Commission. Based on that evaluation, the Company’s President and Chief Executive Officer and Chief Financial
+Officer concluded that, as at June 30, 2023, the Company’s internal controls over financial reporting and disclosure
+controls and procedures were effective to provide reasonable assurance that the information required to be disclosed
+by the Company in reports it files is recorded, processed, summarized and reported within the appropriate time periods.
+There was no change in the Company’s internal controls over financial reporting that occurred during the three and six
+months ended June 30, 2023 that has materially affected, or is reasonably likely to materially affect, the Company’s
+internal controls over financial reporting.
+The Company’s management, including the President and Chief Executive Officer and the Chief Financial Officer, does
+not expect that its internal controls over financial reporting and disclosure controls and procedures will prevent or detect
+all errors and frauds. A cost-effective system of internal controls, no matter how well conceived or operated, can provide
+only reasonable, not absolute, assurance that the objectives of the internal controls over financial reporting are
+achieved.
+RISKS AND UNCERTAINTIES
+Mineral exploration, development and operation of mining properties involves several risks which experience,
+knowledge and careful evaluation may not be sufficient to overcome. Large capital expenditures are required in
+advance of anticipated revenues from operations. Many exploration programs do not result in the discovery of
+mineralization; moreover, mineralization discovered may not be of sufficient quantity or quality to be profitably mined.
+Unusual or unexpected formations, formation pressures, fires, power outages, labour disruptions, flooding, explosions,
+tailings impoundment failures, cave-ins, landslides and the inability to obtain adequate machinery, equipment or labour
+are some of the risks involved in the conduct of exploration programs and the operation of mines. The commercial
+viability of exploiting any mineral resources is also dependent on a number of factors including infrastructure and
+government regulations, in particular those respecting the environment, price, taxes and royalties.
+Additional risks and uncertainties are discussed in greater detail in the Company’s Annual Information Form and the
+Company’s Management Discussion and Analysis for the year ended December 31, 2022, both available on
+www.sedarplus.ca.
+OUTSTANDING SHARE DATA
+As at August 10, 2023 the outstanding common shares, stock options and share purchase warrants are:
+Common shares outstanding
+
+202,253,352
+
+Warrants
+
+10,143,334
+
+Stock options
+
+8,292,780
+
+Fully diluted shares outstanding
+
+220,689,466
+
+MANAGEMENT’S RESPONSIBILITY FOR FINANCIAL INFORMATION
+The Company’s financial statements are the responsibility of the Company’s management and have been approved by
+the board of directors. The consolidated financial statements were prepared by the Company’s management in
+accordance with IFRS. The consolidated financial statements include certain amounts based on the use of estimates
+and assumptions. Management has established these amounts in a reasonable manner in order to ensure the financial
+statements are presented fairly in all material respects.
+
+19
+
+Global Atomic Corporation
+Management’s Discussion and Analysis
+For the three and six months ended June 30, 2023
+
+(All amounts in Canadian Dollars, unless otherwise stated)
+QUALIFIED PERSON
+
+The scientific and technical disclosures in this Management’s Discussion and Analysis have been reviewed and
+approved by A. Christophe Din, Msc. MAusIMM / MAIG who is a “qualified persons” under National Instrument 43-101
+– Standards of Disclosure for Mineral Properties.
+CAUTIONARY NOTE REGARDING FORWARD-LOOKING STATEMENTS
+Except for statements of historical fact relating to the Company, certain information contained in this MD&A constitutes
+“forward-looking information” under Canadian securities legislation. Forward-looking information includes, but is not
+limited to, statements with respect to the potential of the Company’s assets; the future prices of uranium or zinc; capital
+expenditure requirements; requirements for additional capital and other statements relating to the financial and
+business prospects of the Company. Generally, forward-looking information can be identified by the use of forwardlooking terminology such as “plans”, “expects” or “does not expect”, “is expected”, “budget”, “scheduled”, “estimates”,
+“forecasts”, “intends”, “anticipates” or “does not anticipate”, or “believes”, or variations of such words and phrases or
+statements that certain actions, events or results “may”, “could”, “would”, “might” or “will be taken”, “occur” or “be
+achieved”. Forward-looking information is based on the reasonable assumptions, estimates, analysis and opinions of
+management made in light of its experience and its perception of trends, current conditions and expected
+developments, as well as other factors that management believes to be relevant and reasonable in the circumstances
+at the date that such statements are made, and are inherently subject to known and unknown risks, uncertainties and
+other factors that may cause the actual results, level of activity, performance or achievements of the Company to be
+materially different from those expressed or implied by such forward-looking information, including but not limited to
+risks related to: unexpected events and delays during permitting of new discoveries; changes to mining or
+environmental legislation that could affect existing permits; timing and availability of external financing on acceptable
+terms and in light of the current status of global liquidity and credit availability; future prices of uranium or zinc; currency
+exchange rates; government regulation; failure of equipment or processes to operate as anticipated; risks inherent in
+manufacturing and processing operations, including strike by unionized personnel, environmental hazards or industrial
+accidents; and uncertain political and economic environments. Although management of the Company has attempted
+to identify important factors that could cause actual results to differ materially from those contained in forward-looking
+information, there may be other factors that cause results not to be as anticipated, estimated or intended. There can
+be no assurance that such statements will prove to be accurate, as actual results and future events could differ
+materially from those anticipated in such statements. Accordingly, readers should not place undue reliance on forwardlooking information. The Company does not undertake to update any forward-looking information, except in accordance
+with applicable securities laws.
+August 10, 2023
+
+“Stephen G. Roman”
+Stephen G. Roman
+Chairman, President & CEO
+
+“Rein A. Lehari”
+Rein A. Lehari
+Chief Financial Officer
+
+20
+
+

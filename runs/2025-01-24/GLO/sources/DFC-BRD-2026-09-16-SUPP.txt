@@ -1,0 +1,263 @@
+Board of Directors Meeting Notification
+(Supplement)
+September 22, 2026
+
+This notice supplements the September 16, 2026, Board of Directors Meeting Notice.
+In addition to the projects noted in the September 16, 2026, notice, the Board of Directors (the “Board”)
+reviewed and approved on September 16, 2026, the below-listed project. The public information summary
+for the project listed below is being provided in this supplemental notice to update the September 16,
+2026, notice.
+DFC determined that the project listed below contained highly sensitive commercial information,
+including potentially material non-public information. In recognition of the need to balance DFC’s
+transparency commitments with the matters associated with disclosure of such highly sensitive
+commercial information, the Board agreed to defer posting the public information summary and Board
+resolution for the project. DFC determined that this information could be posted following a public
+announcement made by the parent company of the proposed borrower, which occurred on September 16,
+2026.
+The Board resolution approving the below listed project can be found here.
+Board of Directors Meeting Notification (Supplement)
+III. PROJECT APPROVALS
+• Société Minière de DASA S.A
+
+Public Information Summary
+Host Country
+Niger
+Name of Counterparty / Issuer
+Société Minière de DASA S.A.
+Project Description
+The proceeds of the DFC loan will finance the development and construction of a greenfield
+underground uranium mine and first stage ore converter located in north-central Niger. The
+Project will produce triuranium octoxide (“yellowcake”) that is the feedstock for uranium
+conversion and enrichment, yielding fuel for nuclear power generation.
+DFC Product Type
+Debt Financing and Equity Investment
+DFC Debt / Insurance / Equity Amount
+Up to $414,200,000 debt / Equity warrants $[TBD]
+Total Project Costs
+$698,000,000
+U.S. Involvement
+N/A
+Policy Review
+Developmental Objectives
+Niger’s economy is poorly diversified, with agriculture accounting for 34% of its GDP and 70%
+of working age employment. Mining is another important contributor to the country’s GDP and,
+prior to the coup d’état in 2023, uranium was the country’s second largest export. In 2021, one of
+the country’s two uranium mines, Compagnie Minière d’Akokan (“COMINAK”), closed
+because of resource depletion and consequentially reduced the country’s export revenue, mining
+royalties, and employment opportunities. In response to these challenges, the Project will support
+the development, construction, and operation of a new mine that is expected to produce
+approximately four million pounds of uranium annually for export under long-term contracts to
+utilities in North America, Europe, and Asia for use in nuclear power generation. The Project is
+expected to result in more than eight billion dollars of uranium export sales over the life of the
+mine, generating significant local income in Niger and new, full-time jobs in the mining
+industry. Given the Project’s characteristics, it is categorized as Highly Impactful per DFC’s
+Impact Quotient.
+The Project involves the mining of uranium at a site which is located near Agadez in northcentral Niger. The surrounding areas are sparsely inhabited with no permanent villages within
+
+the Project’s direct (i.e., 7 km) Area of Influence (AOI). Livestock grazing occurs to a limited
+extent within the area outside the direct AOI.
+SCREENING:
+The Project has been reviewed against DFC’s categorical prohibitions and determined to be
+categorically eligible. The Project was screened as Category A because of the significant diverse
+impacts that are associated with the extraction of uranium from an underground mine and
+processing of the extracted ore.
+APPLICABLE STANDARDS:
+DFC’s due diligence indicates that the Project will have impacts that must be managed in a
+manner consistent with the following International Finance Corporation’s (IFC) 2012
+Performance Standards (PS):
+- PS 1: Assessment and Management of Environmental and Social Risks and Impacts;
+- PS 2: Labor and Working Conditions;
+- PS 3: Resource Efficiency and Pollution Prevention;
+- PS 4: Community Health, Safety, and Security;
+- PS 6: Biodiversity Conservation and Sustainable Management of Living Natural
+Resources;
+Since the time of DFC’s disclosure of the Project impact assessment in April 2023, PS 5 on Land
+Acquisition and Involuntary Resettlement, PS 7 on Indigenous Peoples and PS 8 on Cultural
+Heritage were not triggered. There is no anticipated physical or economic displacement
+associated with this Project, so PS 5 is not triggered at this time. While the screening highlighted
+the existence of Indigenous Peoples (Tuareg), engagement with community elders determined
+their Indigenous practices and livelihood would not be impacted by the Project, and the risks and
+impacts to this community are adequately managed under PS 1, so PS 7 is not triggered.
+Similarly, while the screening found evidence of some cultural and archaeological heritage in
+some of the neighboring villages, it found no cultural heritage materials within the mining permit
+area. Impact screening concluded that construction activities are unlikely to encounter replicable,
+non-replicable, or critical cultural heritage. The Project will develop and implement a Chance
+Finds Procedure as a risk management approach, so PS 8 is not triggered at this time.
+In accordance with PS 3, the following sector-specific IFC Guidelines apply to the Project:
+Mining Environmental, Health, and Safety (EHS) (2007); General (2007); Ports, Harbors, and
+Terminals (2007); Waste Management (2007), and Water and Sanitation (2007).
+POLICY RISKS AND MITIGATION:
+The Project will update its management systems as a condition of DFC financing. The project’s
+existing management systems are modelled after ISO 14001 and cover the construction phase.
+DFC will require amended management systems as necessary to align with international
+standards and Good International Industry Practices (GIIP) and also to carry the Project into the
+operational phase and through the closure phase.
+The following summarizes key areas of risk and project mitigation measures:
+
+Mine Safety
+Stability analysis of the entire mine system has been undertaken and safety considerations have
+been incorporated in the design which include availability of fire detection, suppression, and
+protection equipment (particularly in areas where rubber-tired vehicles are present); a robust
+ventilation system coupled with flammable gas testing and warning; temperature monitoring and
+air conditioning in vehicles to protect against heat stress; and escape and rescue provisions. A
+consultant has reviewed mine safety and found it to be in conformance with the International
+Council of Mining and Metals (ICMM) Guidelines.
+Radiation Protection
+The overall aim of Dasa’s radiation protection procedures is to ensure that all equipment,
+processes, work methods and operations are designed and operated so that individual and
+collective exposures are kept as low as reasonably achievable (ALAR) and below the regulatory
+limits and international standards. There are three general approaches used to minimize exposure
+to radiation: maximize the distance between the source and the worker; limit exposure times; and
+place shielding between the worker and the source.
+Exposure can occur via the inhalation of very fine ore or uranate dust (radioactive aerosols),
+particularly the short-lived alpha emitters radon-222 and radon-220, and long-lived alpha
+emitters from ore dust. Protection against these is affected by limiting the airborne content of the
+products (through capture and water suppression) or by rapidly evacuating the particles in
+suspension (ventilation). The wearing of individual protection (masks, work clothes) is also
+required for collective protection.
+As part of comprehensive occupational health and safety planning for the Project, a Radiation
+Management Plan has been developed, which is in accordance with the International Atomic
+Energy Agency (IAEA)/International Council on Radiation Protection (ICRP) Guidelines.
+Workplaces will be regularly (continuously) monitored to maintain acceptable exposure dose
+rates, and short- and long-lived emitters. Reference guideline values will be set at various facility
+locations for radon, gamma radiation, ore dust, and uranate dust. If any measurement exceeds
+these reference values (which have been set to protect personnel working in underground
+uranium mines by the IAEA), work will be stopped until safe conditions resume. Personnel
+considered to be at risk of high exposure will wear an integrated multi-risk dosimeter and will
+undergo regular medical surveillance.
+To minimize radiation exposure to the workforce, the air in the active ore mining areas will be
+replaced every three to four minutes. This will be achieved by a ventilation system which will
+draw air into the mine at 400 cubic meters per second (m3/s). The retention time of the air
+flowing through the general mine will not exceed 15 minutes.
+In addition to the mine site and occupational radiation monitoring, Dasa will undertake
+radiological monitoring of the ambient air quality around the mine site and nearby communities
+to monitor potential impacts on the population and the environment. An additional program is
+being developed to monitor potential radiological impacts to groundwater, soil, and the food
+chain in the wider area.
+
+Water Resources
+There are no permanent water courses in the Project area. However, the kori channels are
+characterized by short duration, high flow events in response to heavy rainfall. They remain dry
+for most of the year, but flash floods can occur as a result of local storm events.
+Groundwater in the Project area includes an alternating sequence of high- to moderatepermeability sandstones and low-permeability siltstones and mudstones. The shallow Tchirézrine
+aquifers occur at less than 80 meters in depth and are important for local water supplies, whereas
+the deeper Teloua and Tarat units are considered regional aquifers.
+Groundwater modelling has predicted that inflow of groundwater to the mine will be
+significantly greater than the total Project water demand, including what is needed for ore
+processing and domestic needs. This groundwater must be removed to allow mining to progress
+safely. This results in a risk of natural groundwater levels in the surrounding area being drawn
+down. Modelling suggests that by the end of the 12-year mine life, water levels in wells in
+Tagaza and Eghatrak may decline by around 2 meters (m) as a result of mine dewatering,
+whereas at the market gardens of Elagozan (5 km south of the mine), the decline may be 10 m or
+more.
+Soil and groundwater resources in the Project area will be protected through the implementation
+of GIIPs for materials and waste handling, including the development of a Hazardous Materials
+Management Plan, a Spill Response Plan (part of the Emergency Preparedness and Response
+Plan), a Tailings Management Plan (for dry tailings in accordance with the Global Industry
+Standard on Tailings Management [GISTM]), a Waste Management Plan, and a Wastewater
+Management Plan). Wastewaters will be reused after treatment and there will be no effluent
+discharges.
+Any impact to local wells would be gradual, and detectable by appropriate monitoring, thus
+enabling early planning of appropriate mitigation measures (e.g., provision of alternative water
+supplies, lowering the pump head in the existing wells, deepening the existing wells, or installing
+a replacement deeper well). As per IFC PS3, the Project will implement sustainable natural
+resources management plans, including those for water (in Water Management Plan). Dasa is
+investigating strategies to reduce the inflow of groundwater to the mine, in order to reduce the
+requirement for dewatering and to minimize water requirements. Such strategies should also
+lower the risk of significant drawdowns in local community wells. The strategies under
+consideration are a combination of targeted grouting (to block water inflows) and dewatering
+(via boreholes). There is also a proposal to extract water up-gradient of the mine and re-inject it
+down-gradient.
+Dust and Air Emissions, and Noise
+Control of dust will be of critical importance during all Project phases. A Dust Management Plan
+will be implemented (as part of the Air Quality and Greenhouse Gas Emissions Management
+Plan) and will be based upon the strategies outlined in the IFC’s Mining and General Guidelines.
+
+The Project will employ GIIPs for the control of air emissions and noise in accordance with the
+IFC EHS General and Mining Guidelines and will be required to maintain acceptable ambient air
+quality levels in compliance with the IFC Guidelines.
+Wastewater
+Dasa will procure a packaged wastewater treatment unit whose specifications will include
+compliance with the IFC’s General and Mining Guidelines. Treated wastewaters will be reused
+in the mining operations including dust control and there will be no discharges of wastewaters.
+Prevailing arid conditions limit the possibility of any runoff.
+Resource Conservation
+In line with IFC PS3, Dasa will continuously seek and implement cost effective measures for
+improving efficiency in its energy usage, as well as conserve water and other natural resources
+and material inputs.
+Biodiversity
+Field surveys and GIS analysis have confirmed that areas of perennial vegetation exist in
+association with koris and in lowland areas. The extent of vegetation cover is similar across both
+the dry and wet seasons. A total of 38 floral species have been identified in the area, including
+five woody species which are protected under Nigerien law.
+Recent surveys recorded a total of 54 faunal species in the area. Large mammals included
+Fennec, Dorcas gazelle, Aoudad (barbary sheep), Patas monkey, African wildcat, and Golden
+jackal. Of these, Dorcas gazelle and Aoudad are listed as ‘Vulnerable’ on the International Union
+for the Conservation of Nature’s (IUCN) Red List of Threatened Species. Of the seven reptiles
+recorded, one, the Spiny-tailed lizard, is listed as ‘Near-Threatened’ on the IUCN Red List.
+Bird species observed during the surveys include Egyptian vulture and Lappet-faced vulture,
+both of which are listed as ‘Endangered’ by IUCN; and Tawny eagle, which is listed as
+‘Vulnerable’.
+No ‘critical habitat’, per IFC’s PS6 definition, has been identified in the Project’s Area of
+Influence (AOI). This conclusion is based on GIS spatial assessment, desktop critical habitat
+screening, and historical and recent fieldwork. The species of conservation concern that are
+present in the general area are considered unlikely to trigger a critical habitat determination
+because they are all wide-ranging and the Project is not expected to have any significant impact.
+Any residual impacts will be managed in the Biodiversity Action Plan which will ensure
+compliance with PS 6.
+Cumulative Impacts
+The wider region around the Project is an established uranium mining center. Although the
+COMINAK mine near Arlit (about 110 km northwest of Dasa) closed in March 2021, the Société
+des Mines de l’Aïr (“SOMAÏR”) mine, also located near Arlit, is currently operating and
+expected to do so until 2035. The Madouela project, for which a mining feasibility study was
+published in 2022, is located immediately southeast of Arlit. Approximately 50 km west of Dasa
+is the Imouraren deposit, for which an operating permit was awarded in 2009 but whose
+development has been on hold since 2015, pending an improvement in market conditions. The
+
+relatively large distances between the various existing and potential future developments are
+such that cumulative impacts on ambient environmental conditions are unlikely to add
+significantly to the impacts already identified for Dasa.
+Should both the Imouraren and Madouela projects come on stream during the Dasa project’s life,
+impacts may become significant. These may include common pressures associated with influx of
+workers, including inflation of the local economy, overwhelming of local infrastructure and
+services, over-depletion of natural resources, and loss of traditional cultural heritage and ways of
+life. Dasa will develop management plans to maintain Project impacts to acceptable levels in
+compliance with the IFC’s Performance Standards.
+Community Safety and Security Management
+Although the Project site is relatively remote, there are limited potential health and safety risks to
+the local population especially from possible accidents relating to the movement of Projectrelated vehicles on public roads and through communities (including transportation of hazardous
+materials such as explosives, chemicals, and uranium products); reduced availability or
+contamination of water supplies; risk of physical harm to pastoralists or other community
+members present nearer to the Project site; and risk of increased disease transmission from
+Project staff interacting with the local communities (although staff will be housed in a workers’
+camp which would be required to conform to IFC/EBRD’s Guidance Note and no significant
+interactions with the local communities, which are located at a considerable distance, is
+expected).
+Dasa will develop and implement a Community Health, Safety and Security Management Plan
+(CHSSMP) which will be in accordance with PS4, the IFC EHS General Guidelines, and the
+United Nations Environment Program’s Awareness and Preparedness for Emergencies at Local
+Level (APELL) standards. The Voluntary Principles on Security and Human Rights (VPSHR)
+will also be addressed in the CHSSP.
+
+Stakeholder Engagement
+Although the Project is expected to bring significant benefits to the local area in terms of direct
+and indirect employment opportunities and incomes in general, stakeholder engagement has
+raised concerns over local traditions and customs potentially being lost, as a result of an
+incoming workforce and a switch to mining-related livelihoods. This risk will be lowered by the
+Project having its own, self-contained accommodation camp located at a distance from the local
+villages. Dasa will formulate a plan to raise awareness among staff and subcontractors about
+respecting the traditional practices and customs of the local population. A Code of Conduct will
+be drawn up to encourage respectful interaction with the local communities. Camp residents will
+be discouraged from entering local communities for recreational purposes.
+Site Visit:
+DFC’s due diligence included a site visit during the week of January 15, 2023. In addition to
+visiting existing and planned Project sites around Agadez, meetings were held with the Project’s
+health and safety team, including the community relations department; national regulators in
+Niamey that review impact assessments, including an agency focused on protected areas and
+biodiversity; thermal power plant (located 20 kms from the mine) which has been designated to
+supply power to the grid to support the mine; and representatives of the Agadez community.
+ESIA DISCLOSURE:
+The ESIA for the Project was disclosed on DFC’s website on February 24, 2023. The public
+comment period ended on April 27, 2023. No comments were received by DFC.
+
+

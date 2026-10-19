@@ -14,7 +14,12 @@ From the trigger, write one `issue` record:
   company uses; in the filing's language for non-English issuers.
 - **Lookback**: 2 years by default, never more than 3; shorter if the subject arose more recently
   (start from its first mention).
-- **Related earlier drops** from stage 1 that may belong to the same story.
+- **Related earlier drops** from stage 1 that may belong to the same story, and which ones look like
+  storm warnings.
+- **Case type(s)** from `references/case-types.md`, plus the exemplar memo(s) to read from
+  `references/corpus.md`. The playbook adds case-specific items to stages 4–8.
+- **Misrepresentation themes**, provisional, named the way Andrew names them ("Fully Funded",
+  "Commercial production in Q3", "The Dividend").
 
 **Stop and show the issue definition to the user. Continue only after they confirm or correct it.**
 A wrong issue definition wastes everything downstream.
@@ -43,10 +48,22 @@ Method (adapted from InvestSkill `financial-report-analyst` and `10k-digest`, an
    presentations).
 3. For each passage write a `statement` record: verbatim quote, speaker, venue, `public_at`, exact
    locator, `statement_type` (`references/statement-types.md`), cautionary language quoted if any.
-4. Save the text of every source document used under `runs/<date>/<TICKER>/sources/`.
+4. Save the text of every source document used under `runs/<date>/<TICKER>/sources/`. Documents the
+   user saved to Drive (SEDAR+, Intelligize, Law360, FT.com) come in through `references/drive-sources.md`.
 
 Coverage rule: for every quarter in the lookback, record whether the periodic report and the call
 were checked and whether they mention the subject. A quarter with no record is a gap, not "silent".
+
+Reach: from about 12 months before the first likely impugned document through the correction, plus
+post-correction filings (the next MD&A, impairments, affidavits), because later admissions often prove
+earlier knowledge. Run `economics.py --moves` on every statement date so the total mix shows the price
+move for each disclosure.
+
+**Drift tables.** Whenever the company gave dated promises (approval dates, production starts, closing
+dates) or numeric guidance, build a table with one column per disclosure and the correction as the
+last column. Record each cell as a `statement` record. Flag silent changes as working notes
+("[Note: Q3 becomes "second half" without explanation]"). Andrew built these by hand in Ascot,
+Global Atomic, Paladin and FiServ.
 
 ## Stage 5: compare
 

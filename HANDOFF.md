@@ -9,8 +9,8 @@ Repository: `donna49/research-analyst`, branch `claude/loving-shannon-gsl7kx`.
 | `PLAN.md` | Plan v2: decisions, data sources, drop standard, two-layer workflow, what is borrowed from the five plugins |
 | `plugin-review/` | Reviews of the five source plugins (intel, Bigdata.com, financial-services, InvestSkill, finance-skills) |
 | `research-analyst/` | The plugin (v0.1): orchestrator + 9 stage skills, references, scripts, `/triage` and `/investigate` commands |
-| `research-analyst/runs/2026-10-16/` | First real run: 63-name screener, drop standard, triage of the 18 company-specific names |
-| `research-analyst/runs/2026-10-16/FOXF/` | First Layer 2 case, stopped at the stage 3 checkpoint (`issue.md`) |
+| `runs/2026-10-16/` | First real run: 63-name screener, drop standard, triage of the 18 company-specific names |
+| `runs/2026-10-16/FOXF/` | First Layer 2 case, stopped at the stage 3 checkpoint (`issue.md`) |
 
 ## Setup in the new account
 
@@ -39,8 +39,8 @@ Repository: `donna49/research-analyst`, branch `claude/loving-shannon-gsl7kx`.
    resumes from the ledger). Stage 4 must fetch full transcripts with `bigdata_fetch_document`;
    the six transcript quotes currently match only against search excerpts.
 2. Trigger-scan the 22 Borderline names to finish the 2026-10-16 triage.
-3. Load Andrew's past memos: replace the memo template (`skills/memo-writer`), and calibrate the
-   drop-standard thresholds and trigger tiers against his cases (v2).
+3. Done in v0.2: the memo layer is rebuilt on about 60 of Andrew's memos (see below).
+   Still open: calibrate the drop-standard thresholds and trigger tiers against his cases.
 4. Test a non-US case (Canada, UK or Germany) end to end.
 5. Later: Google Docs output; complaint drafting from the memo plus Andrew's pleadings.
 
@@ -53,3 +53,13 @@ Repository: `donna49/research-analyst`, branch `claude/loving-shannon-gsl7kx`.
   factor handles group moves.
 - Plaintiff-firm "investigation" notices are signals, not suits; existing suits never stop work.
 - The reviewer pass catches researcher errors (e.g. a misrecorded filing time); keep it.
+
+## v0.2 (2026-10-19): memo layer rebuilt on Andrew's corpus
+
+- New references: `andrew-method.md`, `memo-template.md`, `legal-library.md`, `case-types.md`,
+  `economics.md`, `corpus.md` (exemplar memos with Drive IDs).
+- New stages: `parties-and-capital` (8), `case-economics` (9), `claim-framing` (10, with checkpoint 2:
+  the decision). `memo-writer` now renders Andrew's form.
+- New script `economics.py`; `ledger.py memo` lints the rendered memo.
+- FOXF resumes at stage 4 once the three checkpoint-1 questions are answered. It then runs through
+  the new stages.
