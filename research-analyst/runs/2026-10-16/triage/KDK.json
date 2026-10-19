@@ -1,0 +1,91 @@
+{
+  "symbol": "NASDAQ:KDK",
+  "company": "Kodiak AI, Inc.",
+  "likely_trigger": "No company announcement or news report explaining the 2026-10-16 fall was found before the day 0 close; the only company release in the window (2026-10-15) set the Q3 2026 results date of 2026-11-05, and EDGAR shows no Kodiak filings dated 2026-10-12 to 2026-10-19.",
+  "trigger_public_at": null,
+  "trigger_source": {
+    "title": null,
+    "publisher": null,
+    "url": null,
+    "doc_type": null,
+    "doc_id": null
+  },
+  "trigger_quote": null,
+  "tier": "Unexplained",
+  "tier_reason": "Four Bigdata.com searches (entity 6F0F5A and keyword) returned only the earnings-date release, ARK purchase reports (2026-10-14) and sponsored podcast mentions.",
+  "alternatives": [
+    {
+      "explanation": "Robotics/AI theme and market weakness",
+      "weight": "contributing",
+      "why": "Theme BOTZ -2.1%, SPX -1.09%; expected return -3.5% vs actual -15.1% (abnormal -11.6%, t -3.43). No correlated screened names listed."
+    },
+    {
+      "explanation": "Earnings-date announcement (2026-10-15)",
+      "weight": "unlikely",
+      "why": "Routine scheduling release; no financial content."
+    }
+  ],
+  "prior_statement_check": {
+    "outcome": "not run",
+    "quote": null,
+    "source": null,
+    "note": "Step 4 runs only for Tier A or B triggers; this name is not Tier A/B."
+  },
+  "existing_litigation": {
+    "found": false,
+    "items": []
+  },
+  "disposition": "Watch",
+  "disposition_reason": "Company-specific drop, no identified trigger (Unexplained) -> Watch, re-scan in 5 sessions.",
+  "searches": [
+    {
+      "tool": "mcp__Bigdata_com__bigdata_search",
+      "query": "what happened to Kodiak AI stock (fast, entity 6F0F5A)",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 4
+    },
+    {
+      "tool": "mcp__Bigdata_com__bigdata_search",
+      "query": "Kodiak AI shares fall autonomous trucking news (fast, entity 6F0F5A)",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 3
+    },
+    {
+      "tool": "mcp__Bigdata_com__bigdata_search",
+      "query": "Why did Kodiak AI Inc. stock fall on Friday October 16, 2026? (smart)",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 2
+    },
+    {
+      "tool": "mcp__Bigdata_com__bigdata_search",
+      "query": "Kodiak autonomous trucks news (fast, keyword Kodiak AI|KDK)",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 5
+    },
+    {
+      "tool": "mcp__Bigdata_com__bigdata_search",
+      "query": "Kodiak AI securities class action lawsuit, investigation or subpoena (fast, entity 6F0F5A)",
+      "date_range": "2025-10-16T00:00:00Z..2026-10-19T23:59:59Z",
+      "results": 3
+    },
+    {
+      "tool": "SEC EDGAR submissions API",
+      "query": "CIK0001853138 filings dated 2026-10-12..2026-10-19",
+      "date_range": "2026-10-12..2026-10-19",
+      "results": 0
+    },
+    {
+      "tool": "mcp__CourtListener__search",
+      "query": "type=d party_name='Kodiak AI' filed_after=2023-10-16",
+      "date_range": "2023-10-16..2026-10-19",
+      "results": 0
+    },
+    {
+      "tool": "mcp__CourtListener__search",
+      "query": "type=d party_name='Kodiak' nature_of_suit=850 filed_after=2023-10-16",
+      "date_range": "2023-10-16..2026-10-19",
+      "results": 0
+    }
+  ],
+  "notes": "Kodiak's FY2025 10-K and May 2026 S-1 state there is no pending material litigation involving directors/officers for which indemnification is sought. Q3 results due 2026-11-05 after close - a natural re-scan point."
+}

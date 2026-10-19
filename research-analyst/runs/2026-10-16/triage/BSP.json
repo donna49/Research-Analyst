@@ -1,0 +1,84 @@
+{
+  "symbol": "NASDAQ:BSP",
+  "company": "Bending Spoons S.p.A.",
+  "likely_trigger": "No adverse company news was found for 2026-10-16; the fall followed a 41% rise on 2026-10-14 after the company announced a $330 million private placement to Berkshire Hathaway at $33 per share, and press reports describe the day 0 move as a partial give-back of that gain in a broad tech sell-off.",
+  "trigger_public_at": null,
+  "trigger_source": {
+    "title": null,
+    "publisher": null,
+    "url": null,
+    "doc_type": null,
+    "doc_id": null
+  },
+  "trigger_quote": null,
+  "tier": "Unexplained",
+  "tier_reason": "Four Bigdata.com searches and the EDGAR list found no company-specific adverse item before the day 0 close; the only explanation offered is a sector sell-off and reversal of the 2026-10-14 jump (CNBC), which is an attributed explanation rather than identifiable company news. Kept Unexplained, not C, because the abnormal return (-11.1%, t -3.40) is not explained by the software group move.",
+  "alternatives": [
+    {
+      "explanation": "Partial reversal of the 2026-10-14 Berkshire-placement rally",
+      "weight": "primary",
+      "why": "pre_drift_m5_m1 = +47.5% (market_event.json). CNBC (2026-10-17): 'Bending Spoons shares are up 24.3% over the three trading days since the revelation, after giving up a chunk of their earlier gains in Friday's tech sell-off to end at $47.07.'"
+    },
+    {
+      "explanation": "Software / tech sector sell-off",
+      "weight": "contributing",
+      "why": "Peer return -4.5% and theme IGV -4.8% on day 0 (market_event.json); expected return -4.5% vs actual -15.6%."
+    },
+    {
+      "explanation": "Airtable layoffs announced 2026-10-12 and leverage commentary",
+      "weight": "unlikely",
+      "why": "Layoffs were public on 2026-10-12, before the 10-14 rally; leverage figures come from the June 30 balance sheet already disclosed."
+    }
+  ],
+  "prior_statement_check": {
+    "outcome": "not run",
+    "quote": null,
+    "source": null,
+    "note": "Step 4 runs only for Tier A or B triggers; this name is not Tier A/B."
+  },
+  "existing_litigation": {
+    "found": false,
+    "items": []
+  },
+  "disposition": "Watch",
+  "disposition_reason": "Company-specific drop with no identified company trigger (Unexplained) -> Watch, re-scan in 5 sessions. Reviewer may treat it as Tier C (sector move / reversal) -> Exclude X-TIERC; kept on Watch because a wrong exclusion costs more.",
+  "searches": [
+    {
+      "tool": "SEC EDGAR submissions API",
+      "query": "CIK0002004711 filings dated 2026-10-12..2026-10-19",
+      "date_range": "2026-10-12..2026-10-19",
+      "results": 1
+    },
+    {
+      "tool": "mcp__Bigdata_com__bigdata_search",
+      "query": "what happened to Bending Spoons stock (fast, entity UR0FF0)",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 12
+    },
+    {
+      "tool": "mcp__Bigdata_com__bigdata_search",
+      "query": "Bending Spoons shares fall Friday (fast, entity UR0FF0)",
+      "date_range": "2026-10-15T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 10
+    },
+    {
+      "tool": "mcp__Bigdata_com__bigdata_search",
+      "query": "Bending Spoons announcement debt financing acquisition Airtable layoffs (fast, entity UR0FF0, news+filings)",
+      "date_range": "2026-10-12T00:00:00Z..2026-10-16T21:00:00Z",
+      "results": 14
+    },
+    {
+      "tool": "mcp__Bigdata_com__bigdata_search",
+      "query": "Bending Spoons securities class action lawsuit, investigation or subpoena (fast, entity UR0FF0)",
+      "date_range": "2025-10-16T00:00:00Z..2026-10-19T23:59:59Z",
+      "results": 2
+    },
+    {
+      "tool": "mcp__CourtListener__search",
+      "query": "type=d party_name='Bending Spoons' filed_after=2023-10-16",
+      "date_range": "2023-10-16..2026-10-19",
+      "results": 5
+    }
+  ],
+  "notes": "Italian issuer, Nasdaq-only listing (IPO priced 2026-06-30 per CNBC), files 6-K/20-F. Only filing in window: 6-K accession 0002004711-26-000018 dated 2026-10-14 (Berkshire private placement, pre-open per CNBC). market_event.json flags thin trading (traded on 64 of 120 sessions), reflecting the short listing history; abnormal-return estimate rests on ~60 days. Jurisdiction note: no home-exchange listing found; check Italian ad hoc obligations only if a trigger emerges. Litigation: no securities suit found; CourtListener lists non-securities matters naming Bending Spoons S.p.A.: patent suits LearnMaster LLC (E.D. Tex. 2:26-cv-00783, 2026-09-02, NOS 830), isoValent LLC (E.D. Tex. 2:26-cv-00765, 2026-08-28), Data Fence LLC (E.D. Tex. 2:26-cv-00726, 2026-08-21), Shindig, Inc. (W.D. Tex. 1:25-cv-00259, 2025-02-20, NOS 830), and Veleber v. Alphabet Inc. (N.D. Cal. 3:26-cv-03299, 2026-04-17, NOS 470). Kahn Swick & Foti announced on 2025-12-05 an investigation of Eventbrite's sale to Bending Spoons (concerns Eventbrite holders)."
+}

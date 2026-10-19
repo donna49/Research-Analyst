@@ -1,0 +1,126 @@
+{
+  "symbol": "NASDAQ:EOSE",
+  "company": "Eos Energy Enterprises, Inc.",
+  "likely_trigger": "No company announcement or news report explaining the 2026-10-16 fall was found before the day 0 close, and EDGAR shows no Eos filings dated 2026-10-12 to 2026-10-19.",
+  "trigger_public_at": null,
+  "trigger_source": {
+    "title": null,
+    "publisher": null,
+    "url": null,
+    "doc_type": null,
+    "doc_id": null
+  },
+  "trigger_quote": null,
+  "tier": "Unexplained",
+  "tier_reason": "Four Bigdata.com searches (entity 1772BE and keyword) returned only an options-activity note and third-party items; no company filing in the window.",
+  "alternatives": [
+    {
+      "explanation": "Move with correlated small-cap energy/semiconductor group",
+      "weight": "contributing",
+      "why": "market_event.json correlated group: AEHR -12.4%, KOPN -13.5%, TE -10.6%, WOLF -10.4%; expected return -3.4% vs actual -15.7% (abnormal -12.3%, t -3.55)."
+    },
+    {
+      "explanation": "Continuation of a pre-existing decline",
+      "weight": "contributing",
+      "why": "pre_drift_m5_m1 = -9.4% in market_event.json."
+    },
+    {
+      "explanation": "Broad market / tech sell-off",
+      "weight": "unlikely",
+      "why": "SPX -1.09%, peer return -1.6% on day 0."
+    }
+  ],
+  "prior_statement_check": {
+    "outcome": "not run",
+    "quote": null,
+    "source": null,
+    "note": "Step 4 runs only for Tier A or B triggers; this name is not Tier A/B."
+  },
+  "existing_litigation": {
+    "found": true,
+    "items": [
+      {
+        "description": "Putative securities class action (manufacturing capabilities and financial outlook); lead-plaintiff motions pending per Q2 2026 10-Q; class period 2025-11-05 to 2026-02-26 per plaintiff-firm releases",
+        "court": "D.N.J.",
+        "docket_or_source": "Yung v. Eos Energy Enterprises, Inc., 2:26-cv-02372 (NOS 850)",
+        "date": "2026-03-06",
+        "url": "https://www.courtlistener.com/docket/72375360/yung-v-eos-energy-enterprises-inc/"
+      },
+      {
+        "description": "Second securities action (NOS 850) naming Nigro",
+        "court": "D.N.J.",
+        "docket_or_source": "Skaff F. Ronald v. Nigro, 2:26-cv-03158 (NOS 850)",
+        "date": "2026-03-25",
+        "url": "https://www.courtlistener.com/docket/72749228/skaff-f-ronald-v-nigro/"
+      },
+      {
+        "description": "Derivative suit on behalf of Eos",
+        "court": "D.N.J.",
+        "docket_or_source": "Paul Berger, as Trustee ... v. Mastrangelo, 2:26-cv-02587",
+        "date": "2026-03-13",
+        "url": "https://www.courtlistener.com/docket/72488269/paul-berger-as-trustee-of-the-paul-berger-revocable-living-trust/"
+      },
+      {
+        "description": "Stockholder suit (NOS 160)",
+        "court": "D.N.J.",
+        "docket_or_source": "Hyung v. Mastrangelo, 2:24-cv-10305 (NOS 160)",
+        "date": "2024-11-05",
+        "url": "https://www.courtlistener.com/docket/69346239/hyung-v-mastrangelo/"
+      },
+      {
+        "description": "Case naming Eos as defendant, nature of suit not stated on CourtListener",
+        "court": "W.D. Pa.",
+        "docket_or_source": "Sadvary v. Eos Energy Enterprises, Inc., 2:26-cv-01290",
+        "date": "2026-06-11",
+        "url": "https://www.courtlistener.com/docket/73475478/sadvary-v-eos-energy-enterprises-inc/"
+      }
+    ]
+  },
+  "disposition": "Watch",
+  "disposition_reason": "Company-specific drop, no identified trigger (Unexplained) -> Watch, re-scan in 5 sessions. Existing class action (D.N.J.) reported; it covers an earlier class period and does not change the disposition.",
+  "searches": [
+    {
+      "tool": "mcp__Bigdata_com__bigdata_search",
+      "query": "what happened to Eos Energy stock (fast, entity 1772BE)",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 1
+    },
+    {
+      "tool": "mcp__Bigdata_com__bigdata_search",
+      "query": "Eos Energy announcement (fast, entity 1772BE)",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 3
+    },
+    {
+      "tool": "mcp__Bigdata_com__bigdata_search",
+      "query": "Why did Eos Energy Enterprises stock fall on Friday October 16, 2026? (smart)",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 1
+    },
+    {
+      "tool": "mcp__Bigdata_com__bigdata_search",
+      "query": "Eos Energy zinc battery shares news (fast, keyword Eos Energy|EOSE)",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 2
+    },
+    {
+      "tool": "mcp__Bigdata_com__bigdata_search",
+      "query": "Eos Energy securities class action lawsuit, investigation or subpoena (fast, entity 1772BE)",
+      "date_range": "2025-10-16T00:00:00Z..2026-10-19T23:59:59Z",
+      "results": 8
+    },
+    {
+      "tool": "SEC EDGAR submissions API",
+      "query": "CIK0001805077 filings dated 2026-10-12..2026-10-19",
+      "date_range": "2026-10-12..2026-10-19",
+      "results": 0
+    },
+    {
+      "tool": "mcp__CourtListener__search",
+      "query": "type=d party_name='Eos Energy Enterprises' filed_after=2023-10-16",
+      "date_range": "2023-10-16..2026-10-19",
+      "results": 6
+    }
+  ],
+  "notes": "The Fly options note (2026-10-16 20:41 UTC) records shares down 32c near $1.84 with call-heavy options volume; no cause given. CourtListener also lists Federal Insurance Co. as subrogee of Eos v. SFI Global Logistics (S.D. Tex., 5:26-cv-01385, 2026-08-06), a commercial matter with Eos as subrogor, omitted from items."
+}

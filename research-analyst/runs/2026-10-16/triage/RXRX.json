@@ -1,0 +1,99 @@
+{
+  "symbol": "NASDAQ:RXRX",
+  "company": "Recursion Pharmaceuticals, Inc.",
+  "likely_trigger": "Recursion announced before the open on 2026-10-15 (day -1) a $200 million underwritten offering of 61.54 million shares priced at $3.25, alongside clinical and partnering updates; the stock rose on day -1 and fell on day 0, the scheduled closing date, with no new adverse company news found on day 0.",
+  "trigger_public_at": "2026-10-15T08:46:40-04:00",
+  "trigger_source": {
+    "title": "Form 8-K (Items 1.01, 2.02, 7.01, 8.01, 9.01) filed 2026-10-15",
+    "publisher": "Recursion Pharmaceuticals, Inc.",
+    "url": "https://www.sec.gov/Archives/edgar/data/1601830/000160183026000128/rxrx-20261015.htm",
+    "doc_type": "8-K",
+    "doc_id": "0001601830-26-000128"
+  },
+  "trigger_quote": "relating to the offering of 61,540,000 shares of its Class A common stock, par value $0.00001 per share (the “Class A Common Stock”, and the offering of such shares, the “Offering”), at a price of $3.25 per share.",
+  "tier": "C",
+  "tier_reason": "The only candidate is a priced, discounted share sale whose purpose is stated (8-K Item 2.02 ties the proceeds to a cash runway into 2029), so the Tier B condition (unexplained or changed use of proceeds) is not met; the information was public on day -1, when the stock rose, so the day 0 fall reads as offering-related technical flow plus a group move. Confidence moderate.",
+  "alternatives": [
+    {
+      "explanation": "Offering overhang: new supply at $3.25 settling on day 0 after a day -1 rally",
+      "weight": "primary",
+      "why": "8-K says the offering 'is expected to close on October 16, 2026'; The Fly reported the stock 'up 15.4%, or 58c to $4.32' on 2026-10-15; Benzinga reported +0.24% to $4.17 after hours on 10-15. No day 0 company news found."
+    },
+    {
+      "explanation": "Correlated AI-biotech / speculative-growth group move",
+      "weight": "contributing",
+      "why": "market_event.json: DNA -12.7%, SDGR -11.3%, PACB -11.7%, QSI -14.5% in the correlated group; theme ARKK -4.7%; expected return -6.6% vs actual -16.7% (abnormal -10.1%, t -3.65)."
+    },
+    {
+      "explanation": "Delayed negative reading of the REC-4881 / REC-1245 data released 2026-10-15",
+      "weight": "unlikely",
+      "why": "No report found of a negative reading; the stock rose on the release day. Morgan Stanley raised its price target to $5.90 on 2026-10-16 (The Fly). Cannot be excluded without day 0 analyst/transcript coverage."
+    }
+  ],
+  "prior_statement_check": {
+    "outcome": "not run",
+    "quote": null,
+    "source": null,
+    "note": "Step 4 runs only for Tier A or B triggers; this name is not Tier A/B."
+  },
+  "existing_litigation": {
+    "found": true,
+    "items": [
+      {
+        "description": "Securities class action against Exscientia plc and its former officers (Exscientia was acquired by Recursion); per Recursion's FY2025 10-K the amended complaint was dismissed with prejudice in December 2025. Not a suit against Recursion's own disclosures.",
+        "court": "D.N.J.",
+        "docket_or_source": "Campanile v. Exscientia plc, 1:24-cv-05692 (as described in Recursion FY2025 10-K)",
+        "date": "2024-04",
+        "url": "https://app.bigdata.com/documents/9A90E7CB4FE05A59DA498646AA939C3D?cnum=653&cnum=1103&cnum=530"
+      },
+      {
+        "description": "Commercial lease dispute (landlord claims; Recursion counterclaims), in discovery per the Q2 2026 10-Q. Not a securities suit.",
+        "court": "Third District Court, Salt Lake County, Utah",
+        "docket_or_source": "Industry Office SLC, LLC v. Recursion Pharmaceuticals, Inc., Case No. 230904627 (as described in Q2 2026 10-Q)",
+        "date": "2023-06-23",
+        "url": "https://app.bigdata.com/documents/02F3984725BB26C9AE3D395E7DAE5941?cnum=40"
+      }
+    ]
+  },
+  "disposition": "Exclude X-TIERC",
+  "disposition_reason": "Tier C -> Exclude X-TIERC per the disposition table. Reviewer flag: if the day 0 fall is read as a reaction to the 2026-10-15 clinical data rather than offering flow, the tier would rise and the name would need re-triage.",
+  "searches": [
+    {
+      "tool": "SEC EDGAR submissions API",
+      "query": "CIK0001601830 filings dated 2026-10-12..2026-10-19",
+      "date_range": "2026-10-12..2026-10-19",
+      "results": 3
+    },
+    {
+      "tool": "mcp__Bigdata_com__bigdata_search",
+      "query": "what happened to Recursion Pharmaceuticals stock (fast, entity 458A50)",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 11
+    },
+    {
+      "tool": "mcp__Bigdata_com__bigdata_search",
+      "query": "Recursion shares fall Friday after offering (fast, entity 458A50)",
+      "date_range": "2026-10-16T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 6
+    },
+    {
+      "tool": "mcp__Bigdata_com__bigdata_search",
+      "query": "Recursion Pharmaceuticals securities class action lawsuit, investigation or subpoena (fast, entity 458A50)",
+      "date_range": "2025-10-16T00:00:00Z..2026-10-19T23:59:59Z",
+      "results": 6
+    },
+    {
+      "tool": "mcp__CourtListener__search",
+      "query": "type=d party_name='Recursion Pharmaceuticals' filed_after=2023-10-16",
+      "date_range": "2023-10-16..2026-10-19",
+      "results": 0
+    },
+    {
+      "tool": "mcp__CourtListener__search",
+      "query": "type=d party_name='Recursion' nature_of_suit=850 filed_after=2023-10-16",
+      "date_range": "2023-10-16..2026-10-19",
+      "results": 0
+    }
+  ],
+  "notes": "Timing: EDGAR index pages show the preliminary prospectus supplement accepted 2026-10-15 08:19:50 ET, the 8-K (with pricing release Ex. 99.4) 08:46:40 ET, and the final 424B5 17:31:14 ET; the offering was public pre-open on day -1, not day 0. The EDGAR submissions JSON acceptanceDateTime values (marked Z) do not match the index-page times and were not used. Utah Business (Bigdata timestamp 2026-10-16T00:06:48) reported shares 'fell more than 4% in premarket trading, according to GuruFocus' without a clear date; other reports show a day -1 gain. Morgan Stanley PT raise to $5.90 (The Fly, 2026-10-16) is a same-day positive item."
+}
