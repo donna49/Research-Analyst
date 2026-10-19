@@ -40,6 +40,14 @@ daily screen**. The UK and German material stays in the plugin for three uses: c
 proceedings (BP's FSMA s. 90A, Volkswagen's KapMuG, Australia's class actions); UK RNS announcements of
 SEDAR-reporting issuers (Investegate); and FCA notices as triggers.
 
+## The screen
+
+`scripts/screener.py` applies this trigger to the whole market each day (TradingView scanner), always for the last session that closed before today. It finds
+the US-listed names through the scanner's company country (Canada). A SEDAR+ filer incorporated outside
+Canada whose security trades only in the US is not caught by the screen. Those come in through the other
+triggers. Nasdaq Canada is not in TradingView's Canadian market list; its names are mostly also listed
+on TSX.
+
 ## In triage
 
 Triage step 0 applies the trigger to every screener row and records `trigger_met`

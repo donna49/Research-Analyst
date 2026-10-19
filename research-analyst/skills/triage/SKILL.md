@@ -13,6 +13,28 @@ Bigdata.com `company-brief` sweep (mandatory litigation query, category sweep).
 
 ## Steps
 
+### 0a. The screen (when no screener output is given)
+
+```
+python3 "${CLAUDE_PLUGIN_ROOT}/scripts/screener.py"
+```
+
+This is Andrew's step one: every fall of more than 10% in the **last trading session that closed before
+today** (a Monday run screens Friday; holidays are read from each market's own bars). It writes to
+`runs/<session date>/`. It uses the TradingView scanner, and keeps a fall
+only if it meets his trigger (`references/trigger.md`): a TSX, TSXV, CSE or Cboe Canada listing, or a
+Canadian company whose security fell on NYSE, Nasdaq or US OTC, and a market cap over C$200M (USD
+converted at the day's rate). Everything else goes to `screener_outside.md` with its reason. Its flags carry
+into triage:
+- **likely a stale secondary quote:** the primary listing barely moved. Usually an unsponsored ADR or a
+  thin Cboe Canada line. Send to Exclude as `X-MECH` unless the primary listing's own move is confirmed.
+- **verify Canadian registration and SEDAR+ reporting:** venue test (b). Settle it at step 0b.
+- **cap between C$200M and C$250M:** below his flow-chart threshold. Keep it, and note this in the row.
+
+Market cap is taken at the close before the drop. Sub-cent and near-total-move quotes go to the outside
+list as unreliable.
+
+
 ### 1. Measure every drop (script, all names at once)
 
 ```
