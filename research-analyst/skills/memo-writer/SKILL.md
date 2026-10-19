@@ -49,10 +49,10 @@ decision record, deadlines and the next catalyst.
 
 ## 4. Check
 ```
-python3 scripts/ledger.py check runs/<date>/<TICKER>/ledger.jsonl
-python3 scripts/ledger.py quotes runs/<date>/<TICKER>/ledger.jsonl
-python3 scripts/ledger.py memo runs/<date>/<TICKER>/ledger.jsonl runs/<date>/<TICKER>/memo.md
-python3 scripts/render_memo.py runs/<date>/<TICKER>/memo.md [--letterhead]   # --letterhead for Form A
+python3 "${CLAUDE_PLUGIN_ROOT}/scripts/ledger.py" check runs/<date>/<TICKER>/ledger.jsonl
+python3 "${CLAUDE_PLUGIN_ROOT}/scripts/ledger.py" quotes runs/<date>/<TICKER>/ledger.jsonl
+python3 "${CLAUDE_PLUGIN_ROOT}/scripts/ledger.py" memo runs/<date>/<TICKER>/ledger.jsonl runs/<date>/<TICKER>/memo.md
+python3 "${CLAUDE_PLUGIN_ROOT}/scripts/render_memo.py" runs/<date>/<TICKER>/memo.md [--letterhead]   # --letterhead for Form A
 ```
 Fix every problem before going on. Then compare your memo against the form's model side by side,
 heading by heading. Any heading, phrase pattern or footnote style that differs is a defect.

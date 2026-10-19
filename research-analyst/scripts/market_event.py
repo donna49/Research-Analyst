@@ -18,7 +18,7 @@ import numpy as np
 import websocket
 
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36"
-CACHE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".cache")
+CACHE = os.environ.get("RA_CACHE") or os.path.join(os.getcwd(), ".cache")
 
 # Screener exchange prefix -> TradingView scanner market
 MARKETS = {

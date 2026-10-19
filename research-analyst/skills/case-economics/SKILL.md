@@ -11,7 +11,7 @@ happens otherwise: −44.2% written for −30.7%, and a cap that mixed USD and C
 
 ## 1. Price move for every disclosure in the total mix
 ```
-python3 scripts/economics.py --moves EXCH:TICKER <date> <date> ... --json runs/<date>/<TICKER>/moves.json
+python3 "${CLAUDE_PLUGIN_ROOT}/scripts/economics.py" --moves EXCH:TICKER <date> <date> ... --json runs/<date>/<TICKER>/moves.json
 ```
 Run this on every statement date from stage 4 and every correction date. Andrew logs a price move,
 including "(nil%)", for each disclosure in the total mix. Record each as a `market` record citing
@@ -46,7 +46,7 @@ Write `runs/<date>/<TICKER>/economics_input.json`:
 
 ## 3. Run
 ```
-python3 scripts/economics.py runs/<date>/<TICKER>/economics_input.json --json runs/<date>/<TICKER>/economics.json
+python3 "${CLAUDE_PLUGIN_ROOT}/scripts/economics.py" runs/<date>/<TICKER>/economics_input.json --json runs/<date>/<TICKER>/economics.json
 ```
 Then write one `economics` record per headline figure. Each record has `metric`, `value`,
 `currency`, `formula` (copied from the JSON), and source `script output` with `location` set to the

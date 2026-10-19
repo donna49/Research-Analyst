@@ -9,11 +9,23 @@ Word file uses Times New Roman 12 pt; --letterhead adds his Washington letterhea
 (Form A memos carry it). Upload the .docx with the Google Drive connector to get a Google Doc with
 native footnotes (see skills/memo-writer §5). Requires pandoc and python-docx.
 """
-import argparse, os, re, subprocess, sys, tempfile
+import argparse, os, re, shutil, subprocess, sys, tempfile
 from docx import Document
 from docx.shared import Pt
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+
+
+def pandoc_bin():
+    """System pandoc if present, else the copy bundled with pypandoc_binary (scripts/setup.sh)."""
+    found = shutil.which("pandoc")
+    if found:
+        return found
+    try:
+        import pypandoc
+        return pypandoc.get_pandoc_path()
+    except Exception:
+        sys.exit("pandoc not found: run scripts/setup.sh")
 LETTERHEAD = os.path.join(HERE, "..", "references", "memo-forms", "letterhead.txt")
 MIXED_HEADINGS = {"Preamble", "Proposed Class Period", "Defined Terms", "Overview", "Background",
                   "The Beginning of the Class Period", "Post Class Disclosures", "The Causes of Action",
@@ -40,7 +52,7 @@ def prepare(md):
 
 
 def reference_docx(path, letterhead):
-    ref = subprocess.run(["pandoc", "-o", path, "--print-default-data-file", "reference.docx"], capture_output=True)
+    ref = subprocess.run([pandoc_bin(), "-o", path, "--print-default-data-file", "reference.docx"], capture_output=True)
     if ref.returncode:
         sys.exit(ref.stderr.decode())
     d = Document(path)
@@ -70,7 +82,7 @@ def main():
         reference_docx(ref, a.letterhead)
         src = os.path.join(td, "memo.md")
         open(src, "w").write(md)
-        r = subprocess.run(["pandoc", src, "-f", "markdown+footnotes-smart-fancy_lists", "-t", "docx",
+        r = subprocess.run([pandoc_bin(), src, "-f", "markdown+footnotes-smart-fancy_lists", "-t", "docx",
                             "--reference-doc", ref, "-o", out], capture_output=True)
         if r.returncode:
             sys.exit(r.stderr.decode())

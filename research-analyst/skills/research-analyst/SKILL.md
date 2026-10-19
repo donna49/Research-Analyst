@@ -20,6 +20,17 @@ his memos in `references/andrew-method.md`; read it before any Layer 2 work. You
 evidence and draft his submissions; he makes the legal judgment. A well-reasoned **Pass** is a
 complete, valuable answer.
 
+## Setup and paths
+
+- `scripts/` and `references/` live in the plugin folder, `${CLAUDE_PLUGIN_ROOT}`. Read references from
+  there; run scripts as `python3 "${CLAUDE_PLUGIN_ROOT}/scripts/<name>.py"`.
+- `runs/` and `.cache/` are written in the user's working folder, never inside the plugin.
+- Once per session, before the first script: `bash "${CLAUDE_PLUGIN_ROOT}/scripts/setup.sh"`. It installs
+  numpy, websocket-client, python-docx and a bundled pandoc if they are missing.
+- Connectors used: **Bigdata.com** (filings, news, transcripts, identifiers) and **Google Drive**
+  (memo corpus, Sources folder, memo upload). If either is missing, say which and carry on with the open
+  web, recording the lost coverage as `gap` records. Gmail is not used.
+
 ## Two layers
 
 | Layer | Command | Input | Output |

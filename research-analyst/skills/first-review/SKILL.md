@@ -70,7 +70,7 @@ not silence.
 
 ## 7. Price and volume history
 ```
-python3 scripts/price_history.py EXCH:TICKER <drop date> --out runs/<date>/<TICKER>/price_history.csv
+python3 "${CLAUDE_PLUGIN_ROOT}/scripts/price_history.py" EXCH:TICKER <drop date> --out runs/<date>/<TICKER>/price_history.csv
 ```
 The window runs from one year plus 30 days before the drop through the drop day. The script also lists
 every earlier fall of 10% or more, which are candidate storm warnings. Then run

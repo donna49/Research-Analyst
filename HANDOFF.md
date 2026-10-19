@@ -9,8 +9,8 @@ Repository: `donna49/research-analyst`, branch `claude/loving-shannon-gsl7kx`.
 | `PLAN.md` | Plan v2: decisions, data sources, drop standard, two-layer workflow, what is borrowed from the five plugins |
 | `plugin-review/` | Reviews of the five source plugins (intel, Bigdata.com, financial-services, InvestSkill, finance-skills) |
 | `research-analyst/` | The plugin (v0.1): orchestrator + 9 stage skills, references, scripts, `/triage` and `/investigate` commands |
-| `research-analyst/runs/2026-10-16/` | First real run: 63-name screener, drop standard, triage of the 18 company-specific names |
-| `research-analyst/runs/2026-10-16/FOXF/` | First Layer 2 case, stopped at the stage 3 checkpoint (`issue.md`) |
+| `runs/2026-10-16/` | First real run: 63-name screener, drop standard, triage of the 18 company-specific names |
+| `runs/2026-10-16/FOXF/` | First Layer 2 case, stopped at the stage 3 checkpoint (`issue.md`) |
 
 ## Setup in the new account
 

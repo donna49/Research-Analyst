@@ -25,9 +25,9 @@ Use the early exit (orchestrator skill) when the economics show Andrew would pas
 recovery.
 
 Write everything under `runs/<date>/<TICKER>/`. Before replying, run:
-- `python3 scripts/ledger.py check` on the ledger
-- `python3 scripts/ledger.py quotes` on the ledger
-- `python3 scripts/ledger.py memo` on the ledger and the memo
+- `python3 "${CLAUDE_PLUGIN_ROOT}/scripts/ledger.py" check` on the ledger
+- `python3 "${CLAUDE_PLUGIN_ROOT}/scripts/ledger.py" quotes` on the ledger
+- `python3 "${CLAUDE_PLUGIN_ROOT}/scripts/ledger.py" memo` on the ledger and the memo
 
 Then reply with:
 - the recommendation

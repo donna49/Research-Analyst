@@ -16,7 +16,7 @@ Bigdata.com `company-brief` sweep (mandatory litigation query, category sweep).
 ### 1. Measure every drop (script, all names at once)
 
 ```
-python3 scripts/market_event.py --screener runs/<date>/screener.md --date <date> \
+python3 "${CLAUDE_PLUGIN_ROOT}/scripts/market_event.py" --screener runs/<date>/screener.md --date <date> \
   --json runs/<date>/market_event.json > runs/<date>/market_event.md
 ```
 
@@ -122,7 +122,7 @@ own fields. Timing checks that commonly change the picture:
 - a filing accepted after the day-0 close belongs to day +1 (use the EDGAR index-page ET time);
 - plaintiff-firm "investigation" notices are signals, not filed suits.
 
-Render with `python3 scripts/build_triage.py runs/<date>`.
+Render with `python3 "${CLAUDE_PLUGIN_ROOT}/scripts/build_triage.py" runs/<date>`.
 
 ## Output: `runs/<date>/triage.md`
 

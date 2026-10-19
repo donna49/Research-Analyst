@@ -1,7 +1,25 @@
 # research-analyst plugin
 
-Securities-litigation origination research on one-day stock drops in the US, Canada, UK and Germany,
-built on Andrew Morganti's method.
+Securities-litigation origination research on one-day stock drops of more than 10% in Canadian-listed
+and SEDAR-reporting issuers, built on Andrew Morganti's method.
+
+## Install
+
+In Claude Code or Cowork:
+
+```
+/plugin marketplace add donna49/research-analyst
+/plugin install research-analyst@morganti-plugins
+```
+
+Or zip the `research-analyst/` folder and upload it under Customize › Plugins in Cowork.
+
+**Connectors:** Bigdata.com and Google Drive (Gmail is not used). **Python packages:** installed on first
+use by `scripts/setup.sh` (numpy, websocket-client, python-docx, bundled pandoc).
+
+**Drive folders:** finished memos go to *Research Memos*; documents the plugin cannot fetch (SEDAR+,
+Intelligize, Law360, FT.com, PACER) go to *Research Memos / Sources / <TICKER> <date>*
+(`references/drive-sources.md`).
 
 **Questions it answers:** (1) did the new information merely show the business did badly, or did it
 show investors had previously been given a materially inaccurate picture? (2) If so, is there a
