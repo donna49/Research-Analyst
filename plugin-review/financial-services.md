@@ -103,10 +103,6 @@ All of these connectors need paid entitlements or OAuth.
   - private-equity: all except `deal-sourcing`'s CRM step.
   - financial-analysis: `competitive-analysis`, `audit-xls`, `clean-data-xls`, `deck-refresh`, `ib-check-deck`, `ppt-template-creator`, `skill-creator`, `lbo-model` and `3-statement-model` (template-driven), and the author skills.
   - The 3 wealth-management skills in meeting-prep-agent (with user data).
-- **Not wired, but useful for Quoin:**
-  - Moody's (CMBS/CRE credit data, if licensed), Morningstar, and LSEG (rates/swap curves for CMBS spreads).
-  - No skill actually calls Moody's, Morningstar, PitchBook, Aiera, MT Newswires, Chronograph, Egnyte or Box by name. They are listed as available only.
-  - No connector covers CRE, CMBS, Trepp, CoStar or property data. This is where the session's QuoinData MCP would complement the marketplace.
 
 ## 3. Unique skills (63)
 
@@ -167,7 +163,7 @@ The repo holds 111 SKILL.md files and 63 unique hashes. Each unique skill is rev
 | returns-analysis | IRR/MOIC | entry/exit/leverage | xlsx | Attribution (growth/multiple/deleveraging); 4 two-way grids; gross vs net. |
 | dd-checklist | Diligence tracker | sector, deal type | xlsx | Workstreams, statuses, red-flag log (includes "facilities and real estate", environmental). |
 | dd-meeting-prep | Question lists | meeting type | 1-page md | Management/expert/customer question banks; red flags. |
-| unit-economics | SaaS cohorts | customer data | xlsx | ARR bridge, NDR/GRR, LTV/CAC benchmarks. Not relevant to Quoin. |
+| unit-economics | SaaS cohorts | customer data | xlsx | ARR bridge, NDR/GRR, LTV/CAC benchmarks. |
 | portfolio-monitoring | Actual vs plan | financial package | md/xlsx | Green/yellow/red at 5%/15%; covenant compliance; questions for management. |
 | value-creation-plan | EBITDA bridge, 100-day plan | baseline | xlsx/docx | Levers mapped to the bridge. |
 | ai-readiness | Portfolio AI scan | portco materials | 1-page md | 3 go/no-go gates; ranked stack; "replays". |
@@ -350,7 +346,7 @@ Practical implication: install verticals OR agents, not both. Installing both gi
 - **Destructive cache scripts.** `clear-addin-cache.{sh,ps1}` delete Office Wef caches and registry keys. They run in dry-run mode unless `--apply`/`-Apply` is passed, and the README warns this also wipes chat history.
 - **Export scripts.** Read-only.
 - **Bootstrap example.** The Python FastAPI bootstrap validates RS256 JWTs with audience and issuer. It has a `DEV_JWKS_PATH` bypass for local tokens; ensure that is unset in production.
-- **Quoin relevance:** none unless Quoin deploys the Office add-in on its own cloud. Do not run it casually.
+- **Relevance:** none unless you deploy the Office add-in on its own cloud. Do not run it casually.
 
 ## 7. Quality assessment
 
@@ -366,7 +362,7 @@ Practical implication: install verticals OR agents, not both. Installing both gi
 - Zero drift between copies.
 
 **Weaknesses:**
-- **Corporate-equity centric.** There is no real-estate, REIT or credit content: no NOI/cap-rate DCF, FFO/AFFO, P/NAV, DSCR/debt yield/LTV, rent roll, lease-up, CMBS waterfall or loan surveillance. The only CRE touch is a short datapack-builder paragraph.
+- **Corporate-equity centric:** no real-estate, REIT or credit-specific methods.
 - **Shallow skills alongside deep ones.** Many IB/PE/ER skills are 2-4KB checklists, while dcf, comps and initiating-coverage run 30-50KB plus references (verbose and token-heavy).
 - **Broken or missing pieces:**
   - The core `.mcp.json` is invalid JSON.
@@ -379,50 +375,5 @@ Practical implication: install verticals OR agents, not both. Installing both gi
   - comps says "never web search" while earnings mandates web search.
 - **Partner skills are vendor-locked.** They are valuable only with LSEG or S&P entitlements.
 
-**Overall:** high reuse value for modeling and QA mechanics. The vertical content needs adaptation before Quoin can use it.
+**Overall:** high reuse value for modeling and QA mechanics. The vertical content needs adaptation for specialized use.
 
-## 8. Best use cases for a Quoin Data research analyst (CRE in DC/MD/NoVA, CMBS)
-
-Most of these pair the marketplace mechanics with QuoinData MCP property data, web or EDGAR, and local files.
-
-1. **DC-metro REIT trading comps** (comps-analysis via `/comps`, xlsx).
-   - Peers: e.g. JBG SMITH, BXP and other office/multifamily REITs with DC exposure.
-   - Keep the stats block, cell-comment sourcing and checkpoints.
-   - Swap the metrics for P/FFO, P/AFFO, P/NAV, implied cap rate, net debt/EBITDA, occupancy, and DC-region % of NOI.
-   - Data from 10-K/10-Q supplementals (EDGAR) when no S&P/FactSet is available.
-2. **Property-level DCF / valuation** (dcf-model mechanics, xlsx).
-   - Re-base on unlevered property cash flow (NOI less TI/LC/capex reserves) with an exit-cap terminal value instead of Gordon growth.
-   - 5x5 grids of exit cap × discount rate and rent growth × vacancy, with the center cell equal to the base case.
-   - Bear/Base/Bull case selector.
-   - Feed with QuoinData assessments, transactions and tax history, plus `find_nearby_sales` for cap-rate and $/SF anchors.
-   - Run `audit-xls` (`/debug-model`) before sharing.
-3. **CMBS loan credit memo** (ic-memo structure plus returns-analysis sensitivity, docx).
-   - Exec summary, then property/sponsor, market, financials (UW NCF vs servicer NCF), structure, a risks-with-mitigants table, and a recommendation.
-   - Replace IRR grids with DSCR, debt yield and LTV under NOI-haircut × cap-rate stress, plus a refinance-at-maturity test.
-   - Use QuoinData flood, EPA, wetlands and zoning lookups for the environmental/zoning section; the dd-checklist workstreams adapt directly.
-4. **Data pack from an OM, rent roll or servicer report** (datapack-builder plus clean-data-xls, xlsx).
-   - Use the Real Estate adaptation, strict $ vs count vs % formatting and page-cited sources.
-   - Clean messy servicer and loan-tape exports with helper-column formulas, not overwrites.
-5. **Submarket / sector primer** (sector-overview plus competitive-analysis via `/sector`, docx/pptx).
-   - Topics such as NoVA data-center land, DC office distress or MD multifamily.
-   - TAM-style sizing becomes inventory, absorption, vacancy, pipeline and sales volume (QuoinData `search_properties`, transactions, builder sites).
-   - Insight-titled slides with real charts.
-6. **Client pitch deck or property one-pager** (strip-profile 4-quadrant layout, pitch-deck, ppt-template-creator for a Quoin-branded template skill; pptx).
-   - Always finish with `ib-check-deck` for cross-slide number consistency.
-7. **Quarterly deck/report refresh** (deck-refresh, pptx).
-   - Roll recurring market reports or CMBS watchlist decks with new vacancy, delinquency or rate figures.
-   - The approval gate flags stale derived YoY figures.
-8. **CMBS watchlist and maturity calendar** (catalyst-calendar, thesis-tracker, portfolio-monitoring; xlsx + md).
-   - Track loan maturities, DSCR/occupancy trigger breaches, special-servicing transfers, lease expirations of top tenants, and Fed/FOMC dates.
-   - Use green/yellow/red variance flags against UW.
-9. **REIT earnings review** (earnings-preview, earnings-analysis, model-update, morning-note).
-   - For DC-exposed public REITs: beat/miss on FFO/AFFO, same-store NOI and leasing spreads.
-   - The freshness gate and EDGAR hyperlinking come for free.
-10. **Rates and spread context for CMBS pricing** (optional; LSEG macro-rates-monitor and swap-curve-strategy only with an LSEG entitlement).
-    - Otherwise reproduce the outputs (UST/swap curve shape, swap spreads) from public FRED/Treasury data by hand.
-    - Also: `deal-screening` (`/screen-deal`) as a fast pass/fail triage of inbound OMs against Quoin or client criteria.
-
-**Recommendation:**
-- Install `financial-analysis` (fixing the `.mcp.json` comma and brace first, or deleting unused servers) plus `private-equity` and `investment-banking` for document scaffolds.
-- Skip the agent plugins (duplicates and enterprise MCP placeholders), fund-admin/operations, msft-365-install, and LSEG/S&P unless licensed.
-- Fork comps-analysis, dcf-model and ic-memo into Quoin-specific `reit-comps`, `property-dcf` and `cmbs-credit-memo` skills that call QuoinData MCP tools.

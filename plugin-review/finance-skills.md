@@ -149,18 +149,3 @@ Our container has a proxied network, no browser, no desktop apps, and is not mac
   - opencli-reader's COOKIE, HEADER, INTERCEPT and UI adapters (its PUBLIC ones such as `hackernews`, `arxiv` and `web read` could work);
   - options-payoff and generative-ui (they need claude.ai `show_widget`; here the Artifact tool and `dataviz` cover the same need).
 
-## 7. Best use cases for a Quoin Data research analyst (DC/MD/NoVA CRE, CMBS)
-
-None of these skills covers property-level or loan-level data; QuoinData MCP stays the primary source. These are useful for public-market and credit context around it.
-
-1. **CMBS and CRE-credit stress gauge** (etf-premium). Track premium or discount to NAV and peer spreads on CMBS and agency-MBS ETFs (for example iShares `CMBS`, `MBB`) and REIT ETFs (`VNQ`, `XLRE`). A widening discount relative to the bid-ask spread is an early stress signal to set beside our loan-level delinquency data.
-2. **DC-metro REIT and lender earnings monitoring** (earnings-preview, earnings-recap, estimate-analysis). Cover names with DC/MD/NoVA office or multifamily exposure, such as JBG SMITH, BXP and Federal Realty (verify current tickers and listing status, for example Elme Communities). Also cover CRE lenders and mortgage REITs (for example STWD, BXMT, ABR, and regional banks with high CRE concentration). The goal is to catch guidance, impairment and estimate-revision trends that lead CMBS servicer commentary.
-3. **Rate-sensitivity and contagion mapping** (stock-correlation, regime mode). Measure rolling and down-day correlation of DC office REITs and CRE lenders against the 10Y yield (`^TNX`), regional-bank ETFs and the CMBS ETF. This shows whether local office stress is trading as idiosyncratic or as systemic risk.
-4. **Ownership and insider signals on CRE-exposed issuers** (fintel-data, paid). 13F holder changes, Form 4 insider selling, and short interest or borrow costs on office REITs and CRE lenders, as sentiment input for market notes.
-5. **Liquidity screen for public comps** (stock-liquidity). Rank small-cap REITs and lenders by dollar volume and Amihud ratio before using their prices as valuation comps, since thin names give noisy implied cap rates.
-6. **Proptech and CRE-data competitive intelligence** (yc-reader `industries/real-estate-and-construction`, about 138 companies; startup-analysis). Map venture-backed entrants in CRE data and analytics against Quoin Data's offering, and do quick diligence on specific competitors or partners.
-7. **Implied-valuation cross-check** (company-valuation, relative-multiples path only). A sanity check on public REIT pricing versus peers. Fix the exit-multiple and ERP issues first, and add P/FFO from filings, because yfinance has no FFO.
-
-Skip: all social readers, tradingview-reader, hyperliquid-reader, hormuz-strait, options-payoff, generative-ui and sepa-strategy. They are unsafe, off-mission, or already covered by tools in this workspace.
-
-**Install recommendation:** install `finance-market-analysis` only, and optionally `finance-startup-tools`. Do **not** enable `finance-data-providers` as a group, because enabling it auto-starts the tradingview MCP server. If Fintel is wanted, copy that one skill and set the key as an environment secret instead of keeping it in `.env`. Do not install `finance-social-readers`.
