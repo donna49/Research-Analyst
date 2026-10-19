@@ -30,7 +30,7 @@ legal judgment.
 
 | Layer | Command | Output |
 |---|---|---|
-| 1. Triage every screened drop | `/triage <screener output> [date]` | `runs/<date>/triage.md` |
+| 1. Screen and triage today's drops | `/triage` (screens TradingView itself) or `/triage <screener output> [date]` | `runs/<date>/triage.md` |
 | 2. Investigate one drop | `/investigate <EXCH:TICKER> <date>` | `runs/<date>/<TICKER>/memo.md` (Andrew's form) + `ledger.jsonl` |
 
 **Trigger** (Andrew's, `references/trigger.md`): a one-day fall of more than 10%, a market cap over $200M,
@@ -73,6 +73,7 @@ he asks, the 20 research angles, his pursue/pass rules with the cases they came 
 | `skills/research-analyst/` | Orchestrator: the question, stage order, rules, expert questions |
 | `skills/<stage>/` | One skill per stage |
 | `references/` | Evidence ledger schema, drop standard, trigger tiers, statement types, sources, language rules, jurisdictions |
+| `scripts/screener.py` | Andrew's step one: every fall of more than 10% that meets his trigger, from the TradingView scanner |
 | `scripts/market_event.py` | Drop standard (TradingView chart feed + scanner); all market numbers |
 | `scripts/price_history.py` | Step 7: daily close and volume from one year plus 30 days before the drop, with every earlier 10%+ fall flagged |
 | `scripts/economics.py` | Price move on each disclosure; look-back; volume by venue; damages ranges; 5% cap; settlement target; limitation dates |

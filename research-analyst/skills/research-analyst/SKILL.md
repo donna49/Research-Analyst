@@ -35,7 +35,7 @@ complete, valuable answer.
 
 | Layer | Command | Input | Output |
 |---|---|---|---|
-| 1. Triage | `/triage` | Screener output (all flagged stocks for one day) | `runs/<date>/triage.md`: every stock marked Full investigation / Watch / Exclude with reasons |
+| 1. Triage | `/triage` | Its own screen (`screener.py`) or screener output given by the user | `runs/<date>/triage.md`: every stock marked Full investigation / Watch / Exclude with reasons |
 | 2. Investigation | `/investigate` | One ticker + drop date (normally a "Full investigation" row) | `runs/<date>/<TICKER>/memo.md` (Andrew's form) + `ledger.jsonl` |
 
 Layer 1 is fast and wide; Layer 2 is slow and deep. Never run Layer 2 work inside Layer 1.
