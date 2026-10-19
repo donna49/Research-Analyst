@@ -30,6 +30,7 @@ legal judgment.
 
 | Layer | Command | Output |
 |---|---|---|
+| 0. Just the list of candidates | `/screen` | `runs/<session date>/screener.md` |
 | 1. Screen and triage today's drops | `/triage` (screens TradingView itself) or `/triage <screener output> [date]` | `runs/<date>/triage.md` |
 | 2. Investigate one drop | `/investigate <EXCH:TICKER> <date>` | `runs/<date>/<TICKER>/memo.md` (Andrew's form) + `ledger.jsonl` |
 
