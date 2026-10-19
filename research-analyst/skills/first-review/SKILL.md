@@ -15,6 +15,10 @@ $200M, and either a TSX/TSXV/CSE/Cboe Canada listing, or a Canadian-registered S
 security dropped on Nasdaq, NYSE or US OTC. Record a `framing` record (`element: "trigger"`). If the
 trigger is not met, stop and say why.
 
+## 0b. Drive Sources
+Read the case subfolder in Research Memos / Sources, and start `to_save.md`, as set out in
+`references/drive-sources.md`.
+
 ## 1. SEDAR+ profile (the issuer card)
 From the company's SEDAR+ profile page (the first page after opening the company), record:
 - business address(es)
@@ -30,12 +34,14 @@ securities. Take the same facts from the 10-K/20-F/40-F cover (EDGAR) and the in
 (OpenCorporates, the provincial registry).
 
 SEDAR+ often blocks automated access (`source-hierarchy.md`). Try the routes listed there. If the
-profile still cannot be read, ask the user to save the profile page into `sources/`.
+profile still cannot be read, ask the user to save the profile page into the case's Drive folder
+(`references/drive-sources.md`).
 
 ## 2. Every record released on the drop date
 List every document the company filed or released on the drop date, and on the evening before if the
 drop session follows an after-close release. Use SEDAR+ "documents" for that date, EDGAR for US filers,
-the issuer's news page and the wires. Save each document's text to `sources/`. Record the release time
+the issuer's news page and the wires. First pull anything the user saved to the case's Drive folder
+(`references/drive-sources.md`). Save each document's text to `sources/`. Record the release time
 stamp; it decides which session reacted.
 
 ## 3. The 1–3 most important facts

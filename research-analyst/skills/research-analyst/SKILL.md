@@ -36,6 +36,10 @@ cap over $200M, and a TSX/TSXV/CSE/Cboe Canada listing (or a Canadian-registered
 Nasdaq, NYSE or US OTC). Every Layer 2 case opens with his seven-step `first-review`, which seeds
 stages 1–5.
 
+Before the first review, pull what Andrew has saved to the case's Drive Sources folder, and list in
+`to_save.md` anything the plugin cannot fetch (SEDAR+, Intelligize, Law360, FT.com, PACER):
+`references/drive-sources.md`.
+
 ## Layer 2 stage order
 
 | # | Skill | Produces | Memo section it feeds |
@@ -147,5 +151,6 @@ runs/<YYYY-MM-DD>/
     memo_trace.json      # form + ledger ids behind every footnote and figure line
     memo_annex.md        # internal companion: sources, coverage, gaps, deadlines
     memo.docx            # rendered; uploaded to the user's Drive as a Google Doc
-    sources/             # saved copies of key documents (text), named by ledger id
+    sources/             # saved copies of key documents (text), named by ledger id;
+                         # includes files pulled from Drive (references/drive-sources.md)
 ```

@@ -44,7 +44,7 @@ Learned in the Global Atomic backtest (2026-10-19):
 
 | Need | Route | Notes |
 |---|---|---|
-| SEDAR+ documents | Blocked by captcha for automated fetches | Try Bigdata.com filings, then the issuer's document host, then news wires. If a core document is still missing, record a `gap` and ask the user to download it from SEDAR+ into `sources/` |
+| SEDAR+ documents | Blocked by captcha for automated fetches | Try Bigdata.com filings, then the issuer's document host, then news wires. If a core document is still missing, record a `gap` and ask the user to save it from SEDAR+ into the case's Drive folder (`drive-sources.md`) |
 | Issuer IR site | Often behind Cloudflare | Many Canadian issuers serve PDFs from a static host such as `s*.q4cdn.com`. Find the link through search results rather than guessing file names. Record the URL actually opened |
 | SEDI insider trades | The public SEDI search form can be submitted by script (POST) | Record the issuer number and the query parameters in the `search` record |
 | Earnings calls | Bigdata.com often has slides or reports, not transcripts, for small Canadian issuers | If there is no transcript, use the webcast replay page or the news coverage of the call; record a gap for the Q&A |
@@ -73,12 +73,12 @@ flow chart and from his files.
 
 | Source | Why he uses it | Flow-chart step | Access from the plugin |
 |---|---|---|---|
-| **SEDAR+** | Issuer profile (addresses, incorporation, CUSIP, symbols); core documents to compare with the correction; counterparties' and directors' other companies' filings; offerings; reporting-issuer status | 3, 6, 7, 8, 10, 12 | Captcha blocks automation: use the routes in "Canadian filings" above; otherwise the user saves documents to `sources/` |
+| **SEDAR+** | Issuer profile (addresses, incorporation, CUSIP, symbols); core documents to compare with the correction; counterparties' and directors' other companies' filings; offerings; reporting-issuer status | 3, 6, 7, 8, 10, 12 | Captcha blocks automation: use the routes in "Canadian filings" above; otherwise the user saves documents to the Drive Sources folder (`drive-sources.md`) |
 | **SEDI.ca** | Insider sales during the proposed Class Period | 9 | Public search form by script (POST); record the issuer number |
 | **EDGAR** | The same as SEDAR, for US filers and US-listed Canadian issuers (40-F, 6-K, 10-K, 8-K, Forms 3/4/5) | 3, 6, 7, 8, 10 | Direct (User-Agent with contact email) |
 | **Investegate** (FE Investegate, investegate.co.uk; confirmed: his BP materials list "the materials from the FE Investegate", and his Drive holds Petrofac RNS announcements from FE Investegate) | UK RNS announcements for issuers with UK listings (BP, Petrofac) | 3 | Open web |
-| **Intelligize** (paid; subscription since August 2026, monthly for over a decade before) | Call transcripts and full-text search across filings to find how far back the statements go | 4, 8 | No connector. Andrew runs the search or exports to `sources/`; the plugin lists the queries |
-| **Law360** (paid) | New US complaints and litigation news, both as triggers (Putnam came from a Law360 report of a Miller Shah complaint) and for other litigation | Triggers, 13 | No connector. The plugin lists the searches; Andrew saves the articles |
+| **Intelligize** (paid; subscription since August 2026, monthly for over a decade before) | Call transcripts and full-text search across filings to find how far back the statements go | 4, 8 | No connector. Andrew runs the search and exports to the Drive Sources folder; the plugin lists the queries |
+| **Law360** (paid) | New US complaints and litigation news, both as triggers (Putnam came from a Law360 report of a Miller Shah complaint) and for other litigation | Triggers, 13 | No connector. The plugin lists the searches; Andrew saves the articles to the Drive Sources folder |
 | **FT.com** (paid) | The media's response to the correction; international issuers | 5 | No connector. As for Law360 |
 | **PACER** | US dockets: parallel class actions, other litigation involving the defendant and its officers | 13 | CourtListener/RECAP first; for documents not in RECAP the plugin lists docket and entry numbers to pull |
 | **Seeking Alpha** | Call transcripts (free and subscription) and commentary | 4 (5) | Open web where public; commentary is tier 3 |
@@ -98,7 +98,7 @@ Further trigger sources in his flow chart:
 - The CBA Class Action database: free, and it shows the class actions already filed in Canada.
 
 Paid sources are never bypassed. Where the plugin cannot reach a source, it writes the exact search for
-Andrew to run, and treats what he saves as tier 1 or tier 2 according to the document type.
+Andrew to run, he saves the result to the Drive Sources folder (`drive-sources.md`), and treats what he saves as tier 1 or tier 2 according to the document type.
 
 ## Not used
 

@@ -59,7 +59,8 @@ heading by heading. Any heading, phrase pattern or footnote style that differs i
 
 ## 5. Google Doc in the user's Drive
 The user's standing choice is a Google Doc in their Drive.
-1. Ask which Drive folder, unless the user has named one for this case or set a default. Never guess a
+1. The default folder is **Research Memos** (id `1YUitDDaH27i-mff9V16Lt6axwcdzQG3_`). Ask only if the
+   user names another folder for this case. Never guess a
    shared drive. Uploading to a shared drive makes the memo visible to others.
 2. Upload `memo.docx` with the Google Drive connector `create_file`:
    - `title`: "Memo from Morganti to File («Issuer short name»)(«Month D, YYYY»)", his file-naming pattern

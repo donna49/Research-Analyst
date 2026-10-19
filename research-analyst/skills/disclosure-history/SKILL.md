@@ -48,7 +48,8 @@ Method (adapted from InvestSkill `financial-report-analyst` and `10k-digest`, an
    presentations).
 3. For each passage write a `statement` record: verbatim quote, speaker, venue, `public_at`, exact
    locator, `statement_type` (`references/statement-types.md`), cautionary language quoted if any.
-4. Save the text of every source document used under `runs/<date>/<TICKER>/sources/`.
+4. Save the text of every source document used under `runs/<date>/<TICKER>/sources/`. Documents the
+   user saved to Drive (SEDAR+, Intelligize, Law360, FT.com) come in through `references/drive-sources.md`.
 
 Coverage rule: for every quarter in the lookback, record whether the periodic report and the call
 were checked and whether they mention the subject. A quarter with no record is a gap, not "silent".
