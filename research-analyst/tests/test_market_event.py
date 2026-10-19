@@ -59,7 +59,7 @@ class Fake:
         self.saved = me.history, me.tv_lookup, me.tv_peers
         me.history = lambda sym, adj="dividends": self._get(sym, adj)
         me.tv_lookup = lambda market, exch, ticker: self.tv
-        me.tv_peers = lambda market, industry, symbol, n=10: self.peers
+        me.tv_peers = lambda market, industry, symbol, n=10, field="industry": self.peers
         return self
 
     def _get(self, sym, adj):
@@ -123,6 +123,14 @@ class Analyse(unittest.TestCase):
         r = self.run_one(cap=1e9)
         # scanner close == day-0 close here, so shares = cap / close and loss = shares * (prev - close)
         self.assertAlmostEqual(r["market_cap_lost"], 1e9 * 0.15 / 0.85, delta=1)
+
+    def test_gbx_market_cap_currency(self):
+        with Fake() as f:
+            for h in f.h.values():
+                h["currency"] = "GBX"
+            r = me.analyse("NASDAQ:TEST", dt.date.fromisoformat(f.dates[-1]))
+        self.assertEqual(r["market_cap_currency"], "GBP")
+        self.assertIn("prices in pence (GBX)", r["flags"])
 
     def test_day0_not_a_session(self):
         with Fake() as f:

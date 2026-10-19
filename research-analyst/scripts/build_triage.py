@@ -94,7 +94,7 @@ def main(run):
             lit = f"{n_lit} item{'s' if n_lit != 1 else ''} (see notes)" if n_lit else "none found"
             tt = "n/a" if r["t_stat"] is None else f"{r['t_stat']:.1f}"
             out.append(f"| {cell(r['name'])} | {r['symbol']} | {pct(r['return'])} | {pct(r['abnormal_return'])} ({tt}) | "
-                       f"{money(r['market_cap_lost'], r['currency'])} | {trig} | {t.get('tier')} | {ps} | {lit} |")
+                       f"{money(r['market_cap_lost'], r.get('market_cap_currency') or r['currency'])} | {trig} | {t.get('tier')} | {ps} | {lit} |")
         out.append("")
         for r, t, _, reason in rows[k]:
             out.append(f"**{r['symbol']} {cell(r['name'])}.** {cell(t.get('likely_trigger'))}")

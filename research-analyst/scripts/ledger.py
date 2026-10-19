@@ -365,7 +365,8 @@ def add_market(path, me_path, symbol=None):
         v = r.get(key)
         if v is None:
             continue
-        unit = r.get("currency") or "local currency" if unit == "ccy" else unit
+        if unit == "ccy":
+            unit = (r.get("market_cap_currency") if key == "market_cap_lost" else r.get("currency")) or r.get("currency") or "local currency"
         label = metric.replace("Market index", f"Market ({r.get('market_index')})").replace("Theme ETF", f"Theme ({r.get('theme_etf')})")
         rec(f"$[{idx}].{key}", f"{label} on {r['day0']}: {v}", metric=label, value=v, unit=unit)
     rec(f"$[{idx}].class", f"Drop standard class on {r['day0']}: {r['class']}", metric="Drop standard class", value=None,

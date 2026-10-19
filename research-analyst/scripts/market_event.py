@@ -163,17 +163,17 @@ def _scan(market, body):
 
 def tv_lookup(market, exch, ticker):
     cols = ["name", "description", "exchange", "close", "change", "market_cap_basic", "sector",
-            "industry", "volume", "average_volume_30d_calc", "country", "currency"]
+            "industry", "volume", "average_volume_30d_calc", "country", "currency", "fundamental_currency_code"]
     data = _scan(market, {"columns": cols, "range": [0, 10],
                           "filter": [{"left": "name", "operation": "equal", "right": ticker}]})
     rows = [x for x in data if x["s"] == f"{exch}:{ticker}"] or data
     return dict(zip(cols, rows[0]["d"])) if rows else {}
 
 
-def tv_peers(market, industry, symbol, n=N_PEERS):
-    """Largest same-industry primary listings in the same market (no OTC), excluding the stock itself."""
+def tv_peers(market, industry, symbol, n=N_PEERS, field="industry"):
+    """Largest same-industry (or same-sector) primary listings in the same market (no OTC), excluding the stock itself."""
     data = _scan(market, {"columns": ["name", "market_cap_basic"], "range": [0, n + 5],
-                          "filter": [{"left": "industry", "operation": "equal", "right": industry},
+                          "filter": [{"left": field, "operation": "equal", "right": industry},
                                      {"left": "type", "operation": "equal", "right": "stock"},
                                      {"left": "is_primary", "operation": "equal", "right": True},
                                      {"left": "exchange", "operation": "not_in_range", "right": ["OTC"]}],
@@ -220,6 +220,10 @@ def analyse(symbol, day0=None):
     tv = tv_lookup(market, exch, ticker)
     r_s, r_m = returns(stock), returns(index_hist)
     peers = tv_peers(market, tv["industry"], symbol) if tv.get("industry") else []
+    peer_basis = f"industry: {tv.get('industry')}"
+    if len(peers) < 3 and tv.get("sector"):
+        flags.append(f"peer index from sector {tv['sector']}: industry {tv.get('industry')} has {len(peers)} other listings in this market")
+        peers, peer_basis = tv_peers(market, tv["sector"], symbol, field="sector"), f"sector: {tv['sector']}"
     peer_series = []
     for p in peers:
         try:
@@ -241,7 +245,7 @@ def analyse(symbol, day0=None):
     if r_p:
         factors["peers"] = r_p
     else:
-        flags.append("no peer index: no same-industry listings with price history; expected return uses market and theme only")
+        flags.append(f"no peer index: {len(peer_series)} same-industry series with price history (3 needed); expected return uses market and theme only")
     est = [d for d in traded if all(d in f for f in factors.values()) and abs(r_s[d]) < 0.10]
     ret0, mret0, pret0 = r_s.get(d0), r_m.get(d0), r_p.get(d0)
 
@@ -310,7 +314,9 @@ def analyse(symbol, day0=None):
         raw_ret = raw_rows[d0] / raw_rows[raw_dates[raw_dates.index(d0) - 1]] - 1
         if ret0 is not None and abs(raw_ret - ret0) > 0.005:
             flags.append(f"dividend effect: unadjusted {raw_ret:.1%} vs dividend-adjusted {ret0:.1%}")
-    if tv.get("change") is not None and ret0 is not None and d0 == dates[-1] and abs(tv["change"] / 100 - ret0) > 0.01:
+    # the scanner's change is for its latest session; skip the comparison while today's session is still open
+    if tv.get("change") is not None and ret0 is not None and d0 == dates[-1] and not stock.get("dropped_partial") \
+            and abs(tv["change"] / 100 - ret0) > 0.01:
         flags.append(f"scanner change {tv['change']:.1f}% differs from chart-feed return {ret0:.1%}")
     if stock.get("currency") == "GBX":
         flags.append("prices in pence (GBX)")
@@ -332,7 +338,7 @@ def analyse(symbol, day0=None):
         "price_source": stock["source"], "day0": d0,
         "close": stock["rows"][i0]["close"], "prev_close": stock["rows"][i0 - 1]["close"] if i0 else None,
         "return": ret0, "market_index": INDEX[market], "market_return": mret0,
-        "peers": peers, "peers_used": len(peer_series), "peer_return": pret0,
+        "peers": peers, "peer_basis": peer_basis, "peers_used": len(peer_series), "peer_return": pret0,
         "alpha": None if coef is None else float(coef[0]),
         "beta_market": beta("market"), "beta_peers": beta("peers"),
         "theme_etf": theme, "theme": THEMES.get(theme), "theme_corr": theme_corr, "theme_return": tret0,
@@ -344,7 +350,7 @@ def analyse(symbol, day0=None):
         "car_0_1": car(0, 1), "pre_drift_m5_m1": car(-5, -1), "car_1_5_rebound": car(1, 5),
         "volume": vol0, "avg_volume_30d": avg_vol,
         "volume_ratio": vol0 / avg_vol if vol0 and avg_vol else None,
-        "market_cap": cap,
+        "market_cap": cap, "market_cap_currency": tv.get("fundamental_currency_code") or ("GBP" if stock.get("currency") == "GBX" else stock.get("currency")),
         "market_cap_lost": cap_lost, "market_cap_lost_basis": cap_basis,
         "flags": flags,
         "class": classify(ar, t if t is not None else 0, short),
