@@ -47,9 +47,19 @@ facts.
 - **Foreign-language press** where the operations are abroad (Canacol / El Colombiano). Record the
   original and the translation.
 
-## Independent reporting and short sellers
+## Counterparties (flow-chart step 6)
 
-Bigdata.com news (premium and public). For each report: outlet, date, whether it rests on documents,
+List the companies that do business with the defendant: customers, suppliers, lenders, JV partners,
+offtakers, contractors, acquirers. Read **their** continuous disclosure (SEDAR, EDGAR) and their public
+statements about the relationship. Look for any account that differs from the defendant's: timing,
+amounts, disputes, terminations. This is how the Ascot liens and the Global Atomic lender records were
+found. Record each as `external`, linked to the defendant's statements by `comparison` records.
+
+## Independent reporting and short sellers (flow-chart step 5: the media's response)
+
+Cover professional research analysts (notes and rating changes after the correction; notes saying a
+fact "had not previously been disclosed"), short-seller firms (e.g. The Bear Cave), FT.com, Law360,
+Stockhouse and Seeking Alpha commentary (tier 3: signals only), then Bigdata.com news (premium and public). For each report: outlet, date, whether it rests on documents,
 named sources, or anonymous sources, and which statements of the company it contradicts or
 supports. Short-seller reports: record each allegation separately as `attributed`, with the
 evidence the report cites, and look for the company's response.

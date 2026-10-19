@@ -51,6 +51,17 @@ These ground the s. 130 primary-market class and the gatekeeper defendants.
 - Controlling holders and related parties: holdings, management agreements, related-party
   transactions (Slate: the manager owned by two trustees).
 
+## 4b. Other companies of the executives and directors (flow-chart step 7)
+
+For each C-level executive and director, list their other directorships and offices. Sources:
+- the circular's director biographies
+- SEDAR and EDGAR filings of those other companies
+- OpenCorporates
+- ICIJ Offshore Leaks, for offshore entities
+
+Note any overlap with counterparties, related parties or other troubled issuers. Record each as a
+`party` record (`role: related party`), with the source.
+
 ## 5. Insider trades (`capital`, metric `insider trade`)
 - From six months before the Class Period through the correction. Use SEDI for Canadian issuers;
   EDGAR Form 4 (code S/P; 10b5-1 footnotes) for US; RNS PDMR for the UK; BaFin for Germany.

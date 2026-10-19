@@ -204,6 +204,25 @@ def run(path, asof=None):
             else:
                 flags.append("no shares_outstanding supplied: liability cap not computed")
 
+    # Andrew's flow chart: the 5% cap is "measured at the time of the release of each impugned document"
+    if cfg.get("impugned_dates") and cfg.get("shares_outstanding"):
+        per = []
+        shares_by_date = cfg.get("shares_by_date", {})
+        for d in sorted(cfg["impugned_dates"]):
+            j = idx_on_or_after(dates, d)
+            win = rows[max(0, j - 10):j] if j is not None else []
+            if not win:
+                per.append({"date": d, "error": "no sessions before this date"})
+                continue
+            avg_p = sum(r["close"] for r in win) / len(win)
+            shares = shares_by_date.get(d) or sum(s["shares"] for s in cfg["shares_outstanding"])
+            mc = shares * avg_p + cfg.get("other_equity_fmv", 0)
+            per.append({"date": d, "window": f"{win[0]['date']} to {win[-1]['date']}", "avg_close": avg_p,
+                        "shares": shares, "shares_source": "shares_by_date" if d in shares_by_date else "shares_outstanding (flag: update per date)",
+                        "market_cap": mc, "cap": max(CAP_PCT * mc, CAP_FLOOR)})
+        out["liability_cap_by_document"] = {"currency": prim.get("currency"), "documents": per,
+                                            "max_cap": max((x["cap"] for x in per if "cap" in x), default=None)}
+
     # headline ranges on the primary venue
     pv = next((v for v in venues if v["symbol"] == prim["symbol"] and "damages" in v), None)
     if pv:
@@ -286,6 +305,11 @@ def report(o):
     c = o.get("liability_cap")
     if c:
         print(f"\nLiability cap: market cap {fmt(c['market_cap'], c['currency'])} (avg close {c['avg_close']:.4g}, {c['window']}) -> cap {fmt(c['cap'], c['currency'])}")
+    cbd = o.get("liability_cap_by_document")
+    if cbd:
+        for x in cbd["documents"]:
+            if "cap" in x:
+                print(f"Cap at impugned document {x['date']}: market cap {fmt(x['market_cap'], cbd['currency'])} (avg close {x['avg_close']:.4g}) -> cap {fmt(x['cap'], cbd['currency'])}")
     h = o.get("headline")
     if h:
         cl = h["common_law_rough"]

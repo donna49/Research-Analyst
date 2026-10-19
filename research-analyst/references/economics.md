@@ -27,7 +27,14 @@ issuing."
 - The abnormal return and t-statistic come from `market_event.py` (stage 1). Report both the raw
   and the abnormal figure; Andrew's memos quote raw prices.
 
-## Damaged shares (formalizing the "40% damages analysis")
+## Damaged shares (the "40% damages analysis")
+
+His flow chart (step 11) states the rule: "Common law is, generally, equal to 40% of the Class Period
+trading volume x the drop in price on date of the release of the public correction up to the following
+10-days." For the statutory cap: "5% of the company's market capitalization measured at the time of the
+release of each impugned document during the proposed Class Period." Pass `impugned_dates` to compute
+the cap at each impugned document.
+
 In Ascot he wrote "Class Period Volume (TSX, only): 123M / 40% damages analysis: 49M", then "Basic
 Math Statutory Damages: $12.25M". That is 49M shares × the $0.25 per-share drop.
 

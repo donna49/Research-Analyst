@@ -66,29 +66,36 @@ fact is traced to a primary source before it is cited; if it cannot be, it is la
 "reported by [outlet]" and never stands alone. Not allowed: social media, forums, paywall
 circumvention, anything requiring someone's login.
 
-## Andrew's own source list (stated 2026-10-19; this takes precedence)
+## Andrew's own source list (stated 2026-10-19; the "why" comes from his flow chart and Drive)
 
-These are the sites he reviews regularly after a qualifying drop. For each one: what it is used for,
-and how the plugin reaches it. "Why" notes still to come from Andrew are marked *(to explain)*.
+The "Flow-chart step" column refers to `andrew-flowchart.md`. The "why" for each source comes from that
+flow chart and from his files.
 
-| Source | Use | Access from the plugin |
-|---|---|---|
-| **SEDAR+** | Issuer profile (address, incorporation, CUSIP, symbols); every filing (AIF, MD&A, financials, material change reports, prospectuses) | Captcha blocks automation: use the routes in "Canadian filings" above; otherwise the user saves documents to `sources/` |
-| **SEDI.ca** | Insider trades of SEDAR+ issuers | Public search form by script (POST); record the issuer number |
-| **EDGAR** | US filings (10-K, 10-Q, 8-K, 40-F, 6-K, Forms 3/4/5) | Direct (User-Agent with contact email) |
-| **Investegate** (he wrote "investigate.co.uk"; presumably investegate.co.uk, *to confirm*) | UK RNS announcements archive | Open web |
-| **Intelligize** (paid) | Full-text search across filings and comment letters | No connector. Andrew runs the search or exports results to `sources/`; the plugin lists the queries to run |
-| **Law360** (paid) | Litigation news, new complaints (Putnam came from Law360) | No connector. The plugin lists the searches; Andrew pastes or saves articles |
-| **FT.com** (paid) | Reporting on issuers and markets | No connector. As for Law360 |
-| **PACER** | US dockets and filings | CourtListener/RECAP first; for documents not in RECAP the plugin lists docket and entry numbers for Andrew to pull from PACER |
-| **Seeking Alpha** | Analyst and author commentary; transcripts | Open web where public; commentary is tier 3 (discovery only) |
-| **Stockhouse** | Retail bullboards, Canadian small-cap news | Open web; tier 3 (signals only, e.g. what retail investors were told and believed) |
-| **The Bear Cave** | Short-seller research | Open web for public posts; each allegation recorded as `attributed` |
-| **Financialcrimenews.com** | Enforcement and fraud news | Open web; points to primary documents |
-| **OpenCorporates** | Corporate registries: incorporation, officers, related entities | Open web / API |
-| **"ICJI database"** (presumably ICIJ Offshore Leaks, *to confirm*) | Offshore entities and related parties | Open web |
-| **SEC Enforcement** | Litigation releases, administrative proceedings, AAERs | Direct (sec.gov) |
-| **US Department of Justice** | Press releases, indictments, pleas | Direct (justice.gov) |
+| Source | Why he uses it | Flow-chart step | Access from the plugin |
+|---|---|---|---|
+| **SEDAR+** | Issuer profile (addresses, incorporation, CUSIP, symbols); core documents to compare with the correction; counterparties' and directors' other companies' filings; offerings; reporting-issuer status | 3, 6, 7, 8, 10, 12 | Captcha blocks automation: use the routes in "Canadian filings" above; otherwise the user saves documents to `sources/` |
+| **SEDI.ca** | Insider sales during the proposed Class Period | 9 | Public search form by script (POST); record the issuer number |
+| **EDGAR** | The same as SEDAR, for US filers and US-listed Canadian issuers (40-F, 6-K, 10-K, 8-K, Forms 3/4/5) | 3, 6, 7, 8, 10 | Direct (User-Agent with contact email) |
+| **Investegate** (FE Investegate, investegate.co.uk; confirmed: his BP materials list "the materials from the FE Investegate", and his Drive holds Petrofac RNS announcements from FE Investegate) | UK RNS announcements for issuers with UK listings (BP, Petrofac) | 3 | Open web |
+| **Intelligize** (paid; subscription since August 2026, monthly for over a decade before) | Call transcripts and full-text search across filings to find how far back the statements go | 4, 8 | No connector. Andrew runs the search or exports to `sources/`; the plugin lists the queries |
+| **Law360** (paid) | New US complaints and litigation news, both as triggers (Putnam came from a Law360 report of a Miller Shah complaint) and for other litigation | Triggers, 13 | No connector. The plugin lists the searches; Andrew saves the articles |
+| **FT.com** (paid) | The media's response to the correction; international issuers | 5 | No connector. As for Law360 |
+| **PACER** | US dockets: parallel class actions, other litigation involving the defendant and its officers | 13 | CourtListener/RECAP first; for documents not in RECAP the plugin lists docket and entry numbers to pull |
+| **Seeking Alpha** | Call transcripts (free and subscription) and commentary | 4 (5) | Open web where public; commentary is tier 3 |
+| **Stockhouse** | Free call transcripts and Canadian small-cap coverage | 4 | Open web; bullboard posts are tier 3 |
+| **The Bear Cave** | Short-seller research reacting to, or anticipating, the correction | 5 | Open web for public posts; each allegation recorded as `attributed` |
+| **Financialcrimenews.com** | Whether the company or its people are targets of investigations or enforcement | 13 | Open web; points to primary documents |
+| **OpenCorporates** | Executives' and directors' other companies; related entities; Canadian registration of US-listed companies; asset tracing (Wayland) | 7, 13 | Open web / API |
+| **ICIJ Offshore Leaks** ("ICJI" = ICIJ, the International Consortium of Investigative Journalists; Andrew is an ICIJ donor, June 2021) | Offshore entities linked to executives, directors and related parties | 7, 13 | Open web (offshoreleaks.icij.org) |
+| **SEC Enforcement** | Triggers (new investigation or enforcement notices) and other investigations | Triggers, 13 | Direct (sec.gov) |
+| **US Department of Justice** | Indictments, pleas and investigations of the company or its people | 13 | Direct (justice.gov) |
+
+Further trigger sources in his flow chart:
+- Canadian regulators: OSC, AMF (Quebec), BCSC.
+- Other regulators: CFTC, UK FCA, ASIC.
+- Daily Google alerts.
+- Verteris.com (his $500-a-month subscription).
+- The CBA Class Action database: free, and it shows the class actions already filed in Canada.
 
 Paid sources are never bypassed. Where the plugin cannot reach a source, it writes the exact search for
 Andrew to run, and treats what he saves as tier 1 or tier 2 according to the document type.
