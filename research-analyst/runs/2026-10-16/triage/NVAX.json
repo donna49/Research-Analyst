@@ -1,0 +1,97 @@
+{
+  "symbol": "NASDAQ:NVAX",
+  "company": "Novavax, Inc.",
+  "likely_trigger": "Novavax fell during a day-0 selloff concentrated in vaccine makers (Moderna also fell sharply), with no Novavax-specific announcement found before the close; Citi had reiterated a Sell rating while raising its target the day before.",
+  "trigger_public_at": null,
+  "trigger_source": {
+    "title": "Novavax Plunges 12% as Selloff Hits Vaccine Makers; Moderna Tumbles 10%, Pfizer Holds Steady",
+    "publisher": "Yahoo! Finance (24/7 Wall St.)",
+    "url": "https://app.bigdata.com/documents/B6FA551167B6F09DC9EF7F912AC6EBB9?cnum=1&cnum=2&cnum=3",
+    "doc_type": "news",
+    "doc_id": "B6FA551167B6F09DC9EF7F912AC6EBB9"
+  },
+  "trigger_quote": "Vaccine stocks are under heavy pressure, and the smallest name in the group is taking the heaviest losses.",
+  "tier": "C",
+  "tier_reason": "Group/sector move not tied to Novavax news (Tier C 'sector news not naming the company') plus a valuation-type analyst reiteration (Citi Sell maintained, target raised $7 to $8). No company filing or announcement before the close; Shah Capital 13D/A was accepted 16:15 ET, after the close.",
+  "alternatives": [
+    {
+      "explanation": "Vaccine-maker / biotech group selloff",
+      "weight": "primary",
+      "why": "Multiple same-day reports (Yahoo! Finance 16:59 UTC, Edaily, Cboe recap) describe Moderna and Novavax falling together amid sector selling; Cboe: 'Vaccine makers Moderna and Novavax lost 7.8% and 12.2%, respectively, amid broad selling pressure in the sector.' Undercut: market_event peer average (incl. MRNA) was only -1.6% and the drop standard classed the move company-specific."
+    },
+    {
+      "explanation": "Citi maintained Sell (price target raised to $8) on 2026-10-15",
+      "weight": "contributing",
+      "why": "Benzinga 2026-10-15 17:04 UTC; Edaily attributes part of the fall to 'negative assessments from securities firms'. A reiteration with a higher target is not new company facts."
+    },
+    {
+      "explanation": "Mean reversion after a run-up to a 52-week high",
+      "weight": "contributing",
+      "why": "market_event pre_drift_m5_m1 is +15.0%; Yahoo! Finance notes the 52-week high of $12.82 was set in October 2026 (the day-0 previous close)."
+    },
+    {
+      "explanation": "Shah Capital stake sale / exit from activist role (13D/A)",
+      "weight": "unlikely",
+      "why": "Filed 2026-10-16 16:15:14 ET, after the close; it may bear on day +1, not day 0."
+    }
+  ],
+  "prior_statement_check": {
+    "outcome": "not run",
+    "quote": null,
+    "source": null,
+    "note": "Not run: Tier C trigger."
+  },
+  "existing_litigation": {
+    "found": true,
+    "items": [
+      {
+        "description": "Sinnathurai v. Novavax - securities class action (filed 2021) settled; court approved May 23, 2024 and closed the action May 24, 2024 (per Q3 2025 10-Q). Related derivative actions settled. No pending securities suit found; CourtListener NOS 850 party search (filed since 2023-10-16) returned 0 dockets.",
+        "court": "U.S. District Court, D. Maryland",
+        "docket_or_source": "8:21-cv-02910-TDC (per Novavax 10-Q Q3 2025)",
+        "date": "2021-11-12",
+        "url": "https://app.bigdata.com/documents/89FEB89AFB50061D49669956E9E92D13"
+      }
+    ]
+  },
+  "disposition": "Exclude X-TIERC",
+  "disposition_reason": "Tier C: the evidence points to a vaccine-group selloff and an analyst reiteration, with no Novavax-specific disclosure before the close.",
+  "searches": [
+    {
+      "tool": "Bigdata.com find_securities",
+      "query": "NVAX",
+      "date_range": null,
+      "results": "Novavax Inc. id 2C681C"
+    },
+    {
+      "tool": "Bigdata.com bigdata_search fast (entity 2C681C)",
+      "query": "What happened to Novavax stock",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 14
+    },
+    {
+      "tool": "Bigdata.com bigdata_search fast (entity 2C681C, vaccine keywords)",
+      "query": "Why vaccine stocks Moderna Novavax fell on Friday",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 9
+    },
+    {
+      "tool": "SEC EDGAR submissions",
+      "query": "CIK 0001000694 filings",
+      "date_range": "2026-10-12..2026-10-19",
+      "results": 2
+    },
+    {
+      "tool": "Bigdata.com bigdata_search fast (entity 2C681C, litigation keywords)",
+      "query": "Novavax securities class action lawsuit or shareholder investigation",
+      "date_range": "2025-10-16..2026-10-19",
+      "results": 5
+    },
+    {
+      "tool": "CourtListener search (dockets, NOS 850, party Novavax)",
+      "query": "party_name=Novavax nature_of_suit=850 filed_after=2023-10-16",
+      "date_range": "2023-10-16..2026-10-19",
+      "results": 0
+    }
+  ],
+  "notes": "Reviewer caution: the drop standard classed this company-specific (abnormal -8.6%, t -3.17) because the peer basket average was mild; the vaccine subgroup (MRNA) fell nearly as much. If a narrower vaccine peer set is not accepted as explaining it, re-class as Unexplained/Watch. Shah Capital 13D/A (after close) reports a 2.87M-share sale on Oct 5 and withdrawal from seeking control; relevant to day +1. A separate Schedule 13G was accepted 16:30:16 ET."
+}

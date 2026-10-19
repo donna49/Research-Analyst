@@ -1,0 +1,105 @@
+{
+  "symbol": "NYSE:EBS",
+  "company": "Emergent BioSolutions Inc.",
+  "likely_trigger": "Before the open on day 0 Emergent announced that its Chief Financial Officer will step down at year-end, with the Vice President, Treasurer named interim CFO from January 1, 2027.",
+  "trigger_public_at": "2026-10-16T07:48:00-04:00",
+  "trigger_source": {
+    "title": "Form 8-K (Items 5.02, 9.01) - CFO transition; Ex. 99.1 press release",
+    "publisher": "Emergent BioSolutions Inc. (SEC EDGAR)",
+    "url": "https://www.sec.gov/Archives/edgar/data/1367644/000136764426000098/ebs-20261016.htm",
+    "doc_type": "8-K",
+    "doc_id": "0001367644-26-000098"
+  },
+  "trigger_quote": "Richard Lindahl, the Company’s Chief Financial Officer, will step down from his role as the Company’s principal financial and accounting officer effective December 31, 2026, after which he will continue as an advisor until his retirement on March 31, 2027.",
+  "tier": "A",
+  "tier_reason": "CFO departure (Tier A 'Sudden CEO or CFO departure'). Weaker form: framed as a retirement with ~2.5 months' notice and an advisory period, not 'effective immediately'; but the successor is interim and the announcement comes 17 days before Q3 results (Nov 2) and ~10 weeks after a $191.3M NARCAN impairment. Benzinga tied the day-0 decline to the announcement.",
+  "alternatives": [
+    {
+      "explanation": "CFO retirement announcement (pre-market 2026-10-16)",
+      "weight": "primary",
+      "why": "Only company news in the window; Benzinga (18:15 UTC): 'Emergent BioSolutions shares are trading lower. The company announced its CFO Richard Lindahl will retire'; volume ratio 2.0."
+    },
+    {
+      "explanation": "Market move",
+      "weight": "unlikely",
+      "why": "expected_return -0.7%; abnormal -10.5% (t -3.13); peers +0.03%."
+    },
+    {
+      "explanation": "Lingering reaction to the Aug 6, 2026 NARCAN impairment disclosure",
+      "weight": "unlikely",
+      "why": "No new information on that subject in the window; pre_drift_m5_m1 is +2.8%."
+    }
+  ],
+  "prior_statement_check": {
+    "outcome": "silent",
+    "quote": null,
+    "source": null,
+    "note": "Bigdata.com fast search (transcripts + filings, 2024-10-16..2026-10-15, entity filter) on CFO succession returned only call introductions and proxy biographies of Mr. Lindahl; EDGAR full-text search for 'Lindahl' (2024-10-16..2026-10-15, 195 hits) surfaced SOX certifications/S-8 in the first page. No statement on CFO succession or tenure found."
+  },
+  "existing_litigation": {
+    "found": true,
+    "items": [
+      {
+        "description": "Plaintiff-firm 'investigations' re statements on NARCAN pricing/competition after the Aug 6, 2026 $191.3M NARCAN impairment (stock -29.58% to $5.31 per Pomerantz): Levi & Korsinsky (2026-08-13), Schall Brown & Schwartz (2026-08-17), Frank R. Cruz (2026-08-18), Pomerantz (2026-09-24). No filed suit found; no new announcement after day 0 found.",
+        "court": null,
+        "docket_or_source": "Bigdata.com news",
+        "date": "2026-09-24",
+        "url": "https://app.bigdata.com/documents/65CE1DB35D60C20809F388F1784DAC3B"
+      },
+      {
+        "description": "In re Emergent BioSolutions Inc. Securities Litigation - consolidated 2021 Exchange Act class action re CDMO manufacturing capabilities, with related derivative suits (per FY2025 10-K)",
+        "court": "U.S. District Court, D. Maryland",
+        "docket_or_source": "8:21-cv-00955-PWG (per 10-K FY2025)",
+        "date": "2021-12",
+        "url": "https://app.bigdata.com/documents/6158891156682C4CC16AA37B48AF648E"
+      }
+    ]
+  },
+  "disposition": "Full investigation",
+  "disposition_reason": "Company-specific drop with a Tier A trigger (CFO departure). Even if a reviewer grades it Tier B, the prior-statement check is 'silent', which also yields Full investigation.",
+  "searches": [
+    {
+      "tool": "Bigdata.com find_securities",
+      "query": "EBS",
+      "date_range": null,
+      "results": "Emergent Biosolutions Inc. id 2A1009"
+    },
+    {
+      "tool": "Bigdata.com bigdata_search fast (entity 2A1009)",
+      "query": "What happened to Emergent BioSolutions stock",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 8
+    },
+    {
+      "tool": "SEC EDGAR submissions",
+      "query": "CIK 0001367644 filings",
+      "date_range": "2026-10-12..2026-10-19",
+      "results": 1
+    },
+    {
+      "tool": "Bigdata.com bigdata_search fast (entity 2A1009, transcripts+filings)",
+      "query": "Emergent BioSolutions chief financial officer Rich Lindahl succession leadership team",
+      "date_range": "2024-10-16..2026-10-15",
+      "results": 15
+    },
+    {
+      "tool": "EDGAR full-text search",
+      "query": "\"Lindahl\" (ciks=0001367644)",
+      "date_range": "2024-10-16..2026-10-15",
+      "results": 195
+    },
+    {
+      "tool": "Bigdata.com bigdata_search fast (entity 2A1009, litigation keywords)",
+      "query": "Emergent BioSolutions securities class action lawsuit shareholder investigation",
+      "date_range": "2025-10-16..2026-10-19",
+      "results": 7
+    },
+    {
+      "tool": "CourtListener search (dockets, NOS 850, party Emergent BioSolutions)",
+      "query": "party_name=Emergent BioSolutions nature_of_suit=850 filed_after=2023-10-16",
+      "date_range": "2023-10-16..2026-10-19",
+      "results": 0
+    }
+  ],
+  "notes": "Related context for Layer 2: open plaintiff-firm investigations concern the NARCAN impairment; check whether the CFO exit is linked. Press release also distributed via Business Wire 11:51:33 UTC (07:51 ET). Q3 2026 results scheduled for 2026-11-02. CourtListener NOS 850 party search (filed since 2023-10-16): 0 dockets; the 2021 class action predates the 3-year window and its current status was not re-checked."
+}

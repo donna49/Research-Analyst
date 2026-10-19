@@ -1,0 +1,117 @@
+{
+  "symbol": "NASDAQ:GRAL",
+  "company": "GRAIL, Inc.",
+  "likely_trigger": "No company-specific news, filing or analyst action dated within the trigger window was found that accounts for the day-0 fall; the move coincided with a broad decline in speculative-growth and technology shares.",
+  "trigger_public_at": null,
+  "trigger_source": null,
+  "trigger_quote": null,
+  "tier": "Unexplained",
+  "tier_reason": "Searches of Bigdata.com news/filings (entity filter, 2026-10-14..2026-10-17) and EDGAR submissions (2026-10-12..2026-10-19) returned no adverse company announcement before the day-0 close; only Form 4 DSU grants, a Form 144, NHS-Galleri research posters and post-close analyst recaps.",
+  "alternatives": [
+    {
+      "explanation": "Broad speculative-growth / technology selloff on day 0",
+      "weight": "contributing",
+      "why": "market_event.json shows theme ETF ARKK return -4.7% with beta_theme 1.02 and expected return -4.0%; a Cboe recap reports the Nasdaq Composite down 2.1% on the day. Residual abnormal return of -9.0% (t -2.99) is left unexplained by it."
+    },
+    {
+      "explanation": "Competitive read-across from Natera's multi-cancer test receiving FDA Breakthrough Device designation",
+      "weight": "unlikely",
+      "why": "Medical Daily (2026-10-14) reports Natera announced the designation on Oct. 9, before the window; no source links it to GRAL trading on day 0."
+    },
+    {
+      "explanation": "Insider selling signal (Form 144 filed 2026-10-15 16:41 ET)",
+      "weight": "unlikely",
+      "why": "A proposed-sale notice was filed after the 2026-10-15 close; contents not reviewed; no report connects it to the price move."
+    },
+    {
+      "explanation": "Analyst caution on the close FDA panel effectiveness vote",
+      "weight": "unlikely",
+      "why": "Yahoo! Finance/Simply Wall St recap (published 2026-10-17 01:32 UTC, after the close) summarises BTIG/Mizuho notes that the effectiveness votes were close; the notes' own dates were not established."
+    }
+  ],
+  "prior_statement_check": {
+    "outcome": "not run",
+    "quote": null,
+    "source": null,
+    "note": "Not run: trigger Unexplained (step 4 runs only for Tier A/B)."
+  },
+  "existing_litigation": {
+    "found": true,
+    "items": [
+      {
+        "description": "Robbins v. Grail, Inc. - putative securities class action (Exchange Act 10(b)/20(a)) alleging misleading statements about the NHS-Galleri trial; class period May 13, 2025 - Feb 19, 2026; per the Q2 2026 10-Q, pending lead-plaintiff appointment",
+        "court": "U.S. District Court, N.D. California",
+        "docket_or_source": "3:26-cv-05428 (CourtListener NOS 850)",
+        "date": "2026-06-05",
+        "url": "https://www.courtlistener.com/docket/73446573/robbins-v-grail-inc/"
+      },
+      {
+        "description": "Kangas v. Illumina, Inc. - NOS 850 securities docket returned by CourtListener party search for 'GRAIL' (relationship to GRAIL not reviewed)",
+        "court": "U.S. District Court, S.D. California",
+        "docket_or_source": "3:23-cv-02082 (CourtListener NOS 850)",
+        "date": "2023-11-10",
+        "url": "https://www.courtlistener.com/docket/67999601/kangas-v-illumina-inc/"
+      },
+      {
+        "description": "Plaintiff-firm notices on the Robbins action (e.g. Bernstein Liebhard 2026-07-23, Hagens Berman 2026-07-13); no new plaintiff-firm announcement after day 0 found",
+        "court": null,
+        "docket_or_source": "Bigdata.com news",
+        "date": "2026-07-23",
+        "url": "https://app.bigdata.com/documents/6A68AEE1D5A41D5906026D8FE8B704DC"
+      }
+    ]
+  },
+  "disposition": "Watch",
+  "disposition_reason": "Company-specific drop with no identified trigger by the day-0 close: Watch, re-scan in 5 sessions. A pending securities class action on the NHS-Galleri disclosures exists and should be checked against any later-surfacing cause.",
+  "searches": [
+    {
+      "tool": "Bigdata.com find_securities",
+      "query": "GRAL",
+      "date_range": null,
+      "results": "1 match: GRAIL Inc. id 42D4DE"
+    },
+    {
+      "tool": "Bigdata.com bigdata_search fast (entity 42D4DE)",
+      "query": "What happened to GRAIL stock",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 8
+    },
+    {
+      "tool": "Bigdata.com bigdata_search fast (entity 42D4DE, news)",
+      "query": "GRAIL shares fall Galleri FDA advisory committee panel vote",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 4
+    },
+    {
+      "tool": "Bigdata.com bigdata_search fast (entity 42D4DE, news/filings/transcripts)",
+      "query": "GRAIL announcement",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 9
+    },
+    {
+      "tool": "Bigdata.com bigdata_search smart",
+      "query": "Natera multi-cancer early detection test FDA breakthrough device designation competition for GRAIL Galleri",
+      "date_range": "2026-10-12..2026-10-17",
+      "results": 2
+    },
+    {
+      "tool": "SEC EDGAR submissions",
+      "query": "CIK 0001699031 filings",
+      "date_range": "2026-10-12..2026-10-19",
+      "results": 5
+    },
+    {
+      "tool": "Bigdata.com bigdata_search fast (entity 42D4DE, keywords class action/lawsuit/investigation)",
+      "query": "GRAIL securities class action lawsuit or shareholder investigation",
+      "date_range": "2025-10-16..2026-10-19",
+      "results": 10
+    },
+    {
+      "tool": "CourtListener search (dockets, NOS 850, party GRAIL)",
+      "query": "party_name=GRAIL nature_of_suit=850 filed_after=2023-10-16",
+      "date_range": "2023-10-16..2026-10-19",
+      "results": 2
+    }
+  ],
+  "notes": "Existing suit concerns the Feb 20, 2026 NHS-Galleri readout drop, not this day. Volume ratio 0.99 (no abnormal volume). Four Form 4s (director DSU grants) were accepted 2026-10-16 after the close. EDGAR submissions JSON acceptanceDateTime values carry a 'Z' suffix but are 8h ahead of the ET times on EDGAR index pages; times here use the index pages / Bigdata.com EDGAR feed."
+}

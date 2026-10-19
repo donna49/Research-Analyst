@@ -1,0 +1,128 @@
+{
+  "symbol": "NASDAQ:CNDT",
+  "company": "Conduent Incorporated",
+  "likely_trigger": "Conduent disclosed that a revolving credit tranche due October 15, 2026 had been extended only to October 30, 2026 while it was still finalizing the refinancing of its revolving credit facilities.",
+  "trigger_public_at": "2026-10-15T08:40:59-04:00",
+  "trigger_source": {
+    "title": "Form 8-K (Items 1.01, 2.03, 9.01) - Amendment No. 4 to Credit Agreement",
+    "publisher": "Conduent Incorporated (SEC EDGAR)",
+    "url": "https://www.sec.gov/Archives/edgar/data/1677703/000167770326000134/cndt-20261014.htm",
+    "doc_type": "8-K",
+    "doc_id": "0001677703-26-000134"
+  },
+  "trigger_quote": "Conduent Incorporated (the “Company”) and its revolving credit lenders are finalizing the refinancing of its revolving credit facilities. ... to extend the maturity date of the revolving credit commitments scheduled to mature on October 15, 2026 to October 30, 2026.",
+  "tier": "A",
+  "tier_reason": "Liquidity / emergency-financing category (Tier A: 'Going-concern doubt; covenant breach; emergency financing'): a 15-day stop-gap extension of a maturing revolver tranche pending refinancing. Confidence low-moderate: the filing was public before the 2026-10-15 open, one session before day 0, so the timing fit is imperfect.",
+  "alternatives": [
+    {
+      "explanation": "Revolver maturity stop-gap extension / refinancing uncertainty (8-K accepted 2026-10-15 08:40:59 ET)",
+      "weight": "primary",
+      "why": "Only company-specific disclosure before the day-0 close; directly concerns liquidity. Undercut: public a session earlier; market_event pre_drift_m5_m1 is only -2.3%, so the day -1 reaction appears limited."
+    },
+    {
+      "explanation": "Broad market / technology selloff on day 0",
+      "weight": "contributing",
+      "why": "expected_return -2.0% (beta_market 0.65); abnormal -9.5% (t -3.04) remains."
+    },
+    {
+      "explanation": "$80M data-breach class action settlement (8-K accepted 2026-10-16 17:26:57 ET)",
+      "weight": "unlikely",
+      "why": "Accepted after the day-0 close, so it cannot explain the day-0 move; it may bear on day +1 (2026-10-19). Company states it does not expect a material impact given cyber insurance."
+    }
+  ],
+  "prior_statement_check": {
+    "outcome": "reassured",
+    "quote": "We have the ability and intent to refinance the amount outstanding under our Revolving Credit Facility on a long-term basis; therefore all amounts outstanding as of December 31, 2025 are classified as long-term on our Consolidated Balance Sheets.",
+    "source": {
+      "title": "Conduent Inc. Annual Report on Form 10-K for FY2025",
+      "url": "https://www.sec.gov/Archives/edgar/data/1677703/000167770326000024/cndt-20251231.htm",
+      "date": "2026-02-19",
+      "location": "Item 7 MD&A, Capital Resources and Liquidity"
+    },
+    "note": "Same passage adds: 'we believe that our cash on hand, projected cash flow from operations, sound balance sheet and our Revolving Credit Facility will continue to provide sufficient financial resources to meet our expected business obligations for at least the next twelve months.' The company also specifically disclosed (Aug 2025 8-K, 10-K, 10-Qs) that $170M of the facility would 'continue to mature on October 15, 2026' and capacity would step down from $357M to $187M; at the 2026-09-30 Investor Day the CFO said 'we have a refinancing of our revolving credit facility underway.' Risk-factor language cites 'ability to refinance or extend its existing indebtedness on acceptable terms or at all'. Mixed record: maturity specifically disclosed, refinancing ability played down."
+  },
+  "existing_litigation": {
+    "found": true,
+    "items": [
+      {
+        "description": "In re: Conduent Business Services Data Breach Litigation - consolidated consumer data-breach class action (not a securities suit); $80M settlement agreement signed 2026-10-16, subject to court approval",
+        "court": "U.S. District Court, D. New Jersey",
+        "docket_or_source": "2:25-cv-16953 (per 8-K Ex. 10.1, accession 0001677703-26-000138)",
+        "date": "2026-10-16",
+        "url": "https://www.sec.gov/Archives/edgar/data/1677703/000167770326000138/cndt-20261016.htm"
+      },
+      {
+        "description": "Plaintiff-firm privacy 'investigation' notice regarding the data breach (Schubert Jonckheer & Kolbe); no securities plaintiff-firm announcement after day 0 found",
+        "court": null,
+        "docket_or_source": "Bigdata.com news",
+        "date": "2025-10-31",
+        "url": "https://app.bigdata.com/documents/A581865BE8044CA6EE33F073D8C35682"
+      }
+    ]
+  },
+  "disposition": "Full investigation",
+  "disposition_reason": "Company-specific drop with a Tier A (liquidity/refinancing) candidate trigger; per the table, Company-specific + Tier A = Full investigation regardless of the prior-statement outcome.",
+  "searches": [
+    {
+      "tool": "Bigdata.com find_securities",
+      "query": "CNDT",
+      "date_range": null,
+      "results": "Conduent Inc. id CC35BE"
+    },
+    {
+      "tool": "Bigdata.com bigdata_search fast (entity CC35BE)",
+      "query": "What happened to Conduent stock",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 5
+    },
+    {
+      "tool": "Bigdata.com bigdata_search fast (entity CC35BE)",
+      "query": "Conduent refinancing revolving credit facility lenders debt",
+      "date_range": "2026-10-12..2026-10-17",
+      "results": 2
+    },
+    {
+      "tool": "Bigdata.com bigdata_search fast (entity CC35BE)",
+      "query": "Conduent shares fall downgrade announcement",
+      "date_range": "2026-10-16T00:00Z..2026-10-16T20:30Z",
+      "results": 0
+    },
+    {
+      "tool": "SEC EDGAR submissions",
+      "query": "CIK 0001677703 filings",
+      "date_range": "2026-10-12..2026-10-19",
+      "results": 2
+    },
+    {
+      "tool": "EDGAR full-text search",
+      "query": "\"revolving credit\" \"refinanc\" (ciks=0001677703)",
+      "date_range": "2024-10-16..2026-10-14",
+      "results": 0
+    },
+    {
+      "tool": "EDGAR full-text search",
+      "query": "\"revolving credit facility\" \"maturity\" (ciks=0001677703)",
+      "date_range": "2025-06-01..2026-10-14",
+      "results": 9
+    },
+    {
+      "tool": "Bigdata.com bigdata_search fast (entity CC35BE, transcripts+filings)",
+      "query": "Conduent revolving credit facility refinancing maturity October 2026 liquidity",
+      "date_range": "2024-10-16..2026-10-14",
+      "results": 11
+    },
+    {
+      "tool": "Bigdata.com bigdata_search fast (entity CC35BE, securities keywords)",
+      "query": "Conduent securities class action lawsuit shareholder investigation",
+      "date_range": "2025-10-16..2026-10-19",
+      "results": 3
+    },
+    {
+      "tool": "CourtListener search (dockets, NOS 850, party Conduent)",
+      "query": "party_name=Conduent nature_of_suit=850 filed_after=2023-10-16",
+      "date_range": "2023-10-16..2026-10-19",
+      "results": 0
+    }
+  ],
+  "notes": "Timing caveat: trigger was public pre-market 2026-10-15 (day -1); check the 2026-10-15 return in Layer 2. The data-breach settlement 8-K was accepted after the day-0 close (17:26:57 ET) and should be considered for day +1. Oct 6, 2026 8-K: transit-business sale closed Oct 1 with $125M net proceeds intended for revolver repayment. Revolver tranche now matures 2026-10-30: follow-up filing expected. CourtListener NOS 850 party search (filed since 2023-10-16): 0 securities dockets."
+}

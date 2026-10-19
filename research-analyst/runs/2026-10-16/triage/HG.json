@@ -1,0 +1,91 @@
+{
+  "symbol": "CSE:HG",
+  "company": "HydroGraph Clean Power Inc.",
+  "likely_trigger": "No news release, filing or report was found in the trigger window; the fall extended a decline already under way in the prior week.",
+  "trigger_public_at": null,
+  "trigger_source": null,
+  "trigger_quote": null,
+  "tier": "Unexplained",
+  "tier_reason": "Bigdata.com entity, keyword (HydroGraph/HGRAF) and smart searches for 2026-10-05..2026-10-17 returned no items; the most recent company release found is dated 2026-10-01 (GlobeNewswire, trade-show presentation).",
+  "alternatives": [
+    {
+      "explanation": "Continuation of a prior-week decline",
+      "weight": "contributing",
+      "why": "market_event pre_drift_m5_m1 is -17.4%; day-0 volume ratio 1.60."
+    },
+    {
+      "explanation": "Sector / peer weakness",
+      "weight": "unlikely",
+      "why": "Peer return -2.0%, TSX +0.1%; expected return -0.9% vs actual -11.2% (abnormal -10.4%, t -2.82)."
+    }
+  ],
+  "prior_statement_check": {
+    "outcome": "not run",
+    "quote": null,
+    "source": null,
+    "note": "Not run: trigger Unexplained."
+  },
+  "existing_litigation": {
+    "found": false,
+    "items": []
+  },
+  "disposition": "Watch",
+  "disposition_reason": "Unexplained company-specific drop: Watch, re-scan in 5 sessions.",
+  "searches": [
+    {
+      "tool": "Bigdata.com find_securities",
+      "query": "Hydrograph Clean Power",
+      "date_range": null,
+      "results": "Hydrograph Clean Power Inc. id 48SAD0; listings OTCM:HGCPF, XCNQ:HG"
+    },
+    {
+      "tool": "Bigdata.com bigdata_search fast (entity 48SAD0)",
+      "query": "What happened to HydroGraph Clean Power stock",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 0
+    },
+    {
+      "tool": "Bigdata.com bigdata_search fast (keyword HydroGraph)",
+      "query": "HydroGraph Clean Power graphene news release",
+      "date_range": "2026-10-01..2026-10-17",
+      "results": 5
+    },
+    {
+      "tool": "Bigdata.com bigdata_search fast (keyword HydroGraph/HGRAF)",
+      "query": "HydroGraph announcement financing private placement shares",
+      "date_range": "2026-10-08..2026-10-17",
+      "results": 0
+    },
+    {
+      "tool": "Bigdata.com bigdata_search smart (resolved entity 48SAD0)",
+      "query": "Why did HydroGraph Clean Power shares decline in October 2026",
+      "date_range": "2026-10-05..2026-10-17",
+      "results": 0
+    },
+    {
+      "tool": "Newsfile web search (curl)",
+      "query": "https://www.newsfilecorp.com/search?q=HydroGraph",
+      "date_range": null,
+      "results": "page returned HTTP 200 but no parseable release list"
+    },
+    {
+      "tool": "SEC EDGAR company_tickers.json",
+      "query": "HydroGraph / HGRAF / HGCPF",
+      "date_range": null,
+      "results": 0
+    },
+    {
+      "tool": "Bigdata.com bigdata_search fast (keyword HydroGraph)",
+      "query": "HydroGraph Clean Power class action lawsuit investigation",
+      "date_range": "2025-10-16..2026-10-19",
+      "results": 0
+    },
+    {
+      "tool": "CourtListener search (dockets, party HydroGraph)",
+      "query": "party_name=HydroGraph filed_after=2023-10-16",
+      "date_range": "2023-10-16..2026-10-19",
+      "results": "failed: HTTP 429 rate limit (repeated)"
+    }
+  ],
+  "notes": "US OTC listing: Bigdata.com lists OTCM:HGCPF, while the company's 2026-10-01 release states 'OTCQB: HGRAF' - discrepancy to resolve. No SEC CIK in EDGAR company_tickers.json (no US registrant filings). Newsfile search page returned no parseable results (gap); SEDAR+ and CSE disclosure not checked (manual sources). Company distributes releases via GlobeNewswire per the Oct 1 release. CourtListener party search not completed (HTTP 429, shared rate limit); for a Canadian issuer the step relies on Bigdata.com news, which returned nothing."
+}

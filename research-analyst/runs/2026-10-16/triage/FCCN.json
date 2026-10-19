@@ -1,0 +1,84 @@
+{
+  "symbol": "OTC:FCCN",
+  "company": "Spectral Capital Corporation",
+  "likely_trigger": "No news, filing or announcement was found in the trigger window; the fall occurred on low OTC volume.",
+  "trigger_public_at": null,
+  "trigger_source": null,
+  "trigger_quote": null,
+  "tier": "Unexplained",
+  "tier_reason": "Bigdata.com entity search (window) returned 0 results; keyword and smart searches found only an unrelated Mexedia half-year report mention (2026-10-12); EDGAR shows no FCCN filings 2026-10-12..2026-10-19 (last: S-1/A on 2026-09-28).",
+  "alternatives": [
+    {
+      "explanation": "Thin OTC trading noise",
+      "weight": "primary",
+      "why": "market_event: volume 3,184 shares vs 30-day average 11,744 (ratio 0.27), flag OTC-traded; a large percentage move on below-average volume weakens the price signal."
+    },
+    {
+      "explanation": "Overhang from a pending registration statement (S-1/A amendments filed 2026-09-18 and 2026-09-28)",
+      "weight": "unlikely",
+      "why": "Filed weeks before day 0; no new amendment or effectiveness notice in the window."
+    },
+    {
+      "explanation": "Continuation of a prior decline",
+      "weight": "contributing",
+      "why": "pre_drift_m5_m1 is -8.8%."
+    }
+  ],
+  "prior_statement_check": {
+    "outcome": "not run",
+    "quote": null,
+    "source": null,
+    "note": "Not run: trigger Unexplained."
+  },
+  "existing_litigation": {
+    "found": false,
+    "items": []
+  },
+  "disposition": "Watch",
+  "disposition_reason": "Unexplained company-specific drop: Watch, re-scan in 5 sessions. Reviewer may instead apply X-THIN given the very low day-0 volume.",
+  "searches": [
+    {
+      "tool": "Bigdata.com find_securities",
+      "query": "Spectral Capital",
+      "date_range": null,
+      "results": "Spectral Capital Corp. id 79B154"
+    },
+    {
+      "tool": "Bigdata.com bigdata_search fast (entity 79B154)",
+      "query": "What happened to Spectral Capital stock",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 0
+    },
+    {
+      "tool": "Bigdata.com bigdata_search smart",
+      "query": "Spectral Capital Corporation FCCN news",
+      "date_range": "2026-10-01..2026-10-17",
+      "results": 1
+    },
+    {
+      "tool": "Bigdata.com bigdata_search fast (keyword 'Spectral Capital'/'FCCN')",
+      "query": "Spectral Capital announcement",
+      "date_range": "2026-10-09..2026-10-17",
+      "results": 1
+    },
+    {
+      "tool": "SEC EDGAR submissions",
+      "query": "CIK 0001131903 filings",
+      "date_range": "2026-10-12..2026-10-19",
+      "results": 0
+    },
+    {
+      "tool": "Bigdata.com bigdata_search fast (keyword 'Spectral Capital')",
+      "query": "Spectral Capital lawsuit class action investigation SEC",
+      "date_range": "2025-10-16..2026-10-19",
+      "results": 2
+    },
+    {
+      "tool": "CourtListener search (dockets, NOS 850, party Spectral Capital)",
+      "query": "party_name=Spectral Capital nature_of_suit=850 filed_after=2023-10-16",
+      "date_range": "2023-10-16..2026-10-19",
+      "results": 0
+    }
+  ],
+  "notes": "CourtListener NOS 850 party search (since 2023-10-16): 0 dockets. Company 10-Qs (Q1, Q2 2026) list only commercial matters (e.g. Tellza, Inc. v. Telvantis Voice Services Inc., Broward County FL, Case No. Cace-25-017748). Bigdata.com lists listings FINR:FCCN, OTCB:FCCN, OTCM:FCCND."
+}
