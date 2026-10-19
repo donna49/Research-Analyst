@@ -5,7 +5,10 @@ argument-hint: <EXCH:TICKER> <drop date YYYY-MM-DD>
 
 Run Layer 2 of the research-analyst workflow on: $ARGUMENTS
 
-Read `references/andrew-method.md` first. Then follow the `research-analyst` skill's stage order:
+Read `references/andrew-method.md` first. Begin with Andrew's own seven-step review (`first-review`
+skill: trigger, SEDAR+ profile, drop-date records, the 1–3 key facts, a year of MD&As, the language
+change, call transcripts, price and volume history). It seeds the stages below. Then follow the
+`research-analyst` skill's stage order:
 1. market-event
 2. trigger-finder
 3. disclosure-history, issue and case type. **Checkpoint 1: stop and ask the user to confirm.**

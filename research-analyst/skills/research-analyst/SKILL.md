@@ -29,6 +29,13 @@ complete, valuable answer.
 
 Layer 1 is fast and wide; Layer 2 is slow and deep. Never run Layer 2 work inside Layer 1.
 
+## Trigger and first review
+
+The triggering event is Andrew's own (`references/trigger.md`): a one-day fall of more than 10%, a market
+cap over $200M, and a TSX/TSXV/CSE/Cboe Canada listing (or a Canadian-registered SEDAR+ filer listed on
+Nasdaq, NYSE or US OTC). Every Layer 2 case opens with his seven-step `first-review`, which seeds
+stages 1–5.
+
 ## Layer 2 stage order
 
 | # | Skill | Produces | Memo section it feeds |

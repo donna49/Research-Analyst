@@ -66,8 +66,35 @@ fact is traced to a primary source before it is cited; if it cannot be, it is la
 "reported by [outlet]" and never stands alone. Not allowed: social media, forums, paywall
 circumvention, anything requiring someone's login.
 
+## Andrew's own source list (stated 2026-10-19; this takes precedence)
+
+These are the sites he reviews regularly after a qualifying drop. For each one: what it is used for,
+and how the plugin reaches it. "Why" notes still to come from Andrew are marked *(to explain)*.
+
+| Source | Use | Access from the plugin |
+|---|---|---|
+| **SEDAR+** | Issuer profile (address, incorporation, CUSIP, symbols); every filing (AIF, MD&A, financials, material change reports, prospectuses) | Captcha blocks automation: use the routes in "Canadian filings" above; otherwise the user saves documents to `sources/` |
+| **SEDI.ca** | Insider trades of SEDAR+ issuers | Public search form by script (POST); record the issuer number |
+| **EDGAR** | US filings (10-K, 10-Q, 8-K, 40-F, 6-K, Forms 3/4/5) | Direct (User-Agent with contact email) |
+| **Investegate** (he wrote "investigate.co.uk"; presumably investegate.co.uk, *to confirm*) | UK RNS announcements archive | Open web |
+| **Intelligize** (paid) | Full-text search across filings and comment letters | No connector. Andrew runs the search or exports results to `sources/`; the plugin lists the queries to run |
+| **Law360** (paid) | Litigation news, new complaints (Putnam came from Law360) | No connector. The plugin lists the searches; Andrew pastes or saves articles |
+| **FT.com** (paid) | Reporting on issuers and markets | No connector. As for Law360 |
+| **PACER** | US dockets and filings | CourtListener/RECAP first; for documents not in RECAP the plugin lists docket and entry numbers for Andrew to pull from PACER |
+| **Seeking Alpha** | Analyst and author commentary; transcripts | Open web where public; commentary is tier 3 (discovery only) |
+| **Stockhouse** | Retail bullboards, Canadian small-cap news | Open web; tier 3 (signals only, e.g. what retail investors were told and believed) |
+| **The Bear Cave** | Short-seller research | Open web for public posts; each allegation recorded as `attributed` |
+| **Financialcrimenews.com** | Enforcement and fraud news | Open web; points to primary documents |
+| **OpenCorporates** | Corporate registries: incorporation, officers, related entities | Open web / API |
+| **"ICJI database"** (presumably ICIJ Offshore Leaks, *to confirm*) | Offshore entities and related parties | Open web |
+| **SEC Enforcement** | Litigation releases, administrative proceedings, AAERs | Direct (sec.gov) |
+| **US Department of Justice** | Press releases, indictments, pleas | Direct (justice.gov) |
+
+Paid sources are never bypassed. Where the plugin cannot reach a source, it writes the exact search for
+Andrew to run, and treats what he saves as tier 1 or tier 2 according to the document type.
+
 ## Not used
 
-PACER (CourtListener instead); social media readers; TradingView desktop or cookie-based tools;
-Stanford SCAC (blocked; CourtListener and news cover it); Seeking Alpha, OpenInsider, WhaleWisdom
-(paywalled or secondary copies); benchmark tables from other plugins.
+Social media readers; TradingView desktop or cookie-based tools; Stanford SCAC (blocked; CourtListener
+and news cover it); OpenInsider and WhaleWisdom (secondary copies of Form 4 and 13F data); benchmark
+tables from other plugins.

@@ -70,7 +70,7 @@ def main():
         reference_docx(ref, a.letterhead)
         src = os.path.join(td, "memo.md")
         open(src, "w").write(md)
-        r = subprocess.run(["pandoc", src, "-f", "markdown+footnotes-smart", "-t", "docx",
+        r = subprocess.run(["pandoc", src, "-f", "markdown+footnotes-smart-fancy_lists", "-t", "docx",
                             "--reference-doc", ref, "-o", out], capture_output=True)
         if r.returncode:
             sys.exit(r.stderr.decode())

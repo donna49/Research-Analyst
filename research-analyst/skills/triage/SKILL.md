@@ -75,6 +75,14 @@ US: CourtListener dockets, nature of suit 850, party name = company, filed in th
 All countries: Bigdata.com news for "class action" or "securities lawsuit" with the company in the
 last 12 months, plus plaintiff-firm "investigation" announcements after day 0.
 
+### 0b. Andrew's trigger (applied to every row before step 2)
+
+Apply `references/trigger.md` to every screener row: a drop of more than 10%, a market cap over $200M,
+and either a Canadian listing or a Canadian-registered SEDAR+ filer listed in the US. Record
+`trigger_met` in the name's JSON. Names that fail go to the "Outside the trigger" table with the
+reason. Only names that meet the trigger can be Full investigation. For names that fail, add
+`unclear: <what to check>` where the Canadian registration cannot be settled quickly.
+
 ### 6. Disposition
 
 | Drop class | Trigger tier | Prior-statement check | Disposition |

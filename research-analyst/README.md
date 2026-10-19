@@ -15,7 +15,13 @@ legal judgment.
 | 1. Triage every screened drop | `/triage <screener output> [date]` | `runs/<date>/triage.md` |
 | 2. Investigate one drop | `/investigate <EXCH:TICKER> <date>` | `runs/<date>/<TICKER>/memo.md` (Andrew's form) + `ledger.jsonl` |
 
-Layer 2 stages:
+**Trigger** (Andrew's, `references/trigger.md`): a one-day fall of more than 10%, a market cap over $200M,
+and a TSX/TSXV/CSE/Cboe Canada listing, or a Canadian-registered SEDAR+ filer listed on Nasdaq, NYSE or
+US OTC.
+
+Layer 2 opens with Andrew's seven-step **first-review** (SEDAR+ profile, drop-date records, the 1–3 key
+facts, a year of MD&As, the language change, call transcripts, and price and volume history). Then the
+stages:
 1. market-event
 2. trigger-finder
 3. disclosure-history: issue and case type (**checkpoint 1**), then total mix and drift tables
@@ -50,6 +56,7 @@ he asks, the 20 research angles, his pursue/pass rules with the cases they came 
 | `skills/<stage>/` | One skill per stage |
 | `references/` | Evidence ledger schema, drop standard, trigger tiers, statement types, sources, language rules, jurisdictions |
 | `scripts/market_event.py` | Drop standard (TradingView chart feed + scanner); all market numbers |
+| `scripts/price_history.py` | Step 7: daily close and volume from one year plus 30 days before the drop, with every earlier 10%+ fall flagged |
 | `scripts/economics.py` | Price move on each disclosure; look-back; volume by venue; damages ranges; 5% cap; settlement target; limitation dates |
 | `scripts/render_memo.py` | Renders the memo to Word with real footnotes (and his letterhead for Form A), for upload as a Google Doc |
 | `scripts/ledger.py` | Ledger structure check, quote matching, and `memo` lint (citations, placeholders, uncited figures, text carried over from another case, required sections) |
