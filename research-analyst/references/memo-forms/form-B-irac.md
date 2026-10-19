@@ -39,7 +39,7 @@ The theme of the causes of action is «two-fold / three-fold»:
 
 (c) «…».
 
-The specific misrepresentations that is relevant to the proposed legal proceeding is when «TICKER» to negligently reported that:
+The specific misrepresentations that are relevant to the proposed legal proceeding are when «TICKER» negligently reported that:
 
 (a) «the dated promise, with every date it was given, each footnoted: "would happen during January 2024,[^n] April 2024,[^n] …"»; and
 
@@ -129,7 +129,7 @@ The core theme of the misrepresentations across all of the Impugned Documents is
 
 For each Impugned Document, the allegation would be:
 
-This statement contained a misrepresentation because it omitted the materials facts of:
+This statement contained a misrepresentation because it omitted the material facts of:
 
 (a) «…»;
 
@@ -155,10 +155,12 @@ PART E. CONCLUSION
 
 «Rough damages and the 5% cap, one short paragraph, footnoted to the economics output.»
 
-I believe that the facts and quantum of damages justifies an investor to lodge a claim against «TICKER» and «Name», «title», who certified each of the Impugned Documents.
+I believe that the facts and quantum of damages justify an investor to lodge a claim against «TICKER» and «Name», «title», who certified each of the Impugned Documents.
 ```
 
 Notes:
 - In this form he does not sign off with "Sincerely".
+- Form B has no Bear v. Bull section. The defences go in the PART B paragraph on affirmative defences,
+  and in PART D where a submission answers one.
 - The ten-day look-back figure he quotes is the **close on the 10th trading session** (`lookback_close_10th`). "Maximum per share" is the pre-correction close minus that figure.
 - FOIA targets go in footnotes: "A FOIA Request topic, i.e., «what to request»."

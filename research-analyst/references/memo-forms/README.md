@@ -13,7 +13,8 @@ that the form does not have.
 | **C. Litigation Opportunity form** | `form-C-opportunity.md` | Ascot Resources (Aug 3, 2025), Alamos Gold (Oct 24, 2025) | Pursue on mining, project and ramp-up cases and contract terminations (Ascot); **every Monitor** (Alamos variant) |
 | **D. Pass form** | `form-D-pass.md` | Paladin Energy (Dec 18, 2023 / June 12, 2025) | **Every Pass**: the recommendation comes first in an Executive Summary |
 
-Selection order:
+Selection order (when the issue record lists several case types, use the type of the **lead
+misrepresentation theme**, i.e. the one the theory turns on, not the first rule that matches):
 1. The decision is `pass` → D.
 2. The decision is `monitor` → C, Alamos variant.
 3. The case type (`case-types.md`) is 2 (mining/project) or 4 (contract termination) → C, Ascot variant.
@@ -47,6 +48,12 @@ it.
 - **Nothing he does not write.** No "Draft submissions for review" labels. No Sources, Coverage or
   pipeline appendices. No owners on next steps. No ledger tables. All of that goes in `memo_annex.md`,
   the internal companion file. A Defined Terms list appears only where the form has one.
+- **Market and economics figures** are footnoted the way he would source them, not as "script
+  output": "TSX trading data, close on July 30, 2024 (tenth trading day after the correction)." or
+  "Calculated from TSX trading volume, November 10, 2023 to January 23, 2025." The ledger id goes in
+  `memo_trace.json`.
+- **Copy his structure and stock phrases, but correct his grammar slips** ("misrepresentations that
+  is", "materials facts", "if leave it granted", "Pubic"). The forms already give the corrected text.
 - **Dates** are written as "January 23, 2025" in the body, and "Q3 2023 MD&A", "F/2023 AIF", "1Q", "2Q"
   as he writes them.
 - **Rendering:** `scripts/render_memo.py` turns `memo.md` into a Word file with real footnotes and his

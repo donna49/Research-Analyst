@@ -1,11 +1,69 @@
-{"venues": [{"symbol": "TSX:GLO", "role": "primary", "currency": "CAD", "ledger": "E104"},
-            {"symbol": "OTC:GLATF", "role": "secondary", "currency": "USD", "ledger": "E104"},
-            {"symbol": "FWB:G12", "role": "secondary", "currency": "EUR", "ledger": "E104"}],
- "class_period": {"start": "2023-11-10"},
+{
+ "venues": [
+  {
+   "symbol": "TSX:GLO",
+   "role": "primary",
+   "currency": "CAD",
+   "ledger": "E104"
+  },
+  {
+   "symbol": "OTC:GLATF",
+   "role": "secondary",
+   "currency": "USD",
+   "ledger": "E104"
+  },
+  {
+   "symbol": "FWB:G12",
+   "role": "secondary",
+   "currency": "EUR",
+   "ledger": "E104"
+  }
+ ],
+ "class_period": {
+  "start": "2023-11-10"
+ },
  "first_impugned_date": "2023-11-10",
- "corrections": [{"date": "2024-07-17", "label": "storm warning: credit committee postponed (release 2024-07-16 after close)", "storm_warning": true, "ledger": "E054"},
-                 {"date": "2025-01-24", "label": "public correction: bank financing or joint venture; discounted placement (release 2025-01-23 after close)", "ledger": "E028"}],
- "shares_outstanding": [{"class": "common", "shares": 202253352, "as_of": "2023-08-10, Q2 2023 MD&A outstanding share data (nearest reported figure before the s. 249 window; flagged)", "ledger": "E114"}],
+ "corrections": [
+  {
+   "date": "2024-07-16",
+   "after_close": true,
+   "label": "storm warning: credit committee postponed (release 2024-07-16 after close)",
+   "storm_warning": true,
+   "ledger": "E054"
+  },
+  {
+   "date": "2025-01-23",
+   "after_close": true,
+   "label": "public correction: bank financing or joint venture; discounted placement (release 2025-01-23 after close)",
+   "ledger": "E028"
+  }
+ ],
+ "shares_outstanding": [
+  {
+   "class": "common",
+   "shares": 202253352,
+   "as_of": "2023-08-10, Q2 2023 MD&A outstanding share data (nearest reported figure before the s. 249 window; flagged)",
+   "ledger": "E114"
+  }
+ ],
  "other_equity_fmv": 0,
- "d_and_o": {"amount": null, "ledger": "E119"},
- "cash": {"amount": 18673229, "currency": "CAD", "as_of": "2024-12-31", "ledger": "E118"}}
+ "d_and_o": {
+  "amount": null,
+  "ledger": "E119"
+ },
+ "cash": {
+  "amount": 18673229,
+  "currency": "CAD",
+  "as_of": "2024-12-31",
+  "ledger": "E118"
+ },
+ "offerings": [
+  {
+   "date": "2024-10-16",
+   "security": "units (share + C$1.50 warrant), prospectus supplement to 2023 base shelf",
+   "price": 1.2,
+   "units": 33542050,
+   "ledger": "E124"
+  }
+ ]
+}

@@ -1,6 +1,6 @@
 {
  "input": "/home/user/Research-Analyst/research-analyst/runs/2025-01-24/GLO/economics_input.json",
- "computed_at": "2026-10-19T05:17:04+00:00",
+ "computed_at": "2026-10-19T05:33:46+00:00",
  "price_basis": "TradingView chart feed, split-adjusted, not dividend-adjusted",
  "venues": [
   {
@@ -22,7 +22,9 @@
      "lookback_end": "2024-07-30",
      "lookback_avg_10d": 1.4380000000000002,
      "lookback_vwap_10d": 1.4298656060623245,
+     "lookback_close_10th": 1.29,
      "recovered_share_of_drop": -0.662857142857142,
+     "note": "released after the close on 2024-07-16; reacting session 2024-07-17",
      "label": "storm warning: credit committee postponed (release 2024-07-16 after close)",
      "storm_warning": true,
      "ledger": "E054"
@@ -41,7 +43,9 @@
      "lookback_end": "2025-02-06",
      "lookback_avg_10d": 0.597,
      "lookback_vwap_10d": 0.614892746520334,
+     "lookback_close_10th": 0.53,
      "recovered_share_of_drop": -0.14333333333333348,
+     "note": "released after the close on 2025-01-23; reacting session 2025-01-24",
      "label": "public correction: bank financing or joint venture; discounted placement (release 2025-01-23 after close)",
      "storm_warning": false,
      "ledger": "E028"
@@ -49,45 +53,65 @@
    ],
    "class_period": {
     "start": "2023-11-10",
-    "end_session": "2024-07-16",
-    "sessions": 171
+    "end_session": "2025-01-23",
+    "sessions": 302
    },
-   "class_volume": 130316173.0,
-   "class_vwap": 2.639498335022469,
+   "class_volume": 260208469.0,
+   "class_vwap": 1.8875396460673999,
+   "segments": [
+    {
+     "from": "2023-11-10",
+     "to_before": "2024-07-17",
+     "volume": 130316173.0,
+     "vwap": 2.639498335022469,
+     "m1": 0.65,
+     "m2": 1.423,
+     "m3": 2.042498335022469
+    },
+    {
+     "from": "2024-07-17",
+     "to_before": "2025-01-24",
+     "volume": 129892296.0,
+     "vwap": 1.133127093388202,
+     "m1": 0.29999999999999993,
+     "m2": 0.34299999999999997,
+     "m3": 0.5361270933882021
+    }
+   ],
    "per_share": {
     "m1_day0_drops": {
-     "value": 0.65,
-     "formula": "(2.02-1.67) + (0.94-0.64)"
+     "value": 0.47528507325409153,
+     "formula": "volume-weighted over segments of the sum of later day-0 drops"
     },
     "m2_statutory": {
-     "value": 1.423,
-     "formula": "2.02 - lookback_avg_10d 0.597"
+     "value": 0.8838796546126253,
+     "formula": "volume-weighted over segments of (pre-correction close - final 10-day look-back avg 0.597)"
     },
     "m3_upper": {
-     "value": 2.042498335022469,
-     "formula": "class_vwap 2.639 - lookback_avg_10d 0.597"
+     "value": 1.2905396460674,
+     "formula": "volume-weighted over segments of (segment VWAP - final 10-day look-back avg 0.597)"
     }
    },
    "damaged_shares": {
-    "0.25": 32579043.25,
-    "0.4": 52126469.2,
-    "0.5": 65158086.5
+    "0.25": 65052117.25,
+    "0.4": 104083387.60000001,
+    "0.5": 130104234.5
    },
    "damages": {
     "0.25": {
-     "m1": 21176378.1125,
-     "m2": 46359978.544750005,
-     "m3": 66542641.59475001
+     "m1": 30918300.3125,
+     "m2": 57498242.926750004,
+     "m3": 83952336.37175
     },
     "0.4": {
-     "m1": 33882204.980000004,
-     "m2": 74175965.6716,
-     "m3": 106468226.55160002
+     "m1": 49469280.50000001,
+     "m2": 91997188.68280001,
+     "m3": 134323738.19480002
     },
     "0.5": {
-     "m1": 42352756.225,
-     "m2": 92719957.08950001,
-     "m3": 133085283.18950002
+     "m1": 61836600.625,
+     "m2": 114996485.85350001,
+     "m3": 167904672.7435
     }
    }
   },
@@ -110,7 +134,9 @@
      "lookback_end": "2024-07-30",
      "lookback_avg_10d": 1.0459669999999999,
      "lookback_vwap_10d": 1.023568023331065,
+     "lookback_close_10th": 0.93685,
      "recovered_share_of_drop": -0.7668041666666672,
+     "note": "released after the close on 2024-07-16; reacting session 2024-07-17",
      "label": "storm warning: credit committee postponed (release 2024-07-16 after close)",
      "storm_warning": true,
      "ledger": "E054"
@@ -129,7 +155,9 @@
      "lookback_end": "2025-02-06",
      "lookback_avg_10d": 0.41623,
      "lookback_vwap_10d": 0.427523225215562,
+     "lookback_close_10th": 0.3701,
      "recovered_share_of_drop": -0.11625177287621663,
+     "note": "released after the close on 2025-01-23; reacting session 2025-01-24",
      "label": "public correction: bank financing or joint venture; discounted placement (release 2025-01-23 after close)",
      "storm_warning": false,
      "ledger": "E028"
@@ -137,45 +165,65 @@
    ],
    "class_period": {
     "start": "2023-11-10",
-    "end_session": "2024-07-16",
-    "sessions": 169
+    "end_session": "2025-01-23",
+    "sessions": 300
    },
-   "class_volume": 46295060.0,
-   "class_vwap": 1.9105577196184647,
+   "class_volume": 96916313.0,
+   "class_vwap": 1.3391781991260954,
+   "segments": [
+    {
+     "from": "2023-11-10",
+     "to_before": "2024-07-17",
+     "volume": 46295060.0,
+     "vwap": 1.9105577196184647,
+     "m1": 0.44447,
+     "m2": 1.05377,
+     "m3": 1.4943277196184646
+    },
+    {
+     "from": "2024-07-17",
+     "to_before": "2025-01-24",
+     "volume": 50621253.0,
+     "vwap": 0.8166299093007635,
+     "m1": 0.20446999999999999,
+     "m2": 0.22824,
+     "m3": 0.4003999093007635
+    }
+   ],
    "per_share": {
     "m1_day0_drops": {
-     "value": 0.44447,
-     "formula": "(1.47-1.23) + (0.6445-0.44)"
+     "value": 0.31911338722831933,
+     "formula": "volume-weighted over segments of the sum of later day-0 drops"
     },
     "m2_statutory": {
-     "value": 1.05377,
-     "formula": "1.47 - lookback_avg_10d 0.4162"
+     "value": 0.6225798144108103,
+     "formula": "volume-weighted over segments of (pre-correction close - final 10-day look-back avg 0.4162)"
     },
     "m3_upper": {
-     "value": 1.4943277196184646,
-     "formula": "class_vwap 1.911 - lookback_avg_10d 0.4162"
+     "value": 0.9229481991260954,
+     "formula": "volume-weighted over segments of (segment VWAP - final 10-day look-back avg 0.4162)"
     }
    },
    "damaged_shares": {
-    "0.25": 11573765.0,
-    "0.4": 18518024.0,
-    "0.5": 23147530.0
+    "0.25": 24229078.25,
+    "0.4": 38766525.2,
+    "0.5": 48458156.5
    },
    "damages": {
     "0.25": {
-     "m1": 5144191.32955,
-     "m2": 12196086.344050001,
-     "m3": 17294997.859849997
+     "m1": 7731823.2297775,
+     "m2": 15084535.040230002,
+     "m3": 22362184.137322746
     },
     "0.4": {
-     "m1": 8230706.12728,
-     "m2": 19513738.150480002,
-     "m3": 27671996.575759996
+     "m1": 12370917.167644,
+     "m2": 24135256.064368006,
+     "m3": 35779494.6197164
     },
     "0.5": {
-     "m1": 10288382.6591,
-     "m2": 24392172.688100003,
-     "m3": 34589995.719699994
+     "m1": 15463646.459555,
+     "m2": 30169070.080460005,
+     "m3": 44724368.27464549
     }
    }
   },
@@ -198,7 +246,9 @@
      "lookback_end": "2024-07-30",
      "lookback_avg_10d": 0.9917999999999999,
      "lookback_vwap_10d": 0.8976221315108449,
+     "lookback_close_10th": 0.8475,
      "recovered_share_of_drop": -16.62222222222221,
+     "note": "released after the close on 2024-07-16; reacting session 2024-07-17",
      "label": "storm warning: credit committee postponed (release 2024-07-16 after close)",
      "storm_warning": true,
      "ledger": "E054"
@@ -217,7 +267,9 @@
      "lookback_end": "2025-02-06",
      "lookback_avg_10d": 0.40928000000000003,
      "lookback_vwap_10d": 0.45327126595151396,
+     "lookback_close_10th": 0.3672,
      "recovered_share_of_drop": -0.43338898163605993,
+     "note": "released after the close on 2025-01-23; reacting session 2025-01-24",
      "label": "public correction: bank financing or joint venture; discounted placement (release 2025-01-23 after close)",
      "storm_warning": false,
      "ledger": "E028"
@@ -225,53 +277,73 @@
    ],
    "class_period": {
     "start": "2023-11-10",
-    "end_session": "2024-07-16",
-    "sessions": 172
+    "end_session": "2025-01-23",
+    "sessions": 304
    },
-   "class_volume": 299400.0,
-   "class_vwap": 1.7124173547094188,
+   "class_volume": 647871.0,
+   "class_vwap": 1.1936597740908297,
+   "segments": [
+    {
+     "from": "2023-11-10",
+     "to_before": "2024-07-17",
+     "volume": 299400.0,
+     "vwap": 1.7124173547094188,
+     "m1": 0.13779999999999998,
+     "m2": 0.8997199999999999,
+     "m3": 1.3031373547094187
+    },
+    {
+     "from": "2024-07-17",
+     "to_before": "2025-01-24",
+     "volume": 348471.0,
+     "vwap": 0.7479526144212861,
+     "m1": 0.11979999999999996,
+     "m2": 0.17171999999999993,
+     "m3": 0.3386726144212861
+    }
+   ],
    "per_share": {
     "m1_day0_drops": {
-     "value": 0.13779999999999998,
-     "formula": "(1.309-1.291) + (0.581-0.4612)"
+     "value": 0.12811832262904185,
+     "formula": "volume-weighted over segments of the sum of later day-0 drops"
     },
     "m2_statutory": {
-     "value": 0.8997199999999999,
-     "formula": "1.309 - lookback_avg_10d 0.4093"
+     "value": 0.5081499374412498,
+     "formula": "volume-weighted over segments of (pre-correction close - final 10-day look-back avg 0.4093)"
     },
     "m3_upper": {
-     "value": 1.3031373547094187,
-     "formula": "class_vwap 1.712 - lookback_avg_10d 0.4093"
+     "value": 0.7843797740908297,
+     "formula": "volume-weighted over segments of (segment VWAP - final 10-day look-back avg 0.4093)"
     }
    },
    "damaged_shares": {
-    "0.25": 74850.0,
-    "0.4": 119760.0,
-    "0.5": 149700.0
+    "0.25": 161967.75,
+    "0.4": 259148.40000000002,
+    "0.5": 323935.5
    },
    "damages": {
     "0.25": {
-     "m1": 10314.329999999998,
-     "m2": 67344.04199999999,
-     "m3": 97539.83099999999
+     "m1": 20751.036449999992,
+     "m2": 82303.90202999998,
+     "m3": 127044.22715499999
     },
     "0.4": {
-     "m1": 16502.927999999996,
-     "m2": 107750.46719999998,
-     "m3": 156063.7296
+     "m1": 33201.658319999995,
+     "m2": 131686.24324799998,
+     "m3": 203270.76344799998
     },
     "0.5": {
-     "m1": 20628.659999999996,
-     "m2": 134688.08399999997,
-     "m3": 195079.66199999998
+     "m1": 41502.072899999985,
+     "m2": 164607.80405999997,
+     "m3": 254088.45430999997
     }
    }
   }
  ],
  "volume_split": {
-  "TSX:GLO": 0.7366214839104668,
-  "OTC:GLATF": 0.26168613618605957,
-  "FWB:G12": 0.001692379903473637
+  "TSX:GLO": 0.7273011696620647,
+  "OTC:GLATF": 0.27088798483432436,
+  "FWB:G12": 0.0018108455036109203
  },
  "liability_cap": {
   "window": "2023-10-27 to 2023-11-09 (10 sessions before 2023-11-10)",
@@ -297,24 +369,43 @@
   "venue": "TSX:GLO",
   "currency": "CAD",
   "common_law_rough": {
-   "mid": 74175965.6716,
-   "low": 21176378.1125,
-   "high": 92719957.08950001,
+   "mid": 91997188.68280001,
+   "low": 30918300.3125,
+   "high": 114996485.85350001,
    "retention_mid": 0.4
   },
   "statutory_capped": 20366912.546400003,
   "settlement_target": {
    "low": 10183456.273200002,
-   "high": 14835193.13432
+   "high": 18399437.736560002
   },
   "basis": "damaged shares = Class Period volume on this venue x retention; per share = measure m2 unless stated"
  },
+ "primary_market": {
+  "offerings": [
+   {
+    "date": "2024-10-16",
+    "security": "units (share + C$1.50 warrant), prospectus supplement to 2023 base shelf",
+    "price": 1.2,
+    "units": 33542050,
+    "ledger": "E124",
+    "lookback_avg_10d": 0.597,
+    "per_unit": 0.603,
+    "damages": 20225856.15,
+    "formula": "max(1.2 - 0.597, 0) x 33,542,050"
+   }
+  ],
+  "total": 20225856.15,
+  "currency": "CAD",
+  "note": "kept separate from secondary-market damages; s. 130 needs a prospectus offering"
+ },
+ "asof": "2026-10-19",
  "limitations": {
   "s138_14_expiry": "2026-11-10",
-  "common_law_expiry_proxy": "2027-01-24",
+  "common_law_expiry_proxy": "2027-01-23",
   "basis": "s. 138.14: 3 years after first impugned document; common law: 2 years after correction (discovery proxy)",
   "s138_14_expiry_days_left": 22,
-  "common_law_expiry_proxy_days_left": 97
+  "common_law_expiry_proxy_days_left": 96
  },
  "d_and_o": {
   "amount": null,
@@ -328,6 +419,6 @@
  },
  "flags": [
   "s138_14_expiry is 22 days away",
-  "common_law_expiry_proxy is 97 days away"
+  "common_law_expiry_proxy is 96 days away"
  ]
 }

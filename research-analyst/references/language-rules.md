@@ -32,7 +32,8 @@ These appear in THE MISREPRESENTATION(S), BEAR v. BULL and CONCLUSIONS, and only
 - Fraud and knowledge appear only as what discovery may show ("With the benefit of discovery, the
   Plaintiff may be able to add a cause of action for common law fraud…"). The memo never states
   them as facts.
-- Label the block once at the top of each of these sections: *Draft submissions for review.*
+- No "draft" labels in the memo. Andrew's forms do not have them, and the memo is his internal work
+  product. Drafts are drafts until he adopts them.
 
 ## Never, in either kind of text
 
