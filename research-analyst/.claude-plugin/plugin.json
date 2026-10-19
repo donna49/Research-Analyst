@@ -1,0 +1,7 @@
+{
+  "name": "research-analyst",
+  "version": "0.1.0",
+  "description": "Securities-disclosure research analyst: triages one-day stock drops (US, Canada, UK, Germany) and builds evidence-ledger research memos comparing what a company told investors with what later became public.",
+  "author": { "name": "Research Analyst" },
+  "keywords": ["securities", "disclosure", "stock drop", "event study", "research memo", "litigation research"]
+}
