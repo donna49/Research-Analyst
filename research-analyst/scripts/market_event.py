@@ -95,8 +95,29 @@ def _tv_bars(symbol, adjustment, n=BARS):
     raise RuntimeError(f"{symbol}: timed out")
 
 
+# Local close per exchange time zone; a bar dated today before close + 20 minutes is still in progress.
+CLOSES = {"America/New_York": (16, 0), "America/Toronto": (16, 0), "Europe/London": (16, 35), "Europe/Berlin": (17, 35)}
+
+
+def complete_only(h, now=None):
+    """Drop today's bar if its session has not closed yet (running the script during market hours)."""
+    tz = h.get("timezone")
+    if not h["rows"] or tz not in CLOSES:
+        return h
+    from zoneinfo import ZoneInfo
+    local = (now or dt.datetime.now(dt.timezone.utc)).astimezone(ZoneInfo(tz))
+    hh, mm = CLOSES[tz]
+    if h["rows"][-1]["date"] == local.date().isoformat() and (local.hour, local.minute) < (hh, mm + 20):
+        return {**h, "rows": h["rows"][:-1], "dropped_partial": h["rows"][-1]["date"]}
+    return h
+
+
 def history(symbol, adjustment="dividends"):
-    """Daily bars for a TradingView symbol, cached per symbol, adjustment and day."""
+    """Daily bars for a TradingView symbol, cached per symbol, adjustment and day (completed sessions only)."""
+    return complete_only(_history(symbol, adjustment))
+
+
+def _history(symbol, adjustment):
     os.makedirs(CACHE, exist_ok=True)
     path = os.path.join(CACHE, f"tv_{symbol.replace(':', '_').replace(' ', '')}_{adjustment}_{BARS}_{dt.date.today()}.json")
     if os.path.exists(path):
@@ -120,7 +141,8 @@ def history(symbol, adjustment="dividends"):
            "currency": info.get("currency_code"), "timezone": info.get("timezone"),
            "rows": [{"date": d, **rows[d]} for d in sorted(rows)],
            "retrieved": dt.datetime.now(dt.timezone.utc).replace(tzinfo=None).isoformat() + "Z"}
-    json.dump(out, open(path, "w"))
+    if complete_only(out) is out:  # an in-progress bar is never cached as if it were a close
+        json.dump(out, open(path, "w"))
     return out
 
 
@@ -208,12 +230,19 @@ def analyse(symbol, day0=None):
            if peer_series and sum(d in s for s in peer_series) >= max(3, len(peer_series) // 2)}
 
     # Trading-day calendar comes from the market index, so missing stock bars show up as gaps.
-    m0 = mkt_dates.index(d0) if d0 in mkt_dates else len(mkt_dates) - 1
+    if d0 not in mkt_dates:
+        return {"symbol": symbol, "error": f"{d0} is not a session of {INDEX[market]} in the chart feed"}
+    m0 = mkt_dates.index(d0)
     window = mkt_dates[max(0, m0 - EST_GAP - EST_LEN):max(0, m0 - EST_GAP)]
     traded = [d for d in window if d in r_s]
     if len(traded) < 0.8 * len(window):
         flags.append(f"thin trading: stock traded on {len(traded)} of the {len(window)} sessions in the estimation window")
-    est = [d for d in traded if d in r_m and d in r_p and abs(r_s[d]) < 0.10]
+    factors = {"market": r_m}
+    if r_p:
+        factors["peers"] = r_p
+    else:
+        flags.append("no peer index: no same-industry listings with price history; expected return uses market and theme only")
+    est = [d for d in traded if all(d in f for f in factors.values()) and abs(r_s[d]) < 0.10]
     ret0, mret0, pret0 = r_s.get(d0), r_m.get(d0), r_p.get(d0)
 
     # theme factor: the fixed-list ETF the stock tracked most closely before the event
@@ -229,16 +258,19 @@ def analyse(symbol, day0=None):
             c = float(np.corrcoef([r_s[d] for d in common], [tr[d] for d in common])[0, 1])
             if c >= best[0]:
                 best = (c, (tk, tr))
-    factors = [r_m, r_p]
     if best[1]:
         theme, tr = best[1]
         theme_corr, tret0 = best[0], tr[d0]
-        factors.append(tr)
+        factors["theme"] = tr
         est = [d for d in est if d in tr]
     short = len(est) < MIN_OBS
+    names = list(factors)
 
     def xrow(d):
-        return [1.0] + [f[d] for f in factors]
+        return [1.0] + [factors[k][d] for k in names]
+
+    def beta(k):
+        return None if coef is None or k not in names else float(coef[1 + names.index(k)])
 
     coef = sigma = t = None
     if short:
@@ -250,12 +282,14 @@ def analyse(symbol, day0=None):
         X = np.array([xrow(d) for d in est])
         coef, *_ = np.linalg.lstsq(X, y, rcond=None)
         sigma = float(np.std(y - X @ coef, ddof=X.shape[1]))
-        ar = ret0 - float(coef @ xrow(d0)) if ret0 is not None and all(d0 in f for f in factors) else None
+        ar = ret0 - float(coef @ xrow(d0)) if ret0 is not None and all(d0 in f for f in factors.values()) else None
         t = ar / sigma if ar is not None else None
 
     def car(a, b):
-        ds = [mkt_dates[i] for i in range(m0 + a, m0 + b + 1) if 0 <= i < len(mkt_dates)]
-        if coef is None or not ds or any(d not in r_s or any(d not in f for f in factors) for d in ds):
+        if coef is None or m0 + a < 0 or m0 + b >= len(mkt_dates):
+            return None  # window not complete yet (or before the data): never sum part of it
+        ds = mkt_dates[m0 + a:m0 + b + 1]
+        if not ds or any(d not in r_s or any(d not in f for f in factors.values()) for d in ds):
             return None
         return float(sum(r_s[d] - coef @ xrow(d) for d in ds))
 
@@ -281,7 +315,17 @@ def analyse(symbol, day0=None):
     if stock.get("currency") == "GBX":
         flags.append("prices in pence (GBX)")
 
-    cap = tv.get("market_cap_basic")
+    # Market value lost: scanner market cap is at the scanner's latest close, so convert it to a share
+    # count with that close and price the day-0 move on the split-adjusted (unadjusted for dividends) series.
+    cap, tv_close = tv.get("market_cap_basic"), tv.get("close")
+    raw_prev = raw_rows.get(raw_dates[raw_dates.index(d0) - 1]) if d0 in raw_rows and raw_dates.index(d0) > 0 else None
+    cap_lost = cap_basis = None
+    if cap and tv_close and raw_prev and d0 in raw_rows:
+        cap_lost, cap_basis = cap * (raw_prev - raw_rows[d0]) / tv_close, "scanner market cap / scanner close x day-0 price change"
+        if raw_dates and abs(raw_rows[raw_dates[-1]] / tv_close - 1) > 0.02:
+            flags.append(f"scanner close {tv_close} differs from chart-feed latest close {raw_rows[raw_dates[-1]]}: check market value lost")
+    elif cap and ret0 is not None:
+        cap_lost, cap_basis = cap * (-ret0) / (1 + ret0), "scanner market cap treated as day-0 close (approximate)"
     out = {
         "symbol": symbol, "name": tv.get("description"), "country": tv.get("country"),
         "sector": tv.get("sector"), "industry": tv.get("industry"), "currency": stock.get("currency"),
@@ -290,18 +334,18 @@ def analyse(symbol, day0=None):
         "return": ret0, "market_index": INDEX[market], "market_return": mret0,
         "peers": peers, "peers_used": len(peer_series), "peer_return": pret0,
         "alpha": None if coef is None else float(coef[0]),
-        "beta_market": None if coef is None else float(coef[1]),
-        "beta_peers": None if coef is None else float(coef[2]),
+        "beta_market": beta("market"), "beta_peers": beta("peers"),
         "theme_etf": theme, "theme": THEMES.get(theme), "theme_corr": theme_corr, "theme_return": tret0,
-        "beta_theme": None if coef is None or theme is None else float(coef[3]),
+        "beta_theme": beta("theme"),
         "sigma": sigma, "est_days": len(est),
         "expected_return": None if ar is None else ret0 - ar,
         "abnormal_return": ar, "t_stat": t,
+        "ar_m1": car(-1, -1), "ar_p1": car(1, 1),
         "car_0_1": car(0, 1), "pre_drift_m5_m1": car(-5, -1), "car_1_5_rebound": car(1, 5),
         "volume": vol0, "avg_volume_30d": avg_vol,
         "volume_ratio": vol0 / avg_vol if vol0 and avg_vol else None,
         "market_cap": cap,
-        "market_cap_lost": cap * (-ret0) / (1 + ret0) if cap and ret0 is not None else None,
+        "market_cap_lost": cap_lost, "market_cap_lost_basis": cap_basis,
         "flags": flags,
         "class": classify(ar, t if t is not None else 0, short),
     }
@@ -389,6 +433,8 @@ def main():
                     help="also scan this many calendar days before --date for other drops of 5%%+ (stage 1)")
     a = ap.parse_args()
     if a.lookback:
+        if not a.date or len(a.symbols) != 1:
+            ap.error("--lookback needs exactly one symbol and --date")
         return lookback(a.symbols[0], a.date, a.lookback, a.json)
     syms = a.symbols + (parse_screener(a.screener) if a.screener else [])
     results = []
