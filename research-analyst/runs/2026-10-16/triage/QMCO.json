@@ -1,0 +1,132 @@
+{
+  "symbol": "NASDAQ:QMCO",
+  "company": "Quantum Corporation",
+  "likely_trigger": "No company-specific news identified in the Oct 14-16 window; the fall continued a decline that began after the company disclosed on Oct 9 that its CFO had been terminated effective immediately, and coincided with a computer-hardware selloff on Oct 15.",
+  "trigger_public_at": null,
+  "trigger_source": null,
+  "trigger_quote": null,
+  "tier": "Unexplained",
+  "tier_reason": "Nothing from the issuer or the news in the window (no EDGAR filings 2026-10-12..19; searches returned no day-0 explanation). The CFO termination (Tier A type: sudden CFO departure) was public 2026-10-10T00:46Z, four sessions before day 0 and outside the trigger window, so it is recorded as an alternative, not as the trigger.",
+  "alternatives": [
+    {
+      "explanation": "Delayed / staged reaction to the Oct 9 termination of CFO William H. White 'effective immediately' (8-K 0001628280-26-065547)",
+      "weight": "contributing",
+      "why": "Tier A-type event 4 sessions before day 0; the same 8-K said the company expects to meet or exceed Q2 guidance and to file its 10-Q on time. Script pre-drift (days -5..-1) is -20.7%. The company has a pending securities class action over a prior restatement, which raises the salience of a CFO exit. No source links the day-0 fall to it."
+    },
+    {
+      "explanation": "Computer-hardware / storage group weakness",
+      "weight": "contributing",
+      "why": "Flush (2026-10-15) lists QMCO down >9% with Dell -7% and Seagate -3% on Oct 15; script peer return on day 0 -6.0%, QTUM theme -3.4%, expected return -4.7% vs actual -14.5% (abnormal -9.7%, t -2.60)."
+    },
+    {
+      "explanation": "Valuation retracement after a ~190% three-month rally (Zacks/Nasdaq 2026-10-09)",
+      "weight": "contributing",
+      "why": "Plausible; no source states it as the day-0 cause."
+    }
+  ],
+  "prior_statement_check": {
+    "outcome": "not run",
+    "quote": null,
+    "source": null,
+    "note": "Not run: no Tier A/B trigger in the window. If the reviewer re-dates the event to the Oct 9 CFO termination, run the check on CFO/financial-reporting statements (the Oct 9 8-K itself says 'No disruption to current operations is expected')."
+  },
+  "existing_litigation": {
+    "found": true,
+    "items": [
+      {
+        "description": "Lee v. Quantum Corporation - securities class action (NOS 850), open",
+        "court": "U.S. District Court, D. Colorado",
+        "docket_or_source": "1:25-cv-02770 (CourtListener docket 71268619)",
+        "date": "2025-09-04",
+        "url": "https://www.courtlistener.com/docket/71268619/lee-v-quantum-corporation/"
+      },
+      {
+        "description": "Marti v. Lerner - shareholder derivative suit (NOS 850), open",
+        "court": "U.S. District Court, D. Colorado",
+        "docket_or_source": "1:25-cv-03524 (CourtListener docket 71874362)",
+        "date": "2025-11-04",
+        "url": "https://www.courtlistener.com/docket/71874362/marti-v-lerner/"
+      },
+      {
+        "description": "Securities class action (Sections 10(b)/20(a)) re FY2025 Q3 financial reporting and restatement; class period Nov 15, 2024 - Aug 18, 2025; lead plaintiff Hunsu Son; motion to dismiss pending (per Q1 FY2027 10-Q).",
+        "court": "U.S. District Court, District of Colorado",
+        "docket_or_source": "Quantum Q1 FY2027 10-Q (Bigdata.com 3E3ED02735E3E9C9A3420B2CE72A9F6B)",
+        "date": "2025-09-04",
+        "url": "https://app.bigdata.com/documents/3E3ED02735E3E9C9A3420B2CE72A9F6B"
+      },
+      {
+        "description": "Consolidated shareholder derivative suits (Cullison, filed 2025-10-28; Marti, filed 2025-11-04), stayed pending the motion to dismiss in the class action.",
+        "court": "U.S. District Court, District of Colorado",
+        "docket_or_source": "Quantum Q1 FY2027 10-Q (Bigdata.com 3E3ED02735E3E9C9A3420B2CE72A9F6B)",
+        "date": "2025-10-28",
+        "url": "https://app.bigdata.com/documents/3E3ED02735E3E9C9A3420B2CE72A9F6B"
+      },
+      {
+        "description": "Johnson Fistel, PLLP derivative-claim investigation notice for long-term holders (references the pending class action).",
+        "court": null,
+        "docket_or_source": "Benzinga / GlobeNewswire, Bigdata.com AFFC7A1B9A1A13C5C0384043CA0C6025",
+        "date": "2026-10-09",
+        "url": "https://app.bigdata.com/documents/AFFC7A1B9A1A13C5C0384043CA0C6025"
+      }
+    ]
+  },
+  "disposition": "Watch",
+  "disposition_reason": "Company-specific drop, no trigger in the window -> Unexplained -> Watch (re-scan in 5 sessions). Prominent: Oct 9 CFO termination 'effective immediately' (Tier A type) four sessions earlier and an existing restatement class action; reviewer may re-date the event.",
+  "searches": [
+    {
+      "tool": "bigdata_search (fast, entity 21245F)",
+      "query": "What happened to Quantum Corporation stock",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 1,
+      "note": "Only an unrelated Chinese quantum-technology sector item."
+    },
+    {
+      "tool": "bigdata_search (fast, entity 21245F)",
+      "query": "Quantum Corporation announcement shares",
+      "date_range": "2026-10-09T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 6
+    },
+    {
+      "tool": "bigdata_search (fast, entity 21245F, news/research)",
+      "query": "Quantum Corp QMCO stock drop reason",
+      "date_range": "2026-10-15T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 2
+    },
+    {
+      "tool": "bigdata_search (fast, entity 21245F)",
+      "query": "Quantum Corporation lawsuit investigation subpoena class action restatement",
+      "date_range": "2026-07-16T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 4
+    },
+    {
+      "tool": "bigdata_search (smart)",
+      "query": "Why did Quantum Corporation (QMCO) stock fall on October 16, 2026?",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 1,
+      "note": "Unrelated result."
+    },
+    {
+      "tool": "SEC EDGAR submissions CIK0000709283",
+      "query": "filings dated 2026-10-12..2026-10-19",
+      "date_range": "2026-10-12..2026-10-19",
+      "results": 0,
+      "note": "None in window. Most recent: 8-K 0001628280-26-065547 (Items 2.02, 5.02, 8.01) accepted 2026-10-10T00:46:35Z; nine Form 4s on 2026-10-05; 8-K 2026-09-28 (COO appointment)."
+    },
+    {
+      "tool": "bigdata_search (fast, entity 21245F, news)",
+      "query": "Quantum Corporation securities class action lawsuit or law firm investigation",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-19T23:59:59Z",
+      "results": 0,
+      "note": "Window limited to post-window plaintiff-firm notices; 12-month coverage came from the 90-day litigation search and the 10-Q."
+    },
+    {
+      "tool": "CourtListener search (type=d)",
+      "query": "party_name='Quantum Corporation', nature_of_suit=850",
+      "date_range": "filed after 2023-10-16",
+      "results": 4,
+      "note": "4 NOS-850 hits; 2 are Quantum's (Lee; Marti). Durkacz v. CIBC and Hough v. Carroll are unrelated name matches."
+    }
+  ],
+  "notes": "Reviewer: the drop is the second large down day in a row (Benzinga: -14.0% intraday to $20.52 on Oct 15; Flush: closed down >9%). Consider whether the event should be treated as a staged move beginning after the Oct 9 CFO termination; that would make it a Tier A candidate. Existing securities class action (D. Colo., filed 2025-09-04, lead plaintiff Hunsu Son; motion to dismiss pending) and consolidated derivative suits concern the FY2025 Q3 restatement. Johnson Fistel derivative-investigation notices dated 2026-08-27 and 2026-10-09.",
+  "what_would_move_it_up": "Any disclosure (10-Q, 8-K, reporting) tying the CFO termination to financial reporting, controls or guidance; or reporting that attributes the Oct 15-16 fall to the CFO exit."
+}

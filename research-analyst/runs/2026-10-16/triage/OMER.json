@@ -1,0 +1,111 @@
+{
+  "symbol": "NASDAQ:OMER",
+  "company": "Omeros Corporation",
+  "likely_trigger": "Before the open on Oct 16 Omeros announced that the EMA's CHMP had maintained its negative opinion on the narsoplimab (YARTEMLEA) marketing authorization application in TA-TMA after re-examination, and that it would end its European compassionate-use program.",
+  "trigger_public_at": "2026-10-16T10:20:00+00:00",
+  "trigger_source": {
+    "title": "Omeros Corporation Receives CHMP Negative Opinion Following Re-Examination of European Marketing Authorization Application for Narsoplimab in TA-TMA",
+    "publisher": "Omeros Corporation (press release via Business Wire; retrieved from Benzinga on Bigdata.com)",
+    "url": "https://app.bigdata.com/documents/037256A56CD1B5DD858739CD563BE50F",
+    "doc_type": "press release",
+    "doc_id": "037256A56CD1B5DD858739CD563BE50F"
+  },
+  "trigger_quote": "Omeros Corporation (NASDAQ:OMER) today announced that the Committee for Medicinal Products for Human Use (CHMP) of the European Medicines Agency (EMA) issued a negative opinion on the company's marketing authorization application (MAA) for narsoplimab for the treatment of hematopoietic stem cell transplant-associated thrombotic microangiopathy (TA-TMA) following re-examination of its original negative opinion adopted in June 2026.",
+  "tier": "A",
+  "tier_reason": "Regulatory failure on the company's lead product after the company stated it believed the evidence supported approval (trigger-tiers: 'Clinical trial, regulatory or product failure after confident statements'). Caveat: the original negative opinion (June 2026) was already public, so this is the re-examination outcome of a known setback.",
+  "alternatives": [
+    {
+      "explanation": "CHMP negative opinion after re-examination (company press release before the open)",
+      "weight": "primary",
+      "why": "Timed before the open (Benzinga 10:20Z; MT Newswires 11:08Z shows -2.6% pre-market); multiple outlets attribute the 14% fall to it. Peers flat (+0.03%); abnormal -13.6%, t -4.70; volume 3.05x average (script)."
+    },
+    {
+      "explanation": "Termination of the European compassionate-use program, announced in the same release",
+      "weight": "contributing",
+      "why": "Same document, same time; cannot be separated from the CHMP news at daily frequency."
+    },
+    {
+      "explanation": "Biotech sector weakness",
+      "weight": "unlikely",
+      "why": "IBB -2.6% late Friday (MT Newswires), but the script's peer return was +0.03% and expected return -0.2%."
+    }
+  ],
+  "prior_statement_check": {
+    "outcome": "warned specifically",
+    "quote": "We believe the clinical evidence supports approval and have requested re-examination. [...] although there can be no guarantee that the re-examination will result in a reversal of CHMP's negative opinion or the ultimate approval of the MAA.",
+    "source": {
+      "title": "Omeros Corp Form 10-Q for the quarter ended June 30, 2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1285819/000143774926027318/omer20260630_10q.htm",
+      "date": "2026-08-12",
+      "location": "Business overview, YARTEMLEA / European MAA paragraph (Bigdata.com doc EB3E04F66B18566C5DB2DE98B829D579, chunks 20 and 104)"
+    },
+    "note": "Mixed: the company expressed belief that the evidence supports approval (same wording in the Aug 12, 2026 earnings release, 8-K Ex. 99.1) but expressly cautioned that re-examination might not reverse the opinion; the June 2026 negative opinion itself was disclosed when made. Classified 'warned specifically' because the specific risk (no reversal on re-examination) was stated before the drop. EDGAR full-text search for \"re-examination\" (CIK 1285819, 2024-10-16..2026-10-15) returned 5 filings: 8-K Ex.99.1 and 10-Q of 2026-08-12, ARS 2025-05-30, 10-Ks of 2025-03-31 and 2026-03-31 - not opened beyond the 10-Q excerpt. Layer 2 should check what the company said about the AHEG process and patient-level data, since the release now says CHMP did not provide that data to the AHEG."
+  },
+  "existing_litigation": {
+    "found": true,
+    "items": [
+      {
+        "description": "Plaintiff-firm investigation notices following the June 26, 2026 CHMP negative opinion: Schall Law Firm (2026-07-07/08), Portnoy Law Firm (2026-07-13), Pomerantz LLP (2026-07-02, 2026-07-28, 2026-07-30). No filed suit identified in news.",
+        "court": null,
+        "docket_or_source": "Benzinga / GlobeNewswire, Bigdata.com C8DDCDAF8D89F546EDD2424826C848A2, 369B8349B55F9FF6BE85C7B3867DCE10, A5F54E9C15402C041328A9BE85C5AA05",
+        "date": "2026-07-08",
+        "url": "https://app.bigdata.com/documents/C8DDCDAF8D89F546EDD2424826C848A2"
+      }
+    ]
+  },
+  "disposition": "Full investigation",
+  "disposition_reason": "Company-specific drop + Tier A trigger -> Full investigation regardless of the prior-statement outcome ('warned specifically'). Note the June 2026 negative opinion was already public.",
+  "searches": [
+    {
+      "tool": "bigdata_search (fast, entity EB43F4)",
+      "query": "What happened to Omeros stock",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 11
+    },
+    {
+      "tool": "bigdata_search (fast, entity EB43F4)",
+      "query": "Omeros lawsuit investigation subpoena class action",
+      "date_range": "2026-07-16T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 1
+    },
+    {
+      "tool": "SEC EDGAR submissions CIK0001285819",
+      "query": "filings dated 2026-10-12..2026-10-19",
+      "date_range": "2026-10-12..2026-10-19",
+      "results": 0,
+      "note": "No 8-K for the Oct 16 press release found in the submissions feed."
+    },
+    {
+      "tool": "bigdata_search (fast, entity EB43F4, filings+transcripts)",
+      "query": "narsoplimab CHMP re-examination negative opinion expectations Europe marketing authorization",
+      "date_range": "2024-10-16T00:00:00Z..2026-10-15T23:59:59Z",
+      "results": 4
+    },
+    {
+      "tool": "EDGAR full-text search",
+      "query": "\"re-examination\" ciks=0001285819",
+      "date_range": "2024-10-16..2026-10-15",
+      "results": 5
+    },
+    {
+      "tool": "bigdata_fetch_document",
+      "query": "037256A56CD1B5DD858739CD563BE50F (Oct 16 press release)",
+      "date_range": "n/a",
+      "results": 1
+    },
+    {
+      "tool": "bigdata_search (fast, entity EB43F4, news)",
+      "query": "Omeros securities class action lawsuit or law firm investigation",
+      "date_range": "2025-10-16T00:00:00Z..2026-10-19T23:59:59Z",
+      "results": 8
+    },
+    {
+      "tool": "CourtListener search (type=d)",
+      "query": "party_name='Omeros', all natures of suit",
+      "date_range": "filed after 2023-10-16",
+      "results": 7,
+      "note": "7 hits, all unrelated name matches (individual bankruptcies named 'Omero', one product-liability case); no NOS 850 docket involving Omeros Corporation."
+    }
+  ],
+  "notes": "Pre-market timing confirmed by MT Newswires 07:08 EDT item and Nasdaq/RTTNews pre-market quote ($17.84). H.C. Wainwright (The Fly, 2026-10-16T16:20Z) called the selloff overdone and said Europe was already removed from its model in June. No 8-K for this release appeared in EDGAR submissions through 2026-10-19 (press release only). Plaintiff-firm investigations (Schall, Portnoy, Pomerantz) were announced in July 2026 after the June 26 negative opinion; they predate day 0."
+}

@@ -1,0 +1,115 @@
+{
+  "symbol": "NYSE:SECZ",
+  "company": "Securitize Corp.",
+  "likely_trigger": "No company-specific news identified for day 0; the fall followed a plaintiff-firm investigation announcement on Oct 15 that gave no stated basis, and came on a day of broad technology selling.",
+  "trigger_public_at": null,
+  "trigger_source": null,
+  "trigger_quote": null,
+  "tier": "Unexplained",
+  "tier_reason": "No issuer filing in the window (EDGAR: last filing 2026-09-14) and no news explaining the day-0 move. The Pomerantz notice (Oct 15) names no event or disclosure; the Citi downgrade (Oct 13) is valuation-based (Tier C) and predates the window.",
+  "alternatives": [
+    {
+      "explanation": "Pomerantz LLP 'investigation' announcement (PR Newswire, 2026-10-15T14:04Z)",
+      "weight": "contributing",
+      "why": "One session before day 0; states no underlying event. Schall Brown & Schwartz announced a similar investigation on 2026-09-20. The underlying fact, if any, is unknown - this is a reason to look again, not a trigger."
+    },
+    {
+      "explanation": "Broad technology/AI-software selloff on day 0",
+      "weight": "contributing",
+      "why": "Nasdaq -2.15% and AI-software reversal (Globe and Mail). Script: beta_market 1.33, expected return -2.3% vs actual -13.1% (abnormal -10.8%, t -2.64); explains only a small part."
+    },
+    {
+      "explanation": "Citi downgrade to Neutral from Buy (PT raised to $14) citing the recent share rally",
+      "weight": "unlikely",
+      "why": "Published 2026-10-13 (The Fly 10:02Z) - before the window; valuation-only (Tier C)."
+    }
+  ],
+  "prior_statement_check": {
+    "outcome": "not run",
+    "quote": null,
+    "source": null,
+    "note": "Not run: step 4 applies only to Tier A or B triggers."
+  },
+  "existing_litigation": {
+    "found": true,
+    "items": [
+      {
+        "description": "Pomerantz LLP investigation notice (no basis stated).",
+        "court": null,
+        "docket_or_source": "Benzinga / PR Newswire, Bigdata.com 6B985362A526B97F08B19181692A6DCE",
+        "date": "2026-10-15",
+        "url": "https://app.bigdata.com/documents/6B985362A526B97F08B19181692A6DCE"
+      },
+      {
+        "description": "Schall, Brown & Schwartz investigation notice (no basis stated).",
+        "court": null,
+        "docket_or_source": "Benzinga, Bigdata.com C3E8749718BDABCA968294A3FDF0552E",
+        "date": "2026-09-20",
+        "url": "https://app.bigdata.com/documents/C3E8749718BDABCA968294A3FDF0552E"
+      }
+    ]
+  },
+  "disposition": "Watch",
+  "disposition_reason": "Company-specific drop, trigger Unexplained -> Watch (re-scan in 5 sessions); the Oct 15 plaintiff-firm investigation notice is a reason to look again, not a trigger.",
+  "searches": [
+    {
+      "tool": "bigdata_search (fast, entity Q6R0A5)",
+      "query": "What happened to Securitize stock",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 5
+    },
+    {
+      "tool": "bigdata_search (fast, entity Q6R0A5)",
+      "query": "Securitize shares fall announcement",
+      "date_range": "2026-10-16T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 1
+    },
+    {
+      "tool": "bigdata_search (fast, entity Q6R0A5)",
+      "query": "Securitize Citi downgrade neutral",
+      "date_range": "2026-10-13T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 6
+    },
+    {
+      "tool": "bigdata_search (fast, entity Q6R0A5)",
+      "query": "Securitize lawsuit investigation subpoena class action short seller report",
+      "date_range": "2026-07-16T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 0,
+      "note": "Returned nothing although the Pomerantz notice was found by search 1."
+    },
+    {
+      "tool": "bigdata_search (smart)",
+      "query": "Why did Securitize Corp. (SECZ) stock fall on October 16, 2026?",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 1
+    },
+    {
+      "tool": "SEC EDGAR submissions CIK0002094496",
+      "query": "filings dated 2026-10-12..2026-10-19",
+      "date_range": "2026-10-12..2026-10-19",
+      "results": 0,
+      "note": "None. Most recent filings: three Form 4s on 2026-09-14; S-8 2026-09-02; 10-Q and 8-K (Item 2.02) 2026-08-12/13."
+    },
+    {
+      "tool": "bigdata_fetch_document",
+      "query": "6B985362A526B97F08B19181692A6DCE (Pomerantz notice)",
+      "date_range": "n/a",
+      "results": 1
+    },
+    {
+      "tool": "bigdata_search (fast, entity Q6R0A5, news)",
+      "query": "Securitize securities class action lawsuit or law firm investigation",
+      "date_range": "2025-10-16T00:00:00Z..2026-10-19T23:59:59Z",
+      "results": 9
+    },
+    {
+      "tool": "CourtListener search (type=d)",
+      "query": "party_name='Securitize' (all NOS: 39 hits) then nature_of_suit=850 (0 hits)",
+      "date_range": "filed after 2023-10-16",
+      "results": 0,
+      "note": "No NOS-850 docket. Non-securities: Securitize I, Inc. v. tZERO Group, Inc. (D. Del. 1:26-cv-00722, patent, filed 2026-06-22) and Liquid Rarity Exchange, LLC v. Securitize I, Inc. (D. Del. 1:26-cv-00698, patent, filed 2026-06-15); remaining hits are unrelated 'securitization' trusts."
+    }
+  ],
+  "notes": "Issuer is the de-SPAC of Cantor Equity Partners II (CEPT) with Securitize, Inc. (shareholder vote scheduled June 29, 2026; Bigdata.com lists country Cayman Islands while EDGAR lists Delaware - unresolved). Benzinga reported a 5.72% fall to $10.55 on Oct 14 and an MSN/Stocktwits item a steep drop on Oct 12-13 before Citi's downgrade. Short trading history since the merger may make the script's estimation window (est_days 106) noisy. Merger-related M&A-firm inquiries (Monteverde) date from Nov 2025-June 2026.",
+  "what_would_move_it_up": "Identification of the event behind the Pomerantz/SBS investigations (e.g. a short report, restatement, or regulatory item) dated on or before day 0, or a filed complaint."
+}

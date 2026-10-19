@@ -55,8 +55,12 @@ def main(run):
             continue
         t = tri.get(sym)
         if t:
-            disp = norm_disposition(t.get("disposition")) or "Watch"
-            rows[disp].append((r, t, None, t.get("disposition_reason")))
+            ov = t.get("reviewer_override") or {}
+            disp = norm_disposition(ov.get("disposition") or t.get("disposition")) or "Watch"
+            reason = t.get("disposition_reason")
+            if ov:
+                reason = f"Reviewer override ({ov.get('code', '')}): {ov.get('reason')} [researcher: {t.get('disposition')}]"
+            rows[disp].append((r, t, ov.get("code"), reason))
         elif r["class"] in EXCLUDE_CODES:
             code, why = EXCLUDE_CODES[r["class"]]
             if any("thin trading" in f or "OTC" in f for f in r["flags"]):
@@ -78,7 +82,7 @@ def main(run):
         if not rows[k]:
             continue
         out += [f"## {k} ({len(rows[k])})", "",
-                "| Company | Ticker | Return | Abnormal (t) | Value lost | Likely trigger | Tier | Prior statements | Existing suit |",
+                "| Company | Ticker | Return | Abnormal (t) | Value lost | Likely trigger | Tier | Prior statements | Litigation and investigation notices |",
                 "|---|---|---|---|---|---|---|---|---|"]
         for r, t, _, _ in rows[k]:
             src = (t.get("trigger_source") or {})
@@ -86,7 +90,8 @@ def main(run):
             if src.get("url"):
                 trig = f"[{trig}]({src['url']})"
             ps = (t.get("prior_statement_check") or {}).get("outcome", "not run")
-            lit = "yes" if (t.get("existing_litigation") or {}).get("found") else "none found"
+            n_lit = len((t.get("existing_litigation") or {}).get("items") or [])
+            lit = f"{n_lit} item{'s' if n_lit != 1 else ''} (see notes)" if n_lit else "none found"
             tt = "n/a" if r["t_stat"] is None else f"{r['t_stat']:.1f}"
             out.append(f"| {cell(r['name'])} | {r['symbol']} | {pct(r['return'])} | {pct(r['abnormal_return'])} ({tt}) | "
                        f"{money(r['market_cap_lost'], r['currency'])} | {trig} | {t.get('tier')} | {ps} | {lit} |")

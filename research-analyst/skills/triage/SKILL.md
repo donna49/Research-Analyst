@@ -91,6 +91,18 @@ last 12 months, plus plaintiff-firm "investigation" announcements after day 0.
 A plaintiff-firm "investigation" announcement or a filed suit never lowers a disposition; it is
 reported, and for Watch names it is a reason to look again.
 
+### 7. Reviewer pass
+
+Read every disposition against the evidence before rendering. Where the evidence or a rule (e.g.
+step 2 thin-trading) calls for a different result, add `reviewer_override`
+(`disposition`, `code`, `reason`) to the name's `triage/<TICKER>.json`; never edit the researcher's
+own fields. Timing checks that commonly change the picture:
+- a disclosure made before the open on day −1 (the reaction may span two sessions);
+- a filing accepted after the day-0 close belongs to day +1 (use the EDGAR index-page ET time);
+- plaintiff-firm "investigation" notices are signals, not filed suits.
+
+Render with `python3 scripts/build_triage.py runs/<date>`.
+
 ## Output: `runs/<date>/triage.md`
 
 ```markdown

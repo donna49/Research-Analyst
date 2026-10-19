@@ -262,6 +262,9 @@ def analyse(symbol, day0=None):
     vols = [r["volume"] for r in stock["rows"][max(0, i0 - 30):i0] if r["volume"]]
     avg_vol = float(np.mean(vols)) if vols else None
     vol0 = stock["rows"][i0]["volume"]
+    dollar_vol0 = (vol0 or 0) * stock["rows"][i0]["close"]
+    if exch == "OTC" and dollar_vol0 < 100_000:
+        flags.append(f"thin trading: day-0 dollar volume about {dollar_vol0:,.0f} {stock.get('currency') or ''}".rstrip())
     if exch == "OTC":
         home = tv.get("country")
         flags.append("OTC-traded" + (f"; company based in {home}" if home and home != "United States" else ""))

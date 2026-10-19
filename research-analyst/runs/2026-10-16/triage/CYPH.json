@@ -1,0 +1,106 @@
+{
+  "symbol": "NASDAQ:CYPH",
+  "company": "Cypherpunk Technologies Inc.",
+  "likely_trigger": "No company-specific news identified in the window; the fall extended a multi-session decline that coincided with a secondary-source report placing the company on an MSCI watchlist of non-operating (crypto-treasury) companies.",
+  "trigger_public_at": null,
+  "trigger_source": null,
+  "trigger_quote": null,
+  "tier": "Unexplained",
+  "tier_reason": "No issuer announcement (EDGAR shows only two Form 4s on 2026-10-14) and no news attributing the day-0 move. The only candidate is an aggregator report (BitcoinInsider, tier 3) on an MSCI methodology watchlist; even if confirmed, an index-eligibility item would be Tier C, and the report itself says the names are not settled until MSCI publishes on Nov. 11.",
+  "alternatives": [
+    {
+      "explanation": "MSCI non-operating-company methodology: report that Cypherpunk is on a watchlist for potential index removal",
+      "weight": "contributing",
+      "why": "Published 2026-10-16T01:56Z (before the day-0 open) by an aggregator citing other reports; the report itself says the watchlist names are disputed. Index deletion is Tier C. No source ties the day-0 move to it."
+    },
+    {
+      "explanation": "Continuation of a multi-day slide (Benzinga: down 8% on Wednesday 10-14 and 6.1% in pre-market on Thursday 10-15)",
+      "weight": "contributing",
+      "why": "Reported by Benzinga 2026-10-15T12:02Z; no cause given. The script's pre-drift (days -5..-1) is +10.8%, so the slide followed an earlier rise."
+    },
+    {
+      "explanation": "Crypto / digital-asset-treasury group move",
+      "weight": "unlikely",
+      "why": "Script: peer return -3.65%, IBIT theme -0.94%, expected return -2.76% vs actual -14.9% (abnormal -12.1%, t -2.65); the group move explains only a small part."
+    },
+    {
+      "explanation": "Winklevoss entities' Form 4 (purchase of shares and pre-funded warrants on 2026-10-12)",
+      "weight": "unlikely",
+      "why": "An insider purchase filed 2026-10-14 after the close; not adverse on its face."
+    }
+  ],
+  "prior_statement_check": {
+    "outcome": "not run",
+    "quote": null,
+    "source": null,
+    "note": "Not run: step 4 applies only to Tier A or B triggers."
+  },
+  "existing_litigation": {
+    "found": true,
+    "items": [
+      {
+        "description": "Purcell & Lefkowitz LLP announced a shareholder investigation into whether directors breached fiduciary duties 'in connection with recent corporate actions' (no suit identified).",
+        "court": null,
+        "docket_or_source": "Benzinga / PR Newswire, Bigdata.com 703EC64F76328463D4202651795A335B",
+        "date": "2025-11-20",
+        "url": "https://app.bigdata.com/documents/703EC64F76328463D4202651795A335B"
+      }
+    ]
+  },
+  "disposition": "Watch",
+  "disposition_reason": "Company-specific drop, trigger Unexplained -> Watch (re-scan in 5 sessions).",
+  "searches": [
+    {
+      "tool": "bigdata_search (fast, entity 3015AA)",
+      "query": "What happened to Cypherpunk Technologies stock",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 1
+    },
+    {
+      "tool": "bigdata_search (fast, entity 3015AA)",
+      "query": "Cypherpunk Technologies announcement",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 7
+    },
+    {
+      "tool": "bigdata_search (fast, entity 3015AA)",
+      "query": "Cypherpunk Technologies MSCI index exclusion crypto treasury bitcoin zcash holdings",
+      "date_range": "2026-10-13T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 1
+    },
+    {
+      "tool": "bigdata_search (fast, entity 3015AA)",
+      "query": "Cypherpunk Technologies lawsuit investigation subpoena class action",
+      "date_range": "2026-07-16T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 0
+    },
+    {
+      "tool": "bigdata_search (smart)",
+      "query": "Why did Cypherpunk Technologies (CYPH) stock fall on October 16, 2026?",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 2
+    },
+    {
+      "tool": "SEC EDGAR submissions CIK0001509745",
+      "query": "filings dated 2026-10-12..2026-10-19",
+      "date_range": "2026-10-12..2026-10-19",
+      "results": 2,
+      "note": "Two Form 4s filed 2026-10-14 (accession 0001231919-26-001453, 0002092596-26-000004); no 8-K."
+    },
+    {
+      "tool": "bigdata_search (fast, entity 3015AA)",
+      "query": "Cypherpunk Technologies securities class action lawsuit or law firm investigation",
+      "date_range": "2025-10-16T00:00:00Z..2026-10-19T23:59:59Z",
+      "results": 2
+    },
+    {
+      "tool": "CourtListener search (type=d)",
+      "query": "party_name='Cypherpunk' (also 'Leap Therapeutics', former name), all natures of suit",
+      "date_range": "filed after 2023-10-16",
+      "results": 0,
+      "note": "0 dockets for either name."
+    }
+  ],
+  "notes": "Company formerly Leap Therapeutics (Bigdata.com profile); now operates as a crypto-treasury company per the MSCI-watchlist report. The 10-K for FY2025 (filed 2026-03-16) discloses a material weakness identified for the quarter and year ended 2025-12-31 (Bigdata.com doc 5684983ADCF14A61424D147151FB04C8, risk-factor summary) - context only, not a day-0 trigger. Volume ratio on day 0 was 0.67x the 30-day average (script). Re-scan in 5 sessions; MSCI's final list is due Nov. 11 per the report.",
+  "what_would_move_it_up": "An issuer filing or reporting in the re-scan that ties the 10-14..10-16 decline to company-specific information (e.g. treasury losses, financing, or MSCI confirmation plus any company statement on index status)."
+}

@@ -1,0 +1,119 @@
+{
+  "symbol": "NASDAQ:FOXF",
+  "company": "Fox Factory Holding Corp.",
+  "likely_trigger": "Before the open on Oct 16 Fox Factory announced that its CEO was stepping down with an interim CEO appointed the same day, reported preliminary Q3 results below its own guidance, and lowered its fiscal 2026 outlook.",
+  "trigger_public_at": "2026-10-16T12:20:06+00:00",
+  "trigger_source": {
+    "title": "Fox Factory Holding Corp. - Fox Factory Announces CEO Transition",
+    "publisher": "Fox Factory Holding Corp. (GlobeNewswire press release; PubT copy on Bigdata.com)",
+    "url": "https://app.bigdata.com/documents/FA27F309234780297956483850C04F7B",
+    "doc_type": "press release",
+    "doc_id": "FA27F309234780297956483850C04F7B"
+  },
+  "trigger_quote": "Independent Director Douglas Grimm Appointed Interim CEO; Board Initiates Search for Permanent CEO [...] Preliminary Third Quarter Fiscal 2026 Results Below Expectations; Updates Fiscal 2026 Outlook for Divestiture of Marucci and Operating Performance",
+  "tier": "A",
+  "tier_reason": "Sudden CEO departure (stepping down and resigning from the Board effective Oct 15, interim CEO effective Oct 16) combined with preliminary results below guidance and a fiscal 2026 outlook cut; trigger-tiers lists 'Sudden CEO or CFO departure' as Tier A. The guidance cut alone would be Tier B unless the outlook was recently reaffirmed (a plaintiff firm asserts it was reaffirmed in May and raised in August - attributed, not verified).",
+  "alternatives": [
+    {
+      "explanation": "CEO departure plus preliminary Q3 miss and FY2026 outlook cut (single pre-market release)",
+      "weight": "primary",
+      "why": "Released before the open (The Fly 12:20Z; MT Newswires 12:51Z: shares down >22% pre-market). Peers -0.2%; abnormal -12.8%, t -5.70; volume 4.78x average (script)."
+    },
+    {
+      "explanation": "Marucci Sports divestiture (closed Sept 25) reducing the outlook mechanically",
+      "weight": "contributing",
+      "why": "Company attributes ~$63M of the net-sales reduction to Marucci; the adjusted EBITDA cut ($176-196M to $140-150M) also reflects PVG supply disruption, input inflation and AAG upfit problems."
+    },
+    {
+      "explanation": "Market / sector move",
+      "weight": "unlikely",
+      "why": "Script peer return -0.24%, XRT theme -0.9%, expected return -0.5%."
+    }
+  ],
+  "prior_statement_check": {
+    "outcome": "reassured",
+    "quote": "To summarize, our cost programs are executing on plan and our balance sheet health is improving. We remain confident in our full year outlook with margin expansion weighted to the second half.",
+    "source": {
+      "title": "Fox Factory Holding Corp: Q2 2026 Earnings Call on Aug 6, 2026 - Transcript (Quartr)",
+      "url": "https://app.bigdata.com/documents/EC61CAFE0DD26679649D6EAB7B549A12",
+      "date": "2026-08-06",
+      "location": "Prepared remarks, financial outlook section closing (speaker hands back to 'Mike'; speaker name not shown in the chunk - likely CFO Dennis Schemm, to verify), chunk 26"
+    },
+    "note": "Same passage gave Q3 guidance of net sales $355M-$380M and adjusted EBITDA $46M-$54M, and referred to 'the continued impact of chassis supply constraints' and a bike 'supplier disruption' - so supply issues were mentioned but described as normalizing. Plaintiff firm Levi & Korsinsky attributes to CFO Schemm on May 7, 2026: \"We are reaffirming our full year guide for 2026.\" (attributed; primary transcript not opened). EDGAR full-text search \"full year outlook\" (CIK 1424929, 2024-10-16..2026-10-15) returned only the Q3 2025 earnings release (2025-11-06)."
+  },
+  "existing_litigation": {
+    "found": true,
+    "items": [
+      {
+        "description": "Marselis v. Fox Factory Holding Corp. - securities class action (NOS 850) re demand/inventory statements, class period 2021-05-06 to 2023-11-02; dismissed with prejudice 2026-02-10, no appeal (per Q2 2026 10-Q). Closed; different subject from the day-0 news.",
+        "court": "U.S. District Court, N.D. Georgia",
+        "docket_or_source": "1:24-cv-00747 (CourtListener docket 68284991)",
+        "date": "2024-02-20",
+        "url": "https://www.courtlistener.com/docket/68284991/marselis-v-fox-factory-holding-corp/"
+      },
+      {
+        "description": "Levi & Korsinsky investigation notice concerning FY2026 guidance statements (after day 0).",
+        "court": null,
+        "docket_or_source": "Benzinga / PR Newswire, Bigdata.com 0B542CFD028526E0AA1C743660999B9E",
+        "date": "2026-10-16",
+        "url": "https://app.bigdata.com/documents/0B542CFD028526E0AA1C743660999B9E"
+      },
+      {
+        "description": "Schall, Brown & Schwartz investigation notice (after day 0).",
+        "court": null,
+        "docket_or_source": "Benzinga, Bigdata.com 50399669A4A4F7F3B8AC368779BDE594",
+        "date": "2026-10-18",
+        "url": "https://app.bigdata.com/documents/50399669A4A4F7F3B8AC368779BDE594"
+      }
+    ]
+  },
+  "disposition": "Full investigation",
+  "disposition_reason": "Company-specific drop + Tier A trigger (sudden CEO departure with results miss and guidance cut) -> Full investigation; prior statements 'reassured' (Aug 6, 2026 call).",
+  "searches": [
+    {
+      "tool": "bigdata_search (fast, entity 9645E6)",
+      "query": "What happened to Fox Factory stock",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 11
+    },
+    {
+      "tool": "SEC EDGAR submissions CIK0001424929",
+      "query": "filings dated 2026-10-12..2026-10-19",
+      "date_range": "2026-10-12..2026-10-19",
+      "results": 1,
+      "note": "8-K 0001424929-26-000061 (Items 2.02, 5.02, 9.01) accepted 2026-10-17T00:06:27Z (20:06 ET Oct 16, after the close); Ex. 99.1 press release and Ex. 10.1 interim CEO agreement read."
+    },
+    {
+      "tool": "bigdata_search (fast, entity 9645E6)",
+      "query": "Fox Factory lawsuit investigation subpoena class action",
+      "date_range": "2026-07-16T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 3
+    },
+    {
+      "tool": "bigdata_search (fast, entity 9645E6, filings+transcripts)",
+      "query": "Fox Factory full year 2026 guidance outlook raised Marucci Powered Vehicles supply",
+      "date_range": "2026-07-01T00:00:00Z..2026-10-15T23:59:59Z",
+      "results": 1
+    },
+    {
+      "tool": "EDGAR full-text search",
+      "query": "\"full year outlook\" ciks=0001424929",
+      "date_range": "2024-10-16..2026-10-15",
+      "results": 1
+    },
+    {
+      "tool": "bigdata_search (fast, entity 9645E6, news)",
+      "query": "Fox Factory securities class action lawsuit or law firm investigation",
+      "date_range": "2026-10-16T00:00:00Z..2026-10-19T23:59:59Z",
+      "results": 5
+    },
+    {
+      "tool": "CourtListener search (type=d)",
+      "query": "party_name='Fox Factory' (all NOS: 16 hits) then nature_of_suit=850 (1 hit)",
+      "date_range": "filed after 2023-10-16",
+      "results": 1,
+      "note": "Other Fox Factory dockets: patent suits as plaintiff (C.D. Cal. 2025), employment case (Wangle, N.D. Ga. 2024), derivative suit Bardos v. Dennison (N.D. Ga. 1:24-cv-04571, NOS 160, filed 2024-10-09; voluntarily dismissed 2026-05-01 per 10-Q)."
+    }
+  ],
+  "notes": "trigger_public_at is the earliest timestamp seen for the results news (The Fly 2026-10-16T12:20:06Z = 08:20 ET); the GlobeNewswire release time itself was not retrieved. The 8-K was filed after the close (20:06 ET), so the press release, not the 8-K, reached the market first. 8-K: Board approved the CEO transition on Oct 15; Mr. Dennison remains employed pending a transition agreement; interim CEO Grimm joined the Board in March 2026 and served on the Audit Committee and the Transformation Committee. Plaintiff-firm investigation notices after day 0: Levi & Korsinsky (2026-10-16T23:18Z), Schall Brown & Schwartz (2026-10-18). Prior securities class action (Marselis, N.D. Ga. 1:24-cv-00747, class period 2021-2023, demand/inventory statements) was dismissed with prejudice on 2026-02-10 with no appeal."
+}

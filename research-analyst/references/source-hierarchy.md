@@ -30,7 +30,13 @@ origins, not URLs (intel evidence standards).
 | Regulators | SEC litigation releases and AAERs; DOJ press releases API; Federal Register | Capital Markets Tribunal / provincial commissions | FCA notices | BaFin |
 | Existing shareholder suits | CourtListener NOS 850 + party name; plaintiff-firm announcements via Bigdata.com news | Bigdata.com news | Bigdata.com news | KapMuG register |
 
-EDGAR requires a `User-Agent` with a contact email and ≤ 10 requests per second.
+EDGAR requires a `User-Agent` with a contact email and ≤ 10 requests per second. The
+`acceptanceDateTime` in the submissions JSON carries a "Z" suffix but does not match the
+Eastern-time "Accepted" stamp on the filing index page; use the index page time (ET) for
+`public_at`, and check it against the market session (before open / during / after close).
+
+CourtListener allows about 5 searches per minute; run its queries one at a time and retry on
+HTTP 429. A search that never completes is recorded as a failed `search`, not as "no cases".
 
 ## Bigdata.com query discipline (from the Bigdata.com plugin)
 

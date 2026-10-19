@@ -1,90 +1,95 @@
 {
-  "symbol": "OTC:CUAI",
-  "company": "Copper Intelligence, Inc.",
-  "likely_trigger": "No adverse company news was found for the window; the only company release in the window (2026-10-15) reported drilling results at the Butembo project, and the day 0 price change occurred on a day-0 volume of 2,091 shares in OTC trading.",
-  "trigger_public_at": null,
-  "trigger_source": {
-    "title": null,
-    "publisher": null,
-    "url": null,
-    "doc_type": null,
-    "doc_id": null
+ "symbol": "OTC:CUAI",
+ "company": "Copper Intelligence, Inc.",
+ "likely_trigger": "No adverse company news was found for the window; the only company release in the window (2026-10-15) reported drilling results at the Butembo project, and the day 0 price change occurred on a day-0 volume of 2,091 shares in OTC trading.",
+ "trigger_public_at": null,
+ "trigger_source": {
+  "title": null,
+  "publisher": null,
+  "url": null,
+  "doc_type": null,
+  "doc_id": null
+ },
+ "trigger_quote": null,
+ "tier": "Unexplained",
+ "tier_reason": "Keyword searches (the entity could not be resolved in Bigdata.com) found only a favourable drilling-results release on 2026-10-15; no adverse item before the day 0 close. No EDGAR filings exist under the current name.",
+ "alternatives": [
+  {
+   "explanation": "Thin OTC trading: price signal unreliable",
+   "weight": "primary",
+   "why": "market_event.json flags 'OTC-traded'; day 0 volume 2,091 shares vs 30-day average about 1,046; estimation window only 66 days. A few trades can move the quote."
   },
-  "trigger_quote": null,
-  "tier": "Unexplained",
-  "tier_reason": "Keyword searches (the entity could not be resolved in Bigdata.com) found only a favourable drilling-results release on 2026-10-15; no adverse item before the day 0 close. No EDGAR filings exist under the current name.",
-  "alternatives": [
-    {
-      "explanation": "Thin OTC trading: price signal unreliable",
-      "weight": "primary",
-      "why": "market_event.json flags 'OTC-traded'; day 0 volume 2,091 shares vs 30-day average about 1,046; estimation window only 66 days. A few trades can move the quote."
-    },
-    {
-      "explanation": "Reaction to the 2026-10-15 drilling update",
-      "weight": "unlikely",
-      "why": "The release (Newsfile, 2026-10-15) reported all 19 holes intersecting copper; it is favourable in tone and was public a session before day 0."
-    },
-    {
-      "explanation": "Copper / peer move",
-      "weight": "unlikely",
-      "why": "Peer return -2.1% and market -1.09% vs stock -18.75% (abnormal -19.9%, t -4.83) in market_event.json."
-    }
-  ],
-  "prior_statement_check": {
-    "outcome": "not run",
-    "quote": null,
-    "source": null,
-    "note": "Step 4 runs only for Tier A or B triggers; this name is not Tier A/B."
+  {
+   "explanation": "Reaction to the 2026-10-15 drilling update",
+   "weight": "unlikely",
+   "why": "The release (Newsfile, 2026-10-15) reported all 19 holes intersecting copper; it is favourable in tone and was public a session before day 0."
   },
-  "existing_litigation": {
-    "found": false,
-    "items": []
+  {
+   "explanation": "Copper / peer move",
+   "weight": "unlikely",
+   "why": "Peer return -2.1% and market -1.09% vs stock -18.75% (abnormal -19.9%, t -4.83) in market_event.json."
+  }
+ ],
+ "prior_statement_check": {
+  "outcome": "not run",
+  "quote": null,
+  "source": null,
+  "note": "Step 4 runs only for Tier A or B triggers; this name is not Tier A/B."
+ },
+ "existing_litigation": {
+  "found": false,
+  "items": []
+ },
+ "disposition": "Watch",
+ "disposition_reason": "Per the table, Unexplained -> Watch (re-scan in 5 sessions). Reviewer flag: this name meets the X-THIN pre-exclusion description (OTC, ~2,000 shares traded, no home-exchange listing found); if X-THIN is applied it becomes Exclude X-THIN. It was carried through because the caller classed all names Company-specific.",
+ "searches": [
+  {
+   "tool": "mcp__Bigdata_com__bigdata_search",
+   "query": "Copper Intelligence, Inc. (OTC: CUAI) stock news (smart)",
+   "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+   "results": 0
   },
-  "disposition": "Watch",
-  "disposition_reason": "Per the table, Unexplained -> Watch (re-scan in 5 sessions). Reviewer flag: this name meets the X-THIN pre-exclusion description (OTC, ~2,000 shares traded, no home-exchange listing found); if X-THIN is applied it becomes Exclude X-THIN. It was carried through because the caller classed all names Company-specific.",
-  "searches": [
-    {
-      "tool": "mcp__Bigdata_com__bigdata_search",
-      "query": "Copper Intelligence, Inc. (OTC: CUAI) stock news (smart)",
-      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
-      "results": 0
-    },
-    {
-      "tool": "mcp__Bigdata_com__bigdata_search",
-      "query": "Copper Intelligence CUAI (fast, keyword Copper Intelligence|CUAI)",
-      "date_range": "2026-01-01T00:00:00Z..2026-10-18T23:59:59Z",
-      "results": 14
-    },
-    {
-      "tool": "mcp__Bigdata_com__bigdata_search",
-      "query": "Copper Intelligence shares news (fast, keyword Copper Intelligence|CUAI)",
-      "date_range": "2026-10-14T00:00:00Z..2026-10-18T23:59:59Z",
-      "results": 3
-    },
-    {
-      "tool": "mcp__Bigdata_com__bigdata_search",
-      "query": "Copper Intelligence lawsuit, class action, investigation or regulator action (fast, keyword Copper Intelligence)",
-      "date_range": "2025-10-16T00:00:00Z..2026-10-19T23:59:59Z",
-      "results": 1
-    },
-    {
-      "tool": "SEC EDGAR full-text search",
-      "query": "\"Copper Intelligence\"",
-      "date_range": "2025-01-01..2026-10-19",
-      "results": 0
-    },
-    {
-      "tool": "SEC EDGAR submissions API",
-      "query": "CIK0001841328 (African Discovery Group, Inc.) submissions",
-      "date_range": "all",
-      "results": 1
-    },
-    {
-      "tool": "mcp__CourtListener__search",
-      "query": "type=d q='\"Copper Intelligence\" OR \"African Discovery Group\"' filed_after=2023-10-16",
-      "date_range": "2023-10-16..2026-10-19",
-      "results": 0
-    }
-  ],
-  "notes": "Bigdata.com find_securities returned no match for 'CUAI' or 'Copper Intelligence'; keyword filters used instead. Not in SEC company_tickers.json; EDGAR full-text search for \"Copper Intelligence\" returned 0 hits. A 2026-05-29 PR (Benzinga) states the company was formerly African Discovery Group, Inc. (AFDG), with a 1:100 reverse split effective 2026-06-01 and ticker change to CUAI; EDGAR shows only a 2021 Form D for African Discovery Group, Inc. (CIK 0001841328). Company disclosures appear to sit outside EDGAR (OTC Markets disclosure would be needed; not on the fixed source list). CourtListener docket search (first attempt hit HTTP 429; retried) returned 0 results."
+  {
+   "tool": "mcp__Bigdata_com__bigdata_search",
+   "query": "Copper Intelligence CUAI (fast, keyword Copper Intelligence|CUAI)",
+   "date_range": "2026-01-01T00:00:00Z..2026-10-18T23:59:59Z",
+   "results": 14
+  },
+  {
+   "tool": "mcp__Bigdata_com__bigdata_search",
+   "query": "Copper Intelligence shares news (fast, keyword Copper Intelligence|CUAI)",
+   "date_range": "2026-10-14T00:00:00Z..2026-10-18T23:59:59Z",
+   "results": 3
+  },
+  {
+   "tool": "mcp__Bigdata_com__bigdata_search",
+   "query": "Copper Intelligence lawsuit, class action, investigation or regulator action (fast, keyword Copper Intelligence)",
+   "date_range": "2025-10-16T00:00:00Z..2026-10-19T23:59:59Z",
+   "results": 1
+  },
+  {
+   "tool": "SEC EDGAR full-text search",
+   "query": "\"Copper Intelligence\"",
+   "date_range": "2025-01-01..2026-10-19",
+   "results": 0
+  },
+  {
+   "tool": "SEC EDGAR submissions API",
+   "query": "CIK0001841328 (African Discovery Group, Inc.) submissions",
+   "date_range": "all",
+   "results": 1
+  },
+  {
+   "tool": "mcp__CourtListener__search",
+   "query": "type=d q='\"Copper Intelligence\" OR \"African Discovery Group\"' filed_after=2023-10-16",
+   "date_range": "2023-10-16..2026-10-19",
+   "results": 0
+  }
+ ],
+ "notes": "Bigdata.com find_securities returned no match for 'CUAI' or 'Copper Intelligence'; keyword filters used instead. Not in SEC company_tickers.json; EDGAR full-text search for \"Copper Intelligence\" returned 0 hits. A 2026-05-29 PR (Benzinga) states the company was formerly African Discovery Group, Inc. (AFDG), with a 1:100 reverse split effective 2026-06-01 and ticker change to CUAI; EDGAR shows only a 2021 Form D for African Discovery Group, Inc. (CIK 0001841328). Company disclosures appear to sit outside EDGAR (OTC Markets disclosure would be needed; not on the fixed source list). CourtListener docket search (first attempt hit HTTP 429; retried) returned 0 results.",
+ "reviewer_override": {
+  "disposition": "Exclude",
+  "code": "X-THIN",
+  "reason": "OTC-only, about 2,091 shares (roughly $20K) traded on day 0, no home-exchange listing, no SEC filer record; a one-day price print this thin is not a reliable signal (triage step 2). Re-admit if a filing or news item surfaces."
+ }
 }

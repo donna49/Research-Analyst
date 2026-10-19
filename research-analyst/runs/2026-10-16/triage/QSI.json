@@ -1,0 +1,96 @@
+{
+  "symbol": "NASDAQ:QSI",
+  "company": "Quantum-Si Incorporated",
+  "likely_trigger": "No adverse company-specific news identified; the only issuer items in the window were a notice of regained Nasdaq bid-price compliance (Oct 15) and an earnings-date announcement (Oct 16), and the fall coincided with declines in correlated speculative-growth names.",
+  "trigger_public_at": null,
+  "trigger_source": null,
+  "trigger_quote": null,
+  "tier": "Unexplained",
+  "tier_reason": "The window's issuer items (8-K Item 8.01 on regained Nasdaq compliance; Q3 call date) are not adverse. No news attributes the day-0 fall. Theme/correlated-group weakness explains part but not all (abnormal -9.1%, t -2.93).",
+  "alternatives": [
+    {
+      "explanation": "Speculative-growth / correlated-group selloff",
+      "weight": "contributing",
+      "why": "Script: ARKK theme -4.7%, expected return -5.4%; three correlated screened names also fell (SES -19.3%, RXRX -16.7%, PACB -11.7%). Nasdaq Composite fell 2.15% on day 0 (Globe and Mail). Leaves abnormal -9.1%."
+    },
+    {
+      "explanation": "Giving back a sharp rally (stock rose from $0.76 on Sept 23 to $1.55 on Oct 2 per Hartford Business Journal; script pre-drift +15.1%)",
+      "weight": "contributing",
+      "why": "Plausible mean reversion; no source states it as the cause."
+    },
+    {
+      "explanation": "Regained Nasdaq minimum-bid-price compliance (8-K, Oct 15)",
+      "weight": "unlikely",
+      "why": "Favourable on its face; MT Newswires noted shares were down >5% on Oct 15 while the news was out."
+    }
+  ],
+  "prior_statement_check": {
+    "outcome": "not run",
+    "quote": null,
+    "source": null,
+    "note": "Not run: step 4 applies only to Tier A or B triggers."
+  },
+  "existing_litigation": {
+    "found": true,
+    "items": [
+      {
+        "description": "Farzad v. HighCape Capital, et al. - Delaware Court of Chancery putative class action (fiduciary duty, SPAC business combination); settled, final judgment approving settlement 2026-03-27 (per Q2 2026 10-Q). Not a federal securities (NOS 850) action.",
+        "court": "Delaware Court of Chancery",
+        "docket_or_source": "Quantum-Si Q2 2026 10-Q (Bigdata.com 7BAFDCAB148BA321D91AF6C137A7496B)",
+        "date": "2024-05-16",
+        "url": "https://app.bigdata.com/documents/7BAFDCAB148BA321D91AF6C137A7496B"
+      }
+    ]
+  },
+  "disposition": "Watch",
+  "disposition_reason": "Company-specific drop, trigger Unexplained -> Watch (re-scan in 5 sessions).",
+  "searches": [
+    {
+      "tool": "bigdata_search (fast, entity 5D965D)",
+      "query": "What happened to Quantum-Si stock",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 10
+    },
+    {
+      "tool": "bigdata_search (fast, entity 5D965D)",
+      "query": "Quantum-Si shares fall",
+      "date_range": "2026-10-16T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 1
+    },
+    {
+      "tool": "bigdata_search (fast, entity 5D965D)",
+      "query": "Quantum-Si lawsuit investigation subpoena class action",
+      "date_range": "2026-07-16T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 2
+    },
+    {
+      "tool": "bigdata_search (smart)",
+      "query": "Why did Quantum-Si (QSI) stock fall on October 16, 2026?",
+      "date_range": "2026-10-14T00:00:00Z..2026-10-17T23:59:59Z",
+      "results": 8
+    },
+    {
+      "tool": "SEC EDGAR submissions CIK0001816431",
+      "query": "filings dated 2026-10-12..2026-10-19",
+      "date_range": "2026-10-12..2026-10-19",
+      "results": 1,
+      "note": "8-K accession 0001816431-26-000068 (Items 8.01, 9.01) accepted 2026-10-15T17:15:37Z; earlier 8-K 0001816431-26-000064 (Item 7.01) on 2026-10-08 is outside the window."
+    },
+    {
+      "tool": "bigdata_search (fast, entity 5D965D, news)",
+      "query": "Quantum-Si securities class action lawsuit or law firm investigation",
+      "date_range": "2025-10-16T00:00:00Z..2026-10-19T23:59:59Z",
+      "results": 1,
+      "note": "Only result was an unrelated Dec-2025 product press release."
+    },
+    {
+      "tool": "CourtListener search (type=d)",
+      "query": "party_name='Quantum-Si', all natures of suit",
+      "date_range": "filed after 2023-10-16",
+      "results": 2,
+      "note": "2 dockets, neither NOS 850: Benchmark Electronics, Inc. v. Quantum-Si Incorporated (D. Minn. 0:24-cv-00215, filed 2024-01-26, open; S.D. Tex. 4:23-cv-04340, terminated 2024-01-31) - commercial dispute, recorded in notes only."
+    }
+  ],
+  "notes": "Day-0 issuer item: press release scheduling Q3 results for Nov 5, 2026 (Benzinga 2026-10-16T12:00:01Z) - neutral. The Aug 2026 10-Q / Hartford Business Journal note a ~20% workforce cut and Proteus launch delay to Q2 2027 announced in August (context, outside window). Stock is near $1; Nasdaq compliance could recur as an issue. Re-scan in 5 sessions.",
+  "what_would_move_it_up": "Adverse issuer news or reporting surfacing in the re-scan (e.g. financing, Proteus timing, or a Q3 pre-announcement) dated on or before day 0."
+}
