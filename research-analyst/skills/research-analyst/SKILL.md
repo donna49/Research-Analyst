@@ -44,7 +44,7 @@ Layer 1 is fast and wide; Layer 2 is slow and deep. Never run Layer 2 work insid
 | 10 | `claim-framing` | Forum, causes, classes, linkage matrix, proceedings map, Bear v. Bull, **decision**. **Checkpoint 2: show the decision** | Potential Class Proceeding; Misrepresentation(s); Bear v. Bull; Conclusions |
 | 11 | `timeline` | One chronology | Total Mix (ordering) |
 | 12 | `verify` | Re-check quotes, numbers and citations; red-team each comparison and the decision | — |
-| 13 | `memo-writer` | `memo.md` in Andrew's form; `ledger.py memo` lint | The memo |
+| 13 | `memo-writer` | `memo.md` exactly in one of Andrew's four forms (`references/memo-forms/`), chosen by case; Word render with real footnotes; Google Doc in the user's Drive | The memo |
 
 **Checkpoint 1 comes before stage 4.** Write the `issue` record and `issue.md` from stages 1–2, plus
 a quick look at the last two periodic reports, then stop. Full statement collection (stage 4) starts
@@ -136,6 +136,9 @@ runs/<YYYY-MM-DD>/
     moves.json           # stage 9: price move on every disclosure date
     economics_input.json / economics.json   # stage 9
     claim.md             # stage 10 checkpoint
-    memo.md              # Layer 2 result, Andrew's form
+    memo.md              # Layer 2 result, exactly in one of Andrew's forms (footnotes [^n])
+    memo_trace.json      # form + ledger ids behind every footnote and figure line
+    memo_annex.md        # internal companion: sources, coverage, gaps, deadlines
+    memo.docx            # rendered; uploaded to the user's Drive as a Google Doc
     sources/             # saved copies of key documents (text), named by ledger id
 ```

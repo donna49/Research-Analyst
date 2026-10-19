@@ -1,75 +1,81 @@
 ---
 name: memo-writer
-description: Final stage of a research-analyst investigation. Renders the memo in Andrew Morganti's own form (CONFIDENTIAL / LAWYER WORK-PRODUCT; deal sheet; Overview; Total Mix of Information; Public Corrective Disclosure; Parties; Potential Class Proceeding; The Misrepresentation(s); Parallel Proceedings; Bear v. Bull; Conclusions), strictly from the verified case ledger, with footnote citations, then lints it. Use only after verify passes and the claim-framing decision has been shown to the user.
+description: Final stage of a research-analyst investigation. Writes the memo exactly in one of Andrew Morganti's own four forms (2026 form, IRAC form, Litigation Opportunity form, Pass form), chosen by case, with real footnotes in his citation style, strictly from the verified ledger. Renders it to Word and, on the user's go-ahead, uploads it to their Google Drive as a Google Doc. Use only after verify passes and the claim-framing decision has been shown to the user.
 ---
 
 # Memo writer (final stage)
 
-Output: `runs/<date>/<TICKER>/memo.md`. A Google Doc copy is made only when the user asks (see §5).
+Outputs, all under `runs/<date>/<TICKER>/`:
+- `memo.md`: the memo, exactly in his form; footnotes as `[^n]`; no ledger ids.
+- `memo_trace.json`: the form letter, plus the ledger ids behind every footnote and every figure line
+  without a footnote.
+- `memo_annex.md`: the internal companion: sources by ledger id, coverage, open questions, pipeline
+  fields, deadlines. None of this goes in the memo.
+- `memo.docx`: rendered with real footnotes. Becomes a Google Doc in the user's Drive (see §5).
 
-Read first:
-- `references/memo-template.md`: the structure, section by section
-- `references/andrew-method.md` §5: his voice
-- `references/language-rules.md`: the difference between findings and draft submissions
-- the closest A-grade exemplar in `references/corpus.md`, through the Google Drive connector, for
-  tone and density
+## 1. Choose the form
+Read `references/memo-forms/README.md` and apply its selection order (Pass → D; Monitor → C, Alamos
+variant; mining/project/contract → C, Ascot variant; financing/insider/derivative → B; otherwise → A).
+Record the choice as a `framing` record (`element: "form"`). Then read the chosen form file and the
+model memo it names (Drive ID in `references/corpus.md`) **for form and voice only**.
 
-## 1. Inputs
-- The ledger, with every record verified. The memo is rendered from the ledger; a sentence with no
-  record behind it does not go in.
-- `claim.md` (stage 10) and the `decision` record.
-- `parties.md`, `economics.json` and `moves.json`.
+## 2. Write `memo.md` in that form, exactly
+- Use his header lines, headings, order, opening phrases and sign-off exactly as the form file gives
+  them. Add no heading, label, table, summary block or appendix the form does not have.
+- **Body content comes only from verified ledger records**: quotes from `statement` and `revelation`
+  records, figures from `market` and `economics` records, law from `legal` records, judgments from the
+  `framing` and `decision` records.
+- **Footnotes** follow his style (README "Rules common to all four forms"): the document, date and
+  pinpoint, written as he writes them, with his kind of commentary where the records support it.
+  Every footnote is listed in `memo_trace.json` with its ledger ids.
+- **Argument sections** (Misrepresentation(s), Analysis, Bear v. Bull, Conclusion) are written as
+  continuous submissions in his voice ("It is my submission that …"), not as numbered checklists.
+  Each factual assertion in them carries a footnote.
+- **The price-first habit** in Forms B and C: "On «date», $«a» to $«b» (down «x»%), «TICKER» published
+  …". Use `moves.json` for the figures.
+- **Ten-day look-back** as he quotes it: the close on the 10th session (`lookback_close_10th`).
+- Fix his known slips; never copy them (`references/andrew-method.md` §5; form notes).
+- **No other case's facts.** Prior cases appear only by name, as analogy or precedent.
 
-## 2. Rules
-1. **His structure, his headings, in his order** (`memo-template.md`). Sections that do not apply
-   stay in, with one line saying why.
-2. **Deal sheet first.** Every figure comes from an `economics` or `market` record.
-3. **Total mix in his form:** "On «date», «TICKER» published its «document» and reported, in
-   relevant part:", then verbatim quotes, then the price move for that date. Each quote is footnoted
-   to its record, which gives the document, page or paragraph, and link.
-4. **Corrections:** label a STORM WARNING separately; quote the linking words; give the market
-   impact from records; give the competing explanations.
-5. **Draft submissions** (Misrepresentation(s), Bear v. Bull, Conclusions) are in his voice, are
-   labelled *Draft submissions for review*, and cite record ids in the same paragraph.
-6. **Legal text only from `legal` records.** These are verbatim from `legal-library.md` or a
-   verified source. Any item marked ⚠ or "(not from corpus)" must have a `verified: checked: <url>`
-   record before it is used.
-7. **Numbers.** Every figure on a line carries a citation on that line. Keep currencies separate and
-   name each one. Percentages are copied from script output, never recomputed.
-8. **No other case's text.** Exemplars are for voice only. The lint fails on any ticker the ledger
-   never mentions.
-9. **Defined terms** are introduced in the form ("XYZ"), and collected in Appendix A.
-10. **Citations:** write `[E###]` inline in the draft; they become footnotes when rendered.
-    Appendix B lists each record with title, publisher, type, date, locator and link.
-11. **Coverage (Appendix C):** sources searched with date ranges, quarters checked, and open
-    questions, each with the source that would settle it.
+## 3. Write `memo_trace.json` and `memo_annex.md`
+```json
+{"form": "B",
+ "footnotes": {"1": ["E037"], "2": ["E038", "E040"]},
+ "lines": {"TSX: \"AOT\" from $0.44 to $0.19": ["E176"]}}
+```
+`lines` covers header lines that carry figures and no footnote (his deal lines in Form C, and the like).
+The annex holds everything else the reader may want: a source list by ledger id, coverage, gaps, the
+decision record, deadlines and the next catalyst.
 
-## 3. Length and density
-Match the case. A Pass memo can be 1,500 words with the recommendation up front (Paladin). A Pursue
-memo with several themes runs 4,000–6,000 words with 30–60 footnotes (Ascot, Global Atomic). Do not
-pad. Andrew's best memos are dense with quotes and dates, not with commentary.
-
-## 4. Lint, then reply
+## 4. Check
 ```
 python3 scripts/ledger.py check runs/<date>/<TICKER>/ledger.jsonl
 python3 scripts/ledger.py quotes runs/<date>/<TICKER>/ledger.jsonl
 python3 scripts/ledger.py memo runs/<date>/<TICKER>/ledger.jsonl runs/<date>/<TICKER>/memo.md
+python3 scripts/render_memo.py runs/<date>/<TICKER>/memo.md [--letterhead]   # --letterhead for Form A
 ```
-Fix every problem before replying. Then reply with:
+Fix every problem before going on. Then compare your memo against the form's model side by side,
+heading by heading. Any heading, phrase pattern or footnote style that differs is a defect.
+
+## 5. Google Doc in the user's Drive
+The user's standing choice is a Google Doc in their Drive.
+1. Ask which Drive folder, unless the user has named one for this case or set a default. Never guess a
+   shared drive. Uploading to a shared drive makes the memo visible to others.
+2. Upload `memo.docx` with the Google Drive connector `create_file`:
+   - `title`: "Memo from Morganti to File («Issuer short name»)(«Month D, YYYY»)", his file-naming pattern
+   - `base64Content`: the .docx bytes, base64-encoded
+   - `contentMimeType`: `application/vnd.openxmlformats-officedocument.wordprocessingml.document`
+   - `parentId`: the folder id
+   Drive converts it to a Google Doc with native footnotes.
+3. Give the user the link. Record the Doc id in `memo_annex.md`.
+
+## 6. Reply
+Give:
+- the form used and why
 - the recommendation
-- the 3–5 records it rests on
-- the deal-sheet figures
+- the three to five records it rests on
+- the key figures
 - the nearest limitation date
-- the open questions that matter most
-- the path to `memo.md`
-
-## 5. Google Docs (only when asked)
-Andrew's memos live as Word or Google Docs in the firm's Drive. When the user asks for a Doc:
-- create it with the Google Drive connector (`create_file`, Google Docs MIME type) from the
-  rendered memo, with footnotes as numbered endnotes
-- title it "Memo from Morganti to File («Issuer»)(«Month D, YYYY»)"
-- put it in the folder the user names; never guess a shared drive
-- give the user the link
-
-Creating a file in the firm's Drive puts it where others can see it. Confirm the destination folder
-first.
+- the open questions
+- the paths: `memo.md`, `memo.docx`, `memo_annex.md`
+- the Doc link, if uploaded

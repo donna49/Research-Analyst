@@ -1,4 +1,10 @@
-# Memo template: Andrew's 2026 form
+# Memo content checklist
+
+> **Structure and wording now come from `references/memo-forms/`**: four exact forms copied from
+> Andrew's memos, chosen by case. This file is kept as the content checklist, i.e. what the research
+> must be able to support. It is not a layout. The deal-sheet table, PARTIES heading, labels and
+> appendices below belong in `memo_annex.md`, not in the memo.
+
 
 This template combines the shape of Slate Grocery (Sept 25, 2026) and FiServ II (Sept 24, 2026),
 the summary block at the top of Ascot and Alamos, the corrective-disclosure method of Aurora

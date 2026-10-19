@@ -148,14 +148,53 @@ FIGURE = re.compile(r"(\$\s?\d|\bC\$|\bUS\$|\bUSD\s?\d|\bCAD\s?\d|\d[\d,.]*\s?%|
 TICKER = re.compile(r"\b(?:TSXV?|CSE|NEO|NYSE|NASDAQ|Nasdaq|OTCQX|OTCQB|OTC|ASX|LSE|XETR|FRA|Cboe Canada|CBOE)\s*:\s*[\"“']?([A-Z][A-Z0-9.]{0,7})|\(\s*[\"“]([A-Z][A-Z0-9.]{1,7})[\"”]\s*\)")
 
 
+FORM_SECTIONS = {
+    "A": ["OVERVIEW", "TOTAL MIX OF INFORMATION", "PUBLIC CORRECTIVE DISCLOSURE", "POTENTIAL CLASS PROCEEDING",
+          "THE MISREPRESENTATION", "BEAR v. BULL", "CONCLUSIONS"],
+    "B": ["Preamble", "Proposed Class Period", "Defined Terms", "Overview", "PART A. FACTS", "PART B. ISSUES",
+          "PART C. RULES", "PART D. ANALYSIS", "PART E. CONCLUSION"],
+    "C": ["STRICTLY CONFIDENTIAL: LITIGATION OPPORTUNITY", "Causes of Action", "Conclusion"],
+    "D": ["STRICTLY CONFIDENTIAL", "Executive Summary", "Overview", "Chronology of Events", "Overview of the Claim",
+          "The Law", "Causes of Action", "Conclusion"],
+}
+FOOTNOTE_REF = re.compile(r"\[\^(\w+)\](?!:)")
+FOOTNOTE_DEF = re.compile(r"^\[\^(\w+)\]:", re.M)
+
+
 def memo(ledger_path, memo_path):
+    """Lint a memo. Two modes:
+    - form mode (Andrew's forms, references/memo-forms/): footnotes [^n] in the memo, and a sidecar
+      memo_trace.json {"form": "A".."D", "footnotes": {"n": ["E001", ...]}, "lines": {"exact line text": ["E..."]}}
+    - ledger mode (legacy): inline [E###] citations."""
     recs, errs = check(ledger_path)
     ids = {r.get("id") for r in recs}
     corpus = " ".join(json.dumps(r) for r in recs)
     text = open(memo_path).read()
     lines = text.splitlines()
-    for e in sorted(cited_ids(text) - ids):
-        errs.append(f"memo cites {e}, which is not in the ledger")
+    trace_path = os.path.join(os.path.dirname(memo_path), "memo_trace.json")
+    trace = json.load(open(trace_path)) if os.path.exists(trace_path) else None
+    form = (trace or {}).get("form")
+    if trace:
+        fn = {k: v for k, v in trace.get("footnotes", {}).items()}
+        refs, defs = set(FOOTNOTE_REF.findall(text)), set(FOOTNOTE_DEF.findall(text))
+        for n in sorted(refs - defs):
+            errs.append(f"footnote [^{n}] used but not defined")
+        for n in sorted(defs - set(fn)):
+            errs.append(f"footnote [^{n}] has no ledger ids in memo_trace.json")
+        for n, eids in fn.items():
+            for e in eids:
+                if e not in ids:
+                    errs.append(f"memo_trace footnote {n} points to {e}, not in the ledger")
+        line_map = trace.get("lines", {})
+        for k, eids in line_map.items():
+            for e in eids:
+                if e not in ids:
+                    errs.append(f"memo_trace line '{k[:40]}' points to {e}, not in the ledger")
+        if CITE.search(text):
+            errs.append("form-mode memo contains [E###] ledger ids; they belong in memo_trace.json only")
+    else:
+        for e in sorted(cited_ids(text) - ids):
+            errs.append(f"memo cites {e}, which is not in the ledger")
     in_code = False
     for n, line in enumerate(lines, 1):
         if line.strip().startswith("```"):
@@ -164,22 +203,30 @@ def memo(ledger_path, memo_path):
         if PLACEHOLDER.search(line):
             errs.append(f"memo line {n}: placeholder or template marker left: {line.strip()[:90]}")
         body = line.strip()
-        if in_code or not body or body.startswith("#") or body.startswith("|---"):
+        if in_code or not body or body.startswith("#") or body.startswith("|---") or FOOTNOTE_DEF.match(body):
             continue
-        if FIGURE.search(body) and not CITE.search(body):
-            errs.append(f"memo line {n}: figure without a ledger citation: {body[:90]}")
+        if FIGURE.search(body):
+            if trace:
+                ok = FOOTNOTE_REF.search(body) or any(k.strip() and k.strip() in body for k in trace.get("lines", {}))
+            else:
+                ok = CITE.search(body)
+            if not ok:
+                errs.append(f"memo line {n}: figure without a source trace: {body[:90]}")
     for m in TICKER.finditer(text):
         tk = m.group(1) or m.group(2)
         if tk and tk not in corpus:
             errs.append(f"memo mentions ticker {tk}, which appears nowhere in the ledger (text from another case?)")
-    up = text.upper()
-    for sec in REQUIRED_SECTIONS:
-        if sec.upper() not in up:
-            errs.append(f"memo missing section: {sec}")
-    if not re.search(r"\b(Pursue|Monitor|Pass)\b", text):
+    for sec in (FORM_SECTIONS.get(form) if form else REQUIRED_SECTIONS):
+        if sec.upper() not in text.upper():
+            errs.append(f"memo missing section for form {form or 'ledger-mode'}: {sec}")
+    if not form and not re.search(r"\b(Pursue|Monitor|Pass)\b", text):
         errs.append("memo has no recommendation (Pursue / Pursue — issue and hold / Monitor / Pass)")
+    if form == "D" and "recommend" not in text.lower():
+        errs.append("Pass form without a recommendation sentence")
     if not any(r.get("kind") == "decision" for r in recs):
         errs.append("ledger has no decision record (claim-framing stage)")
+    if trace and form not in FORM_SECTIONS:
+        errs.append(f"memo_trace.json form must be one of {sorted(FORM_SECTIONS)}")
     return recs, errs
 
 

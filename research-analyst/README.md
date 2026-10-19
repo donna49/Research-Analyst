@@ -32,7 +32,10 @@ Layer 2 stages:
 origination memos, associate research memos and an expert damages report. It covers the questions
 he asks, the 20 research angles, his pursue/pass rules with the cases they came from, and his voice.
 
-- `references/memo-template.md`: his 2026 memo form.
+- `references/memo-forms/`: his four memo forms, copied exactly: 2026 (Slate/FiServ), IRAC (Global
+  Atomic/Li-Cycle), Litigation Opportunity (Ascot/Alamos) and Pass (Paladin). The plugin chooses one
+  per case and writes in it exactly, with footnotes in his style.
+- `references/memo-template.md`: the content checklist.
 - `references/legal-library.md`: the boilerplate he reuses verbatim, with citations, and flags on
   citations the corpus gives inconsistently.
 - `references/case-types.md`: 13 playbooks.
@@ -48,6 +51,7 @@ he asks, the 20 research angles, his pursue/pass rules with the cases they came 
 | `references/` | Evidence ledger schema, drop standard, trigger tiers, statement types, sources, language rules, jurisdictions |
 | `scripts/market_event.py` | Drop standard (TradingView chart feed + scanner); all market numbers |
 | `scripts/economics.py` | Price move on each disclosure; look-back; volume by venue; damages ranges; 5% cap; settlement target; limitation dates |
+| `scripts/render_memo.py` | Renders the memo to Word with real footnotes (and his letterhead for Form A), for upload as a Google Doc |
 | `scripts/ledger.py` | Ledger structure check, quote matching, and `memo` lint (citations, placeholders, uncited figures, text carried over from another case, required sections) |
 | `runs/` | One folder per screener date |
 
