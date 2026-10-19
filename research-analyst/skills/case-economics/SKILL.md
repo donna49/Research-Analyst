@@ -15,9 +15,9 @@ python3 scripts/economics.py --moves EXCH:TICKER <date> <date> ... --json runs/<
 ```
 Run this on every statement date from stage 4 and every correction date. Andrew logs a price move,
 including "(nil%)", for each disclosure in the total mix. Record each as a `market` record citing
-`moves.json`. The session column shows the day the market actually reacted. A release after the
-close moves day 0 to the next session; the Global Atomic backtest gave −17.3% on July 17, 2024, not
-July 16.
+`moves.json`. **Add `+` to a date released after the close** (e.g. `2024-07-16+`); the script then
+uses the next session as the reacting session. Without `+`, the script uses the date itself, if it
+was a trading session.
 
 ## 2. Input file
 Write `runs/<date>/<TICKER>/economics_input.json`:
@@ -35,7 +35,12 @@ Write `runs/<date>/<TICKER>/economics_input.json`:
 ```
 - The Class Period start is provisional until stage 10 (claim-framing) fixes it. Re-run the script
   after it changes.
-- Use correction dates as calendar dates. The script finds the reacting session.
+- Use the release date for each correction, and set `"after_close": true` for releases made after the
+  close. The script then uses the next session. Check the release time stamp (stage 2) first.
+- Add `"offerings": [{"date": ..., "security": ..., "price": ..., "units": ..., "ledger": ...}]` for
+  prospectus offerings (s. 130). The script prices them against the final ten-day look-back and
+  keeps them separate from the secondary-market damages.
+- Run with `--asof YYYY-MM-DD` to set the date the limitation countdown runs from (default: today).
 - Include every venue with meaningful volume. Volume by venue drives the "where is the class"
   question (Paladin).
 

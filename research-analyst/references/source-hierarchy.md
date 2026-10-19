@@ -38,6 +38,20 @@ Eastern-time "Accepted" stamp on the filing index page; use the index page time 
 CourtListener allows about 5 searches per minute; run its queries one at a time and retry on
 HTTP 429. A search that never completes is recorded as a failed `search`, not as "no cases".
 
+## Canadian filings and insider data: access routes that work
+
+Learned in the Global Atomic backtest (2026-10-19):
+
+| Need | Route | Notes |
+|---|---|---|
+| SEDAR+ documents | Blocked by captcha for automated fetches | Try Bigdata.com filings, then the issuer's document host, then news wires. If a core document is still missing, record a `gap` and ask the user to download it from SEDAR+ into `sources/` |
+| Issuer IR site | Often behind Cloudflare | Many Canadian issuers serve PDFs from a static host such as `s*.q4cdn.com`. Find the link through search results rather than guessing file names. Record the URL actually opened |
+| SEDI insider trades | The public SEDI search form can be submitted by script (POST) | Record the issuer number and the query parameters in the `search` record |
+| Earnings calls | Bigdata.com often has slides or reports, not transcripts, for small Canadian issuers | If there is no transcript, use the webcast replay page or the news coverage of the call; record a gap for the Q&A |
+| Government lenders (DFC, EDC, DOE) | Board meeting notices and minutes on the agency's website | Check the agency's own agendas against every date the company promised |
+| Statutes | Ontario e-Laws (`ontario.ca/laws`); CanLII may block (403) | Record the statute section used, as a `legal` record with the URL |
+| CUSIP / ISIN | Bigdata.com or a data vendor is tier 2; the prospectus or AIF cover is tier 1 | Use tier 2 only if the tier 1 source cannot be reached |
+
 ## Bigdata.com query discipline (from the Bigdata.com plugin)
 
 One entity, one topic, one period per search. Natural-language queries. Use fast mode with explicit

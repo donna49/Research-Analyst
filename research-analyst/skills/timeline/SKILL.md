@@ -22,3 +22,8 @@ Rules:
 - Show staged revelations: earlier partial disclosures and their price reactions.
 - No row without a ledger record. No inferred dates: unknown dates are marked "date not established"
   and listed as a gap.
+
+## Output
+
+Write `runs/<date>/<TICKER>/timeline.md`. It holds the chronology table, one row per dated record,
+with ledger ids. The memo's Total Mix follows its order.

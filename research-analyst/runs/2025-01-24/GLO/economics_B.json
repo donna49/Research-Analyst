@@ -1,0 +1,276 @@
+{
+ "input": "/home/user/Research-Analyst/research-analyst/runs/2025-01-24/GLO/economics_input_B.json",
+ "computed_at": "2026-10-19T05:17:15+00:00",
+ "price_basis": "TradingView chart feed, split-adjusted, not dividend-adjusted",
+ "venues": [
+  {
+   "symbol": "TSX:GLO",
+   "role": "primary",
+   "currency": "CAD",
+   "corrections": [
+    {
+     "day0": "2025-01-24",
+     "prev_date": "2025-01-23",
+     "prev_close": 0.94,
+     "close0": 0.64,
+     "drop_per_share": 0.29999999999999993,
+     "drop_pct": -0.31914893617021267,
+     "volume0": 14400673.0,
+     "avg_volume_30d": 1059779.7333333334,
+     "volume_ratio": 13.588364211028505,
+     "lookback_sessions": 10,
+     "lookback_end": "2025-02-06",
+     "lookback_avg_10d": 0.597,
+     "lookback_vwap_10d": 0.614892746520334,
+     "recovered_share_of_drop": -0.14333333333333348,
+     "label": "public correction: bank financing or joint venture; discounted placement (release 2025-01-23 after close)",
+     "storm_warning": false,
+     "ledger": "E028"
+    }
+   ],
+   "class_period": {
+    "start": "2023-11-10",
+    "end_session": "2025-01-23",
+    "sessions": 302
+   },
+   "class_volume": 260208469.0,
+   "class_vwap": 1.8875396460673999,
+   "per_share": {
+    "m1_day0_drops": {
+     "value": 0.29999999999999993,
+     "formula": "(0.94-0.64)"
+    },
+    "m2_statutory": {
+     "value": 0.34299999999999997,
+     "formula": "0.94 - lookback_avg_10d 0.597"
+    },
+    "m3_upper": {
+     "value": 1.2905396460674,
+     "formula": "class_vwap 1.888 - lookback_avg_10d 0.597"
+    }
+   },
+   "damaged_shares": {
+    "0.25": 65052117.25,
+    "0.4": 104083387.60000001,
+    "0.5": 130104234.5
+   },
+   "damages": {
+    "0.25": {
+     "m1": 19515635.174999997,
+     "m2": 22312876.21675,
+     "m3": 83952336.37175
+    },
+    "0.4": {
+     "m1": 31225016.279999997,
+     "m2": 35700601.9468,
+     "m3": 134323738.19480002
+    },
+    "0.5": {
+     "m1": 39031270.349999994,
+     "m2": 44625752.4335,
+     "m3": 167904672.7435
+    }
+   }
+  },
+  {
+   "symbol": "OTC:GLATF",
+   "role": "secondary",
+   "currency": "USD",
+   "corrections": [
+    {
+     "day0": "2025-01-24",
+     "prev_date": "2025-01-23",
+     "prev_close": 0.64447,
+     "close0": 0.44,
+     "drop_per_share": 0.20446999999999999,
+     "drop_pct": -0.3172684531475476,
+     "volume0": 2677941.0,
+     "avg_volume_30d": 295861.0333333333,
+     "volume_ratio": 9.051347417498148,
+     "lookback_sessions": 10,
+     "lookback_end": "2025-02-06",
+     "lookback_avg_10d": 0.41623,
+     "lookback_vwap_10d": 0.427523225215562,
+     "recovered_share_of_drop": -0.11625177287621663,
+     "label": "public correction: bank financing or joint venture; discounted placement (release 2025-01-23 after close)",
+     "storm_warning": false,
+     "ledger": "E028"
+    }
+   ],
+   "class_period": {
+    "start": "2023-11-10",
+    "end_session": "2025-01-23",
+    "sessions": 300
+   },
+   "class_volume": 96916313.0,
+   "class_vwap": 1.3391781991260954,
+   "per_share": {
+    "m1_day0_drops": {
+     "value": 0.20446999999999999,
+     "formula": "(0.6445-0.44)"
+    },
+    "m2_statutory": {
+     "value": 0.22824,
+     "formula": "0.6445 - lookback_avg_10d 0.4162"
+    },
+    "m3_upper": {
+     "value": 0.9229481991260954,
+     "formula": "class_vwap 1.339 - lookback_avg_10d 0.4162"
+    }
+   },
+   "damaged_shares": {
+    "0.25": 24229078.25,
+    "0.4": 38766525.2,
+    "0.5": 48458156.5
+   },
+   "damages": {
+    "0.25": {
+     "m1": 4954119.6297774995,
+     "m2": 5530044.81978,
+     "m3": 22362184.137322746
+    },
+    "0.4": {
+     "m1": 7926591.407644,
+     "m2": 8848071.711648,
+     "m3": 35779494.6197164
+    },
+    "0.5": {
+     "m1": 9908239.259554999,
+     "m2": 11060089.63956,
+     "m3": 44724368.27464549
+    }
+   }
+  },
+  {
+   "symbol": "FWB:G12",
+   "role": "secondary",
+   "currency": "EUR",
+   "corrections": [
+    {
+     "day0": "2025-01-24",
+     "prev_date": "2025-01-23",
+     "prev_close": 0.581,
+     "close0": 0.4612,
+     "drop_per_share": 0.11979999999999996,
+     "drop_pct": -0.20619621342512906,
+     "volume0": 50180.0,
+     "avg_volume_30d": 8126.307692307692,
+     "volume_ratio": 6.175006152855872,
+     "lookback_sessions": 10,
+     "lookback_end": "2025-02-06",
+     "lookback_avg_10d": 0.40928000000000003,
+     "lookback_vwap_10d": 0.45327126595151396,
+     "recovered_share_of_drop": -0.43338898163605993,
+     "label": "public correction: bank financing or joint venture; discounted placement (release 2025-01-23 after close)",
+     "storm_warning": false,
+     "ledger": "E028"
+    }
+   ],
+   "class_period": {
+    "start": "2023-11-10",
+    "end_session": "2025-01-23",
+    "sessions": 304
+   },
+   "class_volume": 647871.0,
+   "class_vwap": 1.1936597740908297,
+   "per_share": {
+    "m1_day0_drops": {
+     "value": 0.11979999999999996,
+     "formula": "(0.581-0.4612)"
+    },
+    "m2_statutory": {
+     "value": 0.17171999999999993,
+     "formula": "0.581 - lookback_avg_10d 0.4093"
+    },
+    "m3_upper": {
+     "value": 0.7843797740908296,
+     "formula": "class_vwap 1.194 - lookback_avg_10d 0.4093"
+    }
+   },
+   "damaged_shares": {
+    "0.25": 161967.75,
+    "0.4": 259148.40000000002,
+    "0.5": 323935.5
+   },
+   "damages": {
+    "0.25": {
+     "m1": 19403.736449999993,
+     "m2": 27813.102029999987,
+     "m3": 127044.22715499997
+    },
+    "0.4": {
+     "m1": 31045.978319999995,
+     "m2": 44500.963247999985,
+     "m3": 203270.76344799995
+    },
+    "0.5": {
+     "m1": 38807.472899999986,
+     "m2": 55626.204059999975,
+     "m3": 254088.45430999994
+    }
+   }
+  }
+ ],
+ "volume_split": {
+  "TSX:GLO": 0.7273011696620647,
+  "OTC:GLATF": 0.27088798483432436,
+  "FWB:G12": 0.0018108455036109203
+ },
+ "liability_cap": {
+  "window": "2023-10-27 to 2023-11-09 (10 sessions before 2023-11-10)",
+  "avg_close": 2.0140000000000002,
+  "classes": [
+   {
+    "class": "common",
+    "shares": 202253352,
+    "as_of": "2023-08-10, Q2 2023 MD&A outstanding share data (nearest reported figure before the s. 249 window; flagged)",
+    "ledger": "E114",
+    "price_used": 2.0140000000000002,
+    "value": 407338250.92800003
+   }
+  ],
+  "other_equity_fmv": 0,
+  "market_cap": 407338250.92800003,
+  "cap": 20366912.546400003,
+  "currency": "CAD",
+  "formula": "max(5% x market_cap, 1,000,000); market_cap = sum(shares x 10-day avg close) + other FMV",
+  "note": "s. 249 averages the shares outstanding over the same 10 days; the reported figure nearest the window is used, see each class's as_of"
+ },
+ "headline": {
+  "venue": "TSX:GLO",
+  "currency": "CAD",
+  "common_law_rough": {
+   "mid": 35700601.9468,
+   "low": 19515635.174999997,
+   "high": 44625752.4335,
+   "retention_mid": 0.4
+  },
+  "statutory_capped": 20366912.546400003,
+  "settlement_target": {
+   "low": 10183456.273200002,
+   "high": 7140120.38936
+  },
+  "basis": "damaged shares = Class Period volume on this venue x retention; per share = measure m2 unless stated"
+ },
+ "limitations": {
+  "s138_14_expiry": "2026-11-10",
+  "common_law_expiry_proxy": "2027-01-24",
+  "basis": "s. 138.14: 3 years after first impugned document; common law: 2 years after correction (discovery proxy)",
+  "s138_14_expiry_days_left": 22,
+  "common_law_expiry_proxy_days_left": 97
+ },
+ "d_and_o": {
+  "amount": null,
+  "ledger": "E119"
+ },
+ "cash": {
+  "amount": 18673229,
+  "currency": "CAD",
+  "as_of": "2024-12-31",
+  "ledger": "E118"
+ },
+ "flags": [
+  "s138_14_expiry is 22 days away",
+  "common_law_expiry_proxy is 97 days away"
+ ]
+}

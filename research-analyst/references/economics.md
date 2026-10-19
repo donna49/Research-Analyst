@@ -42,11 +42,17 @@ Math Statutory Damages: $12.25M". That is 49M shares × the $0.25 per-share drop
   each forum, which decided Paladin (4M vs 219M shares).
 
 ## Per-share inflation, three measures (shown side by side)
-1. **Day-0 drop** (his "basic math"): the sum of drop_per_share over every correction and storm warning.
-2. **Statutory (s. 138.5-style):** prev_close before the first correction − 10-day look-back average after
-   the final correction. This captures a staged revelation as one movement.
-3. **Upper bound:** the Class Period volume-weighted average close − the 10-day look-back average (the
-   most a class member who bought at the average price could have lost).
+The Class Period is split into segments at each correction. Shares bought before correction *j*
+bear the drops from *j* onward. Each measure below is volume-weighted across the segments.
+1. **Day-0 drop** (his "basic math"): the sum of the day-0 drops from correction *j* onward.
+2. **Statutory (s. 138.5-style):** the close before correction *j* − the 10-day look-back average after
+   the final correction.
+3. **Upper bound:** the segment's volume-weighted average close − the final 10-day look-back average.
+
+The script reports both the 10-day look-back **average** and the **close on the 10th session**.
+Andrew quotes the 10th-session close ("By July 30, 2024, the ten-day look-back, GLO's share price on
+the TSX was at $1.29"). The statute uses the average trading price. Give both in the memo, and say
+which one the damages use.
 
 ## Damages ranges
 - `common_law_rough` = damaged_shares × measure 2, using the middle retention, with a low–high range

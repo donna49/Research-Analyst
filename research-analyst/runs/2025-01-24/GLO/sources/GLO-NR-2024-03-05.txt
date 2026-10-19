@@ -1,0 +1,552 @@
+NEWS RELEASE
+Global Atomic Updates its Dasa Project Feasibility Study and
+Announces Off-Take Agreement
+All monetary amounts are in U.S. dollars, unless otherwise indicated.
+Toronto, ON, March 5, 2024: Global Atomic Corporation (“Global Atomic” or the “Company”),
+(TSX: GLO, OTCQX: GLATF, FRANKFURT: G12) announced today the results of the updated
+Dasa Project Feasibility Study (the “2024 Study”) replacing the previous Phase 1 Feasibility Study
+(“Phase 1 Study”).
+The 2024 Study has extended the Dasa Mine Life from 12 to 23 years, Mineral Reserves have
+increased by 50% to 73 million pounds U3O8, and uranium production from Dasa has increased
+by 55% to 68.1 million pounds.
+Highlights
+Table1 below compares the metrics of the 2024 Study to the Phase 1 Study:
+Phase 1
+Study
+2026-2037
+
+2024
+Study
+2026-2037
+
+2024
+Study
+2026-2049
+
+Mine plan (years)
+
+12
+
+12
+
+23
+
+Uranium price ($/lb)
+
+$35
+
+$75
+
+$75
+
+Average mill feed grade (ppm)
+
+5,267
+
+5,103
+
+4,113
+
+Uranium production (Mlb)
+
+44.1
+
+44.1
+
+68.1
+
+Average cash cost before royalty ($/lb)
+
+$15.72
+
+$20.35
+
+$25.62
+
+1
+
+Average cash cost ($/lb)
+
+$19.02
+
+$25.38
+
+$30.73
+
+Average AISC2 ($/lb)
+
+$22.13
+
+$31.49
+
+$35.70
+
+Internal After-tax Rate of Return (“IRR”)
+
+22.3%
+
+38.4%
+
+After-tax Net Present Value (“NPV8”) ($ million)
+
+$147
+
+$917
+
+Pay-back (years)3
+
+3.25
+
+2.5
+
+1.
+2.
+3.
+
+Cash cost per pound represents mining, processing, onsite and offsite general and administrative costs, selling expenses and
+royalties, divided by recovered U3O8.
+All-in sustaining cost per pound of uranium represents mining, processing, site and offsite general and administrative costs,
+royalties and sustaining capital expenditures including rehabilitation provision, divided by recovered U3O8.
+Pay-back is based on total cost, including amounts already paid.
+
+Stephen G. Roman, President and CEO commented, “The 2024 Study has identified significant
+improvements in the Dasa Project from the Phase 1 Feasibility Study including a 50% increase in
+Mineable Reserves and a near doubling of the mine life. The payback period estimated in the
+2024 Study is expected to be 2.5 years, including recovery of amounts already spent.”
+“With several layers of contingency built into the 2024 Study, we believe that the estimated returns
+are conservative providing numerous opportunities to add value. For example, there are 51.4
+million pounds of Inferred Resources grading at 5,243 ppm in the Dasa deposit that could be
+
+converted to the Indicated category and brought into the mine plan. We expect to have full project
+financing in place soon and are on track for plant construction to commence in the second half of
+2024 and plant commissioning to occur at the end of 2025.”
+The Dasa Project is defined in three Phases, with the Phase 1 comprising the shallow high-grade
+Flank Zone, Phase 2 comprising several ore bearing zones at lower depths and the Phase 3
+surface mineralization that could be mined as an open pit. See figure 1 below.
+
+Figure 1: Schematic of Dasa deposit and hypothetical underground infrastructure.
+
+Figure 1 above outlines the ore body based on the 2019 Mineral Resource Estimate (“MRE”).
+The 16,000-meter drill program conducted during 2021/22 resulted in significant resource
+conversion from Inferred to Indicated. The previous 2019 MRE had been based on both an open
+pit and underground mine, while the current MRE is based solely on an underground mine. The
+MRE was revised in a news release dated May 23, 2023.
+Figure 2 below shows the resource categories delineated by the 2023 MRE, which includes
+results of the 16,000 metres of drilling, most of which was infill and at a 1,500-ppm cutoff grade
+increased Indicated Resources by 50% from the 2019 MRE.
+
+Page 2 of 9
+
+Figure 2: Dasa Project longitudinal section based on 2023 Mineral Resource Estimate
+
+In figure 2 above, Inferred Resources are delineated in yellow and represent 51.4 million pounds
+which will be targeted in future drilling programs with the intention of converting these to Indicated
+Resources and converted to Mineral Reserves in the next feasibility study. The Dasa ore body
+also remains open down dip and along strike. The Company has delineated three other deposits
+in Niger which could eventually feed the Dasa processing plant.
+The new MRE was calculated by AMC Consultants, (“AMC”), of Perth, Western Australia.
+Table 2: Dasa Mineral Resources as at May 12, 2023
+
+Category
+Indicated
+Inferred
+1.
+2.
+3.
+4.
+
+Tonnes
+Mt
+10.09
+4.45
+
+eU3O8
+ppm
+4,913
+5,243
+
+Contained Uranium
+Mlb
+109.3
+51.4
+
+Mineral Resources are based on CIM definitions.
+Assumes all resources to be mined from a ramp access, underground mine.
+A cut-off grade of 1,480 ppm eU3O8 has been applied for underground resources.
+A bulk density of 2.36t/m3 has been applied for all model cells.
+
+The 2024 Study has estimated the current reserves for the Dasa Project to be:
+Table 3: Dasa Mineral Reserves as at February 28, 2024.
+
+Category
+Probable Reserves
+1.
+2.
+3.
+
+Tonnes
+Mt
+8.04
+
+U3O8
+ppm
+4,113
+
+Contained Uranium
+Mlb
+73.0
+
+Mineral Reserves are based on CIM definitions.
+Assumes all resources to be mined from a ramp access, underground mine.
+A cut-off grade of 1,500 ppm U3O8 ppm has been applied for the Mine Plan.
+
+Economics
+The 2024 Study was completed by METC Engineering Pty Ltd. (“METC”), who also completed
+the Phase 1 Study.
+Page 3 of 9
+
+The economic analysis for the 2024 Study was done with a discounted cash flow (“DCF”) model
+based on a uranium price of $75 per pound U3O8. Sensitivity analysis was applied at intervals
+from $60 per pound to $105 per pound, as shown in Table 4 below.
+Table 4. Economic sensitivity with varying uranium prices (USD)
+Uranium price (per pound)
+$60/lb
+$75/lb
+$90/lb
+Before-tax NPV8
+$656 M
+$1,122 M
+$1,572 M
+After-tax NPV8
+$551 M
+$917 M
+$1,269 M
+After-tax IRR
+27.9%
+38.4%
+47.1%
+
+$105/lb
+$2,022 M
+$1,621 M
+55.1%
+
+The DCF includes the current tax regime and royalty requirements in Niger. Net present value
+(“NPV”) figures are calculated using a range of discount rates as shown in Table 5. The discount
+rate used for the base-case analysis is 8% (“NPV8”). NPV is based on discounting to
+commissioning date, January 1, 2026, less undiscounted remaining capital costs.
+Table 5. Economic sensitivity with varying discount rates using base-case uranium
+price of $75 per pound (USD)
+Discount rate (%)
+6%
+8%
+10%
+12%
+Before-tax NPV
+$1,323 M
+$1,122 M
+$960 M
+$828 M
+After-tax NPV
+$1,073 M
+$917 M
+$791 M
+$687 M
+Processing
+The process plant has been designed for a throughput of 1,200 tonnes per day. Long lead
+equipment has been purchased with delivery expected late summer through the fall of 2024. In
+view of the on-site construction schedule, cold commissioning is expected to be complete in Q4
+2025 and hot commissioning beginning in early 2026. Procurement and construction of supporting
+infrastructure is underway. The processing plant recovery is forecast to be 94.15% in steady state.
+Additional Project Costs
+In the Phase 1 Study, development and commissioning of the mine and processing plant were
+projected over 16 and 19 months, respectively, with costs integrated into the ongoing capital. The
+2024 Study revises this timeline, extending mine development from 2022 through the end of 2025,
+a total of 48 months, to align with the processing plant's commissioning schedule. This adjustment
+results in more comprehensive development work and, consequently, an increase in cumulative
+costs, including a rise in owners' and indirect expenses due to the extended development phase.
+Some of the key capital cost increases are due to the following:
+•
+•
+•
+•
+•
+•
+
+Extended support for site and Niamey staff over 48 months, a $22 million increase.
+Prolonged mine development period contributing an additional $36 million.
+Enhanced EPCM and project team expenses due to increased complexity and extended
+duration, for an extra $12 million.
+Shift from a power purchase agreement to a grid connection with Dasa having its own power
+station, adding $20 million in upfront capital.
+A larger mine camp increases costs by $8 million.
+Additional site support buildings necessary for an extended mine life, adding $21 million.
+
+Page 4 of 9
+
+Contingencies
+The 2024 Feasibility Study incorporates a range of contingencies to address potential risks and
+uncertainties. These provisions ensure the project's resilience and flexibility, safeguarding against
+unforeseen events and enabling adaptive responses to market fluctuations and operational
+challenges. By proactively integrating these measures, the study underscores our commitment to
+project viability and stakeholder confidence.
+
+•
+•
+•
+•
+•
+•
+•
+
+•
+
+Contingency
+
+Undiscounted
+Amount
+(USD millions)
+
+Additional transport time for mill equipment
+Use of average 23 year power cost in first 5 years
+Mobilization & start-up costs for international construction contractors
+Reagent transport cost using Lome rather than Cotonou
+Mill and infrastructure capital cost contingency
+Mine development cost contingency
+Mill availability contingency
+Mining dilution contingency
+Total
+
+$2.3
+$3.1
+$3.5
+$15.3
+$28.7
+$33.6
+$65.7
+$80.0
+$232.2
+
+Due to slower transport via the port of Lomé in Togo through Burkina Faso, project timelines
+have been extended by 1.5 months. Utilizing the Cotonou route will eliminate additional site
+and Niamey costs and advance the Project delivery timelines.
+Power costs are carried at an average cost of $0.26/kwh over the production period. As power
+requirements ramp up over the first 5 years, the power source mix of grid connection and our
+own power station should result in lower costs.
+Local contractors have been identified for site development and construction. The 2024 Study
+assumes international construction contractors for all site work which would result in higher
+costs.
+Reagent costs for the mill are assumed to be transported through the Togo – Burkina Faso
+rather than the traditional route via the port of Cotonou in Benin.
+Initial capital costs include a general contingency provision of 12% for the mill and
+infrastructure.
+A 15% contingency has been included for all mine development and capital costs.
+The mill has been designed for 1,200 tonnes per day throughput, however cash flows for the
+2014 Study are based on 1,000 tonnes per day. If plant availability is 92%, similar to the
+experience of other Niger uranium mills, fixed costs for the mill and infrastructure will be
+reduced.
+Mine dilution has been increased to 10% in the 2024 Study compared to 5% in the Phase 1
+Study. The additional tonnes are therefore processed at cost of $210/tonne.
+
+Value Opportunities
+Global Atomic is poised to enhance the Dasa Project's value through strategic infill drilling
+targeting the 51.4 million pounds of high-grade Inferred Resources. This initiative, set to
+commence in Q3 2024 from both underground and surface positions, aims to elevate mineable
+grades post-2038 and extend the mine's operational life beyond 2048. Additionally, exploration
+drilling will seek to expand the deposit further, leveraging its open at depth and on-strike potential.
+Page 5 of 9
+
+Power costs account for 28% of cash costs, up from 22% in the Phase 1 Study. Cash costs during
+the first 12 years have increased from $15.72/lb to $20.34/lb. The cost of a kilowatt of power has
+increased by 50% since the Phase 1 Study, accounting for $2.12/lb of the increase in cash costs
+during this period. Once operational, a potential investment in solar and battery storage or other
+power generation alternatives will be assessed to reduce power costs.
+Once Dasa has achieved commercial production of U3O8, the Company will conduct a third-party
+review of the plant processes to optimize operating rate and plant efficiency that would result in
+higher production volume and lower costs.
+Based on growing global demand for uranium, Global Atomic is planning to complete a preliminary
+feasibility study in the early years of the mine plan for a plant expansion to 2,000 tonnes per day
+and incorporate additional drilling results.
+The mine is already designed for higher production. Additional capital requirements are expected
+to be minimal and primarily used to expand the mining fleet and increase mill throughput. The
+current mine plan is based on throughput of 1,000 tonnes per day, the plant has been designed
+to handle up to 1,200 tonnes per day, with most equipment sized by 20% more than this. At 92%
+availability, throughput could be increased to 1,325 tonnes per day with minimal additional
+investment.
+Technical Report
+A NI 43-101 compliant technical report related to the 2024 Study will be filed on SEDAR and
+posted to the Company website (www.globalatomiccorp.com) within 45-days of today’s news
+release.
+QP Statement
+The scientific and technical disclosures in this news release have been reviewed and approved
+by Andrew Pooley and John Edwards. Andrew Pooley is the Chairman of Bara Consulting. He
+has obtained a B.Eng (Hons) in Mining Engineering from Nottingham University in the UK and
+has over 29 years of experience in the mining industry. He is a Fellow of the South African Institute
+of Mining and Metallurgy. John Edwards is a Professional Metallurgist and is the Chief
+Metallurgist at METC Engineering (Pty) Ltd., having graduated with a BSc Hons in Mineral
+Processing Technology in 1985 from Camborne School of Mines, UK. He is a Fellow of the South
+African Institute of Mining and Metallurgy with over 35 years of experience as a metallurgist.
+Off-take Agreements
+Global Atomic has finalized a Letter of Intent (“LOI”) for the sale of uranium from the Company’s
+Dasa Project in the Republic of Niger to a strategic Europe-based nuclear power utility. The LOI
+is subject to the successful conclusion of a purchase-sale contract, which the Company will now
+progress.
+The LOI represents the supply of 260,000 pounds U3O8 over a three-year delivery window
+beginning in 2026 and is characterized as representing “starter volume”. This is the fourth such
+agreement signed by the Company and brings the Company’s total current committed volume up
+to 9.5 million pounds U3O8, representing revenue of up to US$770 million at current market levels.
+
+Page 6 of 9
+
+This LOI is priced close to current term market prices escalating each year, reflecting the
+Company’s continued strategy of layering in sales contracts in support of Tier 1 global utilities at
+volumes sufficient to underwrite debt financing, thereby limiting equity dilution as the Dasa
+operation moves into production.
+Niger Update
+On February 24, 2024, Niger’s neighboring ECOWAS nations lifted the sanctions imposed on
+Niger subsequent to the July 2023 change in government, including re-opening Niger’s historic
+primary trade route to ocean shipping channels through the port of Cotonou in Benin. During the
+sanction period, Global Atomic continued to open up underground ore access and development
+of mine infrastructure, as well as site preparation for the processing plant. Supplies for these
+activities used an alternate shipping route through Togo and Burkina Faso.
+The Government of Niger places great value on the local, regional and national economic
+potential of the Dasa Mine through their 20% ownership, corporate taxes and mining royalties,
+and more importantly the creation of hundreds of jobs and many business opportunities for local
+suppliers to help build and maintain the Dasa Mine.
+The Government sees the Dasa Mine as playing a significant role in revitalizing the central Agadez
+region of Niger. Recent changes in the Niger Government’s cabinet, have split the Mining portfolio
+away from the Petroleum and Energy portfolios, thus enabling improved access to the Mines
+Minister.
+Project Financing Update
+Financing for the construction of the processing plant continues to advance as the Company
+anticipates that the 60% debt portion of the project financing is expected to be satisfied in Q2
+2024 in the form a debt facility from Export Development Canada and a US development bank.
+The 40% equity portion of the financing cost will be partially satisfied by the $73.4 million invested
+to date in the Dasa Project by Global Atomic and cash on hand. Any remaining equity required
+may be raised in the form of pre-payments on future uranium sales agreements, which would be
+put in place following banks’ board approval of the debt facility. The current estimate for capital
+required by Dasa to commence production is as follows:
+
+Page 7 of 9
+
+Initial Capital Cost (US D millions)
+T otal
+S pent
+R emainder
+Mining
+P rocess plant
+Infrastructure
+O wners costs
+
+$31.5
+2.7
+11.1
+21.9
+67.2
+
+Conting ency
+W orking capital
+Capital cost in F easibility S tudy
+
+$90.4
+88.0
+79.3
+69.9
+327.6
+36.7
+27.8
+$392.0
+
+$67.2
+
+$58.8
+85.3
+68.2
+48.0
+260.4
+36.7
+27.8
+$324.8
+
+Corporate cost allocation (50% )
+F inancing costs
+Capital cost for project financing
+
+7.6
+25.0
+$424.6
+
+4.0
+2.3
+$73.4
+
+3.6
+22.7
+$351.2
+
+B ank funding (60% )
+E quity (40% )
+
+$254.8
+169.8
+$424.6
+
+$0.0
+73.4
+$73.4
+
+$254.8
+96.4
+$351.2
+
+About Global Atomic
+Global Atomic Corporation (https://www.globalatomiccorp.com) is a publicly listed company that
+provides a unique combination of high-grade uranium mine development and cash-flowing zinc
+concentrate production.
+The Company’s Uranium Division has identified three additional deposits in Niger additional to
+the large, high-grade Dasa Project, discovered in 2010 by Global Atomic geologists through
+grassroots field exploration. With the issuance of the Dasa Mining Permit and an Environmental
+Compliance Certificate by the Republic of Niger, the Dasa Project is fully permitted for commercial
+production. Mine excavation began in Q1 2022, and commissioning of the processing plant is
+expected at the end of 2025/ beginning 2026.
+Global Atomic’s Base Metals Division holds a 49% interest in the Befesa Silvermet Turkey, S.L.
+(BST) Joint Venture, which operates a modern zinc production plant, located in Iskenderun,
+Türkiye. The plant recovers zinc from Electric Arc Furnace Dust (EAFD) to produce a high-grade
+zinc oxide concentrate which is sold to zinc smelters around the world. The Company's joint
+venture partner, Befesa Zinc S.A.U. (Befesa) holds a 51% interest in and is the operator of the
+BST Joint Venture. Befesa is a market leader in EAFD recycling, with approximately 50% of the
+European EAFD market and facilities located throughout Europe, Asia and the United States of
+America.
+
+Page 8 of 9
+
+Key contacts:
+Stephen G. Roman
+Chairman, President and CEO
+Tel: +1 (416) 368-3949
+Email: sgr@globalatomiccorp.com
+
+Bob Tait
+VP Investor Relations
+Tel: +1 (416) 558-3858
+Email: bt@globalatomiccorp.com
+
+The information in this release may contain forward-looking information under applicable securities laws. Forward-looking information includes, but is not limited to, statements with respect to completion of
+any financings; Global Atomics’ development potential and timetable of its operations, development and exploration assets; Global Atomics’ ability to raise additional funds necessary; the future price of uranium;
+the estimation of mineral reserves and resources; conclusions of economic evaluation; the realization of mineral reserve estimates; the timing and amount of estimated future production, development and
+exploration; cost of future activities; capital and operating expenditures; success of exploration activities; mining or processing issues; currency exchange rates; government regulation of mining operations; and
+environmental and permitting risks. Generally, forward-looking statements can be identified by forward-looking terminology such as “plans”, “is expected”, “estimates”, variations of such words and phrases or
+statements that certain actions, events or results “could”, “would”, “might”, “will be taken”, “will begin”, “will include”, “are expected”, “occur” or “be achieved”. All information contained in this news release,
+other than statements of current or historical fact, is forward-looking information. Statements of forward-looking information are subject to known and unknown risks, uncertainties and other factors that may
+cause the actual results, level of activity, performance or achievements of Global Atomic to be materially different from those expressed or implied by such forward-looking statements, including but not limited
+to those risks described in the annual information form of Global Atomic and in its public documents filed on SEDAR from time to time.
+Forward-looking statements are based on the opinions and estimates of management at the date such statements are made. Although management of Global Atomic has attempted to identify important factors
+that could cause actual results to be materially different from those forward-looking statements, there may be other factors that cause results not to be as anticipated, estimated or intended. There can be no
+assurance that such statements will prove to be accurate, as actual results and future events could differ materially from those anticipated in such statements. Accordingly, readers should not place undue
+reliance upon forward-looking statements. Global Atomic does not undertake to update any forward-looking statements, except in accordance with applicable securities law. Readers should also review the risks
+and uncertainties sections of Global Atomics’ annual and interim MD&As.
+The Toronto Stock Exchange has not reviewed and does not accept responsibility for the adequacy and accuracy of this news release.
+
+Page 9 of 9
+
+

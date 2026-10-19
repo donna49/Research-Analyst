@@ -95,6 +95,14 @@ def _tv_bars(symbol, adjustment, n=BARS):
     raise RuntimeError(f"{symbol}: timed out")
 
 
+def ensure_history_for(day0):
+    """Fetch enough bars to reach well before day0 (backtests on old drops need more than the default)."""
+    global BARS
+    if day0:
+        need = int((dt.date.today() - day0).days * 252 / 365) + EST_LEN + EST_GAP + 400
+        BARS = max(BARS, need)
+
+
 def history(symbol, adjustment="dividends"):
     """Daily bars for a TradingView symbol, cached per symbol, adjustment and day."""
     os.makedirs(CACHE, exist_ok=True)
@@ -103,7 +111,7 @@ def history(symbol, adjustment="dividends"):
         return json.load(open(path))
     for i in range(3):
         try:
-            info, bars = _tv_bars(symbol, adjustment)
+            info, bars = _tv_bars(symbol, adjustment, BARS)
             break
         except RuntimeError:
             raise
@@ -180,6 +188,7 @@ def classify(ar, t, short_history):
 
 
 def analyse(symbol, day0=None):
+    ensure_history_for(day0)
     exch, ticker = symbol.split(":", 1)
     market = MARKETS.get(exch)
     if not market:
@@ -281,7 +290,14 @@ def analyse(symbol, day0=None):
     if stock.get("currency") == "GBX":
         flags.append("prices in pence (GBX)")
 
-    cap = tv.get("market_cap_basic")
+    # Scanner market cap is today's; rebase it to day 0 through today's implied share count.
+    cap_now = tv.get("market_cap_basic")
+    last_close = stock["rows"][-1]["close"]
+    shares_now = cap_now / last_close if cap_now and last_close else None
+    prev = stock["rows"][i0 - 1]["close"] if i0 else None
+    cap = shares_now * prev if shares_now and prev else None
+    if d0 != dates[-1] and cap:
+        flags.append("market cap and value lost use today's share count at day-0 prices; confirm shares outstanding from filings")
     out = {
         "symbol": symbol, "name": tv.get("description"), "country": tv.get("country"),
         "sector": tv.get("sector"), "industry": tv.get("industry"), "currency": stock.get("currency"),
@@ -301,7 +317,7 @@ def analyse(symbol, day0=None):
         "volume": vol0, "avg_volume_30d": avg_vol,
         "volume_ratio": vol0 / avg_vol if vol0 and avg_vol else None,
         "market_cap": cap,
-        "market_cap_lost": cap * (-ret0) / (1 + ret0) if cap and ret0 is not None else None,
+        "market_cap_lost": shares_now * (prev - stock["rows"][i0]["close"]) if shares_now and prev else None,
         "flags": flags,
         "class": classify(ar, t if t is not None else 0, short),
     }
@@ -338,9 +354,10 @@ def cluster_check(results, min_corr=0.5, min_days=60):
 
 def lookback(symbol, day0, days, out_json=None):
     """Stage 1: every session in the lookback where the stock fell 5%+, run through the drop standard."""
+    ensure_history_for(day0 - dt.timedelta(days=days))
     start = (day0 - dt.timedelta(days=days)).isoformat()
     r = returns(history(symbol))
-    cands = [d for d, x in sorted(r.items()) if start <= d < day0.isoformat() and x <= -0.05]
+    cands = [d for d, x in sorted(r.items()) if start <= d < day0.isoformat() and x <= -0.05] + [day0.isoformat()]
     res = []
     for d in cands:
         try:
@@ -349,7 +366,7 @@ def lookback(symbol, day0, days, out_json=None):
             res.append({"symbol": symbol, "day0": d, "error": str(e)[:200]})
     if out_json:
         json.dump(res, open(out_json, "w"), indent=1, default=str)
-    print(f"{len(cands)} sessions with a fall of 5%+ between {start} and {day0}")
+    print(f"{len(cands) - 1} sessions with a fall of 5%+ between {start} and {day0}, plus day 0 itself (last row)")
     print("| Date | Return | Abnormal | t | Class |")
     print("|---|---|---|---|---|")
     for x in res:

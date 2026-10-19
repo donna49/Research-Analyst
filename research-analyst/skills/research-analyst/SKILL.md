@@ -46,6 +46,10 @@ Layer 1 is fast and wide; Layer 2 is slow and deep. Never run Layer 2 work insid
 | 12 | `verify` | Re-check quotes, numbers and citations; red-team each comparison and the decision | — |
 | 13 | `memo-writer` | `memo.md` in Andrew's form; `ledger.py memo` lint | The memo |
 
+**Checkpoint 1 comes before stage 4.** Write the `issue` record and `issue.md` from stages 1–2, plus
+a quick look at the last two periodic reports, then stop. Full statement collection (stage 4) starts
+only after the user confirms.
+
 Stages 6, 7 and 8 can run in parallel after stage 5. Stage 9 needs the corrections (stage 2) and a
 provisional Class Period start; re-run it after stage 10 fixes the start. Stage 12 must pass before
 stage 13.
@@ -82,7 +86,8 @@ size. Say what was skipped.
 10. **Existing lawsuits do not stop the work.** Record them prominently and continue. A parallel US
     action is often a reason to pursue in Canada (FiServ), not a reason to stop.
 11. **One case, one set of facts.** Exemplar memos (`references/corpus.md`) teach method and voice.
-    Their names, tickers and figures never enter another case's memo.
+    Their facts, tickers and figures never enter another case's memo. Prior cases may be **named**
+    only as an analogy (deal sheet "Case analogy") or as precedent (Bear v. Bull), by case name.
 12. **Legal citations only from `references/legal-library.md`**, or verified against the source and
     recorded as a `legal` record.
 

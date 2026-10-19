@@ -55,7 +55,9 @@ integrity) and InvestSkill `fact-check` (claim ledger, source tiers, verdicts).
 | `party` | Issuer identity, listing, insider, director, officer, auditor, underwriter, related party | `role` (issuer / listing / officer / director / auditor / underwriter / insider / related party / plaintiff), `name`, `tenure`, plus `ticker`, `cusip`, `isin`, `jurisdiction` for issuer/listing records |
 | `capital` | Shares outstanding, market cap, cash, D&O insurance, compensation, insider trade | `metric`, `value`, `unit`/`currency`, `as_of` |
 | `offering` | A securities offering in or near the Class Period | `date`, `security`, `price`, `gross_proceeds`, `agents`, `use_of_proceeds` |
-| `proceeding` | A parallel or competing proceeding (class action, derivative suit, regulator case, CCAA) | `forum`, `docket`, `filed`, `counsel`, `class_period`, `status`, `corrective_dates` |
+| `proceeding` | A parallel or competing proceeding (class action, derivative suit, regulator case, CCAA) | `forum`, `docket`, `filed`, `counsel`, `class_period`, `proceeding_status`, `corrective_dates` |
+| `framing` | A claim-framing element from stage 10: class definition, class period end, defendant, cause of action chosen, linkage-matrix row | `element` (class / period / defendant / cause / linkage), `text`, `refs` |
+| `issue` | The stage 3 issue definition | `subject`, `search_terms`, `lookback`, `case_types`, `themes` |
 | `economics` | A number from `scripts/economics.py` | `metric`, `value`, `unit`/`currency`, `formula`; `source.doc_type` = `script output`, `source.location` = JSON path |
 | `legal` | A legal proposition used in the memo, with its authority | `citation`, `pinpoint`, `text` (verbatim from `legal-library.md` or the verified source), `verified` (`library` / `checked: <url>`), `forum` |
 | `decision` | The recommendation (one per case; supersede to revise) | `recommendation` (`pursue` / `pursue-hold` / `monitor` / `pass`), `reasons`, `refs` (records it rests on), `would_change_if`, `next_catalyst`, `deadlines` |

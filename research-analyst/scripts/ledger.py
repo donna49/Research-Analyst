@@ -17,7 +17,7 @@ import glob, json, os, re, sys
 STAGES = {"market-event", "trigger", "issue", "statement", "comparison", "knowledge", "external", "timeline", "verify",
           "parties", "economics", "claim"}
 KINDS = {"market", "revelation", "statement", "comparison", "knowledge", "external", "event", "alternative",
-         "gap", "search", "issue", "party", "capital", "offering", "proceeding", "economics", "legal", "decision"}
+         "gap", "search", "issue", "party", "capital", "offering", "proceeding", "economics", "legal", "decision", "framing"}
 RECOMMENDATIONS = {"pursue", "pursue-hold", "monitor", "pass"}
 STATUSES = {"fact", "attributed", "inference", "assumption", "estimate", "gap"}
 STATEMENT_TYPES = {"fact", "forward-looking", "opinion", "risk-hypothetical", "reassurance", "omission", "puffery"}
@@ -87,7 +87,7 @@ def check(path):
             errs.append(f"{rid}: proceeding without forum")
         if r.get("kind") == "gap" and not r.get("would_be_settled_by"):
             errs.append(f"{rid}: gap without would_be_settled_by")
-        if BANNED.search(r.get("claim", "")) and r.get("status") != "attributed":
+        if BANNED.search(r.get("claim", "")) and r.get("status") != "attributed" and r.get("kind") != "legal":
             errs.append(f"{rid}: conclusory wording in claim (see language-rules.md)")
         if str(r.get("verified", "")).startswith("failed") and not any(o.get("supersedes") == rid for o in recs):
             errs.append(f"{rid}: verification failed and not superseded")
@@ -129,7 +129,21 @@ REQUIRED_SECTIONS = ["OVERVIEW", "TOTAL MIX OF INFORMATION", "PUBLIC CORRECTIVE 
                      "POTENTIAL CLASS PROCEEDING", "THE MISREPRESENTATION", "PARALLEL AND COMPETING PROCEEDINGS",
                      "BEAR v. BULL", "CONCLUSIONS"]
 PLACEHOLDER = re.compile(r"«|»|\[(add|number|tbd|insert|todo)[^\]]*\]|\breserved\b|\bTBD\b|PART __|\?\?\?|XX+\b", re.I)
-CITE = re.compile(r"\[(E\d{3,})\]")
+CITE = re.compile(r"\[(E\d{3,}(?:\s*[,;–-]\s*E\d{3,})*)\]")
+
+
+def cited_ids(text):
+    out = set()
+    for grp in CITE.findall(text):
+        for part in re.split(r"\s*[,;]\s*", grp):
+            rng = re.split(r"\s*[–-]\s*", part)
+            if len(rng) == 2:
+                a, b = (int(x[1:]) for x in rng)
+                w = len(rng[0]) - 1
+                out.update(f"E{n:0{w}d}" for n in range(a, b + 1))
+            else:
+                out.add(part.strip())
+    return out
 FIGURE = re.compile(r"(\$\s?\d|\bC\$|\bUS\$|\bUSD\s?\d|\bCAD\s?\d|\d[\d,.]*\s?%|\d[\d,.]*\s?(million|billion|M|B)\b)")
 TICKER = re.compile(r"\b(?:TSXV?|CSE|NEO|NYSE|NASDAQ|Nasdaq|OTCQX|OTCQB|OTC|ASX|LSE|XETR|FRA|Cboe Canada|CBOE)\s*:\s*[\"“']?([A-Z][A-Z0-9.]{0,7})|\(\s*[\"“]([A-Z][A-Z0-9.]{1,7})[\"”]\s*\)")
 
@@ -140,7 +154,7 @@ def memo(ledger_path, memo_path):
     corpus = " ".join(json.dumps(r) for r in recs)
     text = open(memo_path).read()
     lines = text.splitlines()
-    for e in sorted(set(CITE.findall(text)) - ids):
+    for e in sorted(cited_ids(text) - ids):
         errs.append(f"memo cites {e}, which is not in the ledger")
     in_code = False
     for n, line in enumerate(lines, 1):

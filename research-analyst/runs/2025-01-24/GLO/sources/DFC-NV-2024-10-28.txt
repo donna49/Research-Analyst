@@ -1,0 +1,307 @@
+Board of Directors Notational Vote
+Monday, October 28, 2024
+Public information summaries for the below listed projects to be considered by the Board of Directors is
+found below.
+Notational Vote Items
+I.
+
+PROJECT APPROVALS
+a. V.tal Rede Neutra De Telecomunicacoes S.A.
+b. Sudameris Bank, S.A.E.C.A.
+c. Banco Financiera Comercial Hondureña S.A.
+d. Southeast Asia Commercial Joint Stock Bank
+
+Host Country
+Brazil
+Name of Counterparty
+V.tal Rede Neutra De Telecomunicacoes S.A. (“V.tal”)
+Deutsche Bank A.G. or another replacement beneficiary acceptable to DFC (“Deutsche Bank”)
+Project Description
+DFC will support the Brazilian digital infrastructure company, V.tal, by (i) co-lending with IDB and other DFIs in
+a $500 million facility and (ii) providing an 80% guaranty to Deutsche Bank or another acceptable party for the
+purchase of debentures issued by V.tal, funding capital expenditures (“CAPEX”) related to the expansion and
+improvement of V.tal’s fiber network across Brazil (the “Project”).
+DFC Product Type
+Debt Financing
+Unfunded Guaranty
+DFC Investment
+DFC Loan: $150 million
+DFC Guaranty: $480 million
+Total Project Costs
+$1.64 billion
+Policy Review
+U.S. Economic Impact
+No material U.S. effects issues.
+Developmental Objectives
+Access to reliable, high-speed internet is a challenge for millions of Brazilian households. Approximately 6 million
+households, 7.5% of the population, did not access the internet in 2023, and 13% of households lacked access to
+fixed broadband. Internet access is unevenly distributed across regions and income groups in Brazil, reflecting
+high, persistent income inequality. In addition, low-income populations typically experience lower internet speeds,
+especially on fixed networks.
+
+In response to these challenges, the Project is expected to have a positive development impact in Brazil by
+supporting digital infrastructure expansion, specifically the expansion and improvement of V.tal’s fiber network
+across the country. The Project is expected to enable more than 1.6 million new Fiber To The Home (FTTH)
+connections by the end of 2028, deepening broadband penetration in Brazil. Approximately 47% of FTTH end
+users are expected to be low-income households. In addition to increasing the number of homes connected, the
+Project is expected to connect 4,000 schools to the fiber network, benefitting more than 500,000 students and
+contributing to human capital development throughout Brazil. Given the Project’s characteristics, it is categorized
+as Highly Impactful per DFC’s Impact Quotient (IQ).
+
+Environment and Social Assessment
+Screening: The Project has been reviewed against DFC’s environmental and social policies and determined to be
+categorically eligible. The Project has been screened as Category B because it involves the expansion of telecom
+operations by enhancing existing telecommunication infrastructure, which have the potential to result in limited
+environmental and social (E&S) impacts that can be mitigated to acceptable levels by adopting good E&S
+management practices. Key issues of concern include the need for: (a) strong and effective environmental and
+social management systems; (b) safety in the workplace (especially when working at elevated locations); (c) a
+strong labor management system; (d) adequate oversight and management of contractors; (e) pollution prevention
+mainly related to waste management practices and hazardous materials management; and (f) stakeholder
+engagement and external grievance mechanism.
+
+Applicable Standards: DFC’s environmental and social due diligence indicates that the Project will have impacts
+that must be managed in a manner consistent with the following International Finance Corporation’s (IFC) 2012
+Performance Standards (PS):
+
+PS1: Assessment and Management of Environmental and Social Risks and Impacts;
+PS2: Labor and Working Conditions;
+PS3: Resource Efficiency and Pollution Prevention; and
+PS4: Community Health, Safety, and Security.
+
+The Project involves the expansion of existing operations by enhancing existing telecom infrastructure through
+ordinary course of business investments, new leases, right of use and equivalent agreements. Enhanced telecom
+infrastructure is expected not to be deployed in known indigenous people, cultural properties, nor biological
+resources which are of conservation concern and therefore, PS 5, 6, 7, and 8 (Land Acquisition and Involuntary
+Resettlement; Biodiversity Conservation and Sustainable Management of Living Natural Resources; Indigenous
+Peoples; and Cultural Heritage) should not be triggered by the Project.
+
+In accordance with PS 3, IFC’s General Environmental, Health, and Safety (EHS) Guidelines and EHS Guidelines
+for Telecommunications are also applicable to the Project.
+
+Environmental and Social Risks and Mitigation Measures: The Borrower has been developing an
+Environmental and Social Management System (ESMS) which provides a comprehensive approach to managing
+environmental and social risks in compliance with the IFC’s Performance Standards. The Borrower has performed
+an environmental and social (E&S) review of its operations and identified the risks associated with its telecom
+operations. The ESMS will be used to manage the identified environmental risks to acceptable levels. The
+Borrower’s organizational capacity, training, monitoring, and reporting are all adequate to manage the
+environmental and safety risks to acceptable levels and are being augmented as the Project progresses.
+
+Solid waste and wastewater management practices are acceptable and involve recycling of wastes and discharge of
+wastewaters to the municipal sewerage network. Solid wastes that are not recycled will be sent to the municipal
+landfills. Small quantities of fuel and lubricants used at the Project facilities will also be properly managed in
+compliance with the local regulations and IFC’s EHS Guidelines. In addition, adequate occupational health and
+safety (OHS), fire prevention and control, and other safety measures will also be put in place. The gaps in the
+borrowers ESMS, including the guidance and requirements regarding security and human rights, and the
+Stakeholder Engagement Plan and Grievance Mechanisms, will also be developed and implemented.
+
+The Borrower is expected to continue implementing its ESMS and monitor the environmental and social
+performance of its operations. In addition, the Borrower is expected to manage its telecom operations in
+accordance with IFC’s 2012 Performance Standards and EHS General and Telecommunications Guidelines.
+
+Host Country
+Paraguay
+Name of Counterparty
+Sudameris Bank, S.A.E.C.A.
+Project Description
+DFC financing to support on-lending to small and medium enterprises (“SMEs”) with 30% of the proceeds
+earmarked for women-owned or women-led SMEs in Paraguay.
+DFC Product Type
+Debt Financing
+DFC Investment Amount
+$180,000,000
+Total Project Costs
+$250,000,000
+U.S. Involvement
+JPMorgan Chase, N.A.
+Policy Review
+U.S. Economic Impact
+The Project is not expected to have a negative impact on the U.S. economy.
+Developmental Objectives
+In Paraguay, SMEs represent 95% of businesses and provide 70% of all jobs, yet SMEs face a financing gap of
+nearly $4 billion. Despite their importance, they face significant challenges securing credit, especially long-term
+credit from the local banking sector. Women-owned/led SMEs face additional challenges in the country where
+women’s economic participation and opportunity lags that found in most counterpart countries of the greater Latin
+America and Caribbean region. Additionally, over half of Paraguayans live in rural areas, and while urban poverty
+decreased in recent years, rural poverty increased over the same period, reaching more than a 12% gap in poverty
+rates between the two groups as of 2021.
+In response to these development challenges, the Project is expected to have a positive development impact in
+Paraguay by providing critical financing to SMEs, with a specific focus on women- owned/-led SMEs and rural
+borrowers. The Project will provide longer tenor loans, which are uncommon in the Paraguayan market for SME
+finance and is aligned to the 2X criteria for leadership and investments through financial intermediaries. Given the
+Project’s characteristics, it is categorized as Highly Impactful per DFC’s Impact Quotient.
+
+Environment and Social Assessment
+The Project has been reviewed against the DFC’s 2024 Environmental and Social Policies and Procedures manual
+(“ESPP”) and has been determined to be categorically eligible. DFC loans to financial institutions for the
+
+expansion of lending to small- and medium-enterprises (“SME”) are screened as a Financial Intermediary C (FI-C)
+for environmental and social assessment. These downstream investments are expected to result in minimal adverse
+environmental and social impacts. Therefore, all those downstream investments have been pre-screened as low risk
+and further review and consent is not required for these investments.
+To ensure that the Borrower’s loans are consistent with the DFC’s statutory and policy requirements, the DFC loan
+will be subject to conditions regarding the use of proceeds. The primary environmental and social issues identified
+in this transaction relate to the need for an Environmental and Social Policy (“ESP”) that meets the 2012 IFC
+Performance Standards.
+Under the DFC’s 2024 ESPP, the Borrower is required to comply with applicable local and national laws and
+regulations related to environmental and social performance and applicable provisions of the 2012 International
+Finance Corporation’s Performance Standard (“PS”) 1 and 2. A desk-review based due diligence assessment
+indicates that because the Project will use DFC support for on-lending to SMEs in various sectors including
+women-owned and women-led businesses in Paraguay, significant adverse impacts concerning community health
+and safety, biodiversity, land acquisition and resettlement, indigenous peoples, and cultural heritage are not
+anticipated; therefore, PS 3, 5, 6, 7, and 8 are not triggered at this time. The Borrower does utilize private security
+and therefore, relevant aspects of IFC PS 4, Community Health, Safety, and Security are triggered.
+
+The Borrower does have a partially aligned environmental and social policy as described in IFC PS 1, grievance
+mechanisms, and human resources policies generally commensurate with its investment strategy. However, the
+Borrower will be required to provide updates to align with DFC’s 2024 ESPP.
+
+Host Country(ies)
+Honduras
+Name of Counterparty
+Banco Financiera Comercial Hondureña S.A.
+Project Description
+The creation of a $312.5 million portfolio of loans to eligible SMEs in Honduras with specific focus on womenowned and -led businesses and the bottom third of businesses by size. The Loan will be co-lent alongside a loan
+from Citibank N.A.
+DFC Product Type
+Debt Financing
+DFC Investment
+$230,000,000
+Total Project Costs
+$312,500,000
+U.S. Involvement
+Citibank N.A.
+Policy Review
+U.S. Economic Impact
+The Project is not expected to have a negative impact on the U.S. economy.
+Developmental Objectives
+In Honduras, small and medium enterprises (SMEs), including microenterprises, are the country’s primary driver
+of economic development and productivity as they account for 60% of Honduras’ GDP and 70% of employment.
+Women-owned/led SMEs disproportionately face access to finance constraints as they often operate in the
+informal economy and lack sufficient collateral.
+In response to these challenges, the Project will contribute to financial inclusion and women’s economic
+empowerment in Honduras by allocating all project proceeds to SMEs, including specific allocations to smaller
+sized SMEs and 2X eligible enterprises, across a variety of sectors including services, trade, agriculture,
+construction, real estate, hospitality, manufacturing, and transportation. With a specific allocation of loans to
+women-owned/led SMEs, the Project is aligned to the 2X criteria for leadership and investments through financial
+intermediaries. Given the Project characteristics, the Project is categorized as Highly Impactful per DFC’s Impact
+Quotient.
+
+B-1
+
+Environment and Social Assessment
+Screening:
+The Project has been reviewed against the DFC’s 2024 Environmental and Social Policies and Procedures manual
+(“ESPP”) and has been determined to be categorically eligible. DFC loans to financial institutions for the
+expansion of on-lending to small and medium-sized enterprises (“SMEs”) are screened as a Financial Intermediary
+C (FI-C) for environmental and social assessment. These downstream investments are expected to result in
+minimal adverse environmental and social impacts. Therefore, all those downstream investments have been prescreened as low risk and further review and consent is not required for these investments.
+To ensure that the Borrower’s loans are consistent with the DFC’s statutory and policy requirements, the DFC loan
+will be subject to conditions regarding the use of proceeds. The primary environmental and social issues identified
+in this transaction relate to the need for an Environmental and Social Policy (“ESP”) that meets the 2012 IFC
+Performance Standards.
+Applicable Standards:
+Under the DFC’s ESPP, the Borrower is required to comply with applicable local and national laws and
+regulations related to environmental and social performance and applicable provisions of the 2012 International
+Finance Corporation’s Performance Standard (“PS”) 1 and 2. A desk-review based due diligence assessment
+indicates that because the Project will use DFC support for on-lending to SMEs for improved access to financing
+especially of women-owned and women-led SMEs and the smallest of local SMEs in Honduras, significant
+adverse impacts concerning community health and safety, biodiversity, land acquisition and resettlement,
+indigenous peoples, and cultural heritage are not anticipated; therefore, PS 3, 5, 6, 7, and 8 are not triggered at this
+time. The Borrower does utilize private security and therefore, relevant aspects of IFC PS 4, Community Health,
+Safety, and Security are triggered.
+Environmental and Social Risk and Mitigation:
+The Borrower has an Environmental and Social Policy, grievance mechanisms, and human resources policies that
+generally align with the expectations listed in the DFC’s 2024 ESPP and IFC PS 1 and 2. The Borrower will be
+required to provide updates to its ESP, human resources policies, and code of conduct to fully align with DFC’s
+expectations as a condition of receipt of DFC support.
+
+Host Country
+Vietnam
+Name of Counterparty
+Southeast Asia Commercial Joint Stock Bank
+Project Description
+Follow-on direct loan of up to $100 million (the “Tranche II Loan”) to the Borrower to expand the
+Borrower’s on-lending program to small- and medium-sized enterprises (“SMEs”) and individual
+borrowers. The Borrower will on-lend at least 30% of the Tranche II Loan proceeds to SMEs, at least
+10% women-owned/women-led SMEs and at least 10% to Qualified Climate Finance Customers. 1
+DFC Product Type
+Debt Financing
+DFC Investment
+$100,000,000
+Total Project Costs
+$125,000,000
+U.S. Involvement (If not applicable, put N/A)
+N/A
+Insurance Specific (If not applicable, put N/A)
+Private Insurer Participation
+N/A
+Investment Type
+N/A
+Foreign Enterprise
+N/A
+Fund Specific (If not applicable, put N/A)
+Fund Manager
+N/A
+
+1
+
+Qualified Climate Finance Customers are borrowers of DFC-supported financial institutions who receive financing
+for end uses compatible with U.S. government approved climate change mitigation, adaptation and/or sustainable
+landscape activities.
+
+Equity Specific (If not applicable, put N/A)
+Grants Assessment
+N/A
+Policy Review
+U.S. Economic Impact
+The Project is not expected to have a negative impact on the U.S. economy.
+Developmental Objectives
+Limited access to financing for both individuals and SMEs is a barrier to sustainable economic
+development and poverty reduction in Vietnam. Approximately 11% of the Vietnamese population
+reports borrowing money from a formal financial institution or mobile money account compared to 37%
+across the greater East Asia and Pacific region. Women in Vietnam report lower rates of both account
+ownership and access to financing than men. SMEs, despite accounting for more than 90% of Vietnam’s
+private sector and employing over 50% of the country’s workforce, have an unmet financing demand of
+approximately $21.7 billion, or 12% of GDP. Women-owned/-led SMEs disproportionately face access to
+finance constraints due to operating mostly in the informal economy and lack of access to collateral.
+Climate change is yet another factor impacting Vietnam’s economic growth, and disruptions to the
+economy are expected to become more pronounced in the future with increasing variability in
+temperatures and sea level rise.
+In response to these challenges, the Project is expected to have a positive development impact in Vietnam
+by increasing access to finance and supporting the economic empowerment of individuals and SMEs,
+including women borrowers and women-owned/led SMEs. The Project will also support Vietnam’s
+transition to more sustainable technologies with specific proceeds allocated to enterprises engaged in
+climate mitigation and/or adaptation activities, including energy efficiency improvements, green
+buildings, and green transportation. Given the Project characteristics, the Project is categorized as Highly
+Impactful per DFC’s Impact Quotient.
+Environment and Social Assessment
+Screening:
+The Project has been reviewed against the DFC’s 2024 Environmental and Social Policies and Procedures
+manual (“ESPP”) and has been determined to be categorically eligible. DFC loans to financial institutions
+for the expansion of lending to small- and medium-sized enterprises (“SMEs”), individual borrowers, and
+corporates are screened as a Financial Intermediary B (FI-B) for environmental and social assessment.
+These downstream investments are expected to result in minimal adverse environmental and social
+impacts. Therefore, all those downstream investments have been pre-screened as low risk and further
+review and consent is not required for these investments.
+Applicable Standards:
+To ensure that the Borrower’s loans are consistent with the DFC’s statutory and policy requirements, the
+DFC loan will be subject to conditions regarding the use of proceeds. The primary environmental and
+social issues identified in this transaction relate to the need for an Environmental and Social Management
+System (“ESMS”) that meets the 2012 IFC Performance Standards.
+
+Under the DFC’s ESPP, the Borrower is required to comply with applicable local and national laws and
+regulations related to environmental and social performance and applicable provisions of the 2012
+International Finance Corporation’s Performance Standard (“PS”) 1 and 2. A desk-review based due
+diligence assessment indicates that because the Project will use DFC support for on-lending to SMEs,
+individual borrowers, and corporates, including in climate finance, energy efficiency, retail, etc. in
+Vietnam, significant adverse impacts concerning community health and safety, biodiversity, land
+acquisition and resettlement, indigenous peoples, and cultural heritage are not anticipated; therefore, PS 3,
+5, 6, 7, and 8 are not triggered at this time. The Borrower does utilize private security and therefore,
+relevant aspects of IFC PS 4, Community Health, Safety, and Security are triggered at this time.
+Environmental and Social Risk and Mitigation:
+The Borrower does have an environmental and social policy as described in IFC PS 1, grievance
+mechanisms, and human resources policies generally commensurate with its investment strategy.
+However, the Borrower will be required to update its Environmental and Social Management System and
+labor policies to fully comply DFC’s 2024 Environmental Policy and Procedures.
+
+

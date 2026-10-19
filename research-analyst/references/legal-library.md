@@ -108,7 +108,8 @@ Footnote: *Stajic v. Ward*, 2026 ONSC 1707, at para. 15.
 - **s. 138.5 (10-day window):** damages are assessed against the average trading price over the 10
   trading days after the correction [Aurora; Global Atomic: "the ten-day look-back"].
 - **s. 138.7 (issuer cap):** the greater of 5% of market capitalization and $1 million
-  **(not from corpus: the $1M floor; confirm in the statute)**. His wording: "there is a liability limit
+  **(not from corpus: the $1M floor; confirm in the statute at ontario.ca/laws/statute/90s05,
+  s. 138.7(1)(a))**. His wording: "there is a liability limit
   measured by 5% of the Company's market capitalization at the commencement of the release of the
   first or each of the Impugned Documents" [Aurora; Ascot].
 - **Market capitalization, Ont. Reg. 1015, s. 249** [Pretium market-cap memo]. Steps:
