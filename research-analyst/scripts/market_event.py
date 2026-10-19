@@ -35,7 +35,7 @@ INDEX = {"america": "SP:SPX", "canada": "TSX:TSX", "uk": "FTSE:ASX", "germany": 
 # v1 thresholds; calibrate on Andrew's past cases (references/drop-standard.md)
 AR_CLEAR, AR_BORDER = -0.07, -0.05
 T_CLEAR, T_BORDER = -2.58, -1.96
-EST_LEN, EST_GAP, MIN_OBS, N_PEERS, BARS = 120, 10, 60, 10, 300
+EST_LEN, EST_GAP, MIN_OBS, N_PEERS, BARS = 120, 10, 60, 10, 800
 # Theme factors: fixed list, never chosen by outcome. Each stock gets the one it tracked most
 # closely over the estimation window (if correlation >= THEME_MIN_CORR).
 THEMES = {"IBIT": "Bitcoin", "XBI": "Biotech", "SMH": "Semiconductors", "IGV": "Software",
@@ -98,7 +98,7 @@ def _tv_bars(symbol, adjustment, n=BARS):
 def history(symbol, adjustment="dividends"):
     """Daily bars for a TradingView symbol, cached per symbol, adjustment and day."""
     os.makedirs(CACHE, exist_ok=True)
-    path = os.path.join(CACHE, f"tv_{symbol.replace(':', '_').replace(' ', '')}_{adjustment}_{dt.date.today()}.json")
+    path = os.path.join(CACHE, f"tv_{symbol.replace(':', '_').replace(' ', '')}_{adjustment}_{BARS}_{dt.date.today()}.json")
     if os.path.exists(path):
         return json.load(open(path))
     for i in range(3):
@@ -336,6 +336,31 @@ def cluster_check(results, min_corr=0.5, min_days=60):
     return results
 
 
+def lookback(symbol, day0, days, out_json=None):
+    """Stage 1: every session in the lookback where the stock fell 5%+, run through the drop standard."""
+    start = (day0 - dt.timedelta(days=days)).isoformat()
+    r = returns(history(symbol))
+    cands = [d for d, x in sorted(r.items()) if start <= d < day0.isoformat() and x <= -0.05]
+    res = []
+    for d in cands:
+        try:
+            res.append(analyse(symbol, dt.date.fromisoformat(d)))
+        except Exception as e:
+            res.append({"symbol": symbol, "day0": d, "error": str(e)[:200]})
+    if out_json:
+        json.dump(res, open(out_json, "w"), indent=1, default=str)
+    print(f"{len(cands)} sessions with a fall of 5%+ between {start} and {day0}")
+    print("| Date | Return | Abnormal | t | Class |")
+    print("|---|---|---|---|---|")
+    for x in res:
+        if "error" in x:
+            print(f"| {x['day0']} | | | | ERROR {x['error']} |")
+        else:
+            t = "n/a" if x["t_stat"] is None else f"{x['t_stat']:.1f}"
+            print(f"| {x['day0']} | {pct(x['return'])} | {pct(x['abnormal_return'])} | {t} | {x['class']} |")
+    return res
+
+
 def parse_screener(path):
     """Pull EXCH:TICKER symbols from the screener's markdown/plain output."""
     syms = []
@@ -360,7 +385,11 @@ def main():
     ap.add_argument("--screener")
     ap.add_argument("--date", type=dt.date.fromisoformat)
     ap.add_argument("--json")
+    ap.add_argument("--lookback", type=int, metavar="DAYS",
+                    help="also scan this many calendar days before --date for other drops of 5%%+ (stage 1)")
     a = ap.parse_args()
+    if a.lookback:
+        return lookback(a.symbols[0], a.date, a.lookback, a.json)
     syms = a.symbols + (parse_screener(a.screener) if a.screener else [])
     results = []
     for s in syms:
