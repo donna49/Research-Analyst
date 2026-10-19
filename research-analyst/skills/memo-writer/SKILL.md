@@ -9,7 +9,10 @@ v1 structure, reconstructed from the October 4 and 15 calls. To be replaced by A
 in v2. Output: `runs/<date>/<TICKER>/memo.md`.
 
 Every factual sentence ends with ledger citations, e.g. `[E004]`, which link to the Sources list.
-Follow `references/language-rules.md`.
+Follow `references/language-rules.md`. Generate section 3's timeline table with `ledger.py
+timeline` and the Sources list with `ledger.py sources`. The memo is finished only when
+`python3 scripts/ledger.py memo runs/<date>/<TICKER>/ledger.jsonl runs/<date>/<TICKER>/memo.md`
+reports 0 problems.
 
 ## Structure
 

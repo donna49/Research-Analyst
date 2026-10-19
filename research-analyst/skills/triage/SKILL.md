@@ -41,8 +41,11 @@ Window: from two sessions before day 0 to the day 0 close (exchange time zone). 
 
 1. Bigdata.com news, fast mode, entity filter, timestamp = window:
    "what happened to <Company> stock", then "<Company> announcement".
-2. Company announcements in the window: US 8-K list from EDGAR submissions; Canada/UK/Germany via
-   the sources in `references/source-hierarchy.md`.
+2. Company announcements in the window.
+   US: `python3 scripts/edgar.py filings <TICKER> --from <d-2> --to <d+1>` (acceptance times from
+   the EDGAR index pages, with before-open / after-close flags); Canada/UK/Germany via the sources
+   in `references/source-hierarchy.md`. An 8-K's acceptance time is when EDGAR published it; the
+   press release inside may have reached the market earlier on a newswire. Record both times.
 3. Litigation and regulators, one search: "<Company> lawsuit OR investigation OR subpoena OR
    class action" in the window and the prior 90 days.
 
@@ -59,8 +62,8 @@ Assign a tier from `references/trigger-tiers.md`.
 ### 4. Quick prior-statement check (only for Tier A or B triggers)
 
 One or two searches over the past 2 years of the company's own filings and calls on the trigger's
-subject (Bigdata.com fast mode, entity filter, categories filings + transcripts; for US also EDGAR
-full-text search). Outcome, with the passage quoted:
+subject (Bigdata.com fast mode, entity filter, categories filings + transcripts; for US also
+`python3 scripts/edgar.py fts "<phrase>" <TICKER> --from <d-2y> --to <d>`). Outcome, with the passage quoted:
 
 | Outcome | Meaning |
 |---|---|
@@ -98,7 +101,8 @@ step 2 thin-trading) calls for a different result, add `reviewer_override`
 (`disposition`, `code`, `reason`) to the name's `triage/<TICKER>.json`; never edit the researcher's
 own fields. Timing checks that commonly change the picture:
 - a disclosure made before the open on day −1 (the reaction may span two sessions);
-- a filing accepted after the day-0 close belongs to day +1 (use the EDGAR index-page ET time);
+- a filing accepted after the day-0 close belongs to day +1 (use `edgar.py filings`, which reads the
+  index-page ET time; never convert the submissions-JSON `acceptanceDateTime`, which is mislabelled UTC);
 - plaintiff-firm "investigation" notices are signals, not filed suits.
 
 Render with `python3 scripts/build_triage.py runs/<date>`.

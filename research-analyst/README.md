@@ -24,13 +24,21 @@ knowledge-indicators + external-evidence → timeline → verify → memo-writer
 | `skills/<stage>/` | One skill per stage |
 | `references/` | Evidence ledger schema, drop standard, trigger tiers, statement types, sources, language rules, jurisdictions |
 | `scripts/market_event.py` | Drop standard (TradingView chart feed + scanner); all market numbers |
-| `scripts/ledger.py` | Ledger structure check and quote matching |
+| `scripts/ledger.py` | Ledger checks (`check`, `quotes`), stage-1 records (`add-market`), renderings (`summary`, `timeline`, `sources`) and the memo gate (`memo`) |
+| `scripts/edgar.py` | SEC EDGAR: filings with true acceptance times (`filings`), full-text search (`fts`), insider trades (`form4`), document text (`fetch`) |
+| `scripts/build_triage.py` | Renders `triage.md` from `market_event.json` and `triage/*.json` |
+| `tests/` | Offline tests: `python3 -m unittest discover tests` |
 | `runs/` | One folder per screener date |
 
 ## Requirements
 
-Python 3 with `numpy` and `websocket-client`. Connectors: Bigdata.com, CourtListener. SEC EDGAR
-needs no key (send a User-Agent with contact email).
+Python 3.11+ with `numpy` and `websocket-client`. Connectors: Bigdata.com, CourtListener. SEC
+EDGAR needs no key but requires a contact in the User-Agent: set `SEC_USER_AGENT_EMAIL` to the
+firm's address before using `scripts/edgar.py`.
+
+Paths: commands run from the plugin directory (`scripts/…`, `runs/…`). When the plugin is installed
+elsewhere, call the scripts as `python3 "${CLAUDE_PLUGIN_ROOT}/scripts/…"` and keep `runs/` in the
+working directory.
 
 ## Borrowed from
 

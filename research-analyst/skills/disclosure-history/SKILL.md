@@ -34,12 +34,16 @@ Not a summary of every filing: only passages on the issue.
 Method (adapted from InvestSkill `financial-report-analyst` and `10k-digest`, and Bigdata.com
 `risk-assessment`):
 
-1. **US**: list filings from EDGAR submissions for the lookback; run EDGAR full-text search for
-   each search term restricted to the company's CIK and date range; open every hit and the
-   matching sections of every 10-K/10-Q even without a hit (silence is also evidence).
+1. **US**: list filings for the lookback (`python3 scripts/edgar.py filings <TICKER> --from <start>
+   --to <day0> --forms 10-K,10-Q,8-K --json …`); run full-text search for each search term
+   (`edgar.py fts "<term>" <TICKER> --from … --to …`); open every hit and the matching sections of
+   every 10-K/10-Q even without a hit (silence is also evidence). Save each document used with
+   `edgar.py fetch`.
 2. **All countries**: Bigdata.com fast mode, entity filter, category `filings` and separately
    `transcripts`, one search term per query, one fiscal year per query; fetch full documents for
-   hits (`bigdata_fetch_document`). Then issuer IR site for anything missing (annual reports,
+   hits (`bigdata_fetch_document`). Search results are excerpts: a quote is recorded only after
+   the full document is fetched and saved, so `ledger.py quotes` matches it against the document,
+   not the excerpt. Then issuer IR site for anything missing (annual reports,
    presentations).
 3. For each passage write a `statement` record: verbatim quote, speaker, venue, `public_at`, exact
    locator, `statement_type` (`references/statement-types.md`), cautionary language quoted if any.

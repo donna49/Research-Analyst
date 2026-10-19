@@ -20,7 +20,7 @@ Adapted from Bigdata.com `company-brief` (six-category sweep with mandatory liti
 
 | Channel | Where |
 |---|---|
-| Company announcements | US: EDGAR filings in the window (8-K items, 10-Q/10-K, NT filings, 6-K). Other countries: announcement archives in `references/source-hierarchy.md` |
+| Company announcements | US: `scripts/edgar.py filings` for the window (8-K items, 10-Q/10-K, NT filings, 6-K; acceptance time in ET, before-open/after-close flags). Other countries: announcement archives in `references/source-hierarchy.md` |
 | Earnings call | Bigdata.com transcripts dated in the window |
 | News | Bigdata.com news, entity filter, window; then specific queries per candidate cause |
 | Courts | CourtListener dockets with the company as party, entries in the window |
@@ -32,7 +32,12 @@ Adapted from Bigdata.com `company-brief` (six-category sweep with mandatory liti
 ## For each candidate trigger, record a `revelation`
 
 - Exact headline or passage quoted, `public_at` with time and time zone, channel and speaker.
-- Primary document behind any news report (fetch it; cite it).
+- Primary document behind any news report (fetch it; cite it). Save its text with
+  `python3 scripts/edgar.py fetch <url> --out runs/<date>/<TICKER>/sources/<id>.txt` (US) so the
+  quote check can match it.
+- Two clocks for company news: the newswire release time and the filing acceptance time can be
+  hours apart (FOXF 2026-10-16: release before the open, 8-K accepted 16:06 ET). The release time
+  decides day 0; record the filing time separately.
 - Whether the item was the first public appearance of the information, or a repeat.
 
 ## Attribution (competing hypotheses, from intel `intel-diagnose`)

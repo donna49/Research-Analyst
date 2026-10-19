@@ -5,7 +5,11 @@ description: Stage 8 of a research-analyst investigation. Merges every dated led
 
 # Timeline (stage 8)
 
-One chronology built only from ledger records. Each row cites its record id.
+One chronology built only from ledger records. Each row cites its record id. Generate it with
+`python3 scripts/ledger.py timeline runs/<date>/<TICKER>/ledger.jsonl` (sorted by `public_at`, else
+`event_at`; superseded records left out; undated records listed as gaps), then mark the pairs
+and staged revelations described below. Edit wording only; never add a row the script did not
+produce — add the ledger record instead and re-run.
 
 | Column | Content |
 |---|---|

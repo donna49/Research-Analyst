@@ -63,6 +63,24 @@ Stages 6 and 7 can run in parallel after stage 5. Stage 9 must pass before stage
    followed.
 10. **Existing lawsuits do not stop the work.** Record them prominently and continue.
 
+## Scripts (run from the plugin directory, or `${CLAUDE_PLUGIN_ROOT}/scripts/` when installed)
+
+| Need | Command |
+|---|---|
+| Drop standard, one name or a screener | `python3 scripts/market_event.py EXCH:TICKER --date D --json …` / `--screener runs/D/screener.md` |
+| Earlier falls in the lookback | `python3 scripts/market_event.py EXCH:TICKER --date D --lookback 730 --json …` |
+| Stage-1 ledger records | `python3 scripts/ledger.py add-market <ledger> <market_event.json> [EXCH:TICKER]` |
+| US filings with true public times | `python3 scripts/edgar.py filings TICKER --from … --to … [--forms 8-K]` |
+| US full-text search / insider trades | `edgar.py fts "<phrase>" TICKER --from … --to …` / `edgar.py form4 TICKER --from … --to …` |
+| Save a document's text for quote matching | `edgar.py fetch <url> --out runs/D/TICKER/sources/<id>.txt` |
+| Ledger checks | `ledger.py check`, `ledger.py quotes`, `ledger.py summary` |
+| Timeline, sources, memo gate | `ledger.py timeline`, `ledger.py sources`, `ledger.py memo <ledger> <memo.md>` |
+
+Timing traps already met in real cases: the EDGAR submissions-JSON `acceptanceDateTime` is
+mislabelled UTC (use `edgar.py filings`, which reads the index page); an 8-K can be accepted
+hours after its press release crossed the wire, and the release time decides day 0; a script
+run during market hours ignores today's unfinished bar, so re-run after the close.
+
 ## How an expert reads a drop (the questions behind every stage)
 
 Carry these questions through the work; they decide what evidence to collect, not the legal answer.

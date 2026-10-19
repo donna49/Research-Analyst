@@ -4,6 +4,13 @@ One file per case: `runs/<date>/<TICKER>/ledger.jsonl`, one JSON object per line
 appends; nothing is deleted (a corrected record supersedes the old one via `supersedes`).
 `scripts/ledger.py check <file>` validates it; the memo writer refuses to run on a ledger that fails.
 
+What `check` enforces beyond required fields: `public_at` / `event_at` are `YYYY`, `YYYY-MM`,
+`YYYY-MM-DD` or a timestamp **with** offset; quotes ≤ 120 words; `statement_id` points to a
+`statement`; `supersedes` points to an existing id; `confidence` starts with high / moderate / low;
+`alternative.weight` starts with primary / contributing / unlikely; `knowledge.direction` is
+supports / undercuts; source `tier` is 1–3; `search` has `tool` and `query`; no conclusory words
+in `claim` unless `attributed`.
+
 Adapted from intel `references/evidence-standards.md` (claim status, source assessment, citation
 integrity) and InvestSkill `fact-check` (claim ledger, source tiers, verdicts).
 
@@ -42,7 +49,7 @@ integrity) and InvestSkill `fact-check` (claim ledger, source tiers, verdicts).
 
 | Kind | What it records | Extra fields |
 |---|---|---|
-| `market` | A number from `scripts/market_event.py` | `metric`, `value`, `unit`; `source.doc_type` = `script output` and `source.location` = JSON path |
+| `market` | A number from `scripts/market_event.py`, written by `ledger.py add-market` | `metric`, `value` (number, or null with `text` for the class and flags), `unit`, `event_at` = day 0; `source.doc_type` = `script output` and `source.location` = JSON path |
 | `revelation` | Adverse information reaching the market | `channel` (company / news / court / regulator / short seller / analyst), `speaker` |
 | `statement` | Something the company said before the drop | `speaker`, `venue`, `statement_type` (see `statement-types.md`), `topic`, `cautionary_language` (quoted, if any) |
 | `comparison` | One prior statement set against later facts | `statement_id`, `revelation_ids`, `apparent_inconsistency`, `contrary_evidence_ids`, `innocent_explanation`, `wording_change` |

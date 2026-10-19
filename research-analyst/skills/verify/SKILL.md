@@ -20,8 +20,10 @@ fabricated citation = failure) and `result-validator`, intel `intel-red-team`, a
 | Numbers | Every number traces to a script output or a quoted document; derived figures recomputed | Correct; supersede the record |
 | Status | Allegations are `attributed`; inferences list `refs` | Re-label |
 
-`scripts/ledger.py check` runs the structural checks; the quote and source checks are done by
-re-reading the saved sources. Set `verified` on each record.
+`scripts/ledger.py check` runs the structural checks and `scripts/ledger.py quotes` the quote
+match against `sources/`; locator and source checks are done by re-reading the saved sources.
+Set `verified` on each record. `scripts/ledger.py summary` lists records not yet verified and
+open gaps.
 
 ## 2. Red team (each `comparison`)
 
@@ -42,5 +44,9 @@ The memo writer may run only when:
 - no record has `verified: failed` unless it is superseded or moved to gaps,
 - every `comparison` has an `innocent_explanation`,
 - every number in the planned memo maps to a `market` record or a quoted document.
+
+After the memo is drafted, `python3 scripts/ledger.py memo <ledger> <memo.md>` must pass: every
+cited id exists and is live, no conclusory wording outside quotations, every line with a
+percentage or money figure cites a record, and percentages cited to `market` records match them.
 
 Report: records checked, quotes matched, numbers recomputed, failures fixed, items moved to gaps.
