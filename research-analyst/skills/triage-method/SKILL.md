@@ -1,5 +1,5 @@
 ---
-name: triage
+name: triage-method
 description: Layer 1 of the research-analyst workflow. Takes one day's screener output of stocks that fell 10%+ and sorts every name into Full investigation, Watch or Exclude with a checkable reason, using the drop standard, the trigger scan, a quick prior-statement check and an existing-litigation check. Use when given screener output or asked which of today's drops are worth investigating.
 ---
 

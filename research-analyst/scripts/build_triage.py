@@ -72,7 +72,7 @@ def main(run):
     day = me[0].get("day0") or os.path.basename(run)
     countries = Counter((r.get("country") or "n/a") for r in me if "error" not in r)
     out = [f"# Triage: screener of {day} ({len(me)} names)", "",
-           "Research triage only; not legal advice. Dispositions follow `skills/triage/SKILL.md`.", "",
+           "Research triage only; not legal advice. Dispositions follow `skills/triage-method/SKILL.md`.", "",
            "Company domicile: " + ", ".join(f"{c} {n}" for c, n in countries.most_common()), "",
            "| Disposition | Count |", "|---|---|"]
     out += [f"| {k} | {len(v)} |" for k, v in rows.items() if v]
