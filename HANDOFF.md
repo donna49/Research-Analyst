@@ -1,6 +1,6 @@
 # Handoff: research-analyst plugin (state as of 2026-10-19)
 
-Repository: `donna49/research-analyst`, branch `claude/loving-shannon-gsl7kx`.
+Repository: `donna49/research-analyst`, branch `main`.
 
 ## What exists
 

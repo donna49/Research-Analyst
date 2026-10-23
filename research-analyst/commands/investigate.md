@@ -20,11 +20,13 @@ change, call transcripts, price and volume history). It seeds the stages below. 
 9. verify
 10. memo-writer
 
-If a ledger already exists for the case, resume from the first stage whose records are missing.
+If a ledger already exists for the case, resume from the first stage whose records are missing
+(`python3 "${CLAUDE_PLUGIN_ROOT}/scripts/ledger.py" summary <ledger>`).
 Use the early exit (orchestrator skill) when the economics show Andrew would pass on size or price
 recovery.
 
-Write everything under `runs/<date>/<TICKER>/`. Before replying, run:
+Write everything under `runs/<date>/<TICKER>/`. Before replying, run these and fix every problem (or move
+it to gaps):
 - `python3 "${CLAUDE_PLUGIN_ROOT}/scripts/ledger.py" check` on the ledger
 - `python3 "${CLAUDE_PLUGIN_ROOT}/scripts/ledger.py" quotes` on the ledger
 - `python3 "${CLAUDE_PLUGIN_ROOT}/scripts/ledger.py" memo` on the ledger and the memo

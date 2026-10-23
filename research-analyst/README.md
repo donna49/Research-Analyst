@@ -79,14 +79,19 @@ he asks, the 20 research angles, his pursue/pass rules with the cases they came 
 | `scripts/price_history.py` | Step 7: daily close and volume from one year plus 30 days before the drop, with every earlier 10%+ fall flagged |
 | `scripts/economics.py` | Price move on each disclosure; look-back; volume by venue; damages ranges; 5% cap; settlement target; limitation dates |
 | `scripts/render_memo.py` | Renders the memo to Word with real footnotes (and his letterhead for Form A), for upload as a Google Doc |
-| `scripts/ledger.py` | Ledger structure check, quote matching, and `memo` lint (citations, placeholders, uncited figures, text carried over from another case, required sections) |
+| `scripts/ledger.py` | Ledger checks (`check`, `quotes`), stage-1 records (`add-market`), renderings (`summary`, `timeline`, `sources`) and the memo lint (`memo`: citations, placeholders, uncited figures, text carried over from another case, required sections) |
+| `scripts/edgar.py` | SEC EDGAR: filings with true acceptance times (`filings`), full-text search (`fts`), insider trades (`form4`), document text (`fetch`) |
+| `scripts/calibrate.py` | Scores AR / t threshold pairs on labelled past cases (`pursue` / `pass`) |
+| `scripts/build_triage.py` | Renders `triage.md` from `market_event.json` and `triage/*.json` |
+| `tests/` | Offline tests: `python3 -m unittest discover tests` |
 | `runs/` | One folder per screener date |
 
 ## Requirements
 
-Python 3 with `numpy` and `websocket-client`. Connectors: Bigdata.com, CourtListener, and Google Drive
-(to read the exemplar memos, and to save a memo as a Doc when asked). SEC EDGAR needs no key (send a
-User-Agent with contact email).
+Python 3.11+ with `numpy` and `websocket-client`. Connectors: Bigdata.com, CourtListener, and Google Drive
+(to read the exemplar memos, and to save a memo as a Doc when asked). SEC EDGAR needs no key but
+requires a contact in the User-Agent: set `SEC_USER_AGENT_EMAIL` to the firm's address before using
+`scripts/edgar.py`.
 
 ## Borrowed from
 

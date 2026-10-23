@@ -23,8 +23,10 @@ fabricated citation = failure) and `result-validator`, intel `intel-red-team`, a
 | Economics | `economics.json` was re-run after the final Class Period was fixed; `economics` records match the JSON paths | Re-run and supersede |
 | Same case | No `party`, `statement` or `legal` record carries another case's names (exemplar contamination) | Remove |
 
-`scripts/ledger.py check` runs the structural checks; the quote and source checks are done by
-re-reading the saved sources. Set `verified` on each record.
+`scripts/ledger.py check` runs the structural checks and `scripts/ledger.py quotes` the quote
+match against `sources/`; locator and source checks are done by re-reading the saved sources.
+Set `verified` on each record. `scripts/ledger.py summary` lists records not yet verified and
+open gaps.
 
 ## 2. Red team (each `comparison`)
 
@@ -55,5 +57,9 @@ The memo writer may run only when:
 - there is exactly one current `decision` record.
 
 After the memo is written, `ledger.py memo` must pass.
+
+After the memo is drafted, `python3 "${CLAUDE_PLUGIN_ROOT}/scripts/ledger.py" memo <ledger> <memo.md>` must pass: every
+cited id exists and is live, no conclusory wording outside quotations, every line with a
+percentage or money figure cites a record, and percentages cited to `market` records match them.
 
 Report: records checked, quotes matched, numbers recomputed, failures fixed, items moved to gaps.
